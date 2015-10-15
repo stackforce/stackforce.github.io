@@ -49,7 +49,7 @@
 
   <header>
     <div id="top">
-      <div class="top_inner">
+      <div class="top_inner" style="height:15px;">
       </div>
     </div>
 
@@ -237,7 +237,7 @@ We&#39;re building your <span style="font-weight: bold;">solutions</span><span s
 $(function() {
 
   /*! Pimp links, but not those encapsulating an image. */
-  $('#container a:not(a:has(img))').each(function() {
+  $('#content_wrapper a:not(a:has(img))').each(function() {
     /*! If link points to another website, add class for external and set target to new page. */
     if(this.hostname && this.hostname !== location.hostname)
     {
