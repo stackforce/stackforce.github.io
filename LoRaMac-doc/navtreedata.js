@@ -3,16 +3,14 @@ var NAVTREE =
   [ "LoRaMAC Layer", "index.html", [
     [ "Introduction", "index.html", [
       [ "Preface", "index.html#PREFACE", [
-        [ "LoRaMAC Implementation", "index.html#PURPOSE", null ],
+        [ "Architecture", "index.html#PURPOSE", null ],
         [ "Features", "index.html#FEATURES", null ]
       ] ],
-      [ "LoRaMAC Quick-Start Guide", "index.html#QUICKSTART", [
-        [ "Initialization of the LoRaMAC layer", "index.html#QUICKSTART_MAC_INITIALIZATION", null ],
+      [ "Quick-Start Guide", "index.html#QUICKSTART", [
+        [ "Overview", "index.html#QUICKSTART_INTRO", null ],
+        [ "Initialization", "index.html#QUICKSTART_MAC_INITIALIZATION", null ],
         [ "Over-the-air actvation", "index.html#QUICKSTART_OTA_ACTIVATION", null ],
         [ "Activation by personalization", "index.html#QUICKSTART_AP_ACTIVATION", null ]
-      ] ],
-      [ "Porting guide", "index.html#PORTING_GUIDE", [
-        [ "v3.4 to v4.0.0", "index.html#VERSION_3_3_TO_4_0", null ]
       ] ],
       [ "License", "index.html#LICENSE", null ],
       [ "Acknowledgements", "index.html#ACKNOWLEDGEMENTS", null ]
@@ -42,8 +40,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_lo_ra_mac_8h.html",
-"group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a719a080d9a7ddae8279aadb67714a96b"
+"_comissioning_8h_source.html",
+"group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696aba17be1162725df5e78e03b3aeff83fa"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

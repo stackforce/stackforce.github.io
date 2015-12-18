@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC Layer
-   &#160;<span id="projectnumber">v4.0.0-rc.3</span>
+   &#160;<span id="projectnumber">v4.0.0</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -112,37 +112,35 @@ $(document).ready(function(){initNavTree('_lo_ra_mac_crypto_8h_source.html','');
 </div><!--header-->
 <div class="contents">
 <a href="_lo_ra_mac_crypto_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef __LORAMAC_CRYPTO_H__</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define __LORAMAC_CRYPTO_H__</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gaa8eb323b00d8d049e94ea02b8c1fd70c">   40</a></span>&#160;<span class="preprocessor">#define LoRaMacMemCpy( src, dst, size ) memcpy1( dst, src, size )</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac26317e380bb58f8fc59bb76b374f4e8">LoRaMacComputeMic</a>( uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint32_t *mic );</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga236f1b92d799ccd500e2086294867c5a">LoRaMacPayloadEncrypt</a>( uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *encBuffer );</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga4489cf86cd2b9fb4f374f479862246e8">LoRaMacPayloadDecrypt</a>( uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *decBuffer );</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gaa3500df1896aefa18a71ecff37deffda">LoRaMacJoinComputeMic</a>( uint8_t *buffer, uint16_t size, <span class="keyword">const</span> uint8_t *key, uint32_t *mic );</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga0fd893906e54d39d42eae222808b09df">LoRaMacJoinDecrypt</a>( uint8_t *buffer, uint16_t size, <span class="keyword">const</span> uint8_t *key, uint8_t *decBuffer );</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gad13afee59adef9953fbc6dbabaa5c3d1">LoRaMacJoinComputeSKeys</a>( <span class="keyword">const</span> uint8_t *key, uint8_t *appNonce, uint16_t devNonce, uint8_t *nwkSKey, uint8_t *appSKey );</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // __LORAMAC_CRYPTO_H__</span></div>
-<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_ga236f1b92d799ccd500e2086294867c5a"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga236f1b92d799ccd500e2086294867c5a">LoRaMacPayloadEncrypt</a></div><div class="ttdeci">void LoRaMacPayloadEncrypt(uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *encBuffer)</div></div>
-<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_gad13afee59adef9953fbc6dbabaa5c3d1"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gad13afee59adef9953fbc6dbabaa5c3d1">LoRaMacJoinComputeSKeys</a></div><div class="ttdeci">void LoRaMacJoinComputeSKeys(const uint8_t *key, uint8_t *appNonce, uint16_t devNonce, uint8_t *nwkSKey, uint8_t *appSKey)</div></div>
-<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_ga4489cf86cd2b9fb4f374f479862246e8"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga4489cf86cd2b9fb4f374f479862246e8">LoRaMacPayloadDecrypt</a></div><div class="ttdeci">void LoRaMacPayloadDecrypt(uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *decBuffer)</div></div>
-<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_gaa3500df1896aefa18a71ecff37deffda"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gaa3500df1896aefa18a71ecff37deffda">LoRaMacJoinComputeMic</a></div><div class="ttdeci">void LoRaMacJoinComputeMic(uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t *mic)</div></div>
-<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_ga0fd893906e54d39d42eae222808b09df"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga0fd893906e54d39d42eae222808b09df">LoRaMacJoinDecrypt</a></div><div class="ttdeci">void LoRaMacJoinDecrypt(uint8_t *buffer, uint16_t size, const uint8_t *key, uint8_t *decBuffer)</div></div>
-<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_gac26317e380bb58f8fc59bb76b374f4e8"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac26317e380bb58f8fc59bb76b374f4e8">LoRaMacComputeMic</a></div><div class="ttdeci">void LoRaMacComputeMic(uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint32_t *mic)</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef __LORAMAC_CRYPTO_H__</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define __LORAMAC_CRYPTO_H__</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga6ee265070494b83255e7fdc4dff985da">LoRaMacComputeMic</a>( <span class="keyword">const</span> uint8_t *buffer, uint16_t size, <span class="keyword">const</span> uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint32_t *mic );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga50339e60abea2186ca7e584b489718b1">LoRaMacPayloadEncrypt</a>( <span class="keyword">const</span> uint8_t *buffer, uint16_t size, <span class="keyword">const</span> uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *encBuffer );</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga41f9ba19f61b195420914ed58c8b94c7">LoRaMacPayloadDecrypt</a>( <span class="keyword">const</span> uint8_t *buffer, uint16_t size, <span class="keyword">const</span> uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *decBuffer );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac9216af326316c9e7f207d4e73aed199">LoRaMacJoinComputeMic</a>( <span class="keyword">const</span> uint8_t *buffer, uint16_t size, <span class="keyword">const</span> uint8_t *key, uint32_t *mic );</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac2379cd7cbeb6febaa2a7be5d9f04b5c">LoRaMacJoinDecrypt</a>( <span class="keyword">const</span> uint8_t *buffer, uint16_t size, <span class="keyword">const</span> uint8_t *key, uint8_t *decBuffer );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gad6fc2ace27fa388ec860fc2e5ae1f544">LoRaMacJoinComputeSKeys</a>( <span class="keyword">const</span> uint8_t *key, <span class="keyword">const</span> uint8_t *appNonce, uint16_t devNonce, uint8_t *nwkSKey, uint8_t *appSKey );</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif // __LORAMAC_CRYPTO_H__</span></div>
+<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_ga6ee265070494b83255e7fdc4dff985da"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga6ee265070494b83255e7fdc4dff985da">LoRaMacComputeMic</a></div><div class="ttdeci">void LoRaMacComputeMic(const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint32_t *mic)</div></div>
+<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_ga50339e60abea2186ca7e584b489718b1"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga50339e60abea2186ca7e584b489718b1">LoRaMacPayloadEncrypt</a></div><div class="ttdeci">void LoRaMacPayloadEncrypt(const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *encBuffer)</div></div>
+<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_ga41f9ba19f61b195420914ed58c8b94c7"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga41f9ba19f61b195420914ed58c8b94c7">LoRaMacPayloadDecrypt</a></div><div class="ttdeci">void LoRaMacPayloadDecrypt(const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *decBuffer)</div></div>
+<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_gac2379cd7cbeb6febaa2a7be5d9f04b5c"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac2379cd7cbeb6febaa2a7be5d9f04b5c">LoRaMacJoinDecrypt</a></div><div class="ttdeci">void LoRaMacJoinDecrypt(const uint8_t *buffer, uint16_t size, const uint8_t *key, uint8_t *decBuffer)</div></div>
+<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_gad6fc2ace27fa388ec860fc2e5ae1f544"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gad6fc2ace27fa388ec860fc2e5ae1f544">LoRaMacJoinComputeSKeys</a></div><div class="ttdeci">void LoRaMacJoinComputeSKeys(const uint8_t *key, const uint8_t *appNonce, uint16_t devNonce, uint8_t *nwkSKey, uint8_t *appSKey)</div></div>
+<div class="ttc" id="group___l_o_r_a_m_a_c___c_r_y_p_t_o_html_gac9216af326316c9e7f207d4e73aed199"><div class="ttname"><a href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac9216af326316c9e7f207d4e73aed199">LoRaMacJoinComputeMic</a></div><div class="ttdeci">void LoRaMacJoinComputeMic(const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t *mic)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_05e3fe392ac1c0296c43442c7a4bd634.html">semtech-lora-mac-node</a></li><li class="navelem"><a class="el" href="dir_9b2deb2d8ebe7c3c936b5355c3fcca91.html">src</a></li><li class="navelem"><a class="el" href="dir_b701423b7820ce586f13cab047142719.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_crypto_8h.html">LoRaMacCrypto.h</a></li>
-    <li class="footer">Generated on Fri Oct 30 2015 14:25:19 for LoRaMAC Layer by
+    <li class="navelem"><a class="el" href="dir_dafd1c82bc8ee7a0dbc693dabb8190c5.html">loramac-stack</a></li><li class="navelem"><a class="el" href="dir_2f0e5c18ad01314d8d34be8f44398fab.html">loramac-node</a></li><li class="navelem"><a class="el" href="dir_335d385ad0448da65716bb819c6d1316.html">src</a></li><li class="navelem"><a class="el" href="dir_a669f5507d465e006b0d6477c99a97ee.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_crypto_8h.html">LoRaMacCrypto.h</a></li>
+    <li class="footer">Generated on Fri Dec 18 2015 12:12:06 for LoRaMAC Layer by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

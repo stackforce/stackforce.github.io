@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC Layer
-   &#160;<span id="projectnumber">v4.0.0-rc.3</span>
+   &#160;<span id="projectnumber">v4.0.0</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -108,7 +108,6 @@ $(document).ready(function(){initNavTree('_lo_ra_mac_crypto_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">LoRaMacCrypto.h File Reference</div>  </div>
@@ -120,25 +119,20 @@ $(document).ready(function(){initNavTree('_lo_ra_mac_crypto_8h.html','');});
 
 <p><a href="_lo_ra_mac_crypto_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gaa8eb323b00d8d049e94ea02b8c1fd70c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gaa8eb323b00d8d049e94ea02b8c1fd70c">LoRaMacMemCpy</a>(src,  dst,  size)&#160;&#160;&#160;memcpy1( dst, src, size )</td></tr>
-<tr class="separator:gaa8eb323b00d8d049e94ea02b8c1fd70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac26317e380bb58f8fc59bb76b374f4e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac26317e380bb58f8fc59bb76b374f4e8">LoRaMacComputeMic</a> (uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint32_t *mic)</td></tr>
-<tr class="separator:gac26317e380bb58f8fc59bb76b374f4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga236f1b92d799ccd500e2086294867c5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga236f1b92d799ccd500e2086294867c5a">LoRaMacPayloadEncrypt</a> (uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *encBuffer)</td></tr>
-<tr class="separator:ga236f1b92d799ccd500e2086294867c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4489cf86cd2b9fb4f374f479862246e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga4489cf86cd2b9fb4f374f479862246e8">LoRaMacPayloadDecrypt</a> (uint8_t *buffer, uint16_t size, uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *decBuffer)</td></tr>
-<tr class="separator:ga4489cf86cd2b9fb4f374f479862246e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa3500df1896aefa18a71ecff37deffda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gaa3500df1896aefa18a71ecff37deffda">LoRaMacJoinComputeMic</a> (uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t *mic)</td></tr>
-<tr class="separator:gaa3500df1896aefa18a71ecff37deffda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fd893906e54d39d42eae222808b09df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga0fd893906e54d39d42eae222808b09df">LoRaMacJoinDecrypt</a> (uint8_t *buffer, uint16_t size, const uint8_t *key, uint8_t *decBuffer)</td></tr>
-<tr class="separator:ga0fd893906e54d39d42eae222808b09df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad13afee59adef9953fbc6dbabaa5c3d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gad13afee59adef9953fbc6dbabaa5c3d1">LoRaMacJoinComputeSKeys</a> (const uint8_t *key, uint8_t *appNonce, uint16_t devNonce, uint8_t *nwkSKey, uint8_t *appSKey)</td></tr>
-<tr class="separator:gad13afee59adef9953fbc6dbabaa5c3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ee265070494b83255e7fdc4dff985da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga6ee265070494b83255e7fdc4dff985da">LoRaMacComputeMic</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint32_t *mic)</td></tr>
+<tr class="separator:ga6ee265070494b83255e7fdc4dff985da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50339e60abea2186ca7e584b489718b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga50339e60abea2186ca7e584b489718b1">LoRaMacPayloadEncrypt</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *encBuffer)</td></tr>
+<tr class="separator:ga50339e60abea2186ca7e584b489718b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41f9ba19f61b195420914ed58c8b94c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga41f9ba19f61b195420914ed58c8b94c7">LoRaMacPayloadDecrypt</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *decBuffer)</td></tr>
+<tr class="separator:ga41f9ba19f61b195420914ed58c8b94c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9216af326316c9e7f207d4e73aed199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac9216af326316c9e7f207d4e73aed199">LoRaMacJoinComputeMic</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t *mic)</td></tr>
+<tr class="separator:gac9216af326316c9e7f207d4e73aed199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2379cd7cbeb6febaa2a7be5d9f04b5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac2379cd7cbeb6febaa2a7be5d9f04b5c">LoRaMacJoinDecrypt</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint8_t *decBuffer)</td></tr>
+<tr class="separator:gac2379cd7cbeb6febaa2a7be5d9f04b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6fc2ace27fa388ec860fc2e5ae1f544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gad6fc2ace27fa388ec860fc2e5ae1f544">LoRaMacJoinComputeSKeys</a> (const uint8_t *key, const uint8_t *appNonce, uint16_t devNonce, uint8_t *nwkSKey, uint8_t *appSKey)</td></tr>
+<tr class="separator:gad6fc2ace27fa388ec860fc2e5ae1f544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LoRa MAC layer cryptography implementation. </p>
@@ -150,16 +144,24 @@ Functions</h2></td></tr>
 <div class="line"> _____) ) ____| | | || |_| ____( (___| | | |</div>
 <div class="line">(______/|_____)_|_|_| \__)_____)\____)_| |_|</div>
 <div class="line">(C)2013 Semtech</div>
-</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Miguel Luis</dd>
+<div class="line"></div>
+<div class="line"> ___ _____ _   ___ _  _____ ___  ___  ___ ___</div>
+<div class="line">/ __|_   _/_\ / __| |/ / __/ _ \| _ \/ __| __|</div>
+<div class="line">\__ \ | |/ _ \ (__| <span class="stringliteral">&#39; &lt;| _| (_) |   / (__| _|</span></div>
+<div class="line"><span class="stringliteral">|___/ |_/_/ \_\___|_|\_\_| \___/|_|_\\___|___|</span></div>
+<div class="line"><span class="stringliteral">embedded.connectivity.solutions===============</span></div>
+</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Miguel Luis ( Semtech )</dd>
 <dd>
-Gregory Cristian </dd></dl>
+Gregory Cristian ( Semtech )</dd>
+<dd>
+Daniel Jäckle ( STACKFORCE ) </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_05e3fe392ac1c0296c43442c7a4bd634.html">semtech-lora-mac-node</a></li><li class="navelem"><a class="el" href="dir_9b2deb2d8ebe7c3c936b5355c3fcca91.html">src</a></li><li class="navelem"><a class="el" href="dir_b701423b7820ce586f13cab047142719.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_crypto_8h.html">LoRaMacCrypto.h</a></li>
-    <li class="footer">Generated on Fri Oct 30 2015 14:25:19 for LoRaMAC Layer by
+    <li class="navelem"><a class="el" href="dir_dafd1c82bc8ee7a0dbc693dabb8190c5.html">loramac-stack</a></li><li class="navelem"><a class="el" href="dir_2f0e5c18ad01314d8d34be8f44398fab.html">loramac-node</a></li><li class="navelem"><a class="el" href="dir_335d385ad0448da65716bb819c6d1316.html">src</a></li><li class="navelem"><a class="el" href="dir_a669f5507d465e006b0d6477c99a97ee.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_crypto_8h.html">LoRaMacCrypto.h</a></li>
+    <li class="footer">Generated on Fri Dec 18 2015 12:12:06 for LoRaMAC Layer by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -37,7 +37,7 @@ var _lo_ra_mac_8h =
       [ "LORAMAC_EVENT_INFO_STATUS_RX2_TIMEOUT", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a743858a21ae7cb162abc9acaa62cd4df", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_RX2_ERROR", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_JOIN_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af42941643347e10f0e5a01c324bf6170", null ],
-      [ "LORAMAC_EVENT_INFO_STATUS_DOWNLINK_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a719a080d9a7ddae8279aadb67714a96b", null ],
+      [ "LORAMAC_EVENT_INFO_STATUS_DOWNLINK_REPEATED", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aaae47a8316ae996d506323e0e6613b9b", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_ADDRESS_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af141bb217ba31a2dc7d3cc128a13de10", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_MIC_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a43bdb9277722c567c81539fd175a7a63", null ]
     ] ],
@@ -76,7 +76,7 @@ var _lo_ra_mac_8h =
       [ "LORAMAC_STATUS_PARAMETER_INVALID", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ad0d3119f247d00e1787dda106fcb3017", null ],
       [ "LORAMAC_STATUS_NO_NETWORK_JOINED", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae", null ],
       [ "LORAMAC_STATUS_LENGTH_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a4ab40311dcd2eeffc77f573a919b29b1", null ],
-      [ "LORAMAC_STATUS_PORT_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a490b19ac3f654125c3d628a15424232f", null ],
+      [ "LORAMAC_STATUS_MAC_CMD_LENGTH_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ab3ceb202ec195d18edb07c4633f21816", null ],
       [ "LORAMAC_STATUS_DEVICE_OFF", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff1d3a91250809d1770a74776057b8ce", null ]
     ] ],
     [ "Mcps_t", "group___l_o_r_a_m_a_c.html#ga3a34a8c4488f3dd643fa1fc390691696", [
@@ -122,5 +122,6 @@ var _lo_ra_mac_8h =
     [ "LoRaMacMibSetRequestConfirm", "group___l_o_r_a_m_a_c.html#ga7a4ee0ced221591206b09630d4a70844", null ],
     [ "LoRaMacMlmeRequest", "group___l_o_r_a_m_a_c.html#ga097113f30feecc17c780940ff74af33e", null ],
     [ "LoRaMacMulticastChannelLink", "group___l_o_r_a_m_a_c.html#ga89622bf6a1705558ba7b76dbb2d59c2f", null ],
-    [ "LoRaMacMulticastChannelUnlink", "group___l_o_r_a_m_a_c.html#ga1542a215938fcff1d665ae48b449335e", null ]
+    [ "LoRaMacMulticastChannelUnlink", "group___l_o_r_a_m_a_c.html#ga1542a215938fcff1d665ae48b449335e", null ],
+    [ "LoRaMacQueryTxPossible", "group___l_o_r_a_m_a_c.html#ga8b0aeaf75f9404ce01da9b202252c231", null ]
 ];

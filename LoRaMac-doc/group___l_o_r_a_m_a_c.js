@@ -10,8 +10,8 @@ var group___l_o_r_a_m_a_c =
     ] ],
     [ "Band_t", "group___l_o_r_a_m_a_c.html#struct_band__t", [
       [ "DCycle", "group___l_o_r_a_m_a_c.html#a9ab2dfbcbe5e7e43c95ff6a436886139", null ],
-      [ "LastTxDoneTime", "group___l_o_r_a_m_a_c.html#a9d5374396f5616445e8dd171fde33def", null ],
-      [ "TimeOff", "group___l_o_r_a_m_a_c.html#a3c5e6b48be6b6561ce9b17cc5e64db09", null ],
+      [ "LastTxDoneTime", "group___l_o_r_a_m_a_c.html#a7316dfb002c4e0015fceeb727020fe5c", null ],
+      [ "TimeOff", "group___l_o_r_a_m_a_c.html#a4de67f0652eb4259907c41ea8056c318", null ],
       [ "TxMaxPower", "group___l_o_r_a_m_a_c.html#a1b9d27384fedab3a94167b8e9bf9b432", null ]
     ] ],
     [ "ChannelParams_t", "group___l_o_r_a_m_a_c.html#struct_channel_params__t", [
@@ -50,18 +50,31 @@ var group___l_o_r_a_m_a_c =
       [ "FOptsLen", "group___l_o_r_a_m_a_c.html#aca65acebde222837502f6cf8e2aeeac8", null ],
       [ "FPending", "group___l_o_r_a_m_a_c.html#a2d5d8f602343aff45f870d4c38ffa0df", null ]
     ] ],
+    [ "LoRaMacFlags_t", "group___l_o_r_a_m_a_c.html#union_lo_ra_mac_flags__t", [
+      [ "Bits", "group___l_o_r_a_m_a_c.html#a86a8429036015d2cec16df681e2258be", null ],
+      [ "Value", "group___l_o_r_a_m_a_c.html#a88f4d00bdab99ae6f48c7ae0bc468bb4", null ]
+    ] ],
+    [ "sMacFlagBits", "group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_flags__t_1_1s_mac_flag_bits", [
+      [ "MacDone", "group___l_o_r_a_m_a_c.html#a8b4a19cca2ba529046ea88bb13305407", null ],
+      [ "McpsInd", "group___l_o_r_a_m_a_c.html#a81d24e4d487adef6c6d4f4ca0963319e", null ],
+      [ "McpsReq", "group___l_o_r_a_m_a_c.html#adee8f234933a066317a08431f5db61b0", null ],
+      [ "MlmeReq", "group___l_o_r_a_m_a_c.html#a3743e193dca88e3913e44e993a209ebf", null ]
+    ] ],
     [ "McpsReqUnconfirmed_t", "group___l_o_r_a_m_a_c.html#struct_mcps_req_unconfirmed__t", [
+      [ "Datarate", "group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],
       [ "fBuffer", "group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af", null ],
       [ "fBufferSize", "group___l_o_r_a_m_a_c.html#a6b4fc83528d7391a193516d9f4ba985b", null ],
       [ "fPort", "group___l_o_r_a_m_a_c.html#a2973de9ac0ab5e876b80362bc4c6a88b", null ]
     ] ],
     [ "McpsReqConfirmed_t", "group___l_o_r_a_m_a_c.html#struct_mcps_req_confirmed__t", [
+      [ "Datarate", "group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],
       [ "fBuffer", "group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af", null ],
       [ "fBufferSize", "group___l_o_r_a_m_a_c.html#a6b4fc83528d7391a193516d9f4ba985b", null ],
       [ "fPort", "group___l_o_r_a_m_a_c.html#a2973de9ac0ab5e876b80362bc4c6a88b", null ],
       [ "nbRetries", "group___l_o_r_a_m_a_c.html#a587c816d3c5fd1b12d22fefebca04c27", null ]
     ] ],
     [ "McpsReqProprietary_t", "group___l_o_r_a_m_a_c.html#struct_mcps_req_proprietary__t", [
+      [ "Datarate", "group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],
       [ "fBuffer", "group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af", null ],
       [ "fBufferSize", "group___l_o_r_a_m_a_c.html#a6b4fc83528d7391a193516d9f4ba985b", null ]
     ] ],
@@ -80,18 +93,22 @@ var group___l_o_r_a_m_a_c =
       [ "McpsRequest", "group___l_o_r_a_m_a_c.html#ab5da7b8ef4530ebd1fb2005f950a2b0b", null ],
       [ "NbRetries", "group___l_o_r_a_m_a_c.html#a87c781229ed6a79169564bbed6581f29", null ],
       [ "Status", "group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5", null ],
-      [ "TxPower", "group___l_o_r_a_m_a_c.html#a037b4f849fa8ed4aa1d3c58aef2b28ec", null ]
+      [ "TxPower", "group___l_o_r_a_m_a_c.html#a037b4f849fa8ed4aa1d3c58aef2b28ec", null ],
+      [ "TxTimeOnAir", "group___l_o_r_a_m_a_c.html#aa17a8607485db100d315e74853dd217e", null ],
+      [ "UpLinkCounter", "group___l_o_r_a_m_a_c.html#ae8c54ca277e4d7295dfd498889e42fdd", null ]
     ] ],
     [ "McpsIndication_t", "group___l_o_r_a_m_a_c.html#struct_mcps_indication__t", [
+      [ "AckReceived", "group___l_o_r_a_m_a_c.html#ac59e1bd1c9450c7d136c7f475be89ded", null ],
       [ "Buffer", "group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121", null ],
       [ "BufferSize", "group___l_o_r_a_m_a_c.html#abf449ca64f34dbb66a7c5bf70fd55753", null ],
-      [ "Datarate", "group___l_o_r_a_m_a_c.html#a780280c12645b2666878162aab5d8cad", null ],
+      [ "DownLinkCounter", "group___l_o_r_a_m_a_c.html#a7a566925baf83b1b3da9209dfa4bb79a", null ],
       [ "FramePending", "group___l_o_r_a_m_a_c.html#a123aed553ea78b5967618c22147a7f4c", null ],
       [ "McpsIndication", "group___l_o_r_a_m_a_c.html#af45477156b4a2e186b2bfa2afb3a4efc", null ],
       [ "Multicast", "group___l_o_r_a_m_a_c.html#acbaf0d718e63c5e2ed50a29cdcca27e0", null ],
       [ "Port", "group___l_o_r_a_m_a_c.html#a4b93121f04819fbab96346736fa720a9", null ],
       [ "Rssi", "group___l_o_r_a_m_a_c.html#ae00742a7fb9199399f4e4d79e42fda78", null ],
       [ "RxData", "group___l_o_r_a_m_a_c.html#afa6d3de110fa10174203ce26682585c9", null ],
+      [ "RxDatarate", "group___l_o_r_a_m_a_c.html#a61e9e29ca015230436fe420bf88989e9", null ],
       [ "RxSlot", "group___l_o_r_a_m_a_c.html#a08824938d0f702a10a2b70301c66d193", null ],
       [ "Snr", "group___l_o_r_a_m_a_c.html#af053995b03762dc0e0cd4d11f7d06d05", null ],
       [ "Status", "group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5", null ]
@@ -112,7 +129,8 @@ var group___l_o_r_a_m_a_c =
       [ "DemodMargin", "group___l_o_r_a_m_a_c.html#a60502ba4c33cf0435f086a1a9f1b5116", null ],
       [ "MlmeRequest", "group___l_o_r_a_m_a_c.html#a05e619573c522884eada37bde4e3d1f3", null ],
       [ "NbGateways", "group___l_o_r_a_m_a_c.html#ac2fbb4be8e3cc46943038a1796010d71", null ],
-      [ "Status", "group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5", null ]
+      [ "Status", "group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5", null ],
+      [ "TxTimeOnAir", "group___l_o_r_a_m_a_c.html#aa17a8607485db100d315e74853dd217e", null ]
     ] ],
     [ "MibParam_t", "group___l_o_r_a_m_a_c.html#union_mib_param__t", [
       [ "AdrEnable", "group___l_o_r_a_m_a_c.html#a04efa8698eeea64f27b216d64e598c0d", null ],
@@ -143,13 +161,17 @@ var group___l_o_r_a_m_a_c =
       [ "Param", "group___l_o_r_a_m_a_c.html#afb8c77b3200d879d36beed691fb71f8d", null ],
       [ "Type", "group___l_o_r_a_m_a_c.html#ada1f9249fb28125c69bdfacfaeeae0e2", null ]
     ] ],
+    [ "LoRaMacTxInfo_t", "group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_tx_info__t", [
+      [ "CurrentPayloadSize", "group___l_o_r_a_m_a_c.html#afd5874846b1ddb673f84f5f70d1281e2", null ],
+      [ "MaxPossiblePayload", "group___l_o_r_a_m_a_c.html#aa2c8329cf5f4dd8fe4b1563a40a3f642", null ]
+    ] ],
     [ "LoRaMacPrimitives_t", "struct_lo_ra_mac_primitives__t.html", [
       [ "MacMcpsConfirm", "struct_lo_ra_mac_primitives__t.html#a2b7cb648bbe609f5fb6fe4e3d0bcda41", null ],
       [ "MacMcpsIndication", "struct_lo_ra_mac_primitives__t.html#a89cb88517df5ff62828e4cf29454d9e5", null ],
       [ "MacMlmeConfirm", "struct_lo_ra_mac_primitives__t.html#ade47d176982e0843084c5932445898a2", null ]
     ] ],
     [ "LoRaMacCallback_t", "struct_lo_ra_mac_callback__t.html", [
-      [ "MeasureBatteryLevel", "struct_lo_ra_mac_callback__t.html#a7cbc774ca34775b99d6ce6ffe3940345", null ]
+      [ "GetBatteryLevel", "struct_lo_ra_mac_callback__t.html#ae0f26df23b50220cf30bc5a1db6bfefa", null ]
     ] ],
     [ "ACK_TIMEOUT", "group___l_o_r_a_m_a_c.html#ga5e53751a27267574b92f23d01951a259", null ],
     [ "ACK_TIMEOUT_RND", "group___l_o_r_a_m_a_c.html#gab4146b8c49f7f06080d38c64ccd2ffab", null ],
@@ -188,7 +210,7 @@ var group___l_o_r_a_m_a_c =
       [ "LORAMAC_EVENT_INFO_STATUS_RX2_TIMEOUT", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a743858a21ae7cb162abc9acaa62cd4df", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_RX2_ERROR", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_JOIN_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af42941643347e10f0e5a01c324bf6170", null ],
-      [ "LORAMAC_EVENT_INFO_STATUS_DOWNLINK_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a719a080d9a7ddae8279aadb67714a96b", null ],
+      [ "LORAMAC_EVENT_INFO_STATUS_DOWNLINK_REPEATED", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aaae47a8316ae996d506323e0e6613b9b", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_ADDRESS_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af141bb217ba31a2dc7d3cc128a13de10", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_MIC_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a43bdb9277722c567c81539fd175a7a63", null ]
     ] ],
@@ -227,7 +249,7 @@ var group___l_o_r_a_m_a_c =
       [ "LORAMAC_STATUS_PARAMETER_INVALID", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ad0d3119f247d00e1787dda106fcb3017", null ],
       [ "LORAMAC_STATUS_NO_NETWORK_JOINED", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae", null ],
       [ "LORAMAC_STATUS_LENGTH_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a4ab40311dcd2eeffc77f573a919b29b1", null ],
-      [ "LORAMAC_STATUS_PORT_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a490b19ac3f654125c3d628a15424232f", null ],
+      [ "LORAMAC_STATUS_MAC_CMD_LENGTH_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ab3ceb202ec195d18edb07c4633f21816", null ],
       [ "LORAMAC_STATUS_DEVICE_OFF", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff1d3a91250809d1770a74776057b8ce", null ]
     ] ],
     [ "Mcps_t", "group___l_o_r_a_m_a_c.html#ga3a34a8c4488f3dd643fa1fc390691696", [
@@ -273,5 +295,6 @@ var group___l_o_r_a_m_a_c =
     [ "LoRaMacMibSetRequestConfirm", "group___l_o_r_a_m_a_c.html#ga7a4ee0ced221591206b09630d4a70844", null ],
     [ "LoRaMacMlmeRequest", "group___l_o_r_a_m_a_c.html#ga097113f30feecc17c780940ff74af33e", null ],
     [ "LoRaMacMulticastChannelLink", "group___l_o_r_a_m_a_c.html#ga89622bf6a1705558ba7b76dbb2d59c2f", null ],
-    [ "LoRaMacMulticastChannelUnlink", "group___l_o_r_a_m_a_c.html#ga1542a215938fcff1d665ae48b449335e", null ]
+    [ "LoRaMacMulticastChannelUnlink", "group___l_o_r_a_m_a_c.html#ga1542a215938fcff1d665ae48b449335e", null ],
+    [ "LoRaMacQueryTxPossible", "group___l_o_r_a_m_a_c.html#ga8b0aeaf75f9404ce01da9b202252c231", null ]
 ];

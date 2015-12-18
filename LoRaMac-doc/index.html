@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC Layer
-   &#160;<span id="projectnumber">v4.0.0-rc.3</span>
+   &#160;<span id="projectnumber">v4.0.0</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -106,16 +106,14 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#PREFACE">Preface</a><ul><li class="level2"><a href="#PURPOSE">LoRaMAC Implementation</a></li>
+<ul><li class="level1"><a href="#PREFACE">Preface</a><ul><li class="level2"><a href="#PURPOSE">Architecture</a></li>
 <li class="level2"><a href="#FEATURES">Features</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#QUICKSTART">LoRaMAC Quick-Start Guide</a><ul><li class="level2"><a href="#QUICKSTART_MAC_INITIALIZATION">Initialization of the LoRaMAC layer</a></li>
+<li class="level1"><a href="#QUICKSTART">Quick-Start Guide</a><ul><li class="level2"><a href="#QUICKSTART_INTRO">Overview</a></li>
+<li class="level2"><a href="#QUICKSTART_MAC_INITIALIZATION">Initialization</a></li>
 <li class="level2"><a href="#QUICKSTART_OTA_ACTIVATION">Over-the-air actvation</a></li>
 <li class="level2"><a href="#QUICKSTART_AP_ACTIVATION">Activation by personalization</a></li>
-</ul>
-</li>
-<li class="level1"><a href="#PORTING_GUIDE">Porting guide</a><ul><li class="level2"><a href="#VERSION_3_3_TO_4_0">v3.4 to v4.0.0</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#LICENSE">License</a></li>
@@ -126,20 +124,19 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h1><a class="anchor" id="PREFACE"></a>
 Preface</h1>
 <h2><a class="anchor" id="PURPOSE"></a>
-LoRaMAC Implementation</h2>
-<p>This documentation is a preliminary version and specifies the API for the upcoming version of the LoRaMAC layer.</p>
+Architecture</h2>
 <p>The concept of the API follows the concept of primitives of the IEEE Standard for local and metropolitan area networks — part 15.4: Low-Rate Wireless Personal Area Networks (IEEE802.15.4-2011).</p>
 <p>The upcoming figure shows the concept of primitives of the LoRaMAC layer. The concept follows the Request-Confirm and Indication-Response architecture. The LoRaMAC layer offers MCPS (MAC Common Part Sublayer) services, MLME (MAC layer management entity) services and a MIB (MAC information base).</p>
-<p>In general, the LoRaMAC layer utilizes MCPS services for data transmissions and data receptions, and MLME services to manage the LoRaWAN network. The MIB stores important runtime information and the configuration of the LoRaMAC layer.</p>
-<p>An upper layer (e.g. the main application) is able to perform <em>Requests</em> which the LoRaMAC layer confirms with a <em>Confirm</em> primitive. In addition, the LoRaMAC layer can notify an upper layer with the <em>Indication</em> primitive. The upper layer may responses to an <em>Indication</em> with a <em>Response</em> primitive.</p>
+<p>In general, the LoRaMAC layer utilizes MCPS services for data transmissions and data receptions, and MLME services to manage the LoRaWAN network. The MIB is responsible to store important runtime information and holds the configuration of the LoRaMAC layer.</p>
+<p>An upper layer (e.g. the main application) is able to perform <em>Requests</em> which the LoRaMAC layer confirms with a <em>Confirm</em> primitive. The LoRaMAC layer notifies an upper layer with the <em>Indication</em> primitive in case of events. The upper layer may responses to an <em>Indication</em> with the <em>Response</em> primitive.</p>
 <div class="image">
 <img src="LoRaMacPrimitives.png" alt="LoRaMacPrimitives.png"/>
 </div>
 <hr/>
 <h2><a class="anchor" id="FEATURES"></a>
 Features</h2>
-<p>The LoRaMAC sources are available on GitHub (<a href="https://github.com/Lora-net/LoRaMac-node">https://github.com/Lora-net/LoRaMac-node</a>).</p>
-<p>The following features are supported according to the LoRaWAN 1.0 specification :</p>
+<p>The LoRaMAC sources are available on GitHub: <a href="https://github.com/Lora-net/LoRaMac-node">https://github.com/Lora-net/LoRaMac-node</a>.</p>
+<p>The following features are supported according to the LoRaWAN 1.0 specification:</p>
 <ul style="list-style-type:disc">
 <li>
 LoRaWAN device classes  <ul style="list-style-type:square">
@@ -160,10 +157,13 @@ US915  </li>
 </ul>
 <hr/>
 <h1><a class="anchor" id="QUICKSTART"></a>
-LoRaMAC Quick-Start Guide</h1>
+Quick-Start Guide</h1>
+<h2><a class="anchor" id="QUICKSTART_INTRO"></a>
+Overview</h2>
+<p>This quick start guide provides a short introduction into important operations of the LoRaMAC layer. Full examples for the different device classes are available in the example section.</p>
 <h2><a class="anchor" id="QUICKSTART_MAC_INITIALIZATION"></a>
-Initialization of the LoRaMAC layer</h2>
-<p>The initialiation function of the LoRaMAC layer is <a class="el" href="group___l_o_r_a_m_a_c.html#gaaf9fc660650a5e992c42aee9de29a3c1">LoRaMacInitialization( LoRaMacPrimitives_t *primitives, LoRaMacCallback_t *callbacks )</a>. The function has two parameters, <a class="el" href="struct_lo_ra_mac_primitives__t.html">LoRaMacPrimitives_t</a> and <a class="el" href="struct_lo_ra_mac_callback__t.html">LoRaMacCallback_t</a>. The parameters define function which have to be defined by upper layers. The first parameter contains function pointers to the <em>Confirm</em> and <em>Indication</em> primitives, and the second parameter contains a function pointer to the function which measures the battery level. This functino is available in the board support package.</p>
+Initialization</h2>
+<p>The initialiation function of the LoRaMAC layer is <a class="el" href="group___l_o_r_a_m_a_c.html#gaaf9fc660650a5e992c42aee9de29a3c1">LoRaMacInitialization( LoRaMacPrimitives_t *primitives, LoRaMacCallback_t *callbacks )</a>. The function has two parameters, <a class="el" href="struct_lo_ra_mac_primitives__t.html">LoRaMacPrimitives_t</a> and <a class="el" href="struct_lo_ra_mac_callback__t.html">LoRaMacCallback_t</a>. The parameters define function which have to be defined by upper layers. The first parameter contains function pointers to the <em>Confirm</em> and <em>Indication</em> primitives, and the second parameter contains a function pointer to the function which measures the battery level. This function is available in the board support package.</p>
 <p>The following code snippet provides an example for the initialization:</p>
 <div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> McpsConfirm( <a class="code" href="group___l_o_r_a_m_a_c.html#struct_mcps_confirm__t">McpsConfirm_t</a> *McpsConfirm )</div>
 <div class="line">{</div>
@@ -189,7 +189,7 @@ Initialization of the LoRaMAC layer</h2>
 <div class="line">  LoRaMacPrimitives.<a class="code" href="struct_lo_ra_mac_primitives__t.html#a2b7cb648bbe609f5fb6fe4e3d0bcda41">MacMcpsConfirm</a> = McpsConfirm;</div>
 <div class="line">  LoRaMacPrimitives.<a class="code" href="struct_lo_ra_mac_primitives__t.html#a89cb88517df5ff62828e4cf29454d9e5">MacMcpsIndication</a> = McpsIndication;</div>
 <div class="line">  LoRaMacPrimitives.<a class="code" href="struct_lo_ra_mac_primitives__t.html#ade47d176982e0843084c5932445898a2">MacMlmeConfirm</a> = MlmeConfirm;</div>
-<div class="line">  LoRaMacCallbacks.<a class="code" href="struct_lo_ra_mac_callback__t.html#a7cbc774ca34775b99d6ce6ffe3940345">MeasureBatteryLevel</a> = BoardMeasureBatterieLevel;</div>
+<div class="line">  LoRaMacCallbacks.<a class="code" href="struct_lo_ra_mac_callback__t.html#ae0f26df23b50220cf30bc5a1db6bfefa">GetBatteryLevel</a> = BoardGetBatteryLevel;</div>
 <div class="line">  Status = <a class="code" href="group___l_o_r_a_m_a_c.html#gaaf9fc660650a5e992c42aee9de29a3c1">LoRaMacInitialization</a>( &amp;LoRaMacPrimitives, &amp;LoRaMacCallbacks );</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">if</span>( Status == <a class="code" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a03db5fca052313edb3823c014b653a74">LORAMAC_STATUS_OK</a> )</div>
@@ -199,24 +199,14 @@ Initialization of the LoRaMAC layer</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="QUICKSTART_OTA_ACTIVATION"></a>
 Over-the-air actvation</h2>
-<p>The LoRaMAC layer provides a MAC management function to perform the over-the-air activation. The request can be performed with the function <a class="el" href="group___l_o_r_a_m_a_c.html#ga097113f30feecc17c780940ff74af33e">LoRaMacMlmeRequest( MlmeReq_t *mlmeRequest )</a>. The LoRaMAC layer reports the status of the join procedure with the <em>MacMlmeConfirm</em> primitive.</p>
+<p>The LoRaMAC layer provides a MLME-Request to perform the over-the-air activation (<a class="el" href="group___l_o_r_a_m_a_c.html#ga097113f30feecc17c780940ff74af33e">LoRaMacMlmeRequest( MlmeReq_t *mlmeRequest )</a>). The LoRaMAC layer creates the join-request message and reports the status of the operation with the <em>MacMlmeConfirm</em> primitive.</p>
 <p>The following code snippet provides an example:</p>
 <div class="fragment"><div class="line"></div>
-<div class="line"><span class="keyword">static</span> uint8_t DevEui[] =</div>
-<div class="line">{</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00</div>
-<div class="line">};</div>
+<div class="line"><span class="keyword">static</span> uint8_t DevEui[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> uint8_t AppEui[] =</div>
-<div class="line">{</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00</div>
-<div class="line">};</div>
+<div class="line"><span class="keyword">static</span> uint8_t AppEui[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> uint8_t AppKey[] =</div>
-<div class="line">{</div>
-<div class="line">    0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6,</div>
-<div class="line">    0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C</div>
-<div class="line">};</div>
+<div class="line"><span class="keyword">static</span> uint8_t AppKey[] = { 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF, 0x00 };</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> MlmeConfirm( <a class="code" href="group___l_o_r_a_m_a_c.html#struct_mlme_confirm__t">MlmeConfirm_t</a> *MlmeConfirm )</div>
 <div class="line">{</div>
@@ -279,17 +269,9 @@ Application session key </li>
 <p>The application must configure those parameters to perform a personalized activation. In addition, the application has to enable the LoRaWAN network itself.</p>
 <p>The following code snippet provides an example:</p>
 <div class="fragment"><div class="line"></div>
-<div class="line"><span class="keyword">static</span> uint8_t NwkSKey[] =</div>
-<div class="line">{</div>
-<div class="line">    0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6,</div>
-<div class="line">    0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C</div>
-<div class="line">};</div>
+<div class="line"><span class="keyword">static</span> uint8_t NwkSKey[] = { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C };</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> uint8_t AppSKey[] =</div>
-<div class="line">{</div>
-<div class="line">    0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6,</div>
-<div class="line">    0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C</div>
-<div class="line">};</div>
+<div class="line"><span class="keyword">static</span> uint8_t AppSKey[] = { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C };</div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main( <span class="keywordtype">void</span> )</div>
 <div class="line">{</div>
@@ -330,44 +312,6 @@ Application session key </li>
 <div class="line">  <span class="comment">// LoRaWAN node has joined the network</span></div>
 <div class="line">}</div>
 </div><!-- fragment --><hr/>
-<h1><a class="anchor" id="PORTING_GUIDE"></a>
-Porting guide</h1>
-<h2><a class="anchor" id="VERSION_3_3_TO_4_0"></a>
-v3.4 to v4.0.0</h2>
-<ul style="list-style-type:disc">
-<li>
-The API of the LoRaMAC layer is now grouped according to MCPS, MLME and MIB services. </li>
-<li>
-<p class="startli">MCPS request services are now accessible via the function <a class="el" href="group___l_o_r_a_m_a_c.html#ga79768f8a3c22aaff84d4dfcc77ad508c" title="LoRaMAC MCPS-Request. ">LoRaMacMcpsRequest( McpsReq_t *mcpsRequest )</a>: </p><ul style="list-style-type:square">
-<li>
-<em>LoRaMacSendFrame</em>  </li>
-<li>
-<em>LoRaMacSendConfirmedFrame</em>  </li>
-</ul>
-<p class="endli"></p>
-</li>
-<li>
-<p class="startli">MLME request services are now accessible via the function <a class="el" href="group___l_o_r_a_m_a_c.html#ga097113f30feecc17c780940ff74af33e" title="LoRaMAC MLME-Request. ">LoRaMacMlmeRequest( MlmeReq_t *mlmeRequest )</a>: </p><ul style="list-style-type:square">
-<li>
-<em>LoRaMacJoinReq</em>  </li>
-<li>
-<em>LoRaMacLinkCheckReq</em>  </li>
-</ul>
-<p class="endli"></p>
-</li>
-<li>
-<p class="startli">MIB request services are now accessible via the functions <a class="el" href="group___l_o_r_a_m_a_c.html#ga3e208a4f73213aa801eeb9d9da7b71dd" title="LoRaMAC MIB-Get. ">LoRaMacMibGetRequestConfirm( MibRequestConfirm_t *mibGet )</a> and <a class="el" href="group___l_o_r_a_m_a_c.html#ga7a4ee0ced221591206b09630d4a70844" title="LoRaMAC MIB-Set. ">LoRaMacMibSetRequestConfirm( MibRequestConfirm_t *mibSet )</a>: </p><ul style="list-style-type:square">
-<li>
-<em>LoRaMacSetAdrOn</em>  </li>
-<li>
-<em>LoRaMacInitNwkIds</em>  </li>
-</ul>
-<p class="endli"></p>
-</li>
-<li>
-Events are now grouped according into primitive types, and are now accessible via <em>LoRaMacEvent_t</em>, containing <em>MacMcpsConfirm</em>, <em>MacMcpsIndication</em> and <em>MacMlmeConfirm</em> </li>
-</ul>
-<hr/>
 <h1><a class="anchor" id="LICENSE"></a>
 License</h1>
 <div class="fragment"><div class="line">  ______                              _</div>
@@ -395,7 +339,7 @@ Acknowledgements</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 30 2015 14:25:20 for LoRaMAC Layer by
+    <li class="footer">Generated on Fri Dec 18 2015 12:12:06 for LoRaMAC Layer by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

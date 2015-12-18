@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC Layer
-   &#160;<span id="projectnumber">v4.0.0-rc.3</span>
+   &#160;<span id="projectnumber">v4.0.0</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -125,13 +125,7 @@ Include dependency graph for LoRaMac.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_lo_ra_mac_8h__incl.png" border="0" usemap="#_lo_ra_mac_8h" alt=""/></div>
 <map name="_lo_ra_mac_8h" id="_lo_ra_mac_8h">
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="_lo_ra_mac_8h__dep__incl.png" border="0" usemap="#_lo_ra_mac_8hdep" alt=""/></div>
-<map name="_lo_ra_mac_8hdep" id="_lo_ra_mac_8hdep">
+<area shape="rect" id="node2" href="_lo_ra_mac-board_8h_source.html" title="LoRaMac&#45;board.h" alt="" coords="5,80,123,107"/>
 </map>
 </div>
 </div>
@@ -159,6 +153,10 @@ Data Structures</h2></td></tr>
 <tr class="separator:union_lo_ra_mac_frame_ctrl__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_lo_ra_mac_frame_ctrl__t_1_1s_ctrl_bits"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_frame_ctrl__t_1_1s_ctrl_bits">LoRaMacFrameCtrl_t::sCtrlBits</a></td></tr>
 <tr class="separator:struct_lo_ra_mac_frame_ctrl__t_1_1s_ctrl_bits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:union_lo_ra_mac_flags__t"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#union_lo_ra_mac_flags__t">LoRaMacFlags_t</a></td></tr>
+<tr class="separator:union_lo_ra_mac_flags__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_lo_ra_mac_flags__t_1_1s_mac_flag_bits"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_flags__t_1_1s_mac_flag_bits">LoRaMacFlags_t::sMacFlagBits</a></td></tr>
+<tr class="separator:struct_lo_ra_mac_flags__t_1_1s_mac_flag_bits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_mcps_req_unconfirmed__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#struct_mcps_req_unconfirmed__t">McpsReqUnconfirmed_t</a></td></tr>
 <tr class="separator:struct_mcps_req_unconfirmed__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_mcps_req_confirmed__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#struct_mcps_req_confirmed__t">McpsReqConfirmed_t</a></td></tr>
@@ -185,6 +183,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:union_mib_param__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_mib_request_confirm__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#struct_mib_request_confirm__t">MibRequestConfirm_t</a></td></tr>
 <tr class="separator:struct_mib_request_confirm__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_lo_ra_mac_tx_info__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_tx_info__t">LoRaMacTxInfo_t</a></td></tr>
+<tr class="separator:struct_lo_ra_mac_tx_info__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lo_ra_mac_primitives__t.html">LoRaMacPrimitives_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lo_ra_mac_callback__t.html">LoRaMacCallback_t</a></td></tr>
@@ -289,7 +289,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716">LORAMAC_EVENT_INFO_STATUS_RX2_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af42941643347e10f0e5a01c324bf6170">LORAMAC_EVENT_INFO_STATUS_JOIN_FAIL</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a719a080d9a7ddae8279aadb67714a96b">LORAMAC_EVENT_INFO_STATUS_DOWNLINK_FAIL</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aaae47a8316ae996d506323e0e6613b9b">LORAMAC_EVENT_INFO_STATUS_DOWNLINK_REPEATED</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af141bb217ba31a2dc7d3cc128a13de10">LORAMAC_EVENT_INFO_STATUS_ADDRESS_FAIL</a>, 
 <br />
 &#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a43bdb9277722c567c81539fd175a7a63">LORAMAC_EVENT_INFO_STATUS_MIC_FAIL</a>
@@ -348,7 +348,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae">LORAMAC_STATUS_NO_NETWORK_JOINED</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a4ab40311dcd2eeffc77f573a919b29b1">LORAMAC_STATUS_LENGTH_ERROR</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a490b19ac3f654125c3d628a15424232f">LORAMAC_STATUS_PORT_ERROR</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ab3ceb202ec195d18edb07c4633f21816">LORAMAC_STATUS_MAC_CMD_LENGTH_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff1d3a91250809d1770a74776057b8ce">LORAMAC_STATUS_DEVICE_OFF</a>
 <br />
  }<tr class="separator:ga363b63a6d24ca4827c81898ebb1887e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -359,6 +359,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaf9fc660650a5e992c42aee9de29a3c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9">LoRaMacStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#gaaf9fc660650a5e992c42aee9de29a3c1">LoRaMacInitialization</a> (<a class="el" href="struct_lo_ra_mac_primitives__t.html">LoRaMacPrimitives_t</a> *primitives, <a class="el" href="struct_lo_ra_mac_callback__t.html">LoRaMacCallback_t</a> *callbacks)</td></tr>
 <tr class="memdesc:gaaf9fc660650a5e992c42aee9de29a3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoRaMAC layer initialization.  <a href="group___l_o_r_a_m_a_c.html#gaaf9fc660650a5e992c42aee9de29a3c1">More...</a><br /></td></tr>
 <tr class="separator:gaaf9fc660650a5e992c42aee9de29a3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b0aeaf75f9404ce01da9b202252c231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9">LoRaMacStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga8b0aeaf75f9404ce01da9b202252c231">LoRaMacQueryTxPossible</a> (uint8_t size, <a class="el" href="group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_tx_info__t">LoRaMacTxInfo_t</a> *txInfo)</td></tr>
+<tr class="memdesc:ga8b0aeaf75f9404ce01da9b202252c231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the LoRaMAC if it is possible to send the next frame with a given payload size. The LoRaMAC takes scheduled MAC commands into account and reports, when the frame can be send or not.  <a href="group___l_o_r_a_m_a_c.html#ga8b0aeaf75f9404ce01da9b202252c231">More...</a><br /></td></tr>
+<tr class="separator:ga8b0aeaf75f9404ce01da9b202252c231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad74920538f07f34e773ca5de9ec89370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9">LoRaMacStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#gad74920538f07f34e773ca5de9ec89370">LoRaMacChannelAdd</a> (uint8_t id, <a class="el" href="group___l_o_r_a_m_a_c.html#struct_channel_params__t">ChannelParams_t</a> params)</td></tr>
 <tr class="memdesc:gad74920538f07f34e773ca5de9ec89370"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoRaMAC channel add service.  <a href="group___l_o_r_a_m_a_c.html#gad74920538f07f34e773ca5de9ec89370">More...</a><br /></td></tr>
 <tr class="separator:gad74920538f07f34e773ca5de9ec89370"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,16 +397,24 @@ Functions</h2></td></tr>
 <div class="line"> _____) ) ____| | | || |_| ____( (___| | | |</div>
 <div class="line">(______/|_____)_|_|_| \__)_____)\____)_| |_|</div>
 <div class="line">(C)2013 Semtech</div>
-</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Miguel Luis</dd>
+<div class="line"></div>
+<div class="line"> ___ _____ _   ___ _  _____ ___  ___  ___ ___</div>
+<div class="line">/ __|_   _/_\ / __| |/ / __/ _ \| _ \/ __| __|</div>
+<div class="line">\__ \ | |/ _ \ (__| <span class="stringliteral">&#39; &lt;| _| (_) |   / (__| _|</span></div>
+<div class="line"><span class="stringliteral">|___/ |_/_/ \_\___|_|\_\_| \___/|_|_\\___|___|</span></div>
+<div class="line"><span class="stringliteral">embedded.connectivity.solutions===============</span></div>
+</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Miguel Luis ( Semtech )</dd>
 <dd>
-Gregory Cristian </dd></dl>
+Gregory Cristian ( Semtech )</dd>
+<dd>
+Daniel Jäckle ( STACKFORCE ) </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_05e3fe392ac1c0296c43442c7a4bd634.html">semtech-lora-mac-node</a></li><li class="navelem"><a class="el" href="dir_9b2deb2d8ebe7c3c936b5355c3fcca91.html">src</a></li><li class="navelem"><a class="el" href="dir_b701423b7820ce586f13cab047142719.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_8h.html">LoRaMac.h</a></li>
-    <li class="footer">Generated on Fri Oct 30 2015 14:25:19 for LoRaMAC Layer by
+    <li class="navelem"><a class="el" href="dir_dafd1c82bc8ee7a0dbc693dabb8190c5.html">loramac-stack</a></li><li class="navelem"><a class="el" href="dir_2f0e5c18ad01314d8d34be8f44398fab.html">loramac-node</a></li><li class="navelem"><a class="el" href="dir_335d385ad0448da65716bb819c6d1316.html">src</a></li><li class="navelem"><a class="el" href="dir_a669f5507d465e006b0d6477c99a97ee.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_8h.html">LoRaMac.h</a></li>
+    <li class="footer">Generated on Fri Dec 18 2015 12:12:06 for LoRaMAC Layer by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>
