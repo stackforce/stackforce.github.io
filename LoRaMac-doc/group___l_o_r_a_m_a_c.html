@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC Layer
-   &#160;<span id="projectnumber">v4.0.0</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -326,8 +326,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff502a87db22d6a9a4919e4b54c7c1cf">LORAMAC_STATUS_SERVICE_UNKNOWN</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ad0d3119f247d00e1787dda106fcb3017">LORAMAC_STATUS_PARAMETER_INVALID</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae">LORAMAC_STATUS_NO_NETWORK_JOINED</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a4ab40311dcd2eeffc77f573a919b29b1">LORAMAC_STATUS_LENGTH_ERROR</a>, 
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ae3ea7b89796aed5a320013d9743b2955">LORAMAC_STATUS_FREQUENCY_INVALID</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aa910e51ef7a7cf64c27dd3ffe5eb9d38">LORAMAC_STATUS_DATARATE_INVALID</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a163a1a739baee13607068af42f2e9d30">LORAMAC_STATUS_FREQ_AND_DR_INVALID</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae">LORAMAC_STATUS_NO_NETWORK_JOINED</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a4ab40311dcd2eeffc77f573a919b29b1">LORAMAC_STATUS_LENGTH_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ab3ceb202ec195d18edb07c4633f21816">LORAMAC_STATUS_MAC_CMD_LENGTH_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff1d3a91250809d1770a74776057b8ce">LORAMAC_STATUS_DEVICE_OFF</a>
 <br />
@@ -509,7 +513,8 @@ TxMaxPower</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>LoRaMAC channel definition </p>
-</div><div class="dynheader">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="class_a_2_lo_ra_mote_2main_8c-example.html#_a63">classA/LoRaMote/main.c</a>, <a class="el" href="class_b_2_lo_ra_mote_2main_8c-example.html#_a63">classB/LoRaMote/main.c</a>, and <a class="el" href="class_c_2_lo_ra_mote_2main_8c-example.html#_a63">classC/LoRaMote/main.c</a>.</dd>
+</dl></div><div class="dynheader">
 Collaboration diagram for ChannelParams_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_channel_params__t__coll__graph.png" border="0" usemap="#_channel_params__t_coll__map" alt="Collaboration graph"/></div>
@@ -1007,11 +1012,32 @@ fPort</td>
 <p>LoRaWAN Specification V1.0, chapter 4.3.2 </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a587c816d3c5fd1b12d22fefebca04c27"></a>uint8_t</td>
+<a class="anchor" id="a9da59688c25c389a323e4d155fca3a47"></a>uint8_t</td>
 <td class="fieldname">
-nbRetries</td>
+NbTrials</td>
 <td class="fielddoc">
-<p>Number of attempts to transmit the frame, if frame could not be send, or if the LoRaMAC layer did not receive an acknowledgment </p>
+<p>Number of trials to transmit the frame, if the LoRaMAC layer did not receive an acknowledgment. The MAC performs a datarate adaptation, according to the LoRaWAN Specification V1.0, chapter 18.4, according to the following table:</p>
+<table class="doxtable">
+<tr>
+<th>Transmission nb </th><th>Data Rate  </th></tr>
+<tr>
+<td>1 (first) </td><td>DR </td></tr>
+<tr>
+<td>2 </td><td>DR </td></tr>
+<tr>
+<td>3 </td><td>max(DR-1,0) </td></tr>
+<tr>
+<td>4 </td><td>max(DR-1,0) </td></tr>
+<tr>
+<td>5 </td><td>max(DR-2,0) </td></tr>
+<tr>
+<td>6 </td><td>max(DR-2,0) </td></tr>
+<tr>
+<td>7 </td><td>max(DR-3,0) </td></tr>
+<tr>
+<td>8 </td><td>max(DR-3,0) </td></tr>
+</table>
+<p>Note, that if NbTrials is set to 1 or 2, the MAC will not decrease the datarate, in case the LoRaMAC layer did not receive an acknowledgment </p>
 </td></tr>
 </table>
 
@@ -2304,6 +2330,15 @@ MaxPossiblePayload</td>
 <tr><td class="fieldname"><a class="anchor" id="gga363b63a6d24ca4827c81898ebb1887e9ad0d3119f247d00e1787dda106fcb3017"></a>LORAMAC_STATUS_PARAMETER_INVALID&#160;</td><td class="fielddoc">
 <p>Service not started - invalid parameter </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga363b63a6d24ca4827c81898ebb1887e9ae3ea7b89796aed5a320013d9743b2955"></a>LORAMAC_STATUS_FREQUENCY_INVALID&#160;</td><td class="fielddoc">
+<p>Service not started - invalid frequency </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga363b63a6d24ca4827c81898ebb1887e9aa910e51ef7a7cf64c27dd3ffe5eb9d38"></a>LORAMAC_STATUS_DATARATE_INVALID&#160;</td><td class="fielddoc">
+<p>Service not started - invalid datarate </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga363b63a6d24ca4827c81898ebb1887e9a163a1a739baee13607068af42f2e9d30"></a>LORAMAC_STATUS_FREQ_AND_DR_INVALID&#160;</td><td class="fielddoc">
+<p>Service not started - invalid frequency and datarate </p>
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae"></a>LORAMAC_STATUS_NO_NETWORK_JOINED&#160;</td><td class="fielddoc">
 <p>Service not started - the device is not in a LoRaWAN </p>
 </td></tr>
@@ -2402,6 +2437,8 @@ MaxPossiblePayload</td>
 <td><a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eae65b7c035d9969666eb5e26a2b3c19fd">MIB_APP_SKEY</a> </td><td align="center">YES </td><td align="center">YES </td></tr>
 <tr>
 <td><a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eab2819c46ba94b53c1fb2c3a0bfa75e48">MIB_PUBLIC_NETWORK</a> </td><td align="center">YES </td><td align="center">YES </td></tr>
+<tr>
+<td><a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea2d0a50cc4dd24771854bd138934ef3e5">MIB_REPEATER_SUPPORT</a> </td><td align="center">YES </td><td align="center">YES </td></tr>
 <tr>
 <td><a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea0236aae7748c12308383eab208a3cc5a">MIB_CHANNELS</a> </td><td align="center">YES </td><td align="center">NO </td></tr>
 <tr>
@@ -2627,7 +2664,8 @@ MaxPossiblePayload</td>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="class_a_2_lo_ra_mote_2main_8c-example.html#a62">classA/LoRaMote/main.c</a>, <a class="el" href="class_b_2_lo_ra_mote_2main_8c-example.html#a62">classB/LoRaMote/main.c</a>, and <a class="el" href="class_c_2_lo_ra_mote_2main_8c-example.html#a62">classC/LoRaMote/main.c</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gafad6c929a33557ac2fd4000bcacd9453"></a>
@@ -2993,7 +3031,7 @@ MaxPossiblePayload</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Dec 18 2015 12:12:06 for LoRaMAC Layer by
+    <li class="footer">Generated on Fri Mar 11 2016 16:02:20 for LoRaMAC Layer by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

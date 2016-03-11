@@ -71,7 +71,7 @@ var group___l_o_r_a_m_a_c =
       [ "fBuffer", "group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af", null ],
       [ "fBufferSize", "group___l_o_r_a_m_a_c.html#a6b4fc83528d7391a193516d9f4ba985b", null ],
       [ "fPort", "group___l_o_r_a_m_a_c.html#a2973de9ac0ab5e876b80362bc4c6a88b", null ],
-      [ "nbRetries", "group___l_o_r_a_m_a_c.html#a587c816d3c5fd1b12d22fefebca04c27", null ]
+      [ "NbTrials", "group___l_o_r_a_m_a_c.html#a9da59688c25c389a323e4d155fca3a47", null ]
     ] ],
     [ "McpsReqProprietary_t", "group___l_o_r_a_m_a_c.html#struct_mcps_req_proprietary__t", [
       [ "Datarate", "group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],
@@ -247,6 +247,9 @@ var group___l_o_r_a_m_a_c =
       [ "LORAMAC_STATUS_BUSY", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a66b12f569207eacd97ee1c1d6c4cee6d", null ],
       [ "LORAMAC_STATUS_SERVICE_UNKNOWN", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff502a87db22d6a9a4919e4b54c7c1cf", null ],
       [ "LORAMAC_STATUS_PARAMETER_INVALID", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ad0d3119f247d00e1787dda106fcb3017", null ],
+      [ "LORAMAC_STATUS_FREQUENCY_INVALID", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ae3ea7b89796aed5a320013d9743b2955", null ],
+      [ "LORAMAC_STATUS_DATARATE_INVALID", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aa910e51ef7a7cf64c27dd3ffe5eb9d38", null ],
+      [ "LORAMAC_STATUS_FREQ_AND_DR_INVALID", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a163a1a739baee13607068af42f2e9d30", null ],
       [ "LORAMAC_STATUS_NO_NETWORK_JOINED", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae", null ],
       [ "LORAMAC_STATUS_LENGTH_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a4ab40311dcd2eeffc77f573a919b29b1", null ],
       [ "LORAMAC_STATUS_MAC_CMD_LENGTH_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ab3ceb202ec195d18edb07c4633f21816", null ],
