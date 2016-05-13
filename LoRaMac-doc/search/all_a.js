@@ -31,6 +31,7 @@ var searchData=
   ['mib_5fapp_5fskey',['MIB_APP_SKEY',['../group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eae65b7c035d9969666eb5e26a2b3c19fd',1,'LoRaMac.h']]],
   ['mib_5fchannels',['MIB_CHANNELS',['../group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea0236aae7748c12308383eab208a3cc5a',1,'LoRaMac.h']]],
   ['mib_5fchannels_5fdatarate',['MIB_CHANNELS_DATARATE',['../group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea78f3b4e3ae4ebaacb478073d2a2ec4f1',1,'LoRaMac.h']]],
+  ['mib_5fchannels_5fdefault_5fdatarate',['MIB_CHANNELS_DEFAULT_DATARATE',['../group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaddef34adbf844ace9eeea97ae93da918',1,'LoRaMac.h']]],
   ['mib_5fchannels_5fmask',['MIB_CHANNELS_MASK',['../group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaafe40b1c0e252d607876423247feab62',1,'LoRaMac.h']]],
   ['mib_5fchannels_5fnb_5frep',['MIB_CHANNELS_NB_REP',['../group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaf8775ceffd8bc73429e43eac205383ea',1,'LoRaMac.h']]],
   ['mib_5fchannels_5ftx_5fpower',['MIB_CHANNELS_TX_POWER',['../group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eae42f1a0c858ffdb283e0236a24ab6398',1,'LoRaMac.h']]],

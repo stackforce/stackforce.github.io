@@ -5,6 +5,7 @@ var group___l_o_r_a_m_a_c_union_mib_param__t =
     [ "ChannelList", "group___l_o_r_a_m_a_c.html#ad8f366dd9087f9cdaa4f7021f2d6e2b9", null ],
     [ "ChannelNbRep", "group___l_o_r_a_m_a_c.html#ab2d109f5c6312dc56dfc9842bb6f141b", null ],
     [ "ChannelsDatarate", "group___l_o_r_a_m_a_c.html#a6c741587260d08d1b883922ce9ca345e", null ],
+    [ "ChannelsDefaultDatarate", "group___l_o_r_a_m_a_c.html#a69f274bb7ff03f12dbda701c3576ac62", null ],
     [ "ChannelsMask", "group___l_o_r_a_m_a_c.html#aed7477cfc6166e3ee0499b898443426a", null ],
     [ "ChannelsTxPower", "group___l_o_r_a_m_a_c.html#ad015aefb498e98276b4102f847b05d0e", null ],
     [ "Class", "group___l_o_r_a_m_a_c.html#a1ca946ebc53171e9f0f1fc39c005a7a6", null ],

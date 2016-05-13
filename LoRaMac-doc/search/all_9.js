@@ -8,6 +8,7 @@ var searchData=
   ['lora_20mac_20layer_20cryptography_20implementation',['LoRa MAC layer cryptography implementation',['../group___l_o_r_a_m_a_c___c_r_y_p_t_o.html',1,'']]],
   ['loramac_5fevent_5finfo_5fstatus_5faddress_5ffail',['LORAMAC_EVENT_INFO_STATUS_ADDRESS_FAIL',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af141bb217ba31a2dc7d3cc128a13de10',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5fdownlink_5frepeated',['LORAMAC_EVENT_INFO_STATUS_DOWNLINK_REPEATED',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aaae47a8316ae996d506323e0e6613b9b',1,'LoRaMac.h']]],
+  ['loramac_5fevent_5finfo_5fstatus_5fdownlink_5ftoo_5fmany_5fframes_5floss',['LORAMAC_EVENT_INFO_STATUS_DOWNLINK_TOO_MANY_FRAMES_LOSS',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a4a75f7744209239bb80e6af142d0249d',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5ferror',['LORAMAC_EVENT_INFO_STATUS_ERROR',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a613ed77c0e8416a512224fffdbfdf6c1',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5fjoin_5ffail',['LORAMAC_EVENT_INFO_STATUS_JOIN_FAIL',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af42941643347e10f0e5a01c324bf6170',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5fmic_5ffail',['LORAMAC_EVENT_INFO_STATUS_MIC_FAIL',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a43bdb9277722c567c81539fd175a7a63',1,'LoRaMac.h']]],

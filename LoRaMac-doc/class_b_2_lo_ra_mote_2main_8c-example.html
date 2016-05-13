@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC Layer
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.2.0</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -128,11 +128,13 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_lo_ra_mac_8h.html">LoRaMac.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;Comissioning.h&quot;</span></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#define OVER_THE_AIR_ACTIVATION_DUTYCYCLE           10000000  // 10 [s] value in us</span></div>
+<div class="line"><span class="preprocessor">#define OVER_THE_AIR_ACTIVATION_DUTYCYCLE           10000 // 10 [s] value in ms</span></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#define APP_TX_DUTYCYCLE                            5000000</span></div>
+<div class="line"><span class="preprocessor">#define APP_TX_DUTYCYCLE                            5000</span></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#define APP_TX_DUTYCYCLE_RND                        1000000</span></div>
+<div class="line"><span class="preprocessor">#define APP_TX_DUTYCYCLE_RND                        1000</span></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#define LORAWAN_DEFAULT_DATARATE                    DR_0</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#define LORAWAN_CONFIRMED_MSG_ON                    false</span></div>
 <div class="line"></div>
@@ -154,6 +156,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line"><span class="preprocessor">#define LC7                { 867700000, { ( ( DR_5 &lt;&lt; 4 ) | DR_0 ) }, 0 }</span></div>
 <div class="line"><span class="preprocessor">#define LC8                { 867900000, { ( ( DR_5 &lt;&lt; 4 ) | DR_0 ) }, 0 }</span></div>
 <div class="line"><span class="preprocessor">#define LC9                { 868800000, { ( ( DR_7 &lt;&lt; 4 ) | DR_7 ) }, 2 }</span></div>
+<div class="line"><span class="preprocessor">#define LC10               { 868300000, { ( ( DR_6 &lt;&lt; 4 ) | DR_6 ) }, 1 }</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"></div>
@@ -182,7 +185,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line"><span class="keyword">static</span> uint8_t NwkSKey[] = LORAWAN_NWKSKEY;</div>
 <div class="line"><span class="keyword">static</span> uint8_t AppSKey[] = LORAWAN_APPSKEY;</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> uint32_t DevAddr;</div>
+<div class="line"><span class="keyword">static</span> uint32_t DevAddr = LORAWAN_DEVICE_ADDRESS;</div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"></div>
@@ -242,7 +245,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">            int16_t altitudeBar = 0;</div>
 <div class="line">            int16_t temperature = 0;</div>
 <div class="line">            int32_t latitude, longitude = 0;</div>
-<div class="line">            uint16_t altitudeGps = 0xFFFF;</div>
+<div class="line">            int16_t altitudeGps = 0xFFFF;</div>
 <div class="line">            uint8_t batteryLevel = 0;</div>
 <div class="line"></div>
 <div class="line">            pressure = ( uint16_t )( MPL3115ReadPressure( ) / 10 );             <span class="comment">// in hPa / 10</span></div>
@@ -281,8 +284,8 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">            altitudeGps = GpsGetLatestGpsAltitude( );                           <span class="comment">// in m</span></div>
 <div class="line">        </div>
 <div class="line">            AppData[0] = AppLedStateOn;</div>
-<div class="line">            AppData[1] = temperature;</div>
-<div class="line">            AppData[2] = batteryLevel;</div>
+<div class="line">            AppData[1] = temperature;                                           <span class="comment">// Signed degrees Celcius in half degree units. So,  +/-63 C</span></div>
+<div class="line">            AppData[2] = batteryLevel;                                          <span class="comment">// Per LoRaWAN spec; 0=Charging; 1...254 = level, 255 = N/A</span></div>
 <div class="line">            AppData[3] = ( latitude &gt;&gt; 16 ) &amp; 0xFF;</div>
 <div class="line">            AppData[4] = ( latitude &gt;&gt; 8 ) &amp; 0xFF;</div>
 <div class="line">            AppData[5] = latitude &amp; 0xFF;</div>
@@ -335,7 +338,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">        mcpsReq.<a name="a4"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a29993a5d65888bf0f36ec406896bb540">Type</a> = <a name="a5"></a><a class="code" href="group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696a340afc087e96410da04d07fb0470f84a">MCPS_UNCONFIRMED</a>;</div>
 <div class="line">        mcpsReq.<a name="a6"></a>Req.<a name="a7"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a name="a8"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af">fBuffer</a> = NULL;</div>
 <div class="line">        mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a name="a9"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a6b4fc83528d7391a193516d9f4ba985b">fBufferSize</a> = 0;</div>
-<div class="line">        mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a name="a10"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d">Datarate</a> = DR_0;</div>
+<div class="line">        mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a name="a10"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d">Datarate</a> = LORAWAN_DEFAULT_DATARATE;</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
@@ -345,7 +348,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a name="a11"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a2973de9ac0ab5e876b80362bc4c6a88b">fPort</a> = AppPort;</div>
 <div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a class="code" href="group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af">fBuffer</a> = AppData;</div>
 <div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a class="code" href="group___l_o_r_a_m_a_c.html#a6b4fc83528d7391a193516d9f4ba985b">fBufferSize</a> = AppDataSize;</div>
-<div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a class="code" href="group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d">Datarate</a> = DR_0;</div>
+<div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#a490d6060b7d5f999539375d160304e9c">Unconfirmed</a>.<a class="code" href="group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d">Datarate</a> = LORAWAN_DEFAULT_DATARATE;</div>
 <div class="line">        }</div>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">        {</div>
@@ -354,7 +357,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#aa6b3511826dee52ed1b057c1762f4afa">Confirmed</a>.<a name="a15"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af">fBuffer</a> = AppData;</div>
 <div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#aa6b3511826dee52ed1b057c1762f4afa">Confirmed</a>.<a name="a16"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a6b4fc83528d7391a193516d9f4ba985b">fBufferSize</a> = AppDataSize;</div>
 <div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#aa6b3511826dee52ed1b057c1762f4afa">Confirmed</a>.<a name="a17"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a9da59688c25c389a323e4d155fca3a47">NbTrials</a> = 8;</div>
-<div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#aa6b3511826dee52ed1b057c1762f4afa">Confirmed</a>.<a name="a18"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d">Datarate</a> = DR_0;</div>
+<div class="line">            mcpsReq.Req.<a class="code" href="group___l_o_r_a_m_a_c.html#aa6b3511826dee52ed1b057c1762f4afa">Confirmed</a>.<a name="a18"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d">Datarate</a> = LORAWAN_DEFAULT_DATARATE;</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
@@ -403,11 +406,11 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">    GpioWrite( &amp;Led2, 1 );</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> McpsConfirm( <a name="_a26"></a><a class="code" href="group___l_o_r_a_m_a_c.html#struct_mcps_confirm__t">McpsConfirm_t</a> *McpsConfirm )</div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> McpsConfirm( <a name="_a26"></a><a class="code" href="group___l_o_r_a_m_a_c.html#struct_mcps_confirm__t">McpsConfirm_t</a> *mcpsConfirm )</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">if</span>( McpsConfirm-&gt;<a name="a27"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">Status</a> == <a name="a28"></a><a class="code" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4">LORAMAC_EVENT_INFO_STATUS_OK</a> )</div>
+<div class="line">    <span class="keywordflow">if</span>( mcpsConfirm-&gt;<a name="a27"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">Status</a> == <a name="a28"></a><a class="code" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4">LORAMAC_EVENT_INFO_STATUS_OK</a> )</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">switch</span>( McpsConfirm-&gt;<a name="a29"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ab5da7b8ef4530ebd1fb2005f950a2b0b">McpsRequest</a> )</div>
+<div class="line">        <span class="keywordflow">switch</span>( mcpsConfirm-&gt;<a name="a29"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ab5da7b8ef4530ebd1fb2005f950a2b0b">McpsRequest</a> )</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keywordflow">case</span> <a class="code" href="group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696a340afc087e96410da04d07fb0470f84a">MCPS_UNCONFIRMED</a>:</div>
 <div class="line">            {</div>
@@ -438,14 +441,14 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">    NextTx = <span class="keyword">true</span>;</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> McpsIndication( <a name="_a31"></a><a class="code" href="group___l_o_r_a_m_a_c.html#struct_mcps_indication__t">McpsIndication_t</a> *McpsIndication )</div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> McpsIndication( <a name="_a31"></a><a class="code" href="group___l_o_r_a_m_a_c.html#struct_mcps_indication__t">McpsIndication_t</a> *mcpsIndication )</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">if</span>( McpsIndication-&gt;<a name="a32"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">Status</a> != <a class="code" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4">LORAMAC_EVENT_INFO_STATUS_OK</a> )</div>
+<div class="line">    <span class="keywordflow">if</span>( mcpsIndication-&gt;<a name="a32"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">Status</a> != <a class="code" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4">LORAMAC_EVENT_INFO_STATUS_OK</a> )</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">return</span>;</div>
 <div class="line">    }</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">switch</span>( McpsIndication-&gt;<a name="a33"></a><a class="code" href="group___l_o_r_a_m_a_c.html#af45477156b4a2e186b2bfa2afb3a4efc">McpsIndication</a> )</div>
+<div class="line">    <span class="keywordflow">switch</span>( mcpsIndication-&gt;<a name="a33"></a><a class="code" href="group___l_o_r_a_m_a_c.html#af45477156b4a2e186b2bfa2afb3a4efc">McpsIndication</a> )</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">case</span> <a class="code" href="group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696a340afc087e96410da04d07fb0470f84a">MCPS_UNCONFIRMED</a>:</div>
 <div class="line">        {</div>
@@ -482,15 +485,15 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">        ComplianceTest.DownLinkCounter++;</div>
 <div class="line">    }</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">if</span>( McpsIndication-&gt;<a name="a35"></a><a class="code" href="group___l_o_r_a_m_a_c.html#afa6d3de110fa10174203ce26682585c9">RxData</a> == <span class="keyword">true</span> )</div>
+<div class="line">    <span class="keywordflow">if</span>( mcpsIndication-&gt;<a name="a35"></a><a class="code" href="group___l_o_r_a_m_a_c.html#afa6d3de110fa10174203ce26682585c9">RxData</a> == <span class="keyword">true</span> )</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">switch</span>( McpsIndication-&gt;<a name="a36"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a4b93121f04819fbab96346736fa720a9">Port</a> )</div>
+<div class="line">        <span class="keywordflow">switch</span>( mcpsIndication-&gt;<a name="a36"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a4b93121f04819fbab96346736fa720a9">Port</a> )</div>
 <div class="line">        {</div>
 <div class="line">        <span class="keywordflow">case</span> 1: <span class="comment">// The application LED can be controlled on port 1 or 2</span></div>
 <div class="line">        <span class="keywordflow">case</span> 2:</div>
-<div class="line">            <span class="keywordflow">if</span>( McpsIndication-&gt;<a name="a37"></a><a class="code" href="group___l_o_r_a_m_a_c.html#abf449ca64f34dbb66a7c5bf70fd55753">BufferSize</a> == 1 )</div>
+<div class="line">            <span class="keywordflow">if</span>( mcpsIndication-&gt;<a name="a37"></a><a class="code" href="group___l_o_r_a_m_a_c.html#abf449ca64f34dbb66a7c5bf70fd55753">BufferSize</a> == 1 )</div>
 <div class="line">            {</div>
-<div class="line">                AppLedStateOn = McpsIndication-&gt;<a name="a38"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[0] &amp; 0x01;</div>
+<div class="line">                AppLedStateOn = mcpsIndication-&gt;<a name="a38"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[0] &amp; 0x01;</div>
 <div class="line">                GpioWrite( &amp;Led3, ( ( AppLedStateOn &amp; 0x01 ) != 0 ) ? 0 : 1 );</div>
 <div class="line">            }</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
@@ -498,11 +501,11 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">            <span class="keywordflow">if</span>( ComplianceTest.Running == <span class="keyword">false</span> )</div>
 <div class="line">            {</div>
 <div class="line">                <span class="comment">// Check compliance test enable command (i)</span></div>
-<div class="line">                <span class="keywordflow">if</span>( ( McpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#abf449ca64f34dbb66a7c5bf70fd55753">BufferSize</a> == 4 ) &amp;&amp; </div>
-<div class="line">                    ( McpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[0] == 0x01 ) &amp;&amp;</div>
-<div class="line">                    ( McpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[1] == 0x01 ) &amp;&amp;</div>
-<div class="line">                    ( McpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[2] == 0x01 ) &amp;&amp;</div>
-<div class="line">                    ( McpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[3] == 0x01 ) )</div>
+<div class="line">                <span class="keywordflow">if</span>( ( mcpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#abf449ca64f34dbb66a7c5bf70fd55753">BufferSize</a> == 4 ) &amp;&amp;</div>
+<div class="line">                    ( mcpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[0] == 0x01 ) &amp;&amp;</div>
+<div class="line">                    ( mcpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[1] == 0x01 ) &amp;&amp;</div>
+<div class="line">                    ( mcpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[2] == 0x01 ) &amp;&amp;</div>
+<div class="line">                    ( mcpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[3] == 0x01 ) )</div>
 <div class="line">                {</div>
 <div class="line">                    IsTxConfirmed = <span class="keyword">false</span>;</div>
 <div class="line">                    AppPort = 224;</div>
@@ -526,7 +529,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">            }</div>
 <div class="line">            <span class="keywordflow">else</span></div>
 <div class="line">            {</div>
-<div class="line">                ComplianceTest.State = McpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[0];</div>
+<div class="line">                ComplianceTest.State = mcpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[0];</div>
 <div class="line">                <span class="keywordflow">switch</span>( ComplianceTest.State )</div>
 <div class="line">                {</div>
 <div class="line">                <span class="keywordflow">case</span> 0: <span class="comment">// Check compliance test disable command (ii)</span></div>
@@ -556,12 +559,12 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">                    ComplianceTest.State = 1;</div>
 <div class="line">                    <span class="keywordflow">break</span>;</div>
 <div class="line">                <span class="keywordflow">case</span> 4: <span class="comment">// (vii)</span></div>
-<div class="line">                    AppDataSize = McpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#abf449ca64f34dbb66a7c5bf70fd55753">BufferSize</a>;</div>
+<div class="line">                    AppDataSize = mcpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#abf449ca64f34dbb66a7c5bf70fd55753">BufferSize</a>;</div>
 <div class="line"></div>
 <div class="line">                    AppData[0] = 4;</div>
 <div class="line">                    <span class="keywordflow">for</span>( uint8_t i = 1; i &lt; AppDataSize; i++ )</div>
 <div class="line">                    {</div>
-<div class="line">                        AppData[i] = McpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[i] + 1;</div>
+<div class="line">                        AppData[i] = mcpsIndication-&gt;<a class="code" href="group___l_o_r_a_m_a_c.html#a095175dabcb7cd83bddf2bea50371121">Buffer</a>[i] + 1;</div>
 <div class="line">                    }</div>
 <div class="line">                    <span class="keywordflow">break</span>;</div>
 <div class="line">                <span class="keywordflow">case</span> 5: <span class="comment">// (viii)</span></div>
@@ -586,11 +589,11 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">    TimerStart( &amp;Led2Timer );</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> MlmeConfirm( <a name="_a47"></a><a class="code" href="group___l_o_r_a_m_a_c.html#struct_mlme_confirm__t">MlmeConfirm_t</a> *MlmeConfirm )</div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> MlmeConfirm( <a name="_a47"></a><a class="code" href="group___l_o_r_a_m_a_c.html#struct_mlme_confirm__t">MlmeConfirm_t</a> *mlmeConfirm )</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">if</span>( MlmeConfirm-&gt;<a name="a48"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">Status</a> == <a class="code" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4">LORAMAC_EVENT_INFO_STATUS_OK</a> )</div>
+<div class="line">    <span class="keywordflow">if</span>( mlmeConfirm-&gt;<a name="a48"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">Status</a> == <a class="code" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4">LORAMAC_EVENT_INFO_STATUS_OK</a> )</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">switch</span>( MlmeConfirm-&gt;<a name="a49"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a05e619573c522884eada37bde4e3d1f3">MlmeRequest</a> )</div>
+<div class="line">        <span class="keywordflow">switch</span>( mlmeConfirm-&gt;<a name="a49"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a05e619573c522884eada37bde4e3d1f3">MlmeRequest</a> )</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keywordflow">case</span> <a name="a50"></a><a class="code" href="group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca475ad5dea1c4c13b93b31095c665e92e">MLME_JOIN</a>:</div>
 <div class="line">            {</div>
@@ -604,8 +607,8 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">                <span class="keywordflow">if</span>( ComplianceTest.Running == <span class="keyword">true</span> )</div>
 <div class="line">                {</div>
 <div class="line">                    ComplianceTest.LinkCheck = <span class="keyword">true</span>;</div>
-<div class="line">                    ComplianceTest.DemodMargin = MlmeConfirm-&gt;<a name="a51"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a60502ba4c33cf0435f086a1a9f1b5116">DemodMargin</a>;</div>
-<div class="line">                    ComplianceTest.NbGateways = MlmeConfirm-&gt;<a name="a52"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ac2fbb4be8e3cc46943038a1796010d71">NbGateways</a>;</div>
+<div class="line">                    ComplianceTest.DemodMargin = mlmeConfirm-&gt;<a name="a51"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a60502ba4c33cf0435f086a1a9f1b5116">DemodMargin</a>;</div>
+<div class="line">                    ComplianceTest.NbGateways = mlmeConfirm-&gt;<a name="a52"></a><a class="code" href="group___l_o_r_a_m_a_c.html#ac2fbb4be8e3cc46943038a1796010d71">NbGateways</a>;</div>
 <div class="line">                }</div>
 <div class="line">                <span class="keywordflow">break</span>;</div>
 <div class="line">            }</div>
@@ -642,10 +645,10 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">                TimerInit( &amp;TxNextPacketTimer, OnTxNextPacketTimerEvent );</div>
 <div class="line"></div>
 <div class="line">                TimerInit( &amp;Led1Timer, OnLed1TimerEvent );</div>
-<div class="line">                TimerSetValue( &amp;Led1Timer, 25000 );</div>
+<div class="line">                TimerSetValue( &amp;Led1Timer, 25 );</div>
 <div class="line"></div>
 <div class="line">                TimerInit( &amp;Led2Timer, OnLed2TimerEvent );</div>
-<div class="line">                TimerSetValue( &amp;Led2Timer, 25000 );</div>
+<div class="line">                TimerSetValue( &amp;Led2Timer, 25 );</div>
 <div class="line"></div>
 <div class="line">                mibReq.<a class="code" href="group___l_o_r_a_m_a_c.html#ada1f9249fb28125c69bdfacfaeeae0e2">Type</a> = <a class="code" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea756ff0b66217e3e4ddd0442c8aa56802">MIB_ADR</a>;</div>
 <div class="line">                mibReq.<a class="code" href="group___l_o_r_a_m_a_c.html#afb8c77b3200d879d36beed691fb71f8d">Param</a>.<a class="code" href="group___l_o_r_a_m_a_c.html#a04efa8698eeea64f27b216d64e598c0d">AdrEnable</a> = LORAWAN_ADR_ON;</div>
@@ -665,6 +668,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">                <a class="code" href="group___l_o_r_a_m_a_c.html#gad74920538f07f34e773ca5de9ec89370">LoRaMacChannelAdd</a>( 6, ( <a class="code" href="group___l_o_r_a_m_a_c.html#struct_channel_params__t">ChannelParams_t</a> )LC7 );</div>
 <div class="line">                <a class="code" href="group___l_o_r_a_m_a_c.html#gad74920538f07f34e773ca5de9ec89370">LoRaMacChannelAdd</a>( 7, ( <a class="code" href="group___l_o_r_a_m_a_c.html#struct_channel_params__t">ChannelParams_t</a> )LC8 );</div>
 <div class="line">                <a class="code" href="group___l_o_r_a_m_a_c.html#gad74920538f07f34e773ca5de9ec89370">LoRaMacChannelAdd</a>( 8, ( <a class="code" href="group___l_o_r_a_m_a_c.html#struct_channel_params__t">ChannelParams_t</a> )LC9 );</div>
+<div class="line">                <a class="code" href="group___l_o_r_a_m_a_c.html#gad74920538f07f34e773ca5de9ec89370">LoRaMacChannelAdd</a>( 9, ( <a class="code" href="group___l_o_r_a_m_a_c.html#struct_channel_params__t">ChannelParams_t</a> )LC10 );</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
@@ -695,11 +699,15 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">                DeviceState = DEVICE_STATE_CYCLE;</div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#else</span></div>
-<div class="line">                <span class="comment">// Random seed initialization</span></div>
-<div class="line">                srand1( BoardGetRandomSeed( ) );</div>
+<div class="line">                <span class="comment">// Choose a random device address if not already defined in Comissioning.h</span></div>
+<div class="line">                <span class="keywordflow">if</span>( DevAddr == 0 )</div>
+<div class="line">                {</div>
+<div class="line">                    <span class="comment">// Random seed initialization</span></div>
+<div class="line">                    srand1( BoardGetRandomSeed( ) );</div>
 <div class="line"></div>
-<div class="line">                <span class="comment">// Choose a random device address</span></div>
-<div class="line">                DevAddr = randr( 0, 0x01FFFFFF );</div>
+<div class="line">                    <span class="comment">// Choose a random device address</span></div>
+<div class="line">                    DevAddr = randr( 0, 0x01FFFFFF );</div>
+<div class="line">                }</div>
 <div class="line"></div>
 <div class="line">                mibReq.<a class="code" href="group___l_o_r_a_m_a_c.html#ada1f9249fb28125c69bdfacfaeeae0e2">Type</a> = <a name="a69"></a><a class="code" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea982c4b7cc1e276633134aa89298c96b0">MIB_NET_ID</a>;</div>
 <div class="line">                mibReq.<a class="code" href="group___l_o_r_a_m_a_c.html#afb8c77b3200d879d36beed691fb71f8d">Param</a>.<a name="a70"></a><a class="code" href="group___l_o_r_a_m_a_c.html#a84a14c879508144e9961372ace234169">NetID</a> = LORAWAN_NETWORK_ID;</div>
@@ -735,8 +743,8 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <div class="line">                }</div>
 <div class="line">                <span class="keywordflow">if</span>( ComplianceTest.Running == <span class="keyword">true</span> )</div>
 <div class="line">                {</div>
-<div class="line">                    <span class="comment">// Schedule next packet transmission as soon as possible</span></div>
-<div class="line">                    TxDutyCycleTime = 300000; <span class="comment">// 300 ms</span></div>
+<div class="line">                    <span class="comment">// Schedule next packet transmission</span></div>
+<div class="line">                    TxDutyCycleTime = 5000; <span class="comment">// 5000 ms</span></div>
 <div class="line">                }</div>
 <div class="line">                <span class="keywordflow">else</span></div>
 <div class="line">                {</div>
@@ -774,7 +782,7 @@ $(document).ready(function(){initNavTree('class_b_2_lo_ra_mote_2main_8c-example.
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 11 2016 16:02:19 for LoRaMAC Layer by
+    <li class="footer">Generated on Fri May 13 2016 13:44:01 for LoRaMAC Layer by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>
