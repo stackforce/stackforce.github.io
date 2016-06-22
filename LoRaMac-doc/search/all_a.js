@@ -11,7 +11,7 @@ var searchData=
   ['max_5ffcnt_5fgap',['MAX_FCNT_GAP',['../group___l_o_r_a_m_a_c.html#ga9544edafb6bc8c57081c953d5aff05a1',1,'LoRaMac.h']]],
   ['max_5frx_5fwindow',['MAX_RX_WINDOW',['../group___l_o_r_a_m_a_c.html#ga966d20aaad34573ae3b8b4b894cdd22c',1,'LoRaMac.h']]],
   ['maxpossiblepayload',['MaxPossiblePayload',['../group___l_o_r_a_m_a_c.html#aa2c8329cf5f4dd8fe4b1563a40a3f642',1,'LoRaMacTxInfo_t']]],
-  ['maxrxwindow',['MaxRxWindow',['../group___l_o_r_a_m_a_c.html#ace391217d534408b8f2af268a4ef0945',1,'MibParam_t']]],
+  ['maxrxwindow',['MaxRxWindow',['../group___l_o_r_a_m_a_c.html#ace391217d534408b8f2af268a4ef0945',1,'LoRaMacParams_t::MaxRxWindow()'],['../group___l_o_r_a_m_a_c.html#ace391217d534408b8f2af268a4ef0945',1,'MibParam_t::MaxRxWindow()']]],
   ['mcps_5fconfirmed',['MCPS_CONFIRMED',['../group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696a5eb18aef0f2abda0d56add7e868b8546',1,'LoRaMac.h']]],
   ['mcps_5fmulticast',['MCPS_MULTICAST',['../group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696aba17be1162725df5e78e03b3aeff83fa',1,'LoRaMac.h']]],
   ['mcps_5fproprietary',['MCPS_PROPRIETARY',['../group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696a29a54ded2edefe9179a33a14e3ceaca5',1,'LoRaMac.h']]],

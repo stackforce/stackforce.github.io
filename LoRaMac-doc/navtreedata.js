@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "LoRaMAC Layer", "index.html", [
+  [ "LoRaMAC", "index.html", [
     [ "Introduction", "index.html", [
       [ "Preface", "index.html#PREFACE", [
         [ "Architecture", "index.html#PURPOSE", null ],
@@ -41,7 +41,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_comissioning_8h_source.html",
-"group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff502a87db22d6a9a4919e4b54c7c1cf"
+"group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aa910e51ef7a7cf64c27dd3ffe5eb9d38"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

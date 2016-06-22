@@ -7,7 +7,7 @@ var searchData=
   ['major',['Major',['../group___l_o_r_a_m_a_c.html#a9c6cb78b2f0ce027b8eb427523270d1d',1,'LoRaMacHeader_t::sHdrBits']]],
   ['max',['Max',['../group___l_o_r_a_m_a_c.html#a5d03c6d792ca60d11ffc7e7a2cb59dd0',1,'DrRange_t::sFields']]],
   ['maxpossiblepayload',['MaxPossiblePayload',['../group___l_o_r_a_m_a_c.html#aa2c8329cf5f4dd8fe4b1563a40a3f642',1,'LoRaMacTxInfo_t']]],
-  ['maxrxwindow',['MaxRxWindow',['../group___l_o_r_a_m_a_c.html#ace391217d534408b8f2af268a4ef0945',1,'MibParam_t']]],
+  ['maxrxwindow',['MaxRxWindow',['../group___l_o_r_a_m_a_c.html#ace391217d534408b8f2af268a4ef0945',1,'LoRaMacParams_t::MaxRxWindow()'],['../group___l_o_r_a_m_a_c.html#ace391217d534408b8f2af268a4ef0945',1,'MibParam_t::MaxRxWindow()']]],
   ['mcpsind',['McpsInd',['../group___l_o_r_a_m_a_c.html#a81d24e4d487adef6c6d4f4ca0963319e',1,'LoRaMacFlags_t::sMacFlagBits']]],
   ['mcpsindication',['McpsIndication',['../group___l_o_r_a_m_a_c.html#af45477156b4a2e186b2bfa2afb3a4efc',1,'McpsIndication_t']]],
   ['mcpsreq',['McpsReq',['../group___l_o_r_a_m_a_c.html#adee8f234933a066317a08431f5db61b0',1,'LoRaMacFlags_t::sMacFlagBits']]],

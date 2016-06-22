@@ -7,6 +7,7 @@ var annotated_dup =
     [ "LoRaMacFlags_t", "group___l_o_r_a_m_a_c.html#union_lo_ra_mac_flags__t", "group___l_o_r_a_m_a_c_union_lo_ra_mac_flags__t" ],
     [ "LoRaMacFrameCtrl_t", "group___l_o_r_a_m_a_c.html#union_lo_ra_mac_frame_ctrl__t", "group___l_o_r_a_m_a_c_union_lo_ra_mac_frame_ctrl__t" ],
     [ "LoRaMacHeader_t", "group___l_o_r_a_m_a_c.html#union_lo_ra_mac_header__t", "group___l_o_r_a_m_a_c_union_lo_ra_mac_header__t" ],
+    [ "LoRaMacParams_t", "group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_params__t", "group___l_o_r_a_m_a_c_struct_lo_ra_mac_params__t" ],
     [ "LoRaMacPrimitives_t", "struct_lo_ra_mac_primitives__t.html", "struct_lo_ra_mac_primitives__t" ],
     [ "LoRaMacTxInfo_t", "group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_tx_info__t", "group___l_o_r_a_m_a_c_struct_lo_ra_mac_tx_info__t" ],
     [ "McpsConfirm_t", "group___l_o_r_a_m_a_c.html#struct_mcps_confirm__t", "group___l_o_r_a_m_a_c_struct_mcps_confirm__t" ],
