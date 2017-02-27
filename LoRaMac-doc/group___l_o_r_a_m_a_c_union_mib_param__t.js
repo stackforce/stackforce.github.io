@@ -6,6 +6,8 @@ var group___l_o_r_a_m_a_c_union_mib_param__t =
     [ "ChannelNbRep", "group___l_o_r_a_m_a_c.html#ab2d109f5c6312dc56dfc9842bb6f141b", null ],
     [ "ChannelsDatarate", "group___l_o_r_a_m_a_c.html#a6c741587260d08d1b883922ce9ca345e", null ],
     [ "ChannelsDefaultDatarate", "group___l_o_r_a_m_a_c.html#a69f274bb7ff03f12dbda701c3576ac62", null ],
+    [ "ChannelsDefaultMask", "group___l_o_r_a_m_a_c.html#ac22764d7ec77150f51f49a3c8839f161", null ],
+    [ "ChannelsDefaultTxPower", "group___l_o_r_a_m_a_c.html#af926e909a910970adb9eccc849020c71", null ],
     [ "ChannelsMask", "group___l_o_r_a_m_a_c.html#aed7477cfc6166e3ee0499b898443426a", null ],
     [ "ChannelsTxPower", "group___l_o_r_a_m_a_c.html#ad015aefb498e98276b4102f847b05d0e", null ],
     [ "Class", "group___l_o_r_a_m_a_c.html#a1ca946ebc53171e9f0f1fc39c005a7a6", null ],
@@ -23,5 +25,6 @@ var group___l_o_r_a_m_a_c_union_mib_param__t =
     [ "ReceiveDelay1", "group___l_o_r_a_m_a_c.html#a426f0e1108ebe3ba1b05c2853c0b0c3a", null ],
     [ "ReceiveDelay2", "group___l_o_r_a_m_a_c.html#a67fbe3fba2eb31f8879ea22674dd50d8", null ],
     [ "Rx2Channel", "group___l_o_r_a_m_a_c.html#aa0fbe93ff398020c65d2431af19368e8", null ],
+    [ "Rx2DefaultChannel", "group___l_o_r_a_m_a_c.html#a0fc23f09c886e3ce57ed0bd2061b336a", null ],
     [ "UpLinkCounter", "group___l_o_r_a_m_a_c.html#ae8c54ca277e4d7295dfd498889e42fdd", null ]
 ];

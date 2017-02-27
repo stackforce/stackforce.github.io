@@ -4,6 +4,8 @@ var searchData=
   ['channelnbrep',['ChannelNbRep',['../group___l_o_r_a_m_a_c.html#ab2d109f5c6312dc56dfc9842bb6f141b',1,'MibParam_t']]],
   ['channelsdatarate',['ChannelsDatarate',['../group___l_o_r_a_m_a_c.html#a6c741587260d08d1b883922ce9ca345e',1,'LoRaMacParams_t::ChannelsDatarate()'],['../group___l_o_r_a_m_a_c.html#a6c741587260d08d1b883922ce9ca345e',1,'MibParam_t::ChannelsDatarate()']]],
   ['channelsdefaultdatarate',['ChannelsDefaultDatarate',['../group___l_o_r_a_m_a_c.html#a69f274bb7ff03f12dbda701c3576ac62',1,'MibParam_t']]],
+  ['channelsdefaultmask',['ChannelsDefaultMask',['../group___l_o_r_a_m_a_c.html#ac22764d7ec77150f51f49a3c8839f161',1,'MibParam_t']]],
+  ['channelsdefaulttxpower',['ChannelsDefaultTxPower',['../group___l_o_r_a_m_a_c.html#af926e909a910970adb9eccc849020c71',1,'MibParam_t']]],
   ['channelsmask',['ChannelsMask',['../group___l_o_r_a_m_a_c.html#a0052c3ee3598f8609137905d1dceeba9',1,'LoRaMacParams_t::ChannelsMask()'],['../group___l_o_r_a_m_a_c.html#aed7477cfc6166e3ee0499b898443426a',1,'MibParam_t::ChannelsMask()']]],
   ['channelsnbrep',['ChannelsNbRep',['../group___l_o_r_a_m_a_c.html#a50c64c3d572cd688816904f8bf2252c7',1,'LoRaMacParams_t']]],
   ['channelstxpower',['ChannelsTxPower',['../group___l_o_r_a_m_a_c.html#ad015aefb498e98276b4102f847b05d0e',1,'LoRaMacParams_t::ChannelsTxPower()'],['../group___l_o_r_a_m_a_c.html#ad015aefb498e98276b4102f847b05d0e',1,'MibParam_t::ChannelsTxPower()']]],

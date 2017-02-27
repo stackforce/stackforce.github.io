@@ -21,6 +21,7 @@ var annotated_dup =
     [ "MlmeConfirm_t", "group___l_o_r_a_m_a_c.html#struct_mlme_confirm__t", "group___l_o_r_a_m_a_c_struct_mlme_confirm__t" ],
     [ "MlmeReq_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req__t", "group___l_o_r_a_m_a_c_struct_mlme_req__t" ],
     [ "MlmeReqJoin_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req_join__t", "group___l_o_r_a_m_a_c_struct_mlme_req_join__t" ],
+    [ "MlmeReqTxCw_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req_tx_cw__t", "group___l_o_r_a_m_a_c_struct_mlme_req_tx_cw__t" ],
     [ "MulticastParams_t", "group___l_o_r_a_m_a_c.html#struct_multicast_params__t", "group___l_o_r_a_m_a_c_struct_multicast_params__t" ],
     [ "Rx2ChannelParams_t", "group___l_o_r_a_m_a_c.html#struct_rx2_channel_params__t", "group___l_o_r_a_m_a_c_struct_rx2_channel_params__t" ]
 ];

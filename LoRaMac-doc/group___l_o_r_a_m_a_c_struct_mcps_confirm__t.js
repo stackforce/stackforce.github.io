@@ -7,5 +7,6 @@ var group___l_o_r_a_m_a_c_struct_mcps_confirm__t =
     [ "Status", "group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5", null ],
     [ "TxPower", "group___l_o_r_a_m_a_c.html#a037b4f849fa8ed4aa1d3c58aef2b28ec", null ],
     [ "TxTimeOnAir", "group___l_o_r_a_m_a_c.html#aa17a8607485db100d315e74853dd217e", null ],
-    [ "UpLinkCounter", "group___l_o_r_a_m_a_c.html#ae8c54ca277e4d7295dfd498889e42fdd", null ]
+    [ "UpLinkCounter", "group___l_o_r_a_m_a_c.html#ae8c54ca277e4d7295dfd498889e42fdd", null ],
+    [ "UpLinkFrequency", "group___l_o_r_a_m_a_c.html#a91a7b39e9921b72ecc653beffd76a740", null ]
 ];

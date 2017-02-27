@@ -11,5 +11,6 @@ var searchData=
   ['mlmeconfirm_5ft',['MlmeConfirm_t',['../group___l_o_r_a_m_a_c.html#struct_mlme_confirm__t',1,'']]],
   ['mlmereq_5ft',['MlmeReq_t',['../group___l_o_r_a_m_a_c.html#struct_mlme_req__t',1,'']]],
   ['mlmereqjoin_5ft',['MlmeReqJoin_t',['../group___l_o_r_a_m_a_c.html#struct_mlme_req_join__t',1,'']]],
+  ['mlmereqtxcw_5ft',['MlmeReqTxCw_t',['../group___l_o_r_a_m_a_c.html#struct_mlme_req_tx_cw__t',1,'']]],
   ['multicastparams_5ft',['MulticastParams_t',['../group___l_o_r_a_m_a_c.html#struct_multicast_params__t',1,'']]]
 ];

@@ -40,8 +40,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_comissioning_8h_source.html",
-"group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aa910e51ef7a7cf64c27dd3ffe5eb9d38"
+"_lo_ra_mac_8h.html",
+"group___l_o_r_a_m_a_c.html#gga26a00d3cd56eeef4e681e5a0dcf382c2a155ae506492f1ddb173b99b52da4092a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,6 +1,0 @@
-<map id="McpsReq_t" name="McpsReq_t">
-<area shape="rect" id="node2" href="$group___l_o_r_a_m_a_c.html#union_mcps_req__t_1_1u_mcps_param" title="uMcpsParam" alt="" coords="272,200,366,227"/>
-<area shape="rect" id="node3" href="$group___l_o_r_a_m_a_c.html#struct_mcps_req_proprietary__t" title="McpsReqProprietary_t" alt="" coords="70,109,217,136"/>
-<area shape="rect" id="node7" href="$group___l_o_r_a_m_a_c.html#struct_mcps_req_confirmed__t" title="McpsReqConfirmed_t" alt="" coords="515,109,657,136"/>
-<area shape="rect" id="node9" href="$group___l_o_r_a_m_a_c.html#struct_mcps_req_unconfirmed__t" title="McpsReqUnconfirmed_t" alt="" coords="241,109,398,136"/>
-</map>

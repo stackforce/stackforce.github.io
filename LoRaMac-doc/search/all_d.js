@@ -10,6 +10,7 @@ var searchData=
   ['rx1droffset',['Rx1DrOffset',['../group___l_o_r_a_m_a_c.html#a7de51959047aa36190c0a59485397244',1,'LoRaMacParams_t']]],
   ['rx2channel',['Rx2Channel',['../group___l_o_r_a_m_a_c.html#aa0fbe93ff398020c65d2431af19368e8',1,'LoRaMacParams_t::Rx2Channel()'],['../group___l_o_r_a_m_a_c.html#aa0fbe93ff398020c65d2431af19368e8',1,'MibParam_t::Rx2Channel()']]],
   ['rx2channelparams_5ft',['Rx2ChannelParams_t',['../group___l_o_r_a_m_a_c.html#struct_rx2_channel_params__t',1,'']]],
+  ['rx2defaultchannel',['Rx2DefaultChannel',['../group___l_o_r_a_m_a_c.html#a0fc23f09c886e3ce57ed0bd2061b336a',1,'MibParam_t']]],
   ['rxdata',['RxData',['../group___l_o_r_a_m_a_c.html#afa6d3de110fa10174203ce26682585c9',1,'McpsIndication_t']]],
   ['rxdatarate',['RxDatarate',['../group___l_o_r_a_m_a_c.html#a61e9e29ca015230436fe420bf88989e9',1,'McpsIndication_t']]],
   ['rxslot',['RxSlot',['../group___l_o_r_a_m_a_c.html#a08824938d0f702a10a2b70301c66d193',1,'McpsIndication_t']]]

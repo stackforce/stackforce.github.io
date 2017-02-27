@@ -17,6 +17,7 @@ var searchData=
   ['loramacpayloadencrypt',['LoRaMacPayloadEncrypt',['../group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga50339e60abea2186ca7e584b489718b1',1,'LoRaMacCrypto.h']]],
   ['loramacquerytxpossible',['LoRaMacQueryTxPossible',['../group___l_o_r_a_m_a_c.html#ga8b0aeaf75f9404ce01da9b202252c231',1,'LoRaMac.h']]],
   ['loramactestrxwindowson',['LoRaMacTestRxWindowsOn',['../group___l_o_r_a_m_a_c_t_e_s_t.html#ga3e8dc79232b2c86d12d8b4191324283d',1,'LoRaMacTest.h']]],
+  ['loramactestsetchannel',['LoRaMacTestSetChannel',['../group___l_o_r_a_m_a_c_t_e_s_t.html#ga8cf3cc21ea237c5620536cea2750463e',1,'LoRaMacTest.h']]],
   ['loramactestsetdutycycleon',['LoRaMacTestSetDutyCycleOn',['../group___l_o_r_a_m_a_c_t_e_s_t.html#gacee5e0492e548af9e1ec5a995e460865',1,'LoRaMacTest.h']]],
   ['loramactestsetmic',['LoRaMacTestSetMic',['../group___l_o_r_a_m_a_c_t_e_s_t.html#ga191314e00a8a27f426427473ba6821a7',1,'LoRaMacTest.h']]]
 ];

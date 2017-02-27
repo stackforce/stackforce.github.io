@@ -1,8 +1,6 @@
 var searchData=
 [
   ['lasttxdonetime',['LastTxDoneTime',['../group___l_o_r_a_m_a_c.html#a7316dfb002c4e0015fceeb727020fe5c',1,'Band_t']]],
-  ['lora_5fmac_5fprivate_5fsyncword',['LORA_MAC_PRIVATE_SYNCWORD',['../group___l_o_r_a_m_a_c.html#ga3a91534e6b1d9c4f1a179a495c38d7fe',1,'LoRaMac.h']]],
-  ['lora_5fmac_5fpublic_5fsyncword',['LORA_MAC_PUBLIC_SYNCWORD',['../group___l_o_r_a_m_a_c.html#gac2b07e04414b57bcebcb1eea5ba5ea70',1,'LoRaMac.h']]],
   ['lora_20mac_20layer_20implementation',['LoRa MAC layer implementation',['../group___l_o_r_a_m_a_c.html',1,'']]],
   ['loramac_2eh',['LoRaMac.h',['../_lo_ra_mac_8h.html',1,'']]],
   ['lora_20mac_20layer_20cryptography_20implementation',['LoRa MAC layer cryptography implementation',['../group___l_o_r_a_m_a_c___c_r_y_p_t_o.html',1,'']]],
@@ -15,6 +13,7 @@ var searchData=
   ['loramac_5fevent_5finfo_5fstatus_5fok',['LORAMAC_EVENT_INFO_STATUS_OK',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5frx2_5ferror',['LORAMAC_EVENT_INFO_STATUS_RX2_ERROR',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5frx2_5ftimeout',['LORAMAC_EVENT_INFO_STATUS_RX2_TIMEOUT',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a743858a21ae7cb162abc9acaa62cd4df',1,'LoRaMac.h']]],
+  ['loramac_5fevent_5finfo_5fstatus_5ftx_5fdr_5fpayload_5fsize_5ferror',['LORAMAC_EVENT_INFO_STATUS_TX_DR_PAYLOAD_SIZE_ERROR',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a6e7b21fbf0358f3438f2de0fc3fdd866',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5ftx_5ftimeout',['LORAMAC_EVENT_INFO_STATUS_TX_TIMEOUT',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a0c2eb197e4102e139b43c01e806fa538',1,'LoRaMac.h']]],
   ['loramac_5fmfr_5flen',['LORAMAC_MFR_LEN',['../group___l_o_r_a_m_a_c.html#ga1727f288e9a871f1474ce61f942a08f3',1,'LoRaMac.h']]],
   ['loramac_5fstatus_5fbusy',['LORAMAC_STATUS_BUSY',['../group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a66b12f569207eacd97ee1c1d6c4cee6d',1,'LoRaMac.h']]],
@@ -60,6 +59,7 @@ var searchData=
   ['lora_20mac_20layer_20test_20function_20implementation',['LoRa MAC layer test function implementation',['../group___l_o_r_a_m_a_c_t_e_s_t.html',1,'']]],
   ['loramactest_2eh',['LoRaMacTest.h',['../_lo_ra_mac_test_8h.html',1,'']]],
   ['loramactestrxwindowson',['LoRaMacTestRxWindowsOn',['../group___l_o_r_a_m_a_c_t_e_s_t.html#ga3e8dc79232b2c86d12d8b4191324283d',1,'LoRaMacTest.h']]],
+  ['loramactestsetchannel',['LoRaMacTestSetChannel',['../group___l_o_r_a_m_a_c_t_e_s_t.html#ga8cf3cc21ea237c5620536cea2750463e',1,'LoRaMacTest.h']]],
   ['loramactestsetdutycycleon',['LoRaMacTestSetDutyCycleOn',['../group___l_o_r_a_m_a_c_t_e_s_t.html#gacee5e0492e548af9e1ec5a995e460865',1,'LoRaMacTest.h']]],
   ['loramactestsetmic',['LoRaMacTestSetMic',['../group___l_o_r_a_m_a_c_t_e_s_t.html#ga191314e00a8a27f426427473ba6821a7',1,'LoRaMacTest.h']]],
   ['loramactxinfo_5ft',['LoRaMacTxInfo_t',['../group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_tx_info__t',1,'']]]
