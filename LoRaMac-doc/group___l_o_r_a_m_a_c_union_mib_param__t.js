@@ -19,6 +19,7 @@ var group___l_o_r_a_m_a_c_union_mib_param__t =
     [ "JoinAcceptDelay1", "group___l_o_r_a_m_a_c.html#a59ed32d2c7ce6d0b2011da8b0109b391", null ],
     [ "JoinAcceptDelay2", "group___l_o_r_a_m_a_c.html#ae4a12f9dc83c6cedcf8afc05fb9ea06f", null ],
     [ "MaxRxWindow", "group___l_o_r_a_m_a_c.html#ace391217d534408b8f2af268a4ef0945", null ],
+    [ "MinRxSymbols", "group___l_o_r_a_m_a_c.html#ab33f97482f9af163d593cf103a2ccf1c", null ],
     [ "MulticastList", "group___l_o_r_a_m_a_c.html#ab0f9cda74f301d191aa5f7d7090c1557", null ],
     [ "NetID", "group___l_o_r_a_m_a_c.html#a84a14c879508144e9961372ace234169", null ],
     [ "NwkSKey", "group___l_o_r_a_m_a_c.html#a04e90b783b4e6841ecda8d32d10dc90e", null ],
@@ -26,5 +27,6 @@ var group___l_o_r_a_m_a_c_union_mib_param__t =
     [ "ReceiveDelay2", "group___l_o_r_a_m_a_c.html#a67fbe3fba2eb31f8879ea22674dd50d8", null ],
     [ "Rx2Channel", "group___l_o_r_a_m_a_c.html#aa0fbe93ff398020c65d2431af19368e8", null ],
     [ "Rx2DefaultChannel", "group___l_o_r_a_m_a_c.html#a0fc23f09c886e3ce57ed0bd2061b336a", null ],
+    [ "SystemMaxRxError", "group___l_o_r_a_m_a_c.html#a62adc341212fe903e9995966051c5fee", null ],
     [ "UpLinkCounter", "group___l_o_r_a_m_a_c.html#ae8c54ca277e4d7295dfd498889e42fdd", null ]
 ];

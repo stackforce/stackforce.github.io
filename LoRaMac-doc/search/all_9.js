@@ -11,6 +11,7 @@ var searchData=
   ['loramac_5fevent_5finfo_5fstatus_5fjoin_5ffail',['LORAMAC_EVENT_INFO_STATUS_JOIN_FAIL',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af42941643347e10f0e5a01c324bf6170',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5fmic_5ffail',['LORAMAC_EVENT_INFO_STATUS_MIC_FAIL',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a43bdb9277722c567c81539fd175a7a63',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5fok',['LORAMAC_EVENT_INFO_STATUS_OK',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4',1,'LoRaMac.h']]],
+  ['loramac_5fevent_5finfo_5fstatus_5frx1_5ferror',['LORAMAC_EVENT_INFO_STATUS_RX1_ERROR',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a7bea16ca3ce17932dd5ee3558fdd0ed1',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5frx2_5ferror',['LORAMAC_EVENT_INFO_STATUS_RX2_ERROR',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5frx2_5ftimeout',['LORAMAC_EVENT_INFO_STATUS_RX2_TIMEOUT',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a743858a21ae7cb162abc9acaa62cd4df',1,'LoRaMac.h']]],
   ['loramac_5fevent_5finfo_5fstatus_5ftx_5fdr_5fpayload_5fsize_5ferror',['LORAMAC_EVENT_INFO_STATUS_TX_DR_PAYLOAD_SIZE_ERROR',['../group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a6e7b21fbf0358f3438f2de0fc3fdd866',1,'LoRaMac.h']]],

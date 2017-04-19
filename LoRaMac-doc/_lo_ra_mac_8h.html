@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.3.1</span>
+   &#160;<span id="projectnumber">4.3.2</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -261,12 +261,13 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a0c2eb197e4102e139b43c01e806fa538">LORAMAC_EVENT_INFO_STATUS_TX_TIMEOUT</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a743858a21ae7cb162abc9acaa62cd4df">LORAMAC_EVENT_INFO_STATUS_RX2_TIMEOUT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716">LORAMAC_EVENT_INFO_STATUS_RX2_ERROR</a>, 
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a7bea16ca3ce17932dd5ee3558fdd0ed1">LORAMAC_EVENT_INFO_STATUS_RX1_ERROR</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716">LORAMAC_EVENT_INFO_STATUS_RX2_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af42941643347e10f0e5a01c324bf6170">LORAMAC_EVENT_INFO_STATUS_JOIN_FAIL</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aaae47a8316ae996d506323e0e6613b9b">LORAMAC_EVENT_INFO_STATUS_DOWNLINK_REPEATED</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a6e7b21fbf0358f3438f2de0fc3fdd866">LORAMAC_EVENT_INFO_STATUS_TX_DR_PAYLOAD_SIZE_ERROR</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a4a75f7744209239bb80e6af142d0249d">LORAMAC_EVENT_INFO_STATUS_DOWNLINK_TOO_MANY_FRAMES_LOSS</a>, 
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a6e7b21fbf0358f3438f2de0fc3fdd866">LORAMAC_EVENT_INFO_STATUS_TX_DR_PAYLOAD_SIZE_ERROR</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a4a75f7744209239bb80e6af142d0249d">LORAMAC_EVENT_INFO_STATUS_DOWNLINK_TOO_MANY_FRAMES_LOSS</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af141bb217ba31a2dc7d3cc128a13de10">LORAMAC_EVENT_INFO_STATUS_ADDRESS_FAIL</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a43bdb9277722c567c81539fd175a7a63">LORAMAC_EVENT_INFO_STATUS_MIC_FAIL</a>
 <br />
@@ -281,7 +282,8 @@ Enumerations</h2></td></tr>
 <tr class="separator:ga3a34a8c4488f3dd643fa1fc390691696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga867a2ba8db200cd6a00511fec9979f1c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga867a2ba8db200cd6a00511fec9979f1c">Mlme_t</a> { <a class="el" href="group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca475ad5dea1c4c13b93b31095c665e92e">MLME_JOIN</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca57ba2a5951a2a4637ff0e574c0e48750">MLME_LINK_CHECK</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca7633734852fb50e0f241ae8059b0aed1">MLME_TXCW</a>
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca7633734852fb50e0f241ae8059b0aed1">MLME_TXCW</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca9a6b50c77269c8fbff9a5a6d33574503">MLME_TXCW_1</a>
  }<tr class="memdesc:ga867a2ba8db200cd6a00511fec9979f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoRaMAC management services.  <a href="group___l_o_r_a_m_a_c.html#ga867a2ba8db200cd6a00511fec9979f1c">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga867a2ba8db200cd6a00511fec9979f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,7 +320,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead0d2e0023858ce3fab3647fa97428d84">MIB_UPLINK_COUNTER</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eae75b53deee33594312d1d2987c24b698">MIB_DOWNLINK_COUNTER</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaf8ac424460fccb3115c6fe6ccb450862">MIB_MULTICAST_CHANNEL</a>
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaf8ac424460fccb3115c6fe6ccb450862">MIB_MULTICAST_CHANNEL</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead5d382841f32fba944bdb68b25699e45">MIB_SYSTEM_MAX_RX_ERROR</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea82fb27fd6414d2bde20a7a00c80e26a1">MIB_MIN_RX_SYMBOLS</a>
 <br />
  }</td></tr>
 <tr class="separator:ga64429ce77a29145f6a7508df5eaa2d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -539,6 +544,13 @@ McpsInd: 1</td>
 <p>MCPS-Ind pending </p>
 </td></tr>
 <tr><td class="fieldtype">
+<a id="a45141607ee2f47da2432d5d2a8045e69"></a>uint8_t</td>
+<td class="fieldname">
+McpsIndSkip: 1</td>
+<td class="fielddoc">
+<p>MCPS-Ind pending. Skip indication to the application layer </p>
+</td></tr>
+<tr><td class="fieldtype">
 <a id="adee8f234933a066317a08431f5db61b0"></a>uint8_t</td>
 <td class="fieldname">
 McpsReq: 1</td>
@@ -633,7 +645,7 @@ TxCw</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_effec920ede41fb96e7864e805338585.html">loramac-node</a></li><li class="navelem"><a class="el" href="dir_4a88cfc83a69fddb7155b83fca49a6bc.html">src</a></li><li class="navelem"><a class="el" href="dir_99e362b2a8ddfd673935ba51ee0c0761.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_8h.html">LoRaMac.h</a></li>
-    <li class="footer">Generated on Mon Feb 27 2017 18:47:43 for LoRaMAC by
+    <li class="footer">Generated on Wed Apr 19 2017 17:36:19 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

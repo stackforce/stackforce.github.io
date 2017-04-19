@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.3.1</span>
+   &#160;<span id="projectnumber">4.3.2</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -240,6 +240,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>Frequency
 : <a class="el" href="group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1">ChannelParams_t</a>
+, <a class="el" href="group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1">MlmeReqTxCw_t</a>
 , <a class="el" href="group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1">Rx2ChannelParams_t</a>
 </li>
 </ul>
@@ -313,6 +314,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>McpsIndication
 : <a class="el" href="group___l_o_r_a_m_a_c.html#af45477156b4a2e186b2bfa2afb3a4efc">McpsIndication_t</a>
 </li>
+<li>McpsIndSkip
+: <a class="el" href="group___l_o_r_a_m_a_c.html#a45141607ee2f47da2432d5d2a8045e69">LoRaMacFlags_t::sMacFlagBits</a>
+</li>
 <li>McpsReq
 : <a class="el" href="group___l_o_r_a_m_a_c.html#adee8f234933a066317a08431f5db61b0">LoRaMacFlags_t::sMacFlagBits</a>
 </li>
@@ -321,6 +325,10 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>Min
 : <a class="el" href="group___l_o_r_a_m_a_c.html#ad870086364c5eb410eec40e1025e3203">DrRange_t::sFields</a>
+</li>
+<li>MinRxSymbols
+: <a class="el" href="group___l_o_r_a_m_a_c.html#ab33f97482f9af163d593cf103a2ccf1c">LoRaMacParams_t</a>
+, <a class="el" href="group___l_o_r_a_m_a_c.html#ab33f97482f9af163d593cf103a2ccf1c">MibParam_t</a>
 </li>
 <li>MlmeReq
 : <a class="el" href="group___l_o_r_a_m_a_c.html#a3743e193dca88e3913e44e993a209ebf">LoRaMacFlags_t::sMacFlagBits</a>
@@ -371,6 +379,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>Port
 : <a class="el" href="group___l_o_r_a_m_a_c.html#a4b93121f04819fbab96346736fa720a9">McpsIndication_t</a>
+</li>
+<li>Power
+: <a class="el" href="group___l_o_r_a_m_a_c.html#ab44615b5dd16068c5a1bfb228b72c081">MlmeReqTxCw_t</a>
 </li>
 <li>Proprietary
 : <a class="el" href="group___l_o_r_a_m_a_c.html#ad79bb26667e5f61b5e5dd5d58a085b48">McpsReq_t::uMcpsParam</a>
@@ -423,6 +434,10 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">McpsConfirm_t</a>
 , <a class="el" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">McpsIndication_t</a>
 , <a class="el" href="group___l_o_r_a_m_a_c.html#ab360e499d5a7a9e0aa7b4df7239633b5">MlmeConfirm_t</a>
+</li>
+<li>SystemMaxRxError
+: <a class="el" href="group___l_o_r_a_m_a_c.html#a62adc341212fe903e9995966051c5fee">LoRaMacParams_t</a>
+, <a class="el" href="group___l_o_r_a_m_a_c.html#a62adc341212fe903e9995966051c5fee">MibParam_t</a>
 </li>
 </ul>
 
@@ -482,7 +497,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 27 2017 18:47:44 for LoRaMAC by
+    <li class="footer">Generated on Wed Apr 19 2017 17:36:21 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

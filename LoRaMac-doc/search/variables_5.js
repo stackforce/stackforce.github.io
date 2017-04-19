@@ -6,5 +6,5 @@ var searchData=
   ['fpending',['FPending',['../group___l_o_r_a_m_a_c.html#a2d5d8f602343aff45f870d4c38ffa0df',1,'LoRaMacFrameCtrl_t::sCtrlBits']]],
   ['fport',['fPort',['../group___l_o_r_a_m_a_c.html#a2973de9ac0ab5e876b80362bc4c6a88b',1,'McpsReqUnconfirmed_t::fPort()'],['../group___l_o_r_a_m_a_c.html#a2973de9ac0ab5e876b80362bc4c6a88b',1,'McpsReqConfirmed_t::fPort()']]],
   ['framepending',['FramePending',['../group___l_o_r_a_m_a_c.html#a123aed553ea78b5967618c22147a7f4c',1,'McpsIndication_t']]],
-  ['frequency',['Frequency',['../group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1',1,'ChannelParams_t::Frequency()'],['../group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1',1,'Rx2ChannelParams_t::Frequency()']]]
+  ['frequency',['Frequency',['../group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1',1,'ChannelParams_t::Frequency()'],['../group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1',1,'Rx2ChannelParams_t::Frequency()'],['../group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1',1,'MlmeReqTxCw_t::Frequency()']]]
 ];

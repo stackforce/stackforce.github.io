@@ -19,6 +19,7 @@ var _lo_ra_mac_8h =
     [ "sMacFlagBits", "group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_flags__t_1_1s_mac_flag_bits", [
       [ "MacDone", "group___l_o_r_a_m_a_c.html#a8b4a19cca2ba529046ea88bb13305407", null ],
       [ "McpsInd", "group___l_o_r_a_m_a_c.html#a81d24e4d487adef6c6d4f4ca0963319e", null ],
+      [ "McpsIndSkip", "group___l_o_r_a_m_a_c.html#a45141607ee2f47da2432d5d2a8045e69", null ],
       [ "McpsReq", "group___l_o_r_a_m_a_c.html#adee8f234933a066317a08431f5db61b0", null ],
       [ "MlmeReq", "group___l_o_r_a_m_a_c.html#a3743e193dca88e3913e44e993a209ebf", null ]
     ] ],
@@ -64,6 +65,7 @@ var _lo_ra_mac_8h =
       [ "LORAMAC_EVENT_INFO_STATUS_ERROR", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a613ed77c0e8416a512224fffdbfdf6c1", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_TX_TIMEOUT", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a0c2eb197e4102e139b43c01e806fa538", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_RX2_TIMEOUT", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a743858a21ae7cb162abc9acaa62cd4df", null ],
+      [ "LORAMAC_EVENT_INFO_STATUS_RX1_ERROR", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a7bea16ca3ce17932dd5ee3558fdd0ed1", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_RX2_ERROR", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_JOIN_FAIL", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af42941643347e10f0e5a01c324bf6170", null ],
       [ "LORAMAC_EVENT_INFO_STATUS_DOWNLINK_REPEATED", "group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aaae47a8316ae996d506323e0e6613b9b", null ],
@@ -146,12 +148,15 @@ var _lo_ra_mac_8h =
       [ "MIB_CHANNELS_DEFAULT_TX_POWER", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea9c5b2d3ad2caf87710b09e8a6e68cc6a", null ],
       [ "MIB_UPLINK_COUNTER", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead0d2e0023858ce3fab3647fa97428d84", null ],
       [ "MIB_DOWNLINK_COUNTER", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eae75b53deee33594312d1d2987c24b698", null ],
-      [ "MIB_MULTICAST_CHANNEL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaf8ac424460fccb3115c6fe6ccb450862", null ]
+      [ "MIB_MULTICAST_CHANNEL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaf8ac424460fccb3115c6fe6ccb450862", null ],
+      [ "MIB_SYSTEM_MAX_RX_ERROR", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead5d382841f32fba944bdb68b25699e45", null ],
+      [ "MIB_MIN_RX_SYMBOLS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea82fb27fd6414d2bde20a7a00c80e26a1", null ]
     ] ],
     [ "Mlme_t", "group___l_o_r_a_m_a_c.html#ga867a2ba8db200cd6a00511fec9979f1c", [
       [ "MLME_JOIN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca475ad5dea1c4c13b93b31095c665e92e", null ],
       [ "MLME_LINK_CHECK", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca57ba2a5951a2a4637ff0e574c0e48750", null ],
-      [ "MLME_TXCW", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca7633734852fb50e0f241ae8059b0aed1", null ]
+      [ "MLME_TXCW", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca7633734852fb50e0f241ae8059b0aed1", null ],
+      [ "MLME_TXCW_1", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca9a6b50c77269c8fbff9a5a6d33574503", null ]
     ] ],
     [ "LoRaMacChannelAdd", "group___l_o_r_a_m_a_c.html#gad74920538f07f34e773ca5de9ec89370", null ],
     [ "LoRaMacChannelRemove", "group___l_o_r_a_m_a_c.html#gafad6c929a33557ac2fd4000bcacd9453", null ],
