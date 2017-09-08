@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['umcpsparam',['uMcpsParam',['../group___l_o_r_a_m_a_c.html#union_mcps_req__t_1_1u_mcps_param',1,'McpsReq_t']]],
-  ['umlmeparam',['uMlmeParam',['../group___l_o_r_a_m_a_c.html#union_mlme_req__t_1_1u_mlme_param',1,'MlmeReq_t']]]
+  ['newchannelreqparams_5ft',['NewChannelReqParams_t',['../group___r_e_g_i_o_n.html#struct_new_channel_req_params__t',1,'']]],
+  ['nextchanparams_5ft',['NextChanParams_t',['../group___r_e_g_i_o_n.html#struct_next_chan_params__t',1,'']]]
 ];

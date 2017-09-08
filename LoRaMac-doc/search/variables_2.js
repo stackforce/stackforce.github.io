@@ -1,15 +1,25 @@
 var searchData=
 [
+  ['channel',['Channel',['../group___r_e_g_i_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e',1,'SetBandTxDoneParams_t::Channel()'],['../group___r_e_g_i_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e',1,'RxConfigParams_t::Channel()'],['../group___r_e_g_i_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e',1,'TxConfigParams_t::Channel()'],['../group___r_e_g_i_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e',1,'CalcBackOffParams_t::Channel()'],['../group___r_e_g_i_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e',1,'ContinuousWaveParams_t::Channel()'],['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e',1,'RegionCommonCalcBackOffParams_t::Channel()']]],
+  ['channelid',['ChannelId',['../group___r_e_g_i_o_n.html#ab072d8ed1ab01d956d5b86a9d0185c3f',1,'NewChannelReqParams_t::ChannelId()'],['../group___r_e_g_i_o_n.html#ae23f953dc29c360e56a3c856404a3276',1,'DlChannelReqParams_t::ChannelId()'],['../group___r_e_g_i_o_n.html#ae23f953dc29c360e56a3c856404a3276',1,'ChannelAddParams_t::ChannelId()'],['../group___r_e_g_i_o_n.html#ae23f953dc29c360e56a3c856404a3276',1,'ChannelRemoveParams_t::ChannelId()']]],
   ['channellist',['ChannelList',['../group___l_o_r_a_m_a_c.html#ad8f366dd9087f9cdaa4f7021f2d6e2b9',1,'MibParam_t']]],
   ['channelnbrep',['ChannelNbRep',['../group___l_o_r_a_m_a_c.html#ab2d109f5c6312dc56dfc9842bb6f141b',1,'MibParam_t']]],
+  ['channels',['Channels',['../group___r_e_g_i_o_n.html#afecbd1e457cbd79eb7072bd140ff33d4',1,'PhyParam_t::Channels()'],['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#afecbd1e457cbd79eb7072bd140ff33d4',1,'RegionCommonLinkAdrReqVerifyParams_t::Channels()'],['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#afecbd1e457cbd79eb7072bd140ff33d4',1,'RegionCommonCalcBackOffParams_t::Channels()']]],
   ['channelsdatarate',['ChannelsDatarate',['../group___l_o_r_a_m_a_c.html#a6c741587260d08d1b883922ce9ca345e',1,'LoRaMacParams_t::ChannelsDatarate()'],['../group___l_o_r_a_m_a_c.html#a6c741587260d08d1b883922ce9ca345e',1,'MibParam_t::ChannelsDatarate()']]],
   ['channelsdefaultdatarate',['ChannelsDefaultDatarate',['../group___l_o_r_a_m_a_c.html#a69f274bb7ff03f12dbda701c3576ac62',1,'MibParam_t']]],
   ['channelsdefaultmask',['ChannelsDefaultMask',['../group___l_o_r_a_m_a_c.html#ac22764d7ec77150f51f49a3c8839f161',1,'MibParam_t']]],
   ['channelsdefaulttxpower',['ChannelsDefaultTxPower',['../group___l_o_r_a_m_a_c.html#af926e909a910970adb9eccc849020c71',1,'MibParam_t']]],
-  ['channelsmask',['ChannelsMask',['../group___l_o_r_a_m_a_c.html#a0052c3ee3598f8609137905d1dceeba9',1,'LoRaMacParams_t::ChannelsMask()'],['../group___l_o_r_a_m_a_c.html#aed7477cfc6166e3ee0499b898443426a',1,'MibParam_t::ChannelsMask()']]],
+  ['channelsmask',['ChannelsMask',['../group___l_o_r_a_m_a_c.html#aed7477cfc6166e3ee0499b898443426a',1,'MibParam_t::ChannelsMask()'],['../group___r_e_g_i_o_n.html#aed7477cfc6166e3ee0499b898443426a',1,'PhyParam_t::ChannelsMask()'],['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#aed7477cfc6166e3ee0499b898443426a',1,'RegionCommonLinkAdrReqVerifyParams_t::ChannelsMask()']]],
+  ['channelsmaskin',['ChannelsMaskIn',['../group___r_e_g_i_o_n.html#ade387d6ecaf27781b14ad97ebdfc0695',1,'ChanMaskSetParams_t']]],
+  ['channelsmasktype',['ChannelsMaskType',['../group___r_e_g_i_o_n.html#a02b75be74cbc34fa2126b2c250ea9283',1,'ChanMaskSetParams_t']]],
   ['channelsnbrep',['ChannelsNbRep',['../group___l_o_r_a_m_a_c.html#a50c64c3d572cd688816904f8bf2252c7',1,'LoRaMacParams_t']]],
   ['channelstxpower',['ChannelsTxPower',['../group___l_o_r_a_m_a_c.html#ad015aefb498e98276b4102f847b05d0e',1,'LoRaMacParams_t::ChannelsTxPower()'],['../group___l_o_r_a_m_a_c.html#ad015aefb498e98276b4102f847b05d0e',1,'MibParam_t::ChannelsTxPower()']]],
+  ['chmask',['ChMask',['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#adb3d38c312a46e617b1319f97dd56a87',1,'RegionCommonLinkAdrParams_t']]],
+  ['chmaskctrl',['ChMaskCtrl',['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#ac5e1891f30a172b2ce39bc3498e1843d',1,'RegionCommonLinkAdrParams_t']]],
   ['class',['Class',['../group___l_o_r_a_m_a_c.html#a1ca946ebc53171e9f0f1fc39c005a7a6',1,'MibParam_t']]],
   ['confirmed',['Confirmed',['../group___l_o_r_a_m_a_c.html#aa6b3511826dee52ed1b057c1762f4afa',1,'McpsReq_t::uMcpsParam']]],
-  ['currentpayloadsize',['CurrentPayloadSize',['../group___l_o_r_a_m_a_c.html#afd5874846b1ddb673f84f5f70d1281e2',1,'LoRaMacTxInfo_t']]]
+  ['currentdatarate',['CurrentDatarate',['../group___r_e_g_i_o_n.html#a928ed703cdac38d74d55ef5e8a45c558',1,'LinkAdrReqParams_t::CurrentDatarate()'],['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#a928ed703cdac38d74d55ef5e8a45c558',1,'RegionCommonLinkAdrReqVerifyParams_t::CurrentDatarate()']]],
+  ['currentnbrep',['CurrentNbRep',['../group___r_e_g_i_o_n.html#a2f3b24e83cdd2600dc9e4374de09f62c',1,'LinkAdrReqParams_t::CurrentNbRep()'],['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#a92fb5546eea8bf128e56b1ad22b088f3',1,'RegionCommonLinkAdrReqVerifyParams_t::CurrentNbRep()']]],
+  ['currentpayloadsize',['CurrentPayloadSize',['../group___l_o_r_a_m_a_c.html#afd5874846b1ddb673f84f5f70d1281e2',1,'LoRaMacTxInfo_t']]],
+  ['currenttxpower',['CurrentTxPower',['../group___r_e_g_i_o_n.html#ac68ea6f7b6f8708b7a5a7fbf13ee3f97',1,'LinkAdrReqParams_t::CurrentTxPower()'],['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#ac68ea6f7b6f8708b7a5a7fbf13ee3f97',1,'RegionCommonLinkAdrReqVerifyParams_t::CurrentTxPower()']]]
 ];

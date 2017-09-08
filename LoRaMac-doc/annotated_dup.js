@@ -1,8 +1,19 @@
 var annotated_dup =
 [
+    [ "AdrNextParams_t", "group___r_e_g_i_o_n.html#struct_adr_next_params__t", "group___r_e_g_i_o_n_struct_adr_next_params__t" ],
+    [ "AlternateDrParams_t", "group___r_e_g_i_o_n.html#struct_alternate_dr_params__t", "group___r_e_g_i_o_n_struct_alternate_dr_params__t" ],
+    [ "ApplyCFListParams_t", "group___r_e_g_i_o_n.html#struct_apply_c_f_list_params__t", "group___r_e_g_i_o_n_struct_apply_c_f_list_params__t" ],
     [ "Band_t", "group___l_o_r_a_m_a_c.html#struct_band__t", "group___l_o_r_a_m_a_c_struct_band__t" ],
+    [ "CalcBackOffParams_t", "group___r_e_g_i_o_n.html#struct_calc_back_off_params__t", "group___r_e_g_i_o_n_struct_calc_back_off_params__t" ],
+    [ "ChanMaskSetParams_t", "group___r_e_g_i_o_n.html#struct_chan_mask_set_params__t", "group___r_e_g_i_o_n_struct_chan_mask_set_params__t" ],
+    [ "ChannelAddParams_t", "group___r_e_g_i_o_n.html#struct_channel_add_params__t", "group___r_e_g_i_o_n_struct_channel_add_params__t" ],
     [ "ChannelParams_t", "group___l_o_r_a_m_a_c.html#struct_channel_params__t", "group___l_o_r_a_m_a_c_struct_channel_params__t" ],
+    [ "ChannelRemoveParams_t", "group___r_e_g_i_o_n.html#struct_channel_remove_params__t", "group___r_e_g_i_o_n_struct_channel_remove_params__t" ],
+    [ "ContinuousWaveParams_t", "group___r_e_g_i_o_n.html#struct_continuous_wave_params__t", "group___r_e_g_i_o_n_struct_continuous_wave_params__t" ],
+    [ "DlChannelReqParams_t", "group___r_e_g_i_o_n.html#struct_dl_channel_req_params__t", "group___r_e_g_i_o_n_struct_dl_channel_req_params__t" ],
     [ "DrRange_t", "group___l_o_r_a_m_a_c.html#union_dr_range__t", "group___l_o_r_a_m_a_c_union_dr_range__t" ],
+    [ "GetPhyParams_t", "group___r_e_g_i_o_n.html#struct_get_phy_params__t", "group___r_e_g_i_o_n_struct_get_phy_params__t" ],
+    [ "LinkAdrReqParams_t", "group___r_e_g_i_o_n.html#struct_link_adr_req_params__t", "group___r_e_g_i_o_n_struct_link_adr_req_params__t" ],
     [ "LoRaMacCallback_t", "struct_lo_ra_mac_callback__t.html", "struct_lo_ra_mac_callback__t" ],
     [ "LoRaMacFlags_t", "group___l_o_r_a_m_a_c.html#union_lo_ra_mac_flags__t", "group___l_o_r_a_m_a_c_union_lo_ra_mac_flags__t" ],
     [ "LoRaMacFrameCtrl_t", "group___l_o_r_a_m_a_c.html#union_lo_ra_mac_frame_ctrl__t", "group___l_o_r_a_m_a_c_union_lo_ra_mac_frame_ctrl__t" ],
@@ -23,5 +34,17 @@ var annotated_dup =
     [ "MlmeReqJoin_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req_join__t", "group___l_o_r_a_m_a_c_struct_mlme_req_join__t" ],
     [ "MlmeReqTxCw_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req_tx_cw__t", "group___l_o_r_a_m_a_c_struct_mlme_req_tx_cw__t" ],
     [ "MulticastParams_t", "group___l_o_r_a_m_a_c.html#struct_multicast_params__t", "group___l_o_r_a_m_a_c_struct_multicast_params__t" ],
-    [ "Rx2ChannelParams_t", "group___l_o_r_a_m_a_c.html#struct_rx2_channel_params__t", "group___l_o_r_a_m_a_c_struct_rx2_channel_params__t" ]
+    [ "NewChannelReqParams_t", "group___r_e_g_i_o_n.html#struct_new_channel_req_params__t", "group___r_e_g_i_o_n_struct_new_channel_req_params__t" ],
+    [ "NextChanParams_t", "group___r_e_g_i_o_n.html#struct_next_chan_params__t", "group___r_e_g_i_o_n_struct_next_chan_params__t" ],
+    [ "PhyParam_t", "group___r_e_g_i_o_n.html#union_phy_param__t", "group___r_e_g_i_o_n_union_phy_param__t" ],
+    [ "RegionCommonCalcBackOffParams_t", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_calc_back_off_params__t", "group___r_e_g_i_o_n_c_o_m_m_o_n_struct_region_common_calc_back_off_params__t" ],
+    [ "RegionCommonLinkAdrParams_t", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_link_adr_params__t", "group___r_e_g_i_o_n_c_o_m_m_o_n_struct_region_common_link_adr_params__t" ],
+    [ "RegionCommonLinkAdrReqVerifyParams_t", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_link_adr_req_verify_params__t", "group___r_e_g_i_o_n_c_o_m_m_o_n_struct_region_common_link_adr_req_verify_params__t" ],
+    [ "Rx2ChannelParams_t", "group___l_o_r_a_m_a_c.html#struct_rx2_channel_params__t", "group___l_o_r_a_m_a_c_struct_rx2_channel_params__t" ],
+    [ "RxConfigParams_t", "group___r_e_g_i_o_n.html#struct_rx_config_params__t", "group___r_e_g_i_o_n_struct_rx_config_params__t" ],
+    [ "RxParamSetupReqParams_t", "group___r_e_g_i_o_n.html#struct_rx_param_setup_req_params__t", "group___r_e_g_i_o_n_struct_rx_param_setup_req_params__t" ],
+    [ "SetBandTxDoneParams_t", "group___r_e_g_i_o_n.html#struct_set_band_tx_done_params__t", "group___r_e_g_i_o_n_struct_set_band_tx_done_params__t" ],
+    [ "TxConfigParams_t", "group___r_e_g_i_o_n.html#struct_tx_config_params__t", "group___r_e_g_i_o_n_struct_tx_config_params__t" ],
+    [ "TxParamSetupReqParams_t", "group___r_e_g_i_o_n.html#struct_tx_param_setup_req_params__t", "group___r_e_g_i_o_n_struct_tx_param_setup_req_params__t" ],
+    [ "VerifyParams_t", "group___r_e_g_i_o_n.html#union_verify_params__t", "group___r_e_g_i_o_n_union_verify_params__t" ]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['lora_20mac_20layer_20implementation',['LoRa MAC layer implementation',['../group___l_o_r_a_m_a_c.html',1,'']]],
-  ['lora_20mac_20layer_20cryptography_20implementation',['LoRa MAC layer cryptography implementation',['../group___l_o_r_a_m_a_c___c_r_y_p_t_o.html',1,'']]],
-  ['lora_20mac_20layer_20test_20function_20implementation',['LoRa MAC layer test function implementation',['../group___l_o_r_a_m_a_c_t_e_s_t.html',1,'']]]
+  ['common_20region_20implementation',['Common region implementation',['../group___r_e_g_i_o_n_c_o_m_m_o_n.html',1,'']]]
 ];

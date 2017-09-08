@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deviceclass_5ft',['DeviceClass_t',['../group___l_o_r_a_m_a_c.html#gad065f3831c9a00390949d52a93074970',1,'LoRaMac.h']]]
+  ['channelsmask_5ft',['ChannelsMask_t',['../group___r_e_g_i_o_n.html#gabe3b4bade28dbbd35945897094ebbf8a',1,'Region.h']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['mcps_5ft',['Mcps_t',['../group___l_o_r_a_m_a_c.html#ga3a34a8c4488f3dd643fa1fc390691696',1,'LoRaMac.h']]],
-  ['mib_5ft',['Mib_t',['../group___l_o_r_a_m_a_c.html#ga64429ce77a29145f6a7508df5eaa2d3e',1,'LoRaMac.h']]],
-  ['mlme_5ft',['Mlme_t',['../group___l_o_r_a_m_a_c.html#ga867a2ba8db200cd6a00511fec9979f1c',1,'LoRaMac.h']]]
+  ['inittype_5ft',['InitType_t',['../group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0',1,'Region.h']]]
 ];

@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.3.2</span>
+   &#160;<span id="projectnumber">4.4.0</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -134,27 +134,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8cf3cc21ea237c5620536cea2750463e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8cf3cc21ea237c5620536cea2750463e">&sect;&nbsp;</a></span>LoRaMacTestSetChannel()</h2>
+<a id="ga191314e00a8a27f426427473ba6821a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga191314e00a8a27f426427473ba6821a7">&sect;&nbsp;</a></span>LoRaMacTestSetMic()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void LoRaMacTestSetChannel </td>
+          <td class="memname">void LoRaMacTestSetMic </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>txPacketCounter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the channel index. </p>
+<p>Enables the MIC field test. </p>
 <p>This is a test function. It shall be used for testing purposes only. Changing this attribute may lead to a non-conformance LoRaMac operation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[IN]</td><td>channel - Channel index </td></tr>
+    <tr><td class="paramname">[IN]</td><td>txPacketCounter - Fixed Tx packet counter value </td></tr>
   </table>
   </dd>
 </dl>
@@ -185,31 +185,31 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="class_a_2_lo_ra_mote_2main_8c-example.html#a42">classA/LoRaMote/main.c</a>, <a class="el" href="class_b_2_lo_ra_mote_2main_8c-example.html#a42">classB/LoRaMote/main.c</a>, and <a class="el" href="class_c_2_lo_ra_mote_2main_8c-example.html#a42">classC/LoRaMote/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="class_a_2_lo_ra_mote_2main_8c-example.html#a42">classA/LoRaMote/main.c</a>, <a class="el" href="class_a_2_mote_i_i_2main_8c-example.html#a50">classA/MoteII/main.c</a>, <a class="el" href="class_a_2_n_a_mote72_2main_8c-example.html#a45">classA/NAMote72/main.c</a>, <a class="el" href="class_a_2_sensor_node_2main_8c-example.html#a42">classA/SensorNode/main.c</a>, <a class="el" href="class_a_2_s_k-i_m880_a_2main_8c-example.html#a42">classA/SK-iM880A/main.c</a>, <a class="el" href="class_b_2_lo_ra_mote_2main_8c-example.html#a42">classB/LoRaMote/main.c</a>, <a class="el" href="class_b_2_mote_i_i_2main_8c-example.html#a50">classB/MoteII/main.c</a>, <a class="el" href="class_b_2_n_a_mote72_2main_8c-example.html#a45">classB/NAMote72/main.c</a>, <a class="el" href="class_b_2_sensor_node_2main_8c-example.html#a42">classB/SensorNode/main.c</a>, <a class="el" href="class_b_2_s_k-i_m880_a_2main_8c-example.html#a42">classB/SK-iM880A/main.c</a>, <a class="el" href="class_c_2_lo_ra_mote_2main_8c-example.html#a42">classC/LoRaMote/main.c</a>, <a class="el" href="class_c_2_mote_i_i_2main_8c-example.html#a50">classC/MoteII/main.c</a>, <a class="el" href="class_c_2_n_a_mote72_2main_8c-example.html#a45">classC/NAMote72/main.c</a>, <a class="el" href="class_c_2_sensor_node_2main_8c-example.html#a42">classC/SensorNode/main.c</a>, and <a class="el" href="class_c_2_s_k-i_m880_a_2main_8c-example.html#a42">classC/SK-iM880A/main.c</a>.</dd>
 </dl>
 </div>
 </div>
-<a id="ga191314e00a8a27f426427473ba6821a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga191314e00a8a27f426427473ba6821a7">&sect;&nbsp;</a></span>LoRaMacTestSetMic()</h2>
+<a id="ga8cf3cc21ea237c5620536cea2750463e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8cf3cc21ea237c5620536cea2750463e">&sect;&nbsp;</a></span>LoRaMacTestSetChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void LoRaMacTestSetMic </td>
+          <td class="memname">void LoRaMacTestSetChannel </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>txPacketCounter</em></td><td>)</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enables the MIC field test. </p>
+<p>Sets the channel index. </p>
 <p>This is a test function. It shall be used for testing purposes only. Changing this attribute may lead to a non-conformance LoRaMac operation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[IN]</td><td>txPacketCounter - Fixed Tx packet counter value </td></tr>
+    <tr><td class="paramname">[IN]</td><td>channel - Channel index </td></tr>
   </table>
   </dd>
 </dl>
@@ -221,7 +221,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 19 2017 17:36:19 for LoRaMAC by
+    <li class="footer">Generated on Fri Sep 8 2017 16:02:31 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

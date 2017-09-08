@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.3.2</span>
+   &#160;<span id="projectnumber">4.4.0</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -94,15 +94,7 @@ $(document).ready(function(){initNavTree('_lo_ra_mac_8h.html','');});
 
 <p>LoRa MAC layer implementation.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;LoRaMac-definitions.h&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for LoRaMac.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="_lo_ra_mac_8h__incl.png" border="0" usemap="#_lo_ra_mac_8h" alt=""/></div>
-<map name="_lo_ra_mac_8h" id="_lo_ra_mac_8h">
-</map>
-</div>
-</div>
+
 <p><a href="_lo_ra_mac_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -170,40 +162,18 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga2c65c03faf418256fb036207a5c08556"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga2c65c03faf418256fb036207a5c08556">BEACON_INTERVAL</a>&#160;&#160;&#160;128000</td></tr>
-<tr class="separator:ga2c65c03faf418256fb036207a5c08556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38a6aa665edb8d5210593a785b6048a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga38a6aa665edb8d5210593a785b6048a3">RECEIVE_DELAY1</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:ga38a6aa665edb8d5210593a785b6048a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f4d33cce7cfdbee881d1e35bd6ecb27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga1f4d33cce7cfdbee881d1e35bd6ecb27">RECEIVE_DELAY2</a>&#160;&#160;&#160;2000</td></tr>
-<tr class="separator:ga1f4d33cce7cfdbee881d1e35bd6ecb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga498f0dd9841195fdec065cae36d47661"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga498f0dd9841195fdec065cae36d47661">JOIN_ACCEPT_DELAY1</a>&#160;&#160;&#160;5000</td></tr>
-<tr class="separator:ga498f0dd9841195fdec065cae36d47661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac75cacf2c3160f32e54dfbc16808774f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#gac75cacf2c3160f32e54dfbc16808774f">JOIN_ACCEPT_DELAY2</a>&#160;&#160;&#160;6000</td></tr>
-<tr class="separator:gac75cacf2c3160f32e54dfbc16808774f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga966d20aaad34573ae3b8b4b894cdd22c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga966d20aaad34573ae3b8b4b894cdd22c">MAX_RX_WINDOW</a>&#160;&#160;&#160;3000</td></tr>
-<tr class="separator:ga966d20aaad34573ae3b8b4b894cdd22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9544edafb6bc8c57081c953d5aff05a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga9544edafb6bc8c57081c953d5aff05a1">MAX_FCNT_GAP</a>&#160;&#160;&#160;16384</td></tr>
-<tr class="separator:ga9544edafb6bc8c57081c953d5aff05a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ab137a4de3c353a59ccf24a5cfed171"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga2ab137a4de3c353a59ccf24a5cfed171">ADR_ACK_LIMIT</a>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:ga2ab137a4de3c353a59ccf24a5cfed171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5bb164f83a129fc35b5b5bb6f75f5b73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga5bb164f83a129fc35b5b5bb6f75f5b73">ADR_ACK_DELAY</a>&#160;&#160;&#160;32</td></tr>
-<tr class="separator:ga5bb164f83a129fc35b5b5bb6f75f5b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e53751a27267574b92f23d01951a259"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga5e53751a27267574b92f23d01951a259">ACK_TIMEOUT</a>&#160;&#160;&#160;2000</td></tr>
-<tr class="separator:ga5e53751a27267574b92f23d01951a259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4146b8c49f7f06080d38c64ccd2ffab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#gab4146b8c49f7f06080d38c64ccd2ffab">ACK_TIMEOUT_RND</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:gab4146b8c49f7f06080d38c64ccd2ffab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3468d8935b09a7191e43fecdd9a15c67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga3468d8935b09a7191e43fecdd9a15c67">MAC_STATE_CHECK_TIMEOUT</a>&#160;&#160;&#160;1000</td></tr>
 <tr class="separator:ga3468d8935b09a7191e43fecdd9a15c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47bc6aeb5be0ba39387e2049e342fa7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga47bc6aeb5be0ba39387e2049e342fa7e">MAX_ACK_RETRIES</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:ga47bc6aeb5be0ba39387e2049e342fa7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab4550e7c71395f61b2c98fcb85bb29b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#gaab4550e7c71395f61b2c98fcb85bb29b">RSSI_FREE_TH</a>&#160;&#160;&#160;( int8_t )( -90 )</td></tr>
-<tr class="separator:gaab4550e7c71395f61b2c98fcb85bb29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e75f3071d6911b19a563d554038f8da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga7e75f3071d6911b19a563d554038f8da">UP_LINK</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga7e75f3071d6911b19a563d554038f8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga801525db3ba12b250029f026403524b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga801525db3ba12b250029f026403524b7">DOWN_LINK</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga801525db3ba12b250029f026403524b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1727f288e9a871f1474ce61f942a08f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga1727f288e9a871f1474ce61f942a08f3">LORAMAC_MFR_LEN</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:ga1727f288e9a871f1474ce61f942a08f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9623296c345a3636f460ecdb8b1bbd9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga9623296c345a3636f460ecdb8b1bbd9d">LORA_MAC_FRMPAYLOAD_OVERHEAD</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:ga9623296c345a3636f460ecdb8b1bbd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -233,7 +203,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga26a00d3cd56eeef4e681e5a0dcf382c2ae3d02a70f26e3f3daf8a84408e962425">MOTE_MAC_DEV_STATUS_ANS</a> = 0x06, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga26a00d3cd56eeef4e681e5a0dcf382c2a83cdaea222c3968f69fe1c23c29a4385">MOTE_MAC_NEW_CHANNEL_ANS</a> = 0x07, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga26a00d3cd56eeef4e681e5a0dcf382c2abd4c19102721cfb18b76136732ac2de8">MOTE_MAC_RX_TIMING_SETUP_ANS</a> = 0x08
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga26a00d3cd56eeef4e681e5a0dcf382c2abd4c19102721cfb18b76136732ac2de8">MOTE_MAC_RX_TIMING_SETUP_ANS</a> = 0x08, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga26a00d3cd56eeef4e681e5a0dcf382c2a462cebd0ba7165044eeabf44c00b1f4c">MOTE_MAC_TX_PARAM_SETUP_ANS</a> = 0x09, 
+<br />
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga26a00d3cd56eeef4e681e5a0dcf382c2a6dfc8ca9222ce73c834a0907992cce13">MOTE_MAC_DL_CHANNEL_ANS</a> = 0x0A
 <br />
  }</td></tr>
 <tr class="separator:ga26a00d3cd56eeef4e681e5a0dcf382c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +218,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4f91028194f81a04f72e33f2fdda2052ac98ae516df5419b24285a74da2d58d7f">SRV_MAC_DEV_STATUS_REQ</a> = 0x06, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4f91028194f81a04f72e33f2fdda2052a34e94bc23cacf1ab088ae1010e55efeb">SRV_MAC_NEW_CHANNEL_REQ</a> = 0x07, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga4f91028194f81a04f72e33f2fdda2052aa24b1505ef48247c1d2a3d486d603686">SRV_MAC_RX_TIMING_SETUP_REQ</a> = 0x08
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga4f91028194f81a04f72e33f2fdda2052aa24b1505ef48247c1d2a3d486d603686">SRV_MAC_RX_TIMING_SETUP_REQ</a> = 0x08, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga4f91028194f81a04f72e33f2fdda2052a6b15b371027770899224e613bbe162a8">SRV_MAC_TX_PARAM_SETUP_REQ</a> = 0x09, 
+<br />
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4f91028194f81a04f72e33f2fdda2052ae3385a6aa575b3ac756c362dbbc8c39f">SRV_MAC_DL_CHANNEL_REQ</a> = 0x0A
 <br />
  }</td></tr>
 <tr class="separator:ga4f91028194f81a04f72e33f2fdda2052"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,17 +235,19 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aa5e3d1c382c8473a1095b56067aea3f4">LORAMAC_EVENT_INFO_STATUS_OK</a> = 0, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a613ed77c0e8416a512224fffdbfdf6c1">LORAMAC_EVENT_INFO_STATUS_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a0c2eb197e4102e139b43c01e806fa538">LORAMAC_EVENT_INFO_STATUS_TX_TIMEOUT</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a743858a21ae7cb162abc9acaa62cd4df">LORAMAC_EVENT_INFO_STATUS_RX2_TIMEOUT</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260ab79a8aa20783ae5825ab8488d66a77cc">LORAMAC_EVENT_INFO_STATUS_RX1_TIMEOUT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a7bea16ca3ce17932dd5ee3558fdd0ed1">LORAMAC_EVENT_INFO_STATUS_RX1_ERROR</a>, 
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a743858a21ae7cb162abc9acaa62cd4df">LORAMAC_EVENT_INFO_STATUS_RX2_TIMEOUT</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a7bea16ca3ce17932dd5ee3558fdd0ed1">LORAMAC_EVENT_INFO_STATUS_RX1_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260afe9be38729233485ea6edd190eaa8716">LORAMAC_EVENT_INFO_STATUS_RX2_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af42941643347e10f0e5a01c324bf6170">LORAMAC_EVENT_INFO_STATUS_JOIN_FAIL</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aaae47a8316ae996d506323e0e6613b9b">LORAMAC_EVENT_INFO_STATUS_DOWNLINK_REPEATED</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a6e7b21fbf0358f3438f2de0fc3fdd866">LORAMAC_EVENT_INFO_STATUS_TX_DR_PAYLOAD_SIZE_ERROR</a>, 
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260aaae47a8316ae996d506323e0e6613b9b">LORAMAC_EVENT_INFO_STATUS_DOWNLINK_REPEATED</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a6e7b21fbf0358f3438f2de0fc3fdd866">LORAMAC_EVENT_INFO_STATUS_TX_DR_PAYLOAD_SIZE_ERROR</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a4a75f7744209239bb80e6af142d0249d">LORAMAC_EVENT_INFO_STATUS_DOWNLINK_TOO_MANY_FRAMES_LOSS</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260af141bb217ba31a2dc7d3cc128a13de10">LORAMAC_EVENT_INFO_STATUS_ADDRESS_FAIL</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a43bdb9277722c567c81539fd175a7a63">LORAMAC_EVENT_INFO_STATUS_MIC_FAIL</a>
+<br />
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga4fa00aa27e8cba6a5634574517cb1260a43bdb9277722c567c81539fd175a7a63">LORAMAC_EVENT_INFO_STATUS_MIC_FAIL</a>
 <br />
  }</td></tr>
 <tr class="separator:ga4fa00aa27e8cba6a5634574517cb1260"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,7 +301,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaf8ac424460fccb3115c6fe6ccb450862">MIB_MULTICAST_CHANNEL</a>, 
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead5d382841f32fba944bdb68b25699e45">MIB_SYSTEM_MAX_RX_ERROR</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea82fb27fd6414d2bde20a7a00c80e26a1">MIB_MIN_RX_SYMBOLS</a>
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea82fb27fd6414d2bde20a7a00c80e26a1">MIB_MIN_RX_SYMBOLS</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea268b2f7da53dbc25655a7bdcc7e6128e">MIB_ANTENNA_GAIN</a>
 <br />
  }</td></tr>
 <tr class="separator:ga64429ce77a29145f6a7508df5eaa2d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,17 +318,33 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae">LORAMAC_STATUS_NO_NETWORK_JOINED</a>, 
 <br />
 &#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a4ab40311dcd2eeffc77f573a919b29b1">LORAMAC_STATUS_LENGTH_ERROR</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9ab3ceb202ec195d18edb07c4633f21816">LORAMAC_STATUS_MAC_CMD_LENGTH_ERROR</a>, 
-<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff1d3a91250809d1770a74776057b8ce">LORAMAC_STATUS_DEVICE_OFF</a>
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff1d3a91250809d1770a74776057b8ce">LORAMAC_STATUS_DEVICE_OFF</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9af424839424174be5fc5e52e00160940e">LORAMAC_STATUS_REGION_NOT_SUPPORTED</a>
 <br />
  }</td></tr>
 <tr class="separator:ga363b63a6d24ca4827c81898ebb1887e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b9d54f0355b51e85df8b33fd1757eec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec">LoRaMacRegion_t</a> { <br />
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eeca5b791cd5d892cd4ffdc891177f9c424f">LORAMAC_REGION_AS923</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eeca31c5134a31ba71dd67fffc7cd2e8d402">LORAMAC_REGION_AU915</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eeca8bf5c395dec14c8c24bc629e9cb4ab64">LORAMAC_REGION_CN470</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eecaa462c6a59045bcdbe27177b3c7d91ed0">LORAMAC_REGION_CN779</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eeca484c9c5522a1bd8411920cc7703d3977">LORAMAC_REGION_EU433</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eecadbfed23153fb6254b9ca2301ec19c24f">LORAMAC_REGION_EU868</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eeca2f45370a935e8767a90e19e24101f859">LORAMAC_REGION_KR920</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eeca58507c2e7248ab724cd3e0d0144ebd77">LORAMAC_REGION_IN865</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eecab2c106945b06878a5ded0cb466330412">LORAMAC_REGION_US915</a>, 
+<a class="el" href="group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eeca973a53fba592cda6ade4592cf7b814b0">LORAMAC_REGION_US915_HYBRID</a>
+<br />
+ }</td></tr>
+<tr class="separator:ga3b9d54f0355b51e85df8b33fd1757eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaaf9fc660650a5e992c42aee9de29a3c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9">LoRaMacStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#gaaf9fc660650a5e992c42aee9de29a3c1">LoRaMacInitialization</a> (<a class="el" href="struct_lo_ra_mac_primitives__t.html">LoRaMacPrimitives_t</a> *primitives, <a class="el" href="struct_lo_ra_mac_callback__t.html">LoRaMacCallback_t</a> *callbacks)</td></tr>
-<tr class="memdesc:gaaf9fc660650a5e992c42aee9de29a3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoRaMAC layer initialization.  <a href="group___l_o_r_a_m_a_c.html#gaaf9fc660650a5e992c42aee9de29a3c1">More...</a><br /></td></tr>
-<tr class="separator:gaaf9fc660650a5e992c42aee9de29a3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ca445cf825e45999810b3991273eba5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9">LoRaMacStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga7ca445cf825e45999810b3991273eba5">LoRaMacInitialization</a> (<a class="el" href="struct_lo_ra_mac_primitives__t.html">LoRaMacPrimitives_t</a> *primitives, <a class="el" href="struct_lo_ra_mac_callback__t.html">LoRaMacCallback_t</a> *callbacks, <a class="el" href="group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec">LoRaMacRegion_t</a> region)</td></tr>
+<tr class="memdesc:ga7ca445cf825e45999810b3991273eba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoRaMAC layer initialization.  <a href="group___l_o_r_a_m_a_c.html#ga7ca445cf825e45999810b3991273eba5">More...</a><br /></td></tr>
+<tr class="separator:ga7ca445cf825e45999810b3991273eba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8b0aeaf75f9404ce01da9b202252c231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9">LoRaMacStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c.html#ga8b0aeaf75f9404ce01da9b202252c231">LoRaMacQueryTxPossible</a> (uint8_t size, <a class="el" href="group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_tx_info__t">LoRaMacTxInfo_t</a> *txInfo)</td></tr>
 <tr class="memdesc:ga8b0aeaf75f9404ce01da9b202252c231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the LoRaMAC if it is possible to send the next frame with a given payload size. The LoRaMAC takes scheduled MAC commands into account and reports, when the frame can be send or not.  <a href="group___l_o_r_a_m_a_c.html#ga8b0aeaf75f9404ce01da9b202252c231">More...</a><br /></td></tr>
 <tr class="separator:ga8b0aeaf75f9404ce01da9b202252c231"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -385,7 +380,7 @@ Functions</h2></td></tr>
 <dd>
 Gregory Cristian ( Semtech )</dd>
 <dd>
-Daniel Jäckle ( STACKFORCE ) </dd></dl>
+Daniel Jaeckle ( STACKFORCE ) </dd></dl>
 </div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="struct_dr_range__t_1_1s_fields" id="struct_dr_range__t_1_1s_fields"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#struct_dr_range__t_1_1s_fields">&sect;&nbsp;</a></span>DrRange_t::sFields</h2>
@@ -402,22 +397,22 @@ Daniel Jäckle ( STACKFORCE ) </dd></dl>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="a5d03c6d792ca60d11ffc7e7a2cb59dd0"></a>int8_t</td>
-<td class="fieldname">
-Max: 4</td>
-<td class="fielddoc">
-<p>Maximum data rate</p>
-<p>EU868 - [DR_0, DR_1, DR_2, DR_3, DR_4, DR_5, DR_6, DR_7]</p>
-<p>US915 - [DR_0, DR_1, DR_2, DR_3, DR_4] </p>
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ad870086364c5eb410eec40e1025e3203"></a>int8_t</td>
 <td class="fieldname">
 Min: 4</td>
 <td class="fielddoc">
 <p>Minimum data rate</p>
-<p>EU868 - [DR_0, DR_1, DR_2, DR_3, DR_4, DR_5, DR_6, DR_7]</p>
-<p>US915 - [DR_0, DR_1, DR_2, DR_3, DR_4] </p>
+<p>LoRaWAN Regional Parameters V1.0.2rB</p>
+<p>The allowed ranges are region specific. Please refer to <a class="el" href="group___r_e_g_i_o_n.html#ga6c4ef966b4f3d5eb7597b087f2b97095">DR_0</a> to <a class="el" href="group___r_e_g_i_o_n.html#gac6e078f51b71f05093daf27834997396">DR_15</a> for details. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5d03c6d792ca60d11ffc7e7a2cb59dd0"></a>int8_t</td>
+<td class="fieldname">
+Max: 4</td>
+<td class="fielddoc">
+<p>Maximum data rate</p>
+<p>LoRaWAN Regional Parameters V1.0.2rB</p>
+<p>The allowed ranges are region specific. Please refer to <a class="el" href="group___r_e_g_i_o_n.html#ga6c4ef966b4f3d5eb7597b087f2b97095">DR_0</a> to <a class="el" href="group___r_e_g_i_o_n.html#gac6e078f51b71f05093daf27834997396">DR_15</a> for details. </p>
 </td></tr>
 </table>
 
@@ -445,18 +440,18 @@ Major: 2</td>
 <p>Major version </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a1b16521f6356e21b690406a9aa7ce147"></a>uint8_t</td>
-<td class="fieldname">
-MType: 3</td>
-<td class="fielddoc">
-<p>Message type </p>
-</td></tr>
-<tr><td class="fieldtype">
 <a id="a1edefc7ee6540e182ed8705e51c90045"></a>uint8_t</td>
 <td class="fieldname">
 RFU: 3</td>
 <td class="fielddoc">
 <p>RFU </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1b16521f6356e21b690406a9aa7ce147"></a>uint8_t</td>
+<td class="fieldname">
+MType: 3</td>
+<td class="fielddoc">
+<p>Message type </p>
 </td></tr>
 </table>
 
@@ -477,27 +472,6 @@ RFU: 3</td>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="a7a652a0a459bea0bd46edc2b83c3eacc"></a>uint8_t</td>
-<td class="fieldname">
-Ack: 1</td>
-<td class="fielddoc">
-<p>Message acknowledge bit </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="af5bcc6a131748c79430a7ce1198e0d7f"></a>uint8_t</td>
-<td class="fieldname">
-Adr: 1</td>
-<td class="fielddoc">
-<p>ADR control in frame header </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ae07af36cd9769b8a153f393715d7eaa7"></a>uint8_t</td>
-<td class="fieldname">
-AdrAckReq: 1</td>
-<td class="fielddoc">
-<p>ADR acknowledgment request bit </p>
-</td></tr>
-<tr><td class="fieldtype">
 <a id="aca65acebde222837502f6cf8e2aeeac8"></a>uint8_t</td>
 <td class="fieldname">
 FOptsLen: 4</td>
@@ -510,6 +484,27 @@ FOptsLen: 4</td>
 FPending: 1</td>
 <td class="fielddoc">
 <p>Frame pending bit </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7a652a0a459bea0bd46edc2b83c3eacc"></a>uint8_t</td>
+<td class="fieldname">
+Ack: 1</td>
+<td class="fielddoc">
+<p>Message acknowledge bit </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae07af36cd9769b8a153f393715d7eaa7"></a>uint8_t</td>
+<td class="fieldname">
+AdrAckReq: 1</td>
+<td class="fielddoc">
+<p>ADR acknowledgment request bit </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af5bcc6a131748c79430a7ce1198e0d7f"></a>uint8_t</td>
+<td class="fieldname">
+Adr: 1</td>
+<td class="fielddoc">
+<p>ADR control in frame header </p>
 </td></tr>
 </table>
 
@@ -530,11 +525,11 @@ FPending: 1</td>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="a8b4a19cca2ba529046ea88bb13305407"></a>uint8_t</td>
+<a id="adee8f234933a066317a08431f5db61b0"></a>uint8_t</td>
 <td class="fieldname">
-MacDone: 1</td>
+McpsReq: 1</td>
 <td class="fielddoc">
-<p>MAC cycle done </p>
+<p>MCPS-Req pending </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a81d24e4d487adef6c6d4f4ca0963319e"></a>uint8_t</td>
@@ -551,18 +546,18 @@ McpsIndSkip: 1</td>
 <p>MCPS-Ind pending. Skip indication to the application layer </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="adee8f234933a066317a08431f5db61b0"></a>uint8_t</td>
-<td class="fieldname">
-McpsReq: 1</td>
-<td class="fielddoc">
-<p>MCPS-Req pending </p>
-</td></tr>
-<tr><td class="fieldtype">
 <a id="a3743e193dca88e3913e44e993a209ebf"></a>uint8_t</td>
 <td class="fieldname">
 MlmeReq: 1</td>
 <td class="fielddoc">
 <p>MLME-Req pending </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8b4a19cca2ba529046ea88bb13305407"></a>uint8_t</td>
+<td class="fieldname">
+MacDone: 1</td>
+<td class="fielddoc">
+<p>MAC cycle done </p>
 </td></tr>
 </table>
 
@@ -583,6 +578,13 @@ MlmeReq: 1</td>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="a490d6060b7d5f999539375d160304e9c"></a><a class="el" href="group___l_o_r_a_m_a_c.html#struct_mcps_req_unconfirmed__t">McpsReqUnconfirmed_t</a></td>
+<td class="fieldname">
+Unconfirmed</td>
+<td class="fielddoc">
+<p>MCPS-Request parameters for an unconfirmed frame </p>
+</td></tr>
+<tr><td class="fieldtype">
 <a id="aa6b3511826dee52ed1b057c1762f4afa"></a><a class="el" href="group___l_o_r_a_m_a_c.html#struct_mcps_req_confirmed__t">McpsReqConfirmed_t</a></td>
 <td class="fieldname">
 Confirmed</td>
@@ -595,13 +597,6 @@ Confirmed</td>
 Proprietary</td>
 <td class="fielddoc">
 <p>MCPS-Request parameters for a proprietary frame </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a490d6060b7d5f999539375d160304e9c"></a><a class="el" href="group___l_o_r_a_m_a_c.html#struct_mcps_req_unconfirmed__t">McpsReqUnconfirmed_t</a></td>
-<td class="fieldname">
-Unconfirmed</td>
-<td class="fielddoc">
-<p>MCPS-Request parameters for an unconfirmed frame </p>
 </td></tr>
 </table>
 
@@ -645,7 +640,7 @@ TxCw</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_effec920ede41fb96e7864e805338585.html">loramac-node</a></li><li class="navelem"><a class="el" href="dir_4a88cfc83a69fddb7155b83fca49a6bc.html">src</a></li><li class="navelem"><a class="el" href="dir_99e362b2a8ddfd673935ba51ee0c0761.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_8h.html">LoRaMac.h</a></li>
-    <li class="footer">Generated on Wed Apr 19 2017 17:36:19 for LoRaMAC by
+    <li class="footer">Generated on Fri Sep 8 2017 16:02:30 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

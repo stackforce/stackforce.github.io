@@ -3,7 +3,7 @@ var searchData=
   ['loramacchanneladd',['LoRaMacChannelAdd',['../group___l_o_r_a_m_a_c.html#gad74920538f07f34e773ca5de9ec89370',1,'LoRaMac.h']]],
   ['loramacchannelremove',['LoRaMacChannelRemove',['../group___l_o_r_a_m_a_c.html#gafad6c929a33557ac2fd4000bcacd9453',1,'LoRaMac.h']]],
   ['loramaccomputemic',['LoRaMacComputeMic',['../group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga6ee265070494b83255e7fdc4dff985da',1,'LoRaMacCrypto.h']]],
-  ['loramacinitialization',['LoRaMacInitialization',['../group___l_o_r_a_m_a_c.html#gaaf9fc660650a5e992c42aee9de29a3c1',1,'LoRaMac.h']]],
+  ['loramacinitialization',['LoRaMacInitialization',['../group___l_o_r_a_m_a_c.html#ga7ca445cf825e45999810b3991273eba5',1,'LoRaMac.h']]],
   ['loramacjoincomputemic',['LoRaMacJoinComputeMic',['../group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac9216af326316c9e7f207d4e73aed199',1,'LoRaMacCrypto.h']]],
   ['loramacjoincomputeskeys',['LoRaMacJoinComputeSKeys',['../group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gad6fc2ace27fa388ec860fc2e5ae1f544',1,'LoRaMacCrypto.h']]],
   ['loramacjoindecrypt',['LoRaMacJoinDecrypt',['../group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac2379cd7cbeb6febaa2a7be5d9f04b5c',1,'LoRaMacCrypto.h']]],
