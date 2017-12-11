@@ -7,7 +7,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "opend_audio_api.h", "opend__audio__api_8h.html", "opend__audio__api_8h" ],
     [ "opend_call.c", "opend__call_8c.html", "opend__call_8c" ],
     [ "opend_call_api.h", "opend__call__api_8h.html", "opend__call__api_8h" ],
-    [ "opend_dataTypes.h", "opend__data_types_8h.html", "opend__data_types_8h" ],
+    [ "opend_dataTypes.h", "opend__dataTypes_8h.html", "opend__dataTypes_8h" ],
     [ "opend_hanfun.c", "opend__hanfun_8c.html", "opend__hanfun_8c" ],
     [ "opend_hanfun_api.h", "opend__hanfun__api_8h.html", "opend__hanfun__api_8h" ],
     [ "opend_mgmt.c", "opend__mgmt_8c.html", "opend__mgmt_8c" ],

@@ -8,23 +8,23 @@ var NAVTREE =
       [ "Further Information", "index.html#FURTHER_INFORMATION", null ],
       [ "License", "index.html#LICENSE", null ]
     ] ],
-    [ "Framework architecture", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html", [
-      [ "General overview", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#OVERVIEW", null ],
-      [ "Primitive architecture", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#PRIMITIVE_ARCHITECTURE", [
-        [ "Introduction", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#PRIMITIVE_ARCHITECTURE_INTRO", null ],
-        [ "Request and Confirm", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#PRIMITIVE_ARCHITECTURE_REQ_CONF", null ],
-        [ "Indication and Response", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#PRIMITIVE_ARCHITECTURE_IND_RESP", null ]
+    [ "Framework architecture", "FRAMEWORK_ARCH.html", [
+      [ "General overview", "FRAMEWORK_ARCH.html#OVERVIEW", null ],
+      [ "Primitive architecture", "FRAMEWORK_ARCH.html#PRIMITIVE_ARCHITECTURE", [
+        [ "Introduction", "FRAMEWORK_ARCH.html#PRIMITIVE_ARCHITECTURE_INTRO", null ],
+        [ "Request and Confirm", "FRAMEWORK_ARCH.html#PRIMITIVE_ARCHITECTURE_REQ_CONF", null ],
+        [ "Indication and Response", "FRAMEWORK_ARCH.html#PRIMITIVE_ARCHITECTURE_IND_RESP", null ]
       ] ],
-      [ "Unified API", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#UNIFIED_API", [
-        [ "Definition", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#UNIFIED_API_DEFINITION", null ],
-        [ "HAN FUN Library", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#UNIFIED_API_HAN_FUN", null ],
-        [ "Portable part", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#UNIFIED_API_PP", null ],
-        [ "Fixed part", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#UNIFIED_API_FP", null ],
-        [ "File references", "_f_r_a_m_e_w_o_r_k__a_r_c_h.html#UNIFIED_API_FILE_REF", null ]
+      [ "Unified API", "FRAMEWORK_ARCH.html#UNIFIED_API", [
+        [ "Definition", "FRAMEWORK_ARCH.html#UNIFIED_API_DEFINITION", null ],
+        [ "HAN FUN Library", "FRAMEWORK_ARCH.html#UNIFIED_API_HAN_FUN", null ],
+        [ "Portable part", "FRAMEWORK_ARCH.html#UNIFIED_API_PP", null ],
+        [ "Fixed part", "FRAMEWORK_ARCH.html#UNIFIED_API_FP", null ],
+        [ "File references", "FRAMEWORK_ARCH.html#UNIFIED_API_FILE_REF", null ]
       ] ]
     ] ],
-    [ "Protocol", "_p_r_o_t_o_c_o_l.html", [
-      [ "Abstract", "_p_r_o_t_o_c_o_l.html#PROTOCOL_ABSTRACT", null ]
+    [ "Protocol", "PROTOCOL.html", [
+      [ "Abstract", "PROTOCOL.html#PROTOCOL_ABSTRACT", null ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
@@ -51,9 +51,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_f_r_a_m_e_w_o_r_k__a_r_c_h.html",
-"group___o_p_e_n_d___h_a_n_f_u_n___a_p_i.html#ga77ff233743e9b6f10e07c59b3b29a8e5",
-"group___o_p_e_n_d___m_g_m_t___a_p_i.html#ga682a77c01aaa0b2283a54f2827443e66"
+"FRAMEWORK_ARCH.html",
+"group__OPEND__HANFUN__API.html#ga77ff233743e9b6f10e07c59b3b29a8e5",
+"group__OPEND__MGMT__API.html#ga682a77c01aaa0b2283a54f2827443e66"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
