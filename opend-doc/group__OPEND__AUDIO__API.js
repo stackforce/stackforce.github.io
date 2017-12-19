@@ -10,34 +10,34 @@ var group__OPEND__AUDIO__API =
     ] ],
     [ "openD_audioApiReq", "group__OPEND__AUDIO__API.html#structopenD__audioApiReq", [
       [ "param", "group__OPEND__AUDIO__API.html#a150f2c72a102f2248d889ecb80035d73", null ],
-      [ "type", "group__OPEND__AUDIO__API.html#a265fe529954e8aa4b6687b149e829ecf", null ]
+      [ "service", "group__OPEND__AUDIO__API.html#a2087f24871f1401b2aee335df313802d", null ]
     ] ],
     [ "openD_audioApiReq.param", "group__OPEND__AUDIO__API.html#unionopenD__audioApiReq_8param", [
       [ "mute", "group__OPEND__AUDIO__API.html#adef9cbe59ce34853e7081f62b095e348", null ],
       [ "volume", "group__OPEND__AUDIO__API.html#a210ab9e731c9c36c2c38db15c28a8d1c", null ]
     ] ],
-    [ "openD_audioApiConfirm", "group__OPEND__AUDIO__API.html#structopenD__audioApiConfirm", [
-      [ "status", "group__OPEND__AUDIO__API.html#a3ff9893e13e4e6bccd504282b9735cf1", null ],
-      [ "type", "group__OPEND__AUDIO__API.html#ae1b20c09906013f3eb778997d66f2941", null ]
+    [ "openD_audioApiCfm", "group__OPEND__AUDIO__API.html#structopenD__audioApiCfm", [
+      [ "service", "group__OPEND__AUDIO__API.html#a1aceae79650195eb74bdaa3d60b94748", null ],
+      [ "status", "group__OPEND__AUDIO__API.html#a61ef67a8ac284edafbd2f49f9ac97cca", null ]
     ] ],
-    [ "openD_audioApiIndication", "group__OPEND__AUDIO__API.html#structopenD__audioApiIndication", [
-      [ "type", "group__OPEND__AUDIO__API.html#a085b59bd911edfc00b77b1ad2980a6bb", null ]
+    [ "openD_audioApiInd", "group__OPEND__AUDIO__API.html#structopenD__audioApiInd", [
+      [ "service", "group__OPEND__AUDIO__API.html#a2b2ee739d2f144346af92733da27dc8a", null ]
     ] ],
     [ "openD_audioApiPrimitives", "structopenD__audioApiPrimitives.html", [
-      [ "openD_audioApiConfirm", "structopenD__audioApiPrimitives.html#a491ceeacca6449b6e8722713ed69f038", null ],
-      [ "openD_audioApiIndication", "structopenD__audioApiPrimitives.html#ae11a249da00849568a671c2f4934d57d", null ]
+      [ "openD_audioApiCfm", "structopenD__audioApiPrimitives.html#a9c4010c017152edff1ec30bb2cbea8b7", null ],
+      [ "openD_audioApiInd", "structopenD__audioApiPrimitives.html#acdb7a62ed6f4f2f60143d43fe9aa3442", null ]
     ] ],
     [ "__OPEND_AUDIO_API_H__", "group__OPEND__AUDIO__API.html#gaa8d60b7f22ea618020a9817908b6f90a", null ],
     [ "audioApiReq_mute_t", "group__OPEND__AUDIO__API.html#gaabfae77fe21105524fc7fa40a81a0b8a", null ],
     [ "audioApiReq_volume_t", "group__OPEND__AUDIO__API.html#ga70dd25d1165b4ea0af5b6a313313213f", null ],
-    [ "openD_audioApiConfirm_t", "group__OPEND__AUDIO__API.html#ga86fbc7e25d64fefd75829bda7d807963", null ],
-    [ "openD_audioApiIndication_t", "group__OPEND__AUDIO__API.html#ga167f2a605e76b68714a2d2fae36918bd", null ],
+    [ "openD_audioApi_service_t", "group__OPEND__AUDIO__API.html#ga3472c34c91ac924e9020bb7bda0dd49b", null ],
+    [ "openD_audioApiCfm_t", "group__OPEND__AUDIO__API.html#ga6c81f1942f5c248cffb61d164d1ac4e3", null ],
+    [ "openD_audioApiInd_t", "group__OPEND__AUDIO__API.html#ga6153683372507efcac5e567506bc3bed", null ],
     [ "openD_audioApiPrimitives_t", "group__OPEND__AUDIO__API.html#ga56325ed55820458232da1d7357959b7f", null ],
     [ "openD_audioApiReq_t", "group__OPEND__AUDIO__API.html#ga6db1ac05efac6144bfd30721416bda90", null ],
-    [ "openD_audioApiServices_t", "group__OPEND__AUDIO__API.html#gaa75ea13d38e0d3023702e7a8e50c6f1f", null ],
-    [ "openD_audioApi", "group__OPEND__AUDIO__API.html#ga9044eeb76b83c6ed72f58a2d55f45ac3", [
-      [ "AUDIOAPI_MUTE", "group__OPEND__AUDIO__API.html#gga9044eeb76b83c6ed72f58a2d55f45ac3a2cc456def2c64887a5e921be20714409", null ],
-      [ "AUDIOAPI_VOLUME", "group__OPEND__AUDIO__API.html#gga9044eeb76b83c6ed72f58a2d55f45ac3a68db97c24c86247c2e3f9a127e49c7c8", null ]
+    [ "openD_audioApi_service", "group__OPEND__AUDIO__API.html#ga9c07f5a0a01198f613f4eaf5f3d97514", [
+      [ "OPEND_AUDIOAPI_MUTE", "group__OPEND__AUDIO__API.html#gga9c07f5a0a01198f613f4eaf5f3d97514a2c6214fa482506c8bc9e409ed4a3ea12", null ],
+      [ "OPEND_AUDIOAPI_VOLUME", "group__OPEND__AUDIO__API.html#gga9c07f5a0a01198f613f4eaf5f3d97514a70a3a83a6892d6f33ed3d7f01066075b", null ]
     ] ],
     [ "openD_audioApi_init", "group__OPEND__AUDIO__API.html#ga29b8f67196a01469a465932b25cc0b0a", null ],
     [ "openD_audioApi_request", "group__OPEND__AUDIO__API.html#ga558b8221536ca8df6533cd476918610c", null ]

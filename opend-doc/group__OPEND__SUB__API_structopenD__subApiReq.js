@@ -1,5 +1,5 @@
 var group__OPEND__SUB__API_structopenD__subApiReq =
 [
-    [ "param", "group__OPEND__SUB__API.html#a54d7f1fd35858dec3903003e598f5874", null ],
-    [ "type", "group__OPEND__SUB__API.html#a26cb78a902e84f03255726ace82912e4", null ]
+    [ "param", "group__OPEND__SUB__API.html#ab887a8065218c2095d41f9cb6beb5cf0", null ],
+    [ "service", "group__OPEND__SUB__API.html#adbd35d3edaa1d32eff62f5f44af784a7", null ]
 ];

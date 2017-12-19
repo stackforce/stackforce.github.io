@@ -1,5 +1,5 @@
 var structopenD__mgmtApiPrimitives =
 [
-    [ "openD_mgmtApiConfirm", "structopenD__mgmtApiPrimitives.html#ac2da024aa5130c55fef311af4ca5b292", null ],
-    [ "openD_mgmtApiIndication", "structopenD__mgmtApiPrimitives.html#ab54fddcb5b6c9535646ff1bd6a6eb328", null ]
+    [ "openD_mgmtApiCfm", "structopenD__mgmtApiPrimitives.html#a9d4ad761c0cc7ca18f3f73e1dc4e1682", null ],
+    [ "openD_mgmtApiInd", "structopenD__mgmtApiPrimitives.html#abb2ecc6946a47a421d19756802130664", null ]
 ];

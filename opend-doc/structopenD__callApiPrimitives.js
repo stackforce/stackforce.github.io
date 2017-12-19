@@ -1,5 +1,5 @@
 var structopenD__callApiPrimitives =
 [
-    [ "openD_callApiConfirm", "structopenD__callApiPrimitives.html#a095d635b8f7529f4f2fa00a4ec823cce", null ],
-    [ "openD_callApiIndication", "structopenD__callApiPrimitives.html#a4c302279585469076e2ef8688847c94c", null ]
+    [ "openD_callApiCfm", "structopenD__callApiPrimitives.html#a75edced0c00a80a46b3760a1d99e3285", null ],
+    [ "openD_callApiInd", "structopenD__callApiPrimitives.html#a9d06021a7867812cd19d34e9d296690a", null ]
 ];

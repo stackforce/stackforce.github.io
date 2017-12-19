@@ -31,7 +31,7 @@
   <div class="col-md-3" id="projectlogo"><img alt="Logo" src="openD_by_dectForum_stackforce_uleA.svg" style="height: 100%; width: 100%;"/></div>
   <div class="col-md-6" id="projectalign">
    <div id="projectname">openD unified API
-   &#160;<span id="projectnumber">1.0.0-alpha.4</span>
+   &#160;<span id="projectnumber">1.0.0-alpha.5</span>
    </div>
   </div>
 </div>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('opend__hanfun__iOnOff_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>openD HAN-FUN API iOnOff.  
+<p>openD HAN-FUN iOnOff.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="opend__hanfun__dataTypes_8h_source.html">../opend_hanfun_dataTypes.h</a>&quot;</code><br />
@@ -99,50 +99,109 @@ $(document).ready(function(){initNavTree('opend__hanfun__iOnOff_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:structopenD__hanfunApi__iOnOff"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#structopenD__hanfunApi__iOnOff">openD_hanfunApi_iOnOff</a></td></tr>
-<tr class="memdesc:structopenD__hanfunApi__iOnOff"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD HanfunApi iOnOff structure.  <a href="group__OPEND__HANFUN__API__IONOFF.html#structopenD__hanfunApi__iOnOff">More...</a><br /></td></tr>
-<tr class="separator:structopenD__hanfunApi__iOnOff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:unionopenD__hanfunApi__iOnOff_8param"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#unionopenD__hanfunApi__iOnOff_8param">openD_hanfunApi_iOnOff.param</a></td></tr>
-<tr class="memdesc:unionopenD__hanfunApi__iOnOff_8param"><td class="mdescLeft">&#160;</td><td class="mdescRight">HanfunApi iOnOff parameters.  <a href="group__OPEND__HANFUN__API__IONOFF.html#unionopenD__hanfunApi__iOnOff_8param">More...</a><br /></td></tr>
-<tr class="separator:unionopenD__hanfunApi__iOnOff_8param"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structopenD__hanfun__iOnOffClientReq__addr"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffClientReq__addr">openD_hanfun_iOnOffClientReq_addr</a></td></tr>
+<tr class="memdesc:structopenD__hanfun__iOnOffClientReq__addr"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff client request parameter structure of the <code>ON_ADDR</code>, <code>OFF_ADDR</code> and <code>TOGGLE_ADDR</code> service.  <a href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffClientReq__addr">More...</a><br /></td></tr>
+<tr class="separator:structopenD__hanfun__iOnOffClientReq__addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structopenD__hanfun__iOnOffServerInd__addr"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerInd__addr">openD_hanfun_iOnOffServerInd_addr</a></td></tr>
+<tr class="memdesc:structopenD__hanfun__iOnOffServerInd__addr"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server indication parameter structure of the <code>ON_ADDR</code>, <code>OFF_ADDR</code> and <code>TOGGLE_ADDR</code> service.  <a href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerInd__addr">More...</a><br /></td></tr>
+<tr class="separator:structopenD__hanfun__iOnOffServerInd__addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structopenD__hanfun__iOnOffServerReq__setState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerReq__setState">openD_hanfun_iOnOffServerReq_setState</a></td></tr>
+<tr class="memdesc:structopenD__hanfun__iOnOffServerReq__setState"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server request parameter structure of the <code>SET_STATE</code> service.  <a href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerReq__setState">More...</a><br /></td></tr>
+<tr class="separator:structopenD__hanfun__iOnOffServerReq__setState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structopenD__hanfun__iOnOffServerCfm__getState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerCfm__getState">openD_hanfun_iOnOffServerCfm_getState</a></td></tr>
+<tr class="memdesc:structopenD__hanfun__iOnOffServerCfm__getState"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server confirm parameter structure of the <code>GET_STATE</code> service.  <a href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerCfm__getState">More...</a><br /></td></tr>
+<tr class="separator:structopenD__hanfun__iOnOffServerCfm__getState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structopenD__hanfun__iOnOffClientReq"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffClientReq">openD_hanfun_iOnOffClientReq</a></td></tr>
+<tr class="memdesc:structopenD__hanfun__iOnOffClientReq"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff client request structure.  <a href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffClientReq">More...</a><br /></td></tr>
+<tr class="separator:structopenD__hanfun__iOnOffClientReq"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structopenD__hanfun__iOnOffServerReq"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerReq">openD_hanfun_iOnOffServerReq</a></td></tr>
+<tr class="memdesc:structopenD__hanfun__iOnOffServerReq"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server request structure.  <a href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerReq">More...</a><br /></td></tr>
+<tr class="separator:structopenD__hanfun__iOnOffServerReq"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structopenD__hanfun__iOnOffServerCfm"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerCfm">openD_hanfun_iOnOffServerCfm</a></td></tr>
+<tr class="memdesc:structopenD__hanfun__iOnOffServerCfm"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server confirm structure.  <a href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerCfm">More...</a><br /></td></tr>
+<tr class="separator:structopenD__hanfun__iOnOffServerCfm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structopenD__hanfun__iOnOffServerInd"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerInd">openD_hanfun_iOnOffServerInd</a></td></tr>
+<tr class="memdesc:structopenD__hanfun__iOnOffServerInd"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server indication structure.  <a href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerInd">More...</a><br /></td></tr>
+<tr class="separator:structopenD__hanfun__iOnOffServerInd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionopenD__hanfun__iOnOffClientReq_8param"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#unionopenD__hanfun__iOnOffClientReq_8param">openD_hanfun_iOnOffClientReq.param</a></td></tr>
+<tr class="memdesc:unionopenD__hanfun__iOnOffClientReq_8param"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hanfun iOnOff parameters.  <a href="group__OPEND__HANFUN__IONOFF.html#unionopenD__hanfun__iOnOffClientReq_8param">More...</a><br /></td></tr>
+<tr class="separator:unionopenD__hanfun__iOnOffClientReq_8param"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionopenD__hanfun__iOnOffServerReq_8param"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#unionopenD__hanfun__iOnOffServerReq_8param">openD_hanfun_iOnOffServerReq.param</a></td></tr>
+<tr class="memdesc:unionopenD__hanfun__iOnOffServerReq_8param"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hanfun iOnOff server parameters.  <a href="group__OPEND__HANFUN__IONOFF.html#unionopenD__hanfun__iOnOffServerReq_8param">More...</a><br /></td></tr>
+<tr class="separator:unionopenD__hanfun__iOnOffServerReq_8param"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionopenD__hanfun__iOnOffServerCfm_8param"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#unionopenD__hanfun__iOnOffServerCfm_8param">openD_hanfun_iOnOffServerCfm.param</a></td></tr>
+<tr class="memdesc:unionopenD__hanfun__iOnOffServerCfm_8param"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hanfun iOnOff parameters.  <a href="group__OPEND__HANFUN__IONOFF.html#unionopenD__hanfun__iOnOffServerCfm_8param">More...</a><br /></td></tr>
+<tr class="separator:unionopenD__hanfun__iOnOffServerCfm_8param"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionopenD__hanfun__iOnOffServerInd_8param"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#unionopenD__hanfun__iOnOffServerInd_8param">openD_hanfun_iOnOffServerInd.param</a></td></tr>
+<tr class="memdesc:unionopenD__hanfun__iOnOffServerInd_8param"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hanfun iOnOff parameters.  <a href="group__OPEND__HANFUN__IONOFF.html#unionopenD__hanfun__iOnOffServerInd_8param">More...</a><br /></td></tr>
+<tr class="separator:unionopenD__hanfun__iOnOffServerInd_8param"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaa97fc1f76b36ed81ef1888dc5dc3aa26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gaa97fc1f76b36ed81ef1888dc5dc3aa26">__OPEND_HANFUN_API_IONOFF_H__</a></td></tr>
-<tr class="separator:gaa97fc1f76b36ed81ef1888dc5dc3aa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafef4f96d403067ca4aa4e0cb1a12fd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#gaafef4f96d403067ca4aa4e0cb1a12fd3">__OPEND_HANFUN_IONOFF_H__</a></td></tr>
+<tr class="separator:gaafef4f96d403067ca4aa4e0cb1a12fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga011fd1454c0d87c60fb296896eded681"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#ga092e2e54a95f4925b344de2d1c922730">openD_hanfunApi_iOnOff_service</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#ga011fd1454c0d87c60fb296896eded681">openD_hanfunApi_iOnOff_service_t</a></td></tr>
-<tr class="memdesc:ga011fd1454c0d87c60fb296896eded681"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD HanfunApi iOnOff services.  <a href="group__OPEND__HANFUN__API__IONOFF.html#ga011fd1454c0d87c60fb296896eded681">More...</a><br /></td></tr>
-<tr class="separator:ga011fd1454c0d87c60fb296896eded681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3cf6591d84ba4f1f1f688abda167adac"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#structopenD__hanfunApi__iOnOff">openD_hanfunApi_iOnOff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#ga3cf6591d84ba4f1f1f688abda167adac">openD_hanfunApi_iOnOff_t</a></td></tr>
-<tr class="memdesc:ga3cf6591d84ba4f1f1f688abda167adac"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD HanfunApi iOnOff structure.  <a href="group__OPEND__HANFUN__API__IONOFF.html#ga3cf6591d84ba4f1f1f688abda167adac">More...</a><br /></td></tr>
-<tr class="separator:ga3cf6591d84ba4f1f1f688abda167adac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga048af165032e3328c1c9fe818339beb9"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__OPEND__HANFUN__IONOFF.html#ga7e151ce5b00f1ceb54b292c8d09b03b7">openD_hanfun_iOnOffClient_service</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#ga048af165032e3328c1c9fe818339beb9">openD_hanfun_iOnOffClient_service_t</a></td></tr>
+<tr class="memdesc:ga048af165032e3328c1c9fe818339beb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff client services.  <a href="group__OPEND__HANFUN__IONOFF.html#ga048af165032e3328c1c9fe818339beb9">More...</a><br /></td></tr>
+<tr class="separator:ga048af165032e3328c1c9fe818339beb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac242fa26891d0993b5d138f9cc275335"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__OPEND__HANFUN__IONOFF.html#gae061b4829d9311e3a3930fbd199a0c6c">openD_hanfun_iOnOffServer_service</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#gac242fa26891d0993b5d138f9cc275335">openD_hanfun_iOnOffServer_service_t</a></td></tr>
+<tr class="memdesc:gac242fa26891d0993b5d138f9cc275335"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server services.  <a href="group__OPEND__HANFUN__IONOFF.html#gac242fa26891d0993b5d138f9cc275335">More...</a><br /></td></tr>
+<tr class="separator:gac242fa26891d0993b5d138f9cc275335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83028357de45a4ec8c54b76e75603e79"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffClientReq__addr">openD_hanfun_iOnOffClientReq_addr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#ga83028357de45a4ec8c54b76e75603e79">openD_hanfun_iOnOffClientReq_addr_t</a></td></tr>
+<tr class="memdesc:ga83028357de45a4ec8c54b76e75603e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff client request parameter structure of the <code>ON_ADDR</code>, <code>OFF_ADDR</code> and <code>TOGGLE_ADDR</code> service.  <a href="group__OPEND__HANFUN__IONOFF.html#ga83028357de45a4ec8c54b76e75603e79">More...</a><br /></td></tr>
+<tr class="separator:ga83028357de45a4ec8c54b76e75603e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga120ee9bbb47f52de8b08c114bd3a9901"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerInd__addr">openD_hanfun_iOnOffServerInd_addr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#ga120ee9bbb47f52de8b08c114bd3a9901">openD_hanfun_iOnOffServerInd_addr_t</a></td></tr>
+<tr class="memdesc:ga120ee9bbb47f52de8b08c114bd3a9901"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server indication parameter structure of the <code>ON_ADDR</code>, <code>OFF_ADDR</code> and <code>TOGGLE_ADDR</code> service.  <a href="group__OPEND__HANFUN__IONOFF.html#ga120ee9bbb47f52de8b08c114bd3a9901">More...</a><br /></td></tr>
+<tr class="separator:ga120ee9bbb47f52de8b08c114bd3a9901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae67d98cc111f9b7518c46c435a7ac69c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerReq__setState">openD_hanfun_iOnOffServerReq_setState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#gae67d98cc111f9b7518c46c435a7ac69c">openD_hanfun_iOnOffServerReq_setState_t</a></td></tr>
+<tr class="memdesc:gae67d98cc111f9b7518c46c435a7ac69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server request parameter structure of the <code>SET_STATE</code> service.  <a href="group__OPEND__HANFUN__IONOFF.html#gae67d98cc111f9b7518c46c435a7ac69c">More...</a><br /></td></tr>
+<tr class="separator:gae67d98cc111f9b7518c46c435a7ac69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7fa290b85708f3396c921414914ebef"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerCfm__getState">openD_hanfun_iOnOffServerCfm_getState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#gaa7fa290b85708f3396c921414914ebef">openD_hanfun_iOnOffServerCfm_getState_t</a></td></tr>
+<tr class="memdesc:gaa7fa290b85708f3396c921414914ebef"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server confirm parameter structure of the <code>GET_STATE</code> service.  <a href="group__OPEND__HANFUN__IONOFF.html#gaa7fa290b85708f3396c921414914ebef">More...</a><br /></td></tr>
+<tr class="separator:gaa7fa290b85708f3396c921414914ebef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac869bb8b2f48cecdda165a2308ddcb0f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffClientReq">openD_hanfun_iOnOffClientReq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#gac869bb8b2f48cecdda165a2308ddcb0f">openD_hanfun_iOnOffClientReq_t</a></td></tr>
+<tr class="memdesc:gac869bb8b2f48cecdda165a2308ddcb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff client request structure.  <a href="group__OPEND__HANFUN__IONOFF.html#gac869bb8b2f48cecdda165a2308ddcb0f">More...</a><br /></td></tr>
+<tr class="separator:gac869bb8b2f48cecdda165a2308ddcb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2441ceba5ec565f9f0bd88f22331df11"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerReq">openD_hanfun_iOnOffServerReq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#ga2441ceba5ec565f9f0bd88f22331df11">openD_hanfun_iOnOffServerReq_t</a></td></tr>
+<tr class="memdesc:ga2441ceba5ec565f9f0bd88f22331df11"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server request structure.  <a href="group__OPEND__HANFUN__IONOFF.html#ga2441ceba5ec565f9f0bd88f22331df11">More...</a><br /></td></tr>
+<tr class="separator:ga2441ceba5ec565f9f0bd88f22331df11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf643ee64fb737619046a5153da3ae4d8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerCfm">openD_hanfun_iOnOffServerCfm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#gaf643ee64fb737619046a5153da3ae4d8">openD_hanfun_iOnOffServerCfm_t</a></td></tr>
+<tr class="memdesc:gaf643ee64fb737619046a5153da3ae4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server confirm structure.  <a href="group__OPEND__HANFUN__IONOFF.html#gaf643ee64fb737619046a5153da3ae4d8">More...</a><br /></td></tr>
+<tr class="separator:gaf643ee64fb737619046a5153da3ae4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26e1b2c3339ea76cbf1e36e1c97e928b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__OPEND__HANFUN__IONOFF.html#structopenD__hanfun__iOnOffServerInd">openD_hanfun_iOnOffServerInd</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#ga26e1b2c3339ea76cbf1e36e1c97e928b">openD_hanfun_iOnOffServerInd_t</a></td></tr>
+<tr class="memdesc:ga26e1b2c3339ea76cbf1e36e1c97e928b"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server indication structure.  <a href="group__OPEND__HANFUN__IONOFF.html#ga26e1b2c3339ea76cbf1e36e1c97e928b">More...</a><br /></td></tr>
+<tr class="separator:ga26e1b2c3339ea76cbf1e36e1c97e928b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga092e2e54a95f4925b344de2d1c922730"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#ga092e2e54a95f4925b344de2d1c922730">openD_hanfunApi_iOnOff_service</a> { <br />
-&#160;&#160;<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730ae3026c17597cde855cafb6fa0645c2c1">OPEND_HANFUN_IONOFF_SERVER_ON_ADDR</a>, 
-<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730afa63f6c81ff830722a0e1c632b84abb2">OPEND_HANFUN_IONOFF_SERVER_OFF_ADDR</a>, 
-<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730a0bd1253792b4817e2f0f997b0bcb8e49">OPEND_HANFUN_IONOFF_SERVER_TOGGLE_ADDR</a>, 
-<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730a7dd577deade17aefac62b7734acab351">OPEND_HANFUN_IONOFF_SERVER_SET_STATE</a>, 
+<tr class="memitem:ga7e151ce5b00f1ceb54b292c8d09b03b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#ga7e151ce5b00f1ceb54b292c8d09b03b7">openD_hanfun_iOnOffClient_service</a> { <br />
+&#160;&#160;<a class="el" href="group__OPEND__HANFUN__IONOFF.html#gga7e151ce5b00f1ceb54b292c8d09b03b7a6f6f5921ea54abb17839fac7979e6760">OPEND_HANFUN_IONOFF_CLIENT_ON_ADDR</a>, 
+<a class="el" href="group__OPEND__HANFUN__IONOFF.html#gga7e151ce5b00f1ceb54b292c8d09b03b7a9c05660ffccf760d7426e1ea8aee4985">OPEND_HANFUN_IONOFF_CLIENT_ON</a>, 
+<a class="el" href="group__OPEND__HANFUN__IONOFF.html#gga7e151ce5b00f1ceb54b292c8d09b03b7a4ea03fa9b0bba99432fc09028624bfce">OPEND_HANFUN_IONOFF_CLIENT_OFF_ADDR</a>, 
+<a class="el" href="group__OPEND__HANFUN__IONOFF.html#gga7e151ce5b00f1ceb54b292c8d09b03b7a113343091787e15072ed395c10c92e49">OPEND_HANFUN_IONOFF_CLIENT_OFF</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730abac3d28b425ee0dffbb258dd52bba075">OPEND_HANFUN_IONOFF_SERVER_GET_STATE</a>, 
-<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730a6f6f5921ea54abb17839fac7979e6760">OPEND_HANFUN_IONOFF_CLIENT_ON_ADDR</a>, 
-<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730a9c05660ffccf760d7426e1ea8aee4985">OPEND_HANFUN_IONOFF_CLIENT_ON</a>, 
-<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730a4ea03fa9b0bba99432fc09028624bfce">OPEND_HANFUN_IONOFF_CLIENT_OFF_ADDR</a>, 
+&#160;&#160;<a class="el" href="group__OPEND__HANFUN__IONOFF.html#gga7e151ce5b00f1ceb54b292c8d09b03b7a515c12d483e6c6abfa65babdc08469df">OPEND_HANFUN_IONOFF_CLIENT_TOGGLE_ADDR</a>, 
+<a class="el" href="group__OPEND__HANFUN__IONOFF.html#gga7e151ce5b00f1ceb54b292c8d09b03b7ae0698b8ae28fcd15aa9c9171abaf80f2">OPEND_HANFUN_IONOFF_CLIENT_TOGGLE</a>
 <br />
-&#160;&#160;<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730a113343091787e15072ed395c10c92e49">OPEND_HANFUN_IONOFF_CLIENT_OFF</a>, 
-<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730a515c12d483e6c6abfa65babdc08469df">OPEND_HANFUN_IONOFF_CLIENT_TOGGLE_ADDR</a>, 
-<a class="el" href="group__OPEND__HANFUN__API__IONOFF.html#gga092e2e54a95f4925b344de2d1c922730ae0698b8ae28fcd15aa9c9171abaf80f2">OPEND_HANFUN_IONOFF_CLIENT_TOGGLE</a>
-<br />
- }<tr class="memdesc:ga092e2e54a95f4925b344de2d1c922730"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD HanfunApi iOnOff services.  <a href="group__OPEND__HANFUN__API__IONOFF.html#ga092e2e54a95f4925b344de2d1c922730">More...</a><br /></td></tr>
+ }<tr class="memdesc:ga7e151ce5b00f1ceb54b292c8d09b03b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff client services.  <a href="group__OPEND__HANFUN__IONOFF.html#ga7e151ce5b00f1ceb54b292c8d09b03b7">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:ga092e2e54a95f4925b344de2d1c922730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga7e151ce5b00f1ceb54b292c8d09b03b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae061b4829d9311e3a3930fbd199a0c6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPEND__HANFUN__IONOFF.html#gae061b4829d9311e3a3930fbd199a0c6c">openD_hanfun_iOnOffServer_service</a> { <br />
+&#160;&#160;<a class="el" href="group__OPEND__HANFUN__IONOFF.html#ggae061b4829d9311e3a3930fbd199a0c6cae3026c17597cde855cafb6fa0645c2c1">OPEND_HANFUN_IONOFF_SERVER_ON_ADDR</a>, 
+<a class="el" href="group__OPEND__HANFUN__IONOFF.html#ggae061b4829d9311e3a3930fbd199a0c6cafa63f6c81ff830722a0e1c632b84abb2">OPEND_HANFUN_IONOFF_SERVER_OFF_ADDR</a>, 
+<a class="el" href="group__OPEND__HANFUN__IONOFF.html#ggae061b4829d9311e3a3930fbd199a0c6ca0bd1253792b4817e2f0f997b0bcb8e49">OPEND_HANFUN_IONOFF_SERVER_TOGGLE_ADDR</a>, 
+<a class="el" href="group__OPEND__HANFUN__IONOFF.html#ggae061b4829d9311e3a3930fbd199a0c6ca7dd577deade17aefac62b7734acab351">OPEND_HANFUN_IONOFF_SERVER_SET_STATE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__OPEND__HANFUN__IONOFF.html#ggae061b4829d9311e3a3930fbd199a0c6cabac3d28b425ee0dffbb258dd52bba075">OPEND_HANFUN_IONOFF_SERVER_GET_STATE</a>
+<br />
+ }<tr class="memdesc:gae061b4829d9311e3a3930fbd199a0c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">openD Hanfun iOnOff server services.  <a href="group__OPEND__HANFUN__IONOFF.html#gae061b4829d9311e3a3930fbd199a0c6c">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gae061b4829d9311e3a3930fbd199a0c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>openD HAN-FUN API iOnOff. </p>
+<div class="textblock"><p>openD HAN-FUN iOnOff. </p>
 <div class="fragment"><div class="line"> ___ _____ _   ___ _  _____ ___  ___  ___ ___</div><div class="line">/ __|_   _/_\ / __| |/ / __/ _ \| _ \/ __| __|</div><div class="line">\__ \ | |/ _ \ (__| <span class="stringliteral">&#39; &lt;| _| (_) |   / (__| _|</span></div><div class="line"><span class="stringliteral">|___/ |_/_/ \_\___|_|\_\_| \___/|_|_\\___|___|</span></div><div class="line"><span class="stringliteral">embedded.connectivity.solutions.==============</span></div></div><!-- fragment --><dl class="section copyright"><dt>Copyright</dt><dd>STACKFORCE GmbH, Heitersheim, Germany, www.stackforce.de </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Patrick Weber </dd></dl>
 </div></div><!-- contents -->

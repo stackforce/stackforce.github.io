@@ -1,5 +1,5 @@
 var structopenD__audioApiPrimitives =
 [
-    [ "openD_audioApiConfirm", "structopenD__audioApiPrimitives.html#a491ceeacca6449b6e8722713ed69f038", null ],
-    [ "openD_audioApiIndication", "structopenD__audioApiPrimitives.html#ae11a249da00849568a671c2f4934d57d", null ]
+    [ "openD_audioApiCfm", "structopenD__audioApiPrimitives.html#a9c4010c017152edff1ec30bb2cbea8b7", null ],
+    [ "openD_audioApiInd", "structopenD__audioApiPrimitives.html#acdb7a62ed6f4f2f60143d43fe9aa3442", null ]
 ];

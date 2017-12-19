@@ -21,8 +21,8 @@ var group__OPEND__SUB__API =
       [ "pmid", "group__OPEND__SUB__API.html#a378dcf8cf080ae1394df9601bf5b8280", null ]
     ] ],
     [ "openD_subApiReq", "group__OPEND__SUB__API.html#structopenD__subApiReq", [
-      [ "param", "group__OPEND__SUB__API.html#a54d7f1fd35858dec3903003e598f5874", null ],
-      [ "type", "group__OPEND__SUB__API.html#a26cb78a902e84f03255726ace82912e4", null ]
+      [ "param", "group__OPEND__SUB__API.html#ab887a8065218c2095d41f9cb6beb5cf0", null ],
+      [ "service", "group__OPEND__SUB__API.html#adbd35d3edaa1d32eff62f5f44af784a7", null ]
     ] ],
     [ "openD_subApiReq.param", "group__OPEND__SUB__API.html#unionopenD__subApiReq_8param", [
       [ "setAc", "group__OPEND__SUB__API.html#a9f56eaf7bbfeb4dcd928d02993ec4a9e", null ],
@@ -30,39 +30,39 @@ var group__OPEND__SUB__API =
       [ "subscribeEnable", "group__OPEND__SUB__API.html#a904399c5872a619b38c3bc6995ee3955", null ],
       [ "subscriptionDelete", "group__OPEND__SUB__API.html#a57d60da83169daf9900116b82c26d80e", null ]
     ] ],
-    [ "openD_subApiConfirm", "group__OPEND__SUB__API.html#structopenD__subApiConfirm", [
-      [ "status", "group__OPEND__SUB__API.html#a79f5fd380548f2275782a0505bc2eb06", null ],
-      [ "type", "group__OPEND__SUB__API.html#a1304ebc4252e206d1a9a07e934d8c463", null ]
+    [ "openD_subApiCfm", "group__OPEND__SUB__API.html#structopenD__subApiCfm", [
+      [ "service", "group__OPEND__SUB__API.html#aa8d1cb50e9bfb690a3ab74ef14fb4aaa", null ],
+      [ "status", "group__OPEND__SUB__API.html#ae244fb79927e53be797e8a75588f24f6", null ]
     ] ],
-    [ "openD_subApiIndication", "group__OPEND__SUB__API.html#structopenD__subApiIndication", [
-      [ "param", "group__OPEND__SUB__API.html#a9539b28d08d4ccda32adbd63f71c30f9", null ],
-      [ "type", "group__OPEND__SUB__API.html#ae22f3b0c5b56ec3b5d5093554acb3b3f", null ]
+    [ "openD_subApiInd", "group__OPEND__SUB__API.html#structopenD__subApiInd", [
+      [ "param", "group__OPEND__SUB__API.html#a1b2ed60f78c774aa4b8b11c3cd26071b", null ],
+      [ "service", "group__OPEND__SUB__API.html#ac79b69e336a97e378402e4c600cd4156", null ]
     ] ],
-    [ "openD_subApiIndication.param", "group__OPEND__SUB__API.html#unionopenD__subApiIndication_8param", [
+    [ "openD_subApiInd.param", "group__OPEND__SUB__API.html#unionopenD__subApiInd_8param", [
       [ "subscribe", "group__OPEND__SUB__API.html#a4f893ee24950069dd823e083338a456d", null ],
       [ "subscriptionDelete", "group__OPEND__SUB__API.html#a57d60da83169daf9900116b82c26d80e", null ]
     ] ],
     [ "openD_subApiPrimitives", "structopenD__subApiPrimitives.html", [
-      [ "openD_subApiConfirm", "structopenD__subApiPrimitives.html#a822ab1c7b771b40f7f8abf221170ddae", null ],
-      [ "openD_subApiIndication", "structopenD__subApiPrimitives.html#aa74ea3a911777dbef303f189b086f73c", null ]
+      [ "openD_subApiCfm", "structopenD__subApiPrimitives.html#aa762029a821dfdcd2bd5486f27cf2cff", null ],
+      [ "openD_subApiInd", "structopenD__subApiPrimitives.html#a82b480180b00aa52afb51177a391c27b", null ]
     ] ],
     [ "__OPEND_SUB_API_H__", "group__OPEND__SUB__API.html#gadcf1d77323b3539ca21e857950d9a930", null ],
-    [ "openD_subApiConfirm_t", "group__OPEND__SUB__API.html#gaf55b4c922d066bc5dd4deb19bd765f76", null ],
-    [ "openD_subApiIndication_t", "group__OPEND__SUB__API.html#gad1045e6b9d12f37c4049f829d8942e83", null ],
+    [ "openD_subApi_service_t", "group__OPEND__SUB__API.html#gaeb7cdb9d9e7725346e6f3a5609376fbe", null ],
+    [ "openD_subApiCfm_t", "group__OPEND__SUB__API.html#ga8ede99e395786297ec1f5fb990685df5", null ],
+    [ "openD_subApiInd_t", "group__OPEND__SUB__API.html#ga3d99d6074fe2cdff201284b88def98c0", null ],
     [ "openD_subApiPrimitives_t", "group__OPEND__SUB__API.html#ga3ac7bfd9c16dbd8ef657af998bef3391", null ],
     [ "openD_subApiReq_t", "group__OPEND__SUB__API.html#ga616aa86bb957314dd073a5465c4eba84", null ],
-    [ "openD_subApiServices_t", "group__OPEND__SUB__API.html#ga6ed639a611caaa9ee2334f336f4ba4e2", null ],
     [ "subApiInd_subscribe_t", "group__OPEND__SUB__API.html#gae6a511ca0e885a1a250e24055b3063be", null ],
     [ "subApiInd_subscriptionDelete_t", "group__OPEND__SUB__API.html#ga94e6f2c6349808f794817175824c5303", null ],
     [ "subApiReq_setAc_t", "group__OPEND__SUB__API.html#gad1ac311e368548be9da0f0ebcee2fc50", null ],
     [ "subApiReq_subscribe_t", "group__OPEND__SUB__API.html#gab56157c5ba3a1d9faf87e8d93a79181b", null ],
     [ "subApiReq_subscribeEnable_t", "group__OPEND__SUB__API.html#ga1a3d5dbb3d670901d15001dd05d562f5", null ],
     [ "subApiReq_subscriptionDelete_t", "group__OPEND__SUB__API.html#ga46afc4492471138990ef720fd045557b", null ],
-    [ "openD_subApi", "group__OPEND__SUB__API.html#ga81f8704a58236e591c9ff8ef3fd30a1c", [
-      [ "SUBAPI_SUBSCRIBE_ENABLE", "group__OPEND__SUB__API.html#gga81f8704a58236e591c9ff8ef3fd30a1ca4c9bf908975532a895811510154ec2bf", null ],
-      [ "SUBAPI_SUBSCRIBE", "group__OPEND__SUB__API.html#gga81f8704a58236e591c9ff8ef3fd30a1ca6a5ca97aff8a94ee913b032ee0e2bd7d", null ],
-      [ "SUBAPI_SUBSCRIPTION_DELETE", "group__OPEND__SUB__API.html#gga81f8704a58236e591c9ff8ef3fd30a1cae3efaad67292b88ec3c7f988526afc14", null ],
-      [ "SUBAPI_SET_AC", "group__OPEND__SUB__API.html#gga81f8704a58236e591c9ff8ef3fd30a1ca31ec86b8f41f8f11b984f45dda34cca2", null ]
+    [ "openD_subApi_service", "group__OPEND__SUB__API.html#gaf839642d682e7eab5c63190447fa8054", [
+      [ "OPEND_SUBAPI_SUBSCRIBE_ENABLE", "group__OPEND__SUB__API.html#ggaf839642d682e7eab5c63190447fa8054ab9eb22d9dc2259a1694b1e20395288c3", null ],
+      [ "OPEND_SUBAPI_SUBSCRIBE", "group__OPEND__SUB__API.html#ggaf839642d682e7eab5c63190447fa8054ae65aeaf0d250824be19102d4b26dbc4e", null ],
+      [ "OPEND_SUBAPI_SUBSCRIPTION_DELETE", "group__OPEND__SUB__API.html#ggaf839642d682e7eab5c63190447fa8054a6c4dbd7eb499f1d4caa72856efd18ea2", null ],
+      [ "OPEND_SUBAPI_SET_AC", "group__OPEND__SUB__API.html#ggaf839642d682e7eab5c63190447fa8054a2ccef8c2f42158754bbcffbd1daa08a6", null ]
     ] ],
     [ "openD_subApi_init", "group__OPEND__SUB__API.html#ga2e5df533c2f8657b626a8079e24302a6", null ],
     [ "openD_subApi_request", "group__OPEND__SUB__API.html#ga71539c44561e65847fa8eddfbf1392d0", null ]

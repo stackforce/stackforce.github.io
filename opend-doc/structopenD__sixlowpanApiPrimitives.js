@@ -1,5 +1,5 @@
 var structopenD__sixlowpanApiPrimitives =
 [
-    [ "openD_sixlowpanApiConfirm", "structopenD__sixlowpanApiPrimitives.html#aac079d9058546740f68eba7f469a8300", null ],
-    [ "openD_sixlowpanApiIndication", "structopenD__sixlowpanApiPrimitives.html#a7fa1407a9db963014e3dfcee341dc0de", null ]
+    [ "openD_sixlowpanApiCfm", "structopenD__sixlowpanApiPrimitives.html#ae2cf963c471571e2b008dfa1445d4a48", null ],
+    [ "openD_sixlowpanApiInd", "structopenD__sixlowpanApiPrimitives.html#ad4c8808bd05533a97e5f4e511833c3fe", null ]
 ];

@@ -1,5 +1,5 @@
 var structopenD__subApiPrimitives =
 [
-    [ "openD_subApiConfirm", "structopenD__subApiPrimitives.html#a822ab1c7b771b40f7f8abf221170ddae", null ],
-    [ "openD_subApiIndication", "structopenD__subApiPrimitives.html#aa74ea3a911777dbef303f189b086f73c", null ]
+    [ "openD_subApiCfm", "structopenD__subApiPrimitives.html#aa762029a821dfdcd2bd5486f27cf2cff", null ],
+    [ "openD_subApiInd", "structopenD__subApiPrimitives.html#a82b480180b00aa52afb51177a391c27b", null ]
 ];
