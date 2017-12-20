@@ -26,6 +26,9 @@ var NAVTREE =
     [ "Protocol", "PROTOCOL.html", [
       [ "Abstract", "PROTOCOL.html#PROTOCOL_ABSTRACT", null ]
     ] ],
+    [ "Audio", "AUDIO.html", [
+      [ "Audio overview", "AUDIO.html#AUDIO_OVERVIEW", null ]
+    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -51,19 +54,19 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"FRAMEWORK_ARCH.html",
-"group__OPEND__HANFUN__API.html#a09f86c403bfb1e468390e07e447a7d39",
-"group__OPEND__HANFUN__API.html#structopenD__hanfunApi__devMgmtInd",
-"group__OPEND__HANFUN__ICOLOURCONTROL.html#a52e4fa60060dc49f1b66eb0f923993f6",
-"group__OPEND__HANFUN__ICOLOURCONTROL.html#ggab20bdcb431657bcccc88a90b5bb2d22fa062e357ec23a2670512be9feb321ee89",
-"group__OPEND__HANFUN__ILEVELCONTROL.html#gga704a73630397897984adf7886a5e898ba1f2b3abc98656ff206d6034b46b57f12",
-"group__OPEND__HANFUN__ISIMPLEBUTTON.html#ggacc75738c6791fc312818bf868967ddd6a17ddcced31b4672b0b2378f8800a93d4",
-"group__OPEND__HANFUN__ISIMPLEPOWERMETER.html#a8d4a14942b5cb328bce6eecafade4ad5",
-"group__OPEND__HANFUN__ISIMPLETHERMOSTAT.html#a99e7ee8dccfe07e7020cb8c1b0991ea7",
-"group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#structopenD__hanfun__iSimpleVisualEffectsClientReq",
-"group__OPEND__HANFUN__PENVIRONMENTMONITOR.html#ggabfb8bc6a6ee0f01574ad7205836ed2a5a9b742e81afd14a850a0aae21637640cc",
-"group__OPEND__MGMT__API.html#gadfb1b4640c9e683ae4f6aedf39e9b353",
-"opend__mgmt_8c.html"
+"AUDIO.html",
+"group__OPEND__HANFUN__API.html",
+"group__OPEND__HANFUN__API.html#structopenD__hanfunApi__bindMgmtReq",
+"group__OPEND__HANFUN__ICOLOURCONTROL.html#a48b5e5b65656562e1aba7bd28e41f55d",
+"group__OPEND__HANFUN__ICOLOURCONTROL.html#ggab20bdcb431657bcccc88a90b5bb2d22fa01ef046d1e2d74c0f6897d8e580adf93",
+"group__OPEND__HANFUN__ILEVELCONTROL.html#gga300df561aeb9fbdd0fd665ff14c55f20aef736336af4b22bc7683429295bcb368",
+"group__OPEND__HANFUN__ISIMPLEBUTTON.html#ggacc75738c6791fc312818bf868967ddd6a164b7113e384b05d3823cbc66cac88fd",
+"group__OPEND__HANFUN__ISIMPLEPOWERMETER.html#a86b924381f65d2390a71d54f6938b60a",
+"group__OPEND__HANFUN__ISIMPLETHERMOSTAT.html#a914bbcfda17706deddc48453e741efed",
+"group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#ggaf4460495523df8c35336c48f8a0d78daadc2a4516c418a94badfd42a8877d0bdb",
+"group__OPEND__HANFUN__PENVIRONMENTMONITOR.html#gabfb8bc6a6ee0f01574ad7205836ed2a5",
+"group__OPEND__MGMT__API.html#ga9649a41ee30c240052aee536f91a77ec",
+"opend__hanfun__pWindowOpenCloseDetector_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
