@@ -31,7 +31,7 @@
   <div class="col-md-3" id="projectlogo"><img alt="Logo" src="openD_by_dectForum_stackforce_uleA.svg" style="height: 100%; width: 100%;"/></div>
   <div class="col-md-6" id="projectalign">
    <div id="projectname">openD unified API
-   &#160;<span id="projectnumber">1.0.0-alpha.6</span>
+   &#160;<span id="projectnumber">1.0.0-alpha.7</span>
    </div>
   </div>
 </div>
@@ -152,47 +152,49 @@ File references</h2>
 <tr>
 <td>3 </td><td>Audio data stream. </td><td>- </td></tr>
 <tr>
-<td>4-8 </td><td>Low level interfaces from the manufacturers stack implementation for the openD framework. </td><td>- </td></tr>
+<td>4-9 </td><td>Low level interfaces from the manufacturers stack implementation for the openD framework. </td><td>- </td></tr>
 <tr>
-<td>9 </td><td>This wrapper adapts the Dialog stack subscription, call, audio and management control functions from element (1) to the openD framework. </td><td>- </td></tr>
+<td>10 </td><td>Interworking unit (IWU) to connect Dialog stack with the ULE Alliance 6LoWPAN control interface. </td><td>- </td></tr>
 <tr>
-<td>10 </td><td>Interworking unit (IWU) to connect Dialog stack with the ULE Alliance HAN-FUN control interface. </td><td>TBD </td></tr>
+<td>11 </td><td>This wrapper adapts the Dialog stack subscription, call, audio and management control functions from element (1) to the openD framework. </td><td>- </td></tr>
 <tr>
-<td>11 </td><td>Interworking unit (IWU) to connect DSPG stack with the ULE Alliance HAN-FUN control interface. </td><td>TBD </td></tr>
+<td>12 </td><td>Interworking unit (IWU) to connect Dialog stack with the ULE Alliance HAN-FUN control interface. </td><td>TBD </td></tr>
 <tr>
-<td>12 </td><td>This wrapper adapts the DSPG stack subscription, call, audio and management control functions from element (1) to the openD framework. </td><td>- </td></tr>
+<td>13 </td><td>Interworking unit (IWU) to connect DSPG stack with the ULE Alliance HAN-FUN control interface. </td><td>TBD </td></tr>
 <tr>
-<td>13 </td><td>Interworking unit (IWU) to connect DSPG stack with the ULE Alliance 6LoWPAN control interface. </td><td>- </td></tr>
+<td>14 </td><td>This wrapper adapts the DSPG stack subscription, call, audio and management control functions from element (2) to the openD framework. </td><td>- </td></tr>
 <tr>
-<td>14 </td><td>Open source HAN-FUN control interface from the ULE Alliance. </td><td>- </td></tr>
+<td>15 </td><td>Interworking unit (IWU) to connect DSPG stack with the ULE Alliance 6LoWPAN control interface. </td><td>- </td></tr>
 <tr>
-<td>15 </td><td>Open source 6LoWPAN control interface from the ULE Alliance. </td><td>- </td></tr>
+<td>16 </td><td>Open source 6LoWPAN control interface from the ULE Alliance. </td><td>- </td></tr>
 <tr>
-<td>16 </td><td>Interface to provide management control functionalities that are adapted by (9) or (12). </td><td>opend_mgmt_api.* </td></tr>
+<td>17 </td><td>Open source HAN-FUN control interface from the ULE Alliance. </td><td>- </td></tr>
 <tr>
-<td>17 </td><td>Interface to provide subscription registration functionalities that are adapted by (9) or (12). </td><td>opend_sub_api.* </td></tr>
+<td>18 </td><td>Interface to provide management control functionalities that are adapted by (11) or (14). </td><td>opend_mgmt_api.* </td></tr>
 <tr>
-<td>18 </td><td>Interface to provide call control functionalities that are adapted by (9) or (12). </td><td>opend_call_api.* </td></tr>
+<td>19 </td><td>Interface to provide subscription registration functionalities that are adapted by (11) or (14). </td><td>opend_sub_api.* </td></tr>
 <tr>
-<td>19 </td><td>Interface to provide audio control functionalities that are adapted by (9) or (12). </td><td>opend_audio_api.* </td></tr>
+<td>20 </td><td>Interface to provide call control functionalities that are adapted by (11) or (14). </td><td>opend_call_api.* </td></tr>
 <tr>
-<td>20 </td><td>Interface to provide HAN-FUN functionalities from the ULE Alliance HAN-FUN (14). </td><td>opend_hanfun_api.* </td></tr>
+<td>21 </td><td>Interface to provide audio control functionalities that are adapted by (11) or (14). </td><td>opend_audio_api.* </td></tr>
 <tr>
-<td>21 </td><td>Interface to provide HAN-FUN functionalities from the ULE Alliance 6LoWPAN (15). </td><td>opend_sixlowpan_api.* </td></tr>
+<td>22 </td><td>Interface to provide HAN-FUN functionalities from the ULE Alliance HAN-FUN (17). </td><td>opend_hanfun_api.* </td></tr>
 <tr>
-<td>22 </td><td>This represents the unified openD API. </td><td>opend_api.* </td></tr>
+<td>23 </td><td>Interface to provide HAN-FUN functionalities from the ULE Alliance 6LoWPAN (16). </td><td>opend_sixlowpan_api.* </td></tr>
 <tr>
-<td>23 </td><td>Audio interface that provides the audio data. Please refer to: <a class="el" href="AUDIO.html">Audio</a> </td><td>- </td></tr>
+<td>24 </td><td>This represents the unified openD API. </td><td>opend_api.* </td></tr>
 <tr>
-<td>24 </td><td>UDP server to provide the access to the unified interfaces. </td><td>- </td></tr>
+<td>25 </td><td>Audio interface that provides the audio data. Please refer to: <a class="el" href="AUDIO.html">Audio</a> </td><td>- </td></tr>
 <tr>
-<td>25 </td><td>Inter-process communication by an UDP connection. </td><td>- </td></tr>
+<td>26 </td><td>UDP server to provide the access to the unified interfaces. </td><td>- </td></tr>
 <tr>
-<td>26 </td><td>UDP client to get access to the UDP server. </td><td>- </td></tr>
+<td>27 </td><td>Inter-process communication by an UDP connection. </td><td>- </td></tr>
 <tr>
-<td>27 </td><td>A module which abstracts the protocol over the UDP connection. This protocol must be defined. A possible format could be JSON. </td><td>- </td></tr>
+<td>28 </td><td>UDP client to get access to the UDP server. </td><td>- </td></tr>
 <tr>
-<td>28 </td><td>This is a customer/community application. </td><td>- </td></tr>
+<td>29 </td><td>A module which abstracts the protocol over the UDP connection. This protocol must be defined. A possible format could be JSON. </td><td>- </td></tr>
+<tr>
+<td>30 </td><td>This is a customer/community application. </td><td>- </td></tr>
 </table>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

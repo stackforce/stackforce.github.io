@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__OPEND__DATATYPES.html#gga67c4237b926c86d002d55db3c17a494fa9bf7db3463911d8b0c0f153a5b63f265":[6,0,1,7,6,1],
 "group__OPEND__HANFUN__API.html":[4,4],
 "group__OPEND__HANFUN__API.html#a098257b5d91d3175247b3017b4519929":[4,4,7,1],
 "group__OPEND__HANFUN__API.html#a09f86c403bfb1e468390e07e447a7d39":[4,4,14,4],
@@ -157,8 +158,8 @@ var NAVTREEINDEX1 =
 "group__OPEND__HANFUN__API.html#gga24e0ff09a0e42fe1e7cfaac40ffa14f2a9a7b166eb64adb5cfedf9e2a33f61d7e":[4,4,39,0],
 "group__OPEND__HANFUN__API.html#gga24e0ff09a0e42fe1e7cfaac40ffa14f2ae70730a937469100396ed343f392c9e7":[6,0,1,9,19,6],
 "group__OPEND__HANFUN__API.html#gga24e0ff09a0e42fe1e7cfaac40ffa14f2ae70730a937469100396ed343f392c9e7":[4,4,39,6],
-"group__OPEND__HANFUN__API.html#gga24e0ff09a0e42fe1e7cfaac40ffa14f2aeff5db01abb6ab1ecf2bcad43dc22134":[4,4,39,5],
 "group__OPEND__HANFUN__API.html#gga24e0ff09a0e42fe1e7cfaac40ffa14f2aeff5db01abb6ab1ecf2bcad43dc22134":[6,0,1,9,19,5],
+"group__OPEND__HANFUN__API.html#gga24e0ff09a0e42fe1e7cfaac40ffa14f2aeff5db01abb6ab1ecf2bcad43dc22134":[4,4,39,5],
 "group__OPEND__HANFUN__API.html#gga24e0ff09a0e42fe1e7cfaac40ffa14f2af558dc6aedd516809e67686012534b80":[6,0,1,9,19,1],
 "group__OPEND__HANFUN__API.html#gga24e0ff09a0e42fe1e7cfaac40ffa14f2af558dc6aedd516809e67686012534b80":[4,4,39,1],
 "group__OPEND__HANFUN__API.html#gga2506dd1791c175baf9b39159ee919610a7ce766122eacf8beab5002fd4edc1f62":[6,0,1,9,20,1],
@@ -219,8 +220,8 @@ var NAVTREEINDEX1 =
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faa9c8385a1183e4b0d4b75d78554a90018":[4,4,41,27],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaa300cd81db82b168c03f995724d2b207":[6,0,1,9,21,35],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaa300cd81db82b168c03f995724d2b207":[4,4,41,35],
-"group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaa3ab2cce5fb4b083921da1092bd40726":[6,0,1,9,21,33],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaa3ab2cce5fb4b083921da1092bd40726":[4,4,41,33],
+"group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaa3ab2cce5fb4b083921da1092bd40726":[6,0,1,9,21,33],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaa6fb48d081c8380fa04a7f1630f816b3":[6,0,1,9,21,6],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaa6fb48d081c8380fa04a7f1630f816b3":[4,4,41,6],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaaa0070b8f1219e6353691786e4530a4e":[6,0,1,9,21,14],
@@ -233,8 +234,8 @@ var NAVTREEINDEX1 =
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faad17691ae4c226ba062b90a4c7a337485":[4,4,41,1],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faad2eca2a914209b2cf14e5cbe03c6c2f0":[6,0,1,9,21,23],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faad2eca2a914209b2cf14e5cbe03c6c2f0":[4,4,41,23],
-"group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faad8ed107190c7d6b32355e594c8ab9b16":[4,4,41,34],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faad8ed107190c7d6b32355e594c8ab9b16":[6,0,1,9,21,34],
+"group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faad8ed107190c7d6b32355e594c8ab9b16":[4,4,41,34],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaf046bddc01ce34d8f01435b117f9d9c1":[6,0,1,9,21,0],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaf046bddc01ce34d8f01435b117f9d9c1":[4,4,41,0],
 "group__OPEND__HANFUN__API.html#ggafbbcb7f48d7037313e844e77210c40faaf132b691ae3dda8f5e7bbcef6c6e529f":[6,0,1,9,21,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__OPEND__HANFUN__API.html#structhanfunApiDevMgmt__deregister":[4,4,3],
 "group__OPEND__HANFUN__API.html#structhanfunApiDevMgmt__register":[4,4,2],
 "group__OPEND__HANFUN__API.html#structhanfunApiDevMgmt__registrationElement":[4,4,4],
-"group__OPEND__HANFUN__API.html#structopenD__hanfunApi__bindMgmtCfm":[4,4,11],
-"group__OPEND__HANFUN__API.html#structopenD__hanfunApi__bindMgmtInd":[4,4,12]
+"group__OPEND__HANFUN__API.html#structopenD__hanfunApi__bindMgmtCfm":[4,4,11]
 };

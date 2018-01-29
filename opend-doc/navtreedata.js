@@ -27,7 +27,9 @@ var NAVTREE =
       [ "Abstract", "PROTOCOL.html#PROTOCOL_ABSTRACT", null ]
     ] ],
     [ "Audio", "AUDIO.html", [
-      [ "Audio overview", "AUDIO.html#AUDIO_OVERVIEW", null ]
+      [ "Audio overview", "AUDIO.html#AUDIO_OVERVIEW", [
+        [ "Fixed part", "AUDIO.html#AUDIO_UNIFIED_API_FP", null ]
+      ] ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
@@ -55,18 +57,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AUDIO.html",
-"group__OPEND__HANFUN__API.html",
-"group__OPEND__HANFUN__API.html#structopenD__hanfunApi__bindMgmtReq",
-"group__OPEND__HANFUN__ICOLOURCONTROL.html#a48b5e5b65656562e1aba7bd28e41f55d",
+"group__OPEND__DATATYPES.html#gga67c4237b926c86d002d55db3c17a494fa9bf7db3463911d8b0c0f153a5b63f265",
+"group__OPEND__HANFUN__API.html#structopenD__hanfunApi__bindMgmtInd",
+"group__OPEND__HANFUN__ICOLOURCONTROL.html#a487a07cfbb234755f6a8dac42e249056",
 "group__OPEND__HANFUN__ICOLOURCONTROL.html#ggab20bdcb431657bcccc88a90b5bb2d22fa01ef046d1e2d74c0f6897d8e580adf93",
-"group__OPEND__HANFUN__ILEVELCONTROL.html#gga300df561aeb9fbdd0fd665ff14c55f20aef736336af4b22bc7683429295bcb368",
+"group__OPEND__HANFUN__ILEVELCONTROL.html#gga300df561aeb9fbdd0fd665ff14c55f20adb75047572b3c5e2bda9bff2a25f9395",
 "group__OPEND__HANFUN__ISIMPLEBUTTON.html#ggacc75738c6791fc312818bf868967ddd6a164b7113e384b05d3823cbc66cac88fd",
-"group__OPEND__HANFUN__ISIMPLEPOWERMETER.html#a86b924381f65d2390a71d54f6938b60a",
-"group__OPEND__HANFUN__ISIMPLETHERMOSTAT.html#a914bbcfda17706deddc48453e741efed",
-"group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#ggaf4460495523df8c35336c48f8a0d78daadc2a4516c418a94badfd42a8877d0bdb",
+"group__OPEND__HANFUN__ISIMPLEPOWERMETER.html#a86073614f2d35b561443035a3249fd6a",
+"group__OPEND__HANFUN__ISIMPLETHERMOSTAT.html#a7faa8983a1655aa63724659c354ad926",
+"group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#ggaf4460495523df8c35336c48f8a0d78daad6d1ee084181c28198c62fd4873c6453",
 "group__OPEND__HANFUN__PENVIRONMENTMONITOR.html#gabfb8bc6a6ee0f01574ad7205836ed2a5",
 "group__OPEND__MGMT__API.html#ga9649a41ee30c240052aee536f91a77ec",
-"opend__hanfun__pWindowOpenCloseDetector_8h.html"
+"opend__hanfun__pVibrationDetector_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__OPEND__HANFUN__API.html#structopenD__hanfunApi__bindMgmtInd":[4,4,12],
 "group__OPEND__HANFUN__API.html#structopenD__hanfunApi__bindMgmtReq":[4,4,10],
 "group__OPEND__HANFUN__API.html#structopenD__hanfunApi__devMgmtCfm":[4,4,7],
 "group__OPEND__HANFUN__API.html#structopenD__hanfunApi__devMgmtInd":[4,4,9],
@@ -62,15 +63,15 @@ var NAVTREEINDEX2 =
 "group__OPEND__HANFUN__IALERT.html#a12367be7c565f8c3a8e1294db3f05d93":[4,4,0,0,12,0],
 "group__OPEND__HANFUN__IALERT.html#a15582945591998de0037c0031c7687c2":[4,4,0,0,17,1],
 "group__OPEND__HANFUN__IALERT.html#a19d82d87f8dc661f7dcdf32ad0a33cc2":[4,4,0,0,4,0],
-"group__OPEND__HANFUN__IALERT.html#a1e775ebc3ab641ea983103e552c38462":[4,4,0,0,20,4],
 "group__OPEND__HANFUN__IALERT.html#a1e775ebc3ab641ea983103e552c38462":[4,4,0,0,18,4],
+"group__OPEND__HANFUN__IALERT.html#a1e775ebc3ab641ea983103e552c38462":[4,4,0,0,20,4],
 "group__OPEND__HANFUN__IALERT.html#a2129e874626fd86fe1c10033c626dcf6":[4,4,0,0,20,3],
 "group__OPEND__HANFUN__IALERT.html#a24cb4bd8605721d7fff41d0199d5232d":[4,4,0,0,9,0],
 "group__OPEND__HANFUN__IALERT.html#a2d901f9ba2bf01ed32e78c9d5864fc71":[4,4,0,0,18,9],
 "group__OPEND__HANFUN__IALERT.html#a3930f5410c4636fcee123b92535f9f60":[4,4,0,0,17,0],
 "group__OPEND__HANFUN__IALERT.html#a3b5e15cf74836652baf4d35dae6dd559":[4,4,0,0,21,1],
-"group__OPEND__HANFUN__IALERT.html#a47458a827fd69e154776abeda51182d2":[4,4,0,0,18,3],
 "group__OPEND__HANFUN__IALERT.html#a47458a827fd69e154776abeda51182d2":[4,4,0,0,20,2],
+"group__OPEND__HANFUN__IALERT.html#a47458a827fd69e154776abeda51182d2":[4,4,0,0,18,3],
 "group__OPEND__HANFUN__IALERT.html#a596885d0960badb750d43b938934bb90":[4,4,0,0,6,0],
 "group__OPEND__HANFUN__IALERT.html#a597b699a6732f1dc577e55ff1e72f9fc":[4,4,0,0,18,2],
 "group__OPEND__HANFUN__IALERT.html#a597b699a6732f1dc577e55ff1e72f9fc":[4,4,0,0,20,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "group__OPEND__HANFUN__ICOLOURCONTROL.html#a435c5dbb0db110c0c416af1dac6fa0dc":[4,4,0,1,6,1],
 "group__OPEND__HANFUN__ICOLOURCONTROL.html#a43875aaf91e51ce031deb7e2edecb253":[4,4,0,1,16,1],
 "group__OPEND__HANFUN__ICOLOURCONTROL.html#a44bbbb78763e1935ff60b1a476921981":[4,4,0,1,52,1],
-"group__OPEND__HANFUN__ICOLOURCONTROL.html#a47d2d50428a50230918ce97105bd65de":[4,4,0,1,33,0],
-"group__OPEND__HANFUN__ICOLOURCONTROL.html#a487a07cfbb234755f6a8dac42e249056":[4,4,0,1,11,1]
+"group__OPEND__HANFUN__ICOLOURCONTROL.html#a47d2d50428a50230918ce97105bd65de":[4,4,0,1,33,0]
 };

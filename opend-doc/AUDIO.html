@@ -31,7 +31,7 @@
   <div class="col-md-3" id="projectlogo"><img alt="Logo" src="openD_by_dectForum_stackforce_uleA.svg" style="height: 100%; width: 100%;"/></div>
   <div class="col-md-6" id="projectalign">
    <div id="projectname">openD unified API
-   &#160;<span id="projectnumber">1.0.0-alpha.6</span>
+   &#160;<span id="projectnumber">1.0.0-alpha.7</span>
    </div>
   </div>
 </div>
@@ -85,13 +85,15 @@ $(document).ready(function(){initNavTree('AUDIO.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#AUDIO_OVERVIEW">Audio overview</a></li>
+<ul><li class="level1"><a href="#AUDIO_OVERVIEW">Audio overview</a><ul><li class="level2"><a href="#AUDIO_UNIFIED_API_FP">Fixed part</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="textblock"><h1><a class="anchor" id="AUDIO_OVERVIEW"></a>
 Audio overview</h1>
-<p>This page describes the audio handling in combination with the openD framework. The figure below shows the architecture of the fixed part. On the audio side the framework differentiates between the audio data (23) and the audio management (19). The audio data is out of scope of this project and is provided by the DECT module manufactures. It is usually available as an PCM audio interface on the fixed part side. In addition, there is usually the possibility of an analog interface on the DECT modules. The audio management can be controlled via the openD audio API (19).</p>
-<h2><a class="anchor" id="UNIFIED_API_FP"></a>
+<p>This page describes the audio handling in combination with the openD framework. The figure below shows the architecture of the fixed part. On the audio side the framework differentiates between the audio data (25) and the audio management (21). The audio data is out of scope of this project and is provided by the DECT module manufactures. It is usually available as an PCM audio interface on the fixed part side. In addition, there is usually the possibility of an analog interface on the DECT modules. The audio management can be controlled via the openD audio API (21).</p>
+<h2><a class="anchor" id="AUDIO_UNIFIED_API_FP"></a>
 Fixed part</h2>
 <div class="image">
 <img src="opend_architecture_FP.png" alt="opend_architecture_FP.png"/>
