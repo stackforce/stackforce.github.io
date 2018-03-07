@@ -29,5 +29,6 @@ var group___l_o_r_a_m_a_c_union_mib_param__t =
     [ "MulticastList", "group___l_o_r_a_m_a_c.html#ab0f9cda74f301d191aa5f7d7090c1557", null ],
     [ "SystemMaxRxError", "group___l_o_r_a_m_a_c.html#a62adc341212fe903e9995966051c5fee", null ],
     [ "MinRxSymbols", "group___l_o_r_a_m_a_c.html#ab33f97482f9af163d593cf103a2ccf1c", null ],
-    [ "AntennaGain", "group___l_o_r_a_m_a_c.html#a727eaefd87f898a5238118573968962c", null ]
+    [ "AntennaGain", "group___l_o_r_a_m_a_c.html#a727eaefd87f898a5238118573968962c", null ],
+    [ "DefaultAntennaGain", "group___l_o_r_a_m_a_c.html#a3679fa4ff6ab120429480da6aa8a017d", null ]
 ];

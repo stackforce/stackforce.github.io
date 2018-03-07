@@ -10,5 +10,5 @@ var group___r_e_g_i_o_n_struct_rx_config_params__t =
     [ "DownlinkDwellTime", "group___r_e_g_i_o_n.html#a63074ce7d23ff98956f5d6f4054f235f", null ],
     [ "RepeaterSupport", "group___r_e_g_i_o_n.html#a037bdbc41e8b3deeaab3684cf4b23f66", null ],
     [ "RxContinuous", "group___r_e_g_i_o_n.html#ad155d9bae95f09d927ca588dc4f4734a", null ],
-    [ "Window", "group___r_e_g_i_o_n.html#acb8d2d13fbac6d2cbe431b40bb3043f4", null ]
+    [ "RxSlot", "group___r_e_g_i_o_n.html#a0a258bf8cfad5219bfd579257e523fc1", null ]
 ];

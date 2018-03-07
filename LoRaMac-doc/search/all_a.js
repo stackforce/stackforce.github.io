@@ -73,6 +73,7 @@ var searchData=
   ['loramacprimitives_5ft',['LoRaMacPrimitives_t',['../struct_lo_ra_mac_primitives__t.html',1,'']]],
   ['loramacquerytxpossible',['LoRaMacQueryTxPossible',['../group___l_o_r_a_m_a_c.html#ga8b0aeaf75f9404ce01da9b202252c231',1,'LoRaMac.h']]],
   ['loramacregion_5ft',['LoRaMacRegion_t',['../group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec',1,'LoRaMac.h']]],
+  ['loramacrxslot_5ft',['LoRaMacRxSlot_t',['../group___l_o_r_a_m_a_c.html#gaf1585bffd2940eb589ea730ccd0475b6',1,'LoRaMac.h']]],
   ['loramacsrvcmd_5ft',['LoRaMacSrvCmd_t',['../group___l_o_r_a_m_a_c.html#ga4f91028194f81a04f72e33f2fdda2052',1,'LoRaMac.h']]],
   ['loramacstatus_5ft',['LoRaMacStatus_t',['../group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9',1,'LoRaMac.h']]],
   ['lora_20mac_20layer_20test_20function_20implementation',['LoRa MAC layer test function implementation',['../group___l_o_r_a_m_a_c_t_e_s_t.html',1,'']]],

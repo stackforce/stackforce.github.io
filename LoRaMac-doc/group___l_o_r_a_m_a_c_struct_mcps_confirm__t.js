@@ -8,5 +8,5 @@ var group___l_o_r_a_m_a_c_struct_mcps_confirm__t =
     [ "NbRetries", "group___l_o_r_a_m_a_c.html#a87c781229ed6a79169564bbed6581f29", null ],
     [ "TxTimeOnAir", "group___l_o_r_a_m_a_c.html#aa17a8607485db100d315e74853dd217e", null ],
     [ "UpLinkCounter", "group___l_o_r_a_m_a_c.html#ae8c54ca277e4d7295dfd498889e42fdd", null ],
-    [ "UpLinkFrequency", "group___l_o_r_a_m_a_c.html#a91a7b39e9921b72ecc653beffd76a740", null ]
+    [ "Channel", "group___l_o_r_a_m_a_c.html#ae82bf9242a014164f9f6907f29782c44", null ]
 ];

@@ -21,6 +21,7 @@ var _lo_ra_mac_8h =
       [ "McpsInd", "group___l_o_r_a_m_a_c.html#a81d24e4d487adef6c6d4f4ca0963319e", null ],
       [ "McpsIndSkip", "group___l_o_r_a_m_a_c.html#a45141607ee2f47da2432d5d2a8045e69", null ],
       [ "MlmeReq", "group___l_o_r_a_m_a_c.html#a3743e193dca88e3913e44e993a209ebf", null ],
+      [ "MlmeInd", "group___l_o_r_a_m_a_c.html#a201c052466c33d1e875325f0d0025e90", null ],
       [ "MacDone", "group___l_o_r_a_m_a_c.html#a8b4a19cca2ba529046ea88bb13305407", null ]
     ] ],
     [ "uMcpsParam", "group___l_o_r_a_m_a_c.html#union_mcps_req__t_1_1u_mcps_param", [
@@ -42,6 +43,12 @@ var _lo_ra_mac_8h =
       [ "CLASS_A", "group___l_o_r_a_m_a_c.html#ggad065f3831c9a00390949d52a93074970a307ee33f71385819abc142fe4f23c3bb", null ],
       [ "CLASS_B", "group___l_o_r_a_m_a_c.html#ggad065f3831c9a00390949d52a93074970a10611f4c3b970c7d722c98eaea63ddd5", null ],
       [ "CLASS_C", "group___l_o_r_a_m_a_c.html#ggad065f3831c9a00390949d52a93074970abfee35359a39adbacbc3f13eddc76cd0", null ]
+    ] ],
+    [ "LoRaMacRxSlot_t", "group___l_o_r_a_m_a_c.html#gaf1585bffd2940eb589ea730ccd0475b6", [
+      [ "RX_SLOT_WIN_1", "group___l_o_r_a_m_a_c.html#ggaf1585bffd2940eb589ea730ccd0475b6a5fa7051b96e31f50660867ec02cb6624", null ],
+      [ "RX_SLOT_WIN_2", "group___l_o_r_a_m_a_c.html#ggaf1585bffd2940eb589ea730ccd0475b6ace540b9f9215441fc67199b013a4fab9", null ],
+      [ "RX_SLOT_WIN_CLASS_C", "group___l_o_r_a_m_a_c.html#ggaf1585bffd2940eb589ea730ccd0475b6a8785f8319ec8d3476f892af54a9e28fc", null ],
+      [ "RX_SLOT_WIN_PING_SLOT", "group___l_o_r_a_m_a_c.html#ggaf1585bffd2940eb589ea730ccd0475b6a44705442cff2bdf0f626de44d646f685", null ]
     ] ],
     [ "LoRaMacFrameType_t", "group___l_o_r_a_m_a_c.html#gaa4faa85be75a0f7b173d1db23922d4f2", [
       [ "FRAME_TYPE_JOIN_REQ", "group___l_o_r_a_m_a_c.html#ggaa4faa85be75a0f7b173d1db23922d4f2ae01d60e50804065d3564dc1e12d80811", null ],
@@ -106,7 +113,8 @@ var _lo_ra_mac_8h =
       [ "MLME_JOIN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca475ad5dea1c4c13b93b31095c665e92e", null ],
       [ "MLME_LINK_CHECK", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca57ba2a5951a2a4637ff0e574c0e48750", null ],
       [ "MLME_TXCW", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca7633734852fb50e0f241ae8059b0aed1", null ],
-      [ "MLME_TXCW_1", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca9a6b50c77269c8fbff9a5a6d33574503", null ]
+      [ "MLME_TXCW_1", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca9a6b50c77269c8fbff9a5a6d33574503", null ],
+      [ "MLME_SCHEDULE_UPLINK", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1cada36c2ddbd1f26a8ff146b348dd30e96", null ]
     ] ],
     [ "Mib_t", "group___l_o_r_a_m_a_c.html#ga64429ce77a29145f6a7508df5eaa2d3e", [
       [ "MIB_DEVICE_CLASS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eac0426517132356c9977dcdafa5ab3a7f", null ],
@@ -138,7 +146,8 @@ var _lo_ra_mac_8h =
       [ "MIB_MULTICAST_CHANNEL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaf8ac424460fccb3115c6fe6ccb450862", null ],
       [ "MIB_SYSTEM_MAX_RX_ERROR", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead5d382841f32fba944bdb68b25699e45", null ],
       [ "MIB_MIN_RX_SYMBOLS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea82fb27fd6414d2bde20a7a00c80e26a1", null ],
-      [ "MIB_ANTENNA_GAIN", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea268b2f7da53dbc25655a7bdcc7e6128e", null ]
+      [ "MIB_ANTENNA_GAIN", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea268b2f7da53dbc25655a7bdcc7e6128e", null ],
+      [ "MIB_DEFAULT_ANTENNA_GAIN", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eafdc28fdfdbed01cb4c4ea59e0c9b9994", null ]
     ] ],
     [ "LoRaMacStatus_t", "group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9", [
       [ "LORAMAC_STATUS_OK", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a03db5fca052313edb3823c014b653a74", null ],
@@ -151,7 +160,10 @@ var _lo_ra_mac_8h =
       [ "LORAMAC_STATUS_NO_NETWORK_JOINED", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a105228330376111d46d99d57688a20ae", null ],
       [ "LORAMAC_STATUS_LENGTH_ERROR", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a4ab40311dcd2eeffc77f573a919b29b1", null ],
       [ "LORAMAC_STATUS_DEVICE_OFF", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9aff1d3a91250809d1770a74776057b8ce", null ],
-      [ "LORAMAC_STATUS_REGION_NOT_SUPPORTED", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9af424839424174be5fc5e52e00160940e", null ]
+      [ "LORAMAC_STATUS_REGION_NOT_SUPPORTED", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9af424839424174be5fc5e52e00160940e", null ],
+      [ "LORAMAC_STATUS_DUTYCYCLE_RESTRICTED", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a0c982ada0769ecee2e1041fb6945ddd4", null ],
+      [ "LORAMAC_STATUS_NO_CHANNEL_FOUND", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a393266a9952cf6617917f1fce181efcd", null ],
+      [ "LORAMAC_STATUS_NO_FREE_CHANNEL_FOUND", "group___l_o_r_a_m_a_c.html#gga363b63a6d24ca4827c81898ebb1887e9a61b018814bb071d16d3f970f907fafb2", null ]
     ] ],
     [ "LoRaMacRegion_t", "group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec", [
       [ "LORAMAC_REGION_AS923", "group___l_o_r_a_m_a_c.html#gga3b9d54f0355b51e85df8b33fd1757eeca5b791cd5d892cd4ffdc891177f9c424f", null ],

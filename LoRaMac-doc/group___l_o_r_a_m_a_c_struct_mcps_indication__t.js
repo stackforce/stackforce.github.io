@@ -11,7 +11,7 @@ var group___l_o_r_a_m_a_c_struct_mcps_indication__t =
     [ "RxData", "group___l_o_r_a_m_a_c.html#afa6d3de110fa10174203ce26682585c9", null ],
     [ "Rssi", "group___l_o_r_a_m_a_c.html#ae00742a7fb9199399f4e4d79e42fda78", null ],
     [ "Snr", "group___l_o_r_a_m_a_c.html#af053995b03762dc0e0cd4d11f7d06d05", null ],
-    [ "RxSlot", "group___l_o_r_a_m_a_c.html#a08824938d0f702a10a2b70301c66d193", null ],
+    [ "RxSlot", "group___l_o_r_a_m_a_c.html#a0a258bf8cfad5219bfd579257e523fc1", null ],
     [ "AckReceived", "group___l_o_r_a_m_a_c.html#ac59e1bd1c9450c7d136c7f475be89ded", null ],
     [ "DownLinkCounter", "group___l_o_r_a_m_a_c.html#a7a566925baf83b1b3da9209dfa4bb79a", null ]
 ];

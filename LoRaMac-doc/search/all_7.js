@@ -36,6 +36,7 @@ var searchData=
   ['in865_5ftx_5fmax_5fdatarate',['IN865_TX_MAX_DATARATE',['../group___r_e_g_i_o_n_i_n865.html#ga927945116c9bf6917614b894d45c0972',1,'RegionIN865.h']]],
   ['in865_5ftx_5fmin_5fdatarate',['IN865_TX_MIN_DATARATE',['../group___r_e_g_i_o_n_i_n865.html#ga334bf7f8b226ad91762f977490af0c72',1,'RegionIN865.h']]],
   ['introduction',['Introduction',['../index.html',1,'']]],
+  ['init_5ftype_5fapp_5fdefaults',['INIT_TYPE_APP_DEFAULTS',['../group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a3d260b94611dd833c5243c16ca26c3f0',1,'Region.h']]],
   ['init_5ftype_5finit',['INIT_TYPE_INIT',['../group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7',1,'Region.h']]],
   ['init_5ftype_5frestore',['INIT_TYPE_RESTORE',['../group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0aed3218cb3c4ebbb74a1b48e4f8ac8599',1,'Region.h']]],
   ['inittype_5ft',['InitType_t',['../group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0',1,'Region.h']]],

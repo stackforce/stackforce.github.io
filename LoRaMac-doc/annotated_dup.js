@@ -1,7 +1,6 @@
 var annotated_dup =
 [
     [ "AdrNextParams_t", "group___r_e_g_i_o_n.html#struct_adr_next_params__t", "group___r_e_g_i_o_n_struct_adr_next_params__t" ],
-    [ "AlternateDrParams_t", "group___r_e_g_i_o_n.html#struct_alternate_dr_params__t", "group___r_e_g_i_o_n_struct_alternate_dr_params__t" ],
     [ "ApplyCFListParams_t", "group___r_e_g_i_o_n.html#struct_apply_c_f_list_params__t", "group___r_e_g_i_o_n_struct_apply_c_f_list_params__t" ],
     [ "Band_t", "group___l_o_r_a_m_a_c.html#struct_band__t", "group___l_o_r_a_m_a_c_struct_band__t" ],
     [ "CalcBackOffParams_t", "group___r_e_g_i_o_n.html#struct_calc_back_off_params__t", "group___r_e_g_i_o_n_struct_calc_back_off_params__t" ],
@@ -30,6 +29,7 @@ var annotated_dup =
     [ "MibParam_t", "group___l_o_r_a_m_a_c.html#union_mib_param__t", "group___l_o_r_a_m_a_c_union_mib_param__t" ],
     [ "MibRequestConfirm_t", "group___l_o_r_a_m_a_c.html#struct_mib_request_confirm__t", "group___l_o_r_a_m_a_c_struct_mib_request_confirm__t" ],
     [ "MlmeConfirm_t", "group___l_o_r_a_m_a_c.html#struct_mlme_confirm__t", "group___l_o_r_a_m_a_c_struct_mlme_confirm__t" ],
+    [ "MlmeIndication_t", "group___l_o_r_a_m_a_c.html#struct_mlme_indication__t", "group___l_o_r_a_m_a_c_struct_mlme_indication__t" ],
     [ "MlmeReq_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req__t", "group___l_o_r_a_m_a_c_struct_mlme_req__t" ],
     [ "MlmeReqJoin_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req_join__t", "group___l_o_r_a_m_a_c_struct_mlme_req_join__t" ],
     [ "MlmeReqTxCw_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req_tx_cw__t", "group___l_o_r_a_m_a_c_struct_mlme_req_tx_cw__t" ],

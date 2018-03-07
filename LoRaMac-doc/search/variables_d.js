@@ -12,5 +12,5 @@ var searchData=
   ['rxcontinuous',['RxContinuous',['../group___r_e_g_i_o_n.html#ad155d9bae95f09d927ca588dc4f4734a',1,'RxConfigParams_t']]],
   ['rxdata',['RxData',['../group___l_o_r_a_m_a_c.html#afa6d3de110fa10174203ce26682585c9',1,'McpsIndication_t']]],
   ['rxdatarate',['RxDatarate',['../group___l_o_r_a_m_a_c.html#a61e9e29ca015230436fe420bf88989e9',1,'McpsIndication_t']]],
-  ['rxslot',['RxSlot',['../group___l_o_r_a_m_a_c.html#a08824938d0f702a10a2b70301c66d193',1,'McpsIndication_t']]]
+  ['rxslot',['RxSlot',['../group___l_o_r_a_m_a_c.html#a0a258bf8cfad5219bfd579257e523fc1',1,'McpsIndication_t::RxSlot()'],['../group___r_e_g_i_o_n.html#a0a258bf8cfad5219bfd579257e523fc1',1,'RxConfigParams_t::RxSlot()']]]
 ];

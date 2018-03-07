@@ -7,6 +7,5 @@ var group___r_e_g_i_o_n_union_verify_params__t =
     ] ],
     [ "TxPower", "group___r_e_g_i_o_n.html#a037b4f849fa8ed4aa1d3c58aef2b28ec", null ],
     [ "DutyCycle", "group___r_e_g_i_o_n.html#a72f580d8a64ab70f5c4f7e10a694c65b", null ],
-    [ "NbJoinTrials", "group___r_e_g_i_o_n.html#a8bc2c92bc853f0461e0d2a44e5a4349e", null ],
     [ "DatarateParams", "group___r_e_g_i_o_n.html#a98139e2506044be6c716c0e3462e38a1", null ]
 ];
