@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['device',['device',['../group___o_p_e_n_d___h_a_n_f_u_n___d_a_t_a_t_y_p_e_s.html#a14753695d17c5ca8d404f808e14f504d',1,'openD_hanfunApi_address']]]
+  ['blinkeffect',['blinkEffect',['../group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#a927c8b04c7242e023aada237ab150308',1,'openD_hanfun_iSimpleVisualEffectsClientReq_blink::blinkEffect()'],['../group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#aedc2634932ff11fb9f752552ee6b7c25',1,'openD_hanfun_iSimpleVisualEffectsClientReq_blinkAddr::blinkEffect()'],['../group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#a8def8c1509a800a160c943b0f1f8bc65',1,'openD_hanfun_iSimpleVisualEffectsServerReq_blinkAddr::blinkEffect()']]],
+  ['breatheeffect',['breatheEffect',['../group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#a181ff51cdfd404ea7e47b7875c18c1b4',1,'openD_hanfun_iSimpleVisualEffectsClientReq_breathe::breatheEffect()'],['../group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#ad2ec1672b43062a5f3b78742f60ee0ed',1,'openD_hanfun_iSimpleVisualEffectsClientReq_breatheAddr::breatheEffect()'],['../group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#af85215ecc4da8617646f616366c43b06',1,'openD_hanfun_iSimpleVisualEffectsServerReq_breatheAddr::breatheEffect()']]]
 ];
