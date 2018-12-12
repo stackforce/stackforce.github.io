@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['hanfunapidevmgmt_5fderegister',['hanfunApiDevMgmt_deregister',['../group__OPEND__HANFUN__API.html#structhanfunApiDevMgmt__deregister',1,'']]],
-  ['hanfunapidevmgmt_5fderegister_5ft',['hanfunApiDevMgmt_deregister_t',['../group__OPEND__HANFUN__API.html#ga77ff233743e9b6f10e07c59b3b29a8e5',1,'opend_hanfun_api.h']]],
-  ['hanfunapidevmgmt_5fregister',['hanfunApiDevMgmt_register',['../group__OPEND__HANFUN__API.html#structhanfunApiDevMgmt__register',1,'']]],
-  ['hanfunapidevmgmt_5fregister_5ft',['hanfunApiDevMgmt_register_t',['../group__OPEND__HANFUN__API.html#gad7915ed779f502afce77f337f4b4eabe',1,'opend_hanfun_api.h']]],
-  ['hanfunapidevmgmt_5fregistrationelement',['hanfunApiDevMgmt_registrationElement',['../group__OPEND__HANFUN__API.html#structhanfunApiDevMgmt__registrationElement',1,'']]],
-  ['hanfunapidevmgmt_5fregistrationelement_5ft',['hanfunApiDevMgmt_registrationElement_t',['../group__OPEND__HANFUN__API.html#ga0cbffa336462cc13014647b3790daeb5',1,'opend_hanfun_api.h']]],
-  ['hscolour',['hsColour',['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a2ea044050dc23159db2d2a77fa5d2ec4',1,'openD_hanfun_iColourControlClientReq_moveToHueAndSaturationAddr::hsColour()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#ab0319f3b902dcd42b1a27e399968a6f4',1,'openD_hanfun_iColourControlClientReq_moveToHueAndSaturation::hsColour()']]],
-  ['hue',['hue',['../group__OPEND__HANFUN__ICOLOURCONTROL.html#ac6b7cc651afb60c5c3478b5228ffe149',1,'openD_hanfun_iColourControl_hsColour::hue()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a5c2cc7ee62bf356994b0bca527d4605a',1,'openD_hanfun_iColourControl_moveToHueMessage::hue()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a1bfd8edbbdc8257edcb31a3ff221d131',1,'openD_hanfun_iColourControlClientReq_moveToHueAddr::hue()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a52e4fa60060dc49f1b66eb0f923993f6',1,'openD_hanfun_iColourControlClientReq_moveToHue::hue()']]]
+  ['handle',['handle',['../struct_commands_1_1_unit.html#abf77261a0ef1258788f9cb38cfc70322',1,'Commands::Unit']]],
+  ['hanfunapibindmgmt_5fentrieselement',['hanfunApiBindMgmt_entriesElement',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#structhanfun_api_bind_mgmt__entries_element',1,'']]],
+  ['hanfunapibindmgmt_5fentrieselement_5ft',['hanfunApiBindMgmt_entriesElement_t',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#gab18c22d3296a72227d1026a617dc1a62',1,'opend_hanfun_types.h']]],
+  ['hanfunapidevmgmt_5fderegister',['hanfunApiDevMgmt_deregister',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#structhanfun_api_dev_mgmt__deregister',1,'']]],
+  ['hanfunapidevmgmt_5fderegister_5ft',['hanfunApiDevMgmt_deregister_t',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#ga77ff233743e9b6f10e07c59b3b29a8e5',1,'opend_hanfun_types.h']]],
+  ['hanfunapidevmgmt_5fregister',['hanfunApiDevMgmt_register',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#structhanfun_api_dev_mgmt__register',1,'']]],
+  ['hanfunapidevmgmt_5fregister_5ft',['hanfunApiDevMgmt_register_t',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#gad7915ed779f502afce77f337f4b4eabe',1,'opend_hanfun_types.h']]],
+  ['hanfunapidevmgmt_5fregistrationelement',['hanfunApiDevMgmt_registrationElement',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#structhanfun_api_dev_mgmt__registration_element',1,'']]],
+  ['hanfunapidevmgmt_5fregistrationelement_5ft',['hanfunApiDevMgmt_registrationElement_t',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#ga0cbffa336462cc13014647b3790daeb5',1,'opend_hanfun_types.h']]],
+  ['has_5fbind',['has_bind',['../struct_f_p.html#a67d64c1b5124f1efcbf8e55232a41d28',1,'FP']]]
 ];

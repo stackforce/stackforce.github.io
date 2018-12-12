@@ -1,0 +1,26 @@
+var group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s_unionopen_d__hanfun_api__profile_cfm_8____unnamed____ =
+[
+    [ "acOutlet", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#ac337ba07e5b6df45f410d0d956def965", null ],
+    [ "acOutletWithPowerMetering", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#adb4dc713fd08fd6bfcef3dfc6f5ff96b", null ],
+    [ "colourBulb", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a2d1a36ca9ad534342eef54ee6842c18a", null ],
+    [ "controlableThermostat", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#ad900f730985e4e9e99024149a2d29e78", null ],
+    [ "dimmableColourBulb", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a09f86c403bfb1e468390e07e447a7d39", null ],
+    [ "dimmableLight", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a4fd000e321b10c4c85a2c474c0a373f0", null ],
+    [ "doorBell", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a26410208435336a6b7440486382fc3db", null ],
+    [ "environmentMonitor", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#ae820d37aeb0aea14d53d183a72030f07", null ],
+    [ "motionDetector", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a8648c1b59fb2c1893e5af1302602219d", null ],
+    [ "simpleAirPressureSensor", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a99c95af3fb8e7609895bbea2dd025061", null ],
+    [ "simpleButton", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a89f8bee5cea7362388fe1816a2c0b871", null ],
+    [ "simpleDoorLock", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#ac8ad6af48c060773bca2c2621b163e64", null ],
+    [ "simpleHumiditySensor", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a894c3cce734dcfc184c772ce2aa582eb", null ],
+    [ "simpleLevelControllable", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a36d57b0cf1694f8318960ee49c20fc0e", null ],
+    [ "simpleLevelControllableSwitchable", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a90fb7dab5cee75806ae1eb298e5e05b9", null ],
+    [ "simpleLight", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#adaeb7ae5c97e37473e13939876a65a15", null ],
+    [ "simpleLightSensor", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#ac951ec7ab62c34c45db9434cb3ad2401", null ],
+    [ "simpleOnOffSwitch", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#acf5382cbcc86a148be1f1170de30dc02", null ],
+    [ "simpleOnOffSwitchable", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a168ea7f66861e43c3c9c98dfa41dd431", null ],
+    [ "simplePowerMeter", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#aebda36008372857ea85555b8fe4ac8cd", null ],
+    [ "simpleTemperatureSensor", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a79516210506a4539b9c2892bc16d3370", null ],
+    [ "siren", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#a9762af70cf94777610debc44bf919c8d", null ],
+    [ "userInterfaceLock", "group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#adcaace695b22805c0e80197b1e4c558a", null ]
+];

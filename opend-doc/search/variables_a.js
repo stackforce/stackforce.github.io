@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['new_5flevel',['new_level',['../group__OPEND__HANFUN__ILEVELCONTROL.html#a9bdb1e57934ee732ba9e23ad4068cebc',1,'openD_hanfun_iLevelControlServerInd_levelChange']]],
-  ['number_5fof_5fcycle',['number_of_cycle',['../group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#a3784629b8c8911404550203280b987ab',1,'openD_hanfun_iSimpleVisualEffects_blinkEffect::number_of_cycle()'],['../group__OPEND__HANFUN__ISIMPLEVISUALEFFECTS.html#a3e95109ab0f4647c9e84c4371af7a412',1,'openD_hanfun_iSimpleVisualEffects_breatheEffect::number_of_cycle()']]]
+  ['rfpi',['rfpi',['../group___o_p_e_n_d___s_u_b___t_y_p_e_s.html#ae3ac469a4ea8c9b64f57d743df4b2411',1,'subApiReq_subscribe']]],
+  ['role',['role',['../group___o_p_e_n_d___h_a_n_f_u_n___t_y_p_e_s.html#adc0a3fa8991be183adefc66a604e02bc',1,'interfaceUid']]]
 ];

@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['x',['x',['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a1c75c01d0bddbbc5ccfa73cc324b0713',1,'openD_hanfun_iColourControl_xyColour']]],
-  ['x_5frate',['x_rate',['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a0626e50beb1c4b458a2b5e2c61470619',1,'openD_hanfun_iColourControl_moveXyMessage::x_rate()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a487a07cfbb234755f6a8dac42e249056',1,'openD_hanfun_iColourControl_stepXyMessage::x_rate()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a29e556e7c51a7f93e5d0ecd033f31e88',1,'openD_hanfun_iColourControlClientReq_moveXyAddr::x_rate()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a24e75357786452484ee989efe05cb85a',1,'openD_hanfun_iColourControlClientReq_moveXy::x_rate()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#a140bdfecf346bbc1f18885f79d185e52',1,'openD_hanfun_iColourControlClientReq_stepXyAddr::x_rate()'],['../group__OPEND__HANFUN__ICOLOURCONTROL.html#aa96bd063196e5ac004333a7a3b8aa88f',1,'openD_hanfun_iColourControlClientReq_stepXy::x_rate()']]]
-];
