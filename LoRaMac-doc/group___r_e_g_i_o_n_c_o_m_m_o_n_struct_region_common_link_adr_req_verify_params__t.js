@@ -1,5 +1,6 @@
 var group___r_e_g_i_o_n_c_o_m_m_o_n_struct_region_common_link_adr_req_verify_params__t =
 [
+    [ "Version", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a82b24af49de7b10e4078eb3b10d46031", null ],
     [ "Status", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a7ca418fa247ab5f1df4e8b5852d8b738", null ],
     [ "AdrEnabled", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ab3e2fb44577c95786e11aacd56769703", null ],
     [ "Datarate", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],

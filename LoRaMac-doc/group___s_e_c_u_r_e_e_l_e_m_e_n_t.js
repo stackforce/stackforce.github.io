@@ -1,0 +1,26 @@
+var group___s_e_c_u_r_e_e_l_e_m_e_n_t =
+[
+    [ "SecureElementNvmEvent", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga4a582c9959ab3c53ed55ec42ed6bec1f", null ],
+    [ "SecureElementStatus_t", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga6ceb1eae1f7aafea8a4c15009da00212", [
+      [ "SECURE_ELEMENT_SUCCESS", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gga6ceb1eae1f7aafea8a4c15009da00212a1886298f323fd6c258ebd97dd9787fc0", null ],
+      [ "SECURE_ELEMENT_FAIL_CMAC", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gga6ceb1eae1f7aafea8a4c15009da00212ab702f475626544cb8c65d10386f182e8", null ],
+      [ "SECURE_ELEMENT_ERROR_NPE", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gga6ceb1eae1f7aafea8a4c15009da00212ae098b07108ec684d9e73c6c1c901be48", null ],
+      [ "SECURE_ELEMENT_ERROR_INVALID_KEY_ID", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gga6ceb1eae1f7aafea8a4c15009da00212a2a76a8453b581de0477defb450ecd9fc", null ],
+      [ "SECURE_ELEMENT_ERROR_INVALID_LORAWAM_SPEC_VERSION", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gga6ceb1eae1f7aafea8a4c15009da00212ae333b23fd83ffb451aeee4ce503e09a6", null ],
+      [ "SECURE_ELEMENT_ERROR_BUF_SIZE", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gga6ceb1eae1f7aafea8a4c15009da00212aa3b66db0880808587fd155221ee37999", null ],
+      [ "SECURE_ELEMENT_ERROR", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gga6ceb1eae1f7aafea8a4c15009da00212ad72a6fd9854d908c9dc46e5330a48281", null ]
+    ] ],
+    [ "SecureElementInit", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga2b9139a3635685ffaa7baa7379ff4920", null ],
+    [ "SecureElementRestoreNvmCtx", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga40661f59e532869b6914e4eb658fc453", null ],
+    [ "SecureElementGetNvmCtx", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga8a360c062576c56953e4e402bff02237", null ],
+    [ "SecureElementSetKey", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga7ccfc3ad5662ec476ca7f68677c4f0d8", null ],
+    [ "SecureElementComputeAesCmac", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga4856f7e209d1c0f90f1f58d798cd7de2", null ],
+    [ "SecureElementVerifyAesCmac", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gaa7809fcf041025c0c581b364d5b2f3c3", null ],
+    [ "SecureElementAesEncrypt", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga4dad12e2062fd318aba17c51b96d64f4", null ],
+    [ "SecureElementDeriveAndStoreKey", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga0e5ea32fd3c56323d2b39dd3a84d1b59", null ],
+    [ "SecureElementRandomNumber", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gab96a7a833c840ab7453b8bb78c91b805", null ],
+    [ "SecureElementSetDevEui", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga0686e9a08199aa5c48114a010cf29beb", null ],
+    [ "SecureElementGetDevEui", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga3d05da542bc52ccba33cbd2c5d101292", null ],
+    [ "SecureElementSetJoinEui", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga867c38b4b76f780cbd7e057b46d7f4a1", null ],
+    [ "SecureElementGetJoinEui", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga7f5cd4277e9befaee148502dbf60ec20", null ]
+];

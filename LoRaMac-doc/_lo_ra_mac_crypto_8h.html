@@ -27,10 +27,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
+  <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.1</span>
+   &#160;<span id="projectnumber">4.4.2</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -82,49 +82,718 @@ $(document).ready(function(){initNavTree('_lo_ra_mac_crypto_8h.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">LoRaMacCrypto.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>LoRa MAC layer cryptography implementation.  
+<p>LoRa MAC layer cryptographic functionality implementation.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;utilities.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_lo_ra_mac_types_8h_source.html">LoRaMacTypes.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_lo_ra_mac_message_types_8h_source.html">LoRaMacMessageTypes.h</a>&quot;</code><br />
 </div>
 <p><a href="_lo_ra_mac_crypto_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga6ee265070494b83255e7fdc4dff985da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga6ee265070494b83255e7fdc4dff985da">LoRaMacComputeMic</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint32_t *mic)</td></tr>
-<tr class="separator:ga6ee265070494b83255e7fdc4dff985da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50339e60abea2186ca7e584b489718b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga50339e60abea2186ca7e584b489718b1">LoRaMacPayloadEncrypt</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *encBuffer)</td></tr>
-<tr class="separator:ga50339e60abea2186ca7e584b489718b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41f9ba19f61b195420914ed58c8b94c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#ga41f9ba19f61b195420914ed58c8b94c7">LoRaMacPayloadDecrypt</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t address, uint8_t dir, uint32_t sequenceCounter, uint8_t *decBuffer)</td></tr>
-<tr class="separator:ga41f9ba19f61b195420914ed58c8b94c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9216af326316c9e7f207d4e73aed199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac9216af326316c9e7f207d4e73aed199">LoRaMacJoinComputeMic</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint32_t *mic)</td></tr>
-<tr class="separator:gac9216af326316c9e7f207d4e73aed199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2379cd7cbeb6febaa2a7be5d9f04b5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gac2379cd7cbeb6febaa2a7be5d9f04b5c">LoRaMacJoinDecrypt</a> (const uint8_t *buffer, uint16_t size, const uint8_t *key, uint8_t *decBuffer)</td></tr>
-<tr class="separator:gac2379cd7cbeb6febaa2a7be5d9f04b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6fc2ace27fa388ec860fc2e5ae1f544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___l_o_r_a_m_a_c___c_r_y_p_t_o.html#gad6fc2ace27fa388ec860fc2e5ae1f544">LoRaMacJoinComputeSKeys</a> (const uint8_t *key, const uint8_t *appNonce, uint16_t devNonce, uint8_t *nwkSKey, uint8_t *appSKey)</td></tr>
-<tr class="separator:gad6fc2ace27fa388ec860fc2e5ae1f544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac626bd5e8bbec818c939aba174edecd9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> { <br />
+&#160;&#160;<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9abbbcdcf975e44b35f68fd2fe23e93541">LORAMAC_CRYPTO_SUCCESS</a> = 0, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a102c65fd853260bac854d3c6d28b456c">LORAMAC_CRYPTO_FAIL_MIC</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9ab89904ff59d51385219f3086edaa5a21">LORAMAC_CRYPTO_FAIL_ADDRESS</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a4bac2987f11e78b96214bf760ef98127">LORAMAC_CRYPTO_FAIL_JOIN_NONCE</a>, 
+<br />
+&#160;&#160;<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a013ebdfdc3faaede1b3406a1164a314c">LORAMAC_CRYPTO_FAIL_RJCOUNT0_OVERFLOW</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a06426fd74c9100b43e1fdaaabb253a94">LORAMAC_CRYPTO_FAIL_FCNT_ID</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9ae8acea307f86e84248dca07820b50cea">LORAMAC_CRYPTO_FAIL_FCNT_SMALLER</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a6b54665107db8b030ed0cbed9d491922">LORAMAC_CRYPTO_FAIL_FCNT_DUPLICATED</a>, 
+<br />
+&#160;&#160;<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a7ff298826e4d397d6cb58124f8f5501a">LORAMAC_CRYPTO_FAIL_MAX_GAP_FCNT</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a98af56b45b4a8ebc471e182f8d1d2f49">LORAMAC_CRYPTO_FAIL_PARAM</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9aadb3b5051bdd8c6508d1c392b10d06bb">LORAMAC_CRYPTO_ERROR_NPE</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9aa3811d1f718098fd33a3c151c2e55956">LORAMAC_CRYPTO_ERROR_INVALID_KEY_ID</a>, 
+<br />
+&#160;&#160;<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a829965f0965e3d046a725b51ddc29f7d">LORAMAC_CRYPTO_ERROR_INVALID_ADDR_ID</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a1d7752f37e89ddff214b408484bac25d">LORAMAC_CRYPTO_ERROR_INVALID_VERSION</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9acea7733b679bb1c100701b8d473d8bab">LORAMAC_CRYPTO_ERROR_BUF_SIZE</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9aa237793776bbbd05afd5bb0d724ce6fe">LORAMAC_CRYPTO_ERROR_SECURE_ELEMENT_FUNC</a>, 
+<br />
+&#160;&#160;<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a484e27696adc6c38b14204fd1b5a561c">LORAMAC_CRYPTO_ERROR_PARSER</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9aecab19d7c688addb2100ef2f91e23dec">LORAMAC_CRYPTO_ERROR_SERIALIZER</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a31e1c9c2bb6cbc6e0aa07439f92e7af6">LORAMAC_CRYPTO_ERROR_RJCOUNT1_OVERFLOW</a>, 
+<a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9a1dc380de449d3cf7ae6472e07f1bc39c">LORAMAC_CRYPTO_ERROR</a>
+<br />
+ }</td></tr>
+<tr class="separator:ac626bd5e8bbec818c939aba174edecd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7b9f15243c18a9764ed06876165e33"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#aac7b9f15243c18a9764ed06876165e33">LoRaMacCryptoNvmEvent</a>) (void)</td></tr>
+<tr class="separator:aac7b9f15243c18a9764ed06876165e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874f592d2d266176a0b0aed55bea949a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a874f592d2d266176a0b0aed55bea949a">LoRaMacCryptoInit</a> (<a class="el" href="_lo_ra_mac_crypto_8h.html#aac7b9f15243c18a9764ed06876165e33">LoRaMacCryptoNvmEvent</a> cryptoNvmCtxChanged)</td></tr>
+<tr class="separator:a874f592d2d266176a0b0aed55bea949a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ea12f357afa557c4db87827ba87561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a47ea12f357afa557c4db87827ba87561">LoRaMacCryptoSetLrWanVersion</a> (Version_t version)</td></tr>
+<tr class="separator:a47ea12f357afa557c4db87827ba87561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfe701d6618c16d30e0dafada108799"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#acdfe701d6618c16d30e0dafada108799">LoRaMacCryptoRestoreNvmCtx</a> (void *cryptoNvmCtx)</td></tr>
+<tr class="separator:acdfe701d6618c16d30e0dafada108799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29357bb8493a4efbb50c594ae4c28258"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a29357bb8493a4efbb50c594ae4c28258">LoRaMacCryptoGetNvmCtx</a> (size_t *cryptoNvmCtxSize)</td></tr>
+<tr class="separator:a29357bb8493a4efbb50c594ae4c28258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15725542e04ec7aaa73a639ab9db8ada"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a15725542e04ec7aaa73a639ab9db8ada">LoRaMacCryptoGetFCntDown</a> (<a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20b">FCntIdentifier_t</a> fCntID, uint16_t maxFCntGap, uint32_t frameFcnt, uint32_t *currentDown)</td></tr>
+<tr class="separator:a15725542e04ec7aaa73a639ab9db8ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3fd7211e751a5a02b1eefc2e719b921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac3fd7211e751a5a02b1eefc2e719b921">LoRaMacCryptoGetFCntUp</a> (uint32_t *currentUp)</td></tr>
+<tr class="separator:ac3fd7211e751a5a02b1eefc2e719b921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe81362ecf6dc0e22259101204e82aba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#abe81362ecf6dc0e22259101204e82aba">LoRaMacCryptoSetMulticastReference</a> (<a class="el" href="_lo_ra_mac_types_8h.html#struct_multicast_ctx__t">MulticastCtx_t</a> *multicastList)</td></tr>
+<tr class="separator:abe81362ecf6dc0e22259101204e82aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec00b7729d64be6c11136b2227f1dde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a5ec00b7729d64be6c11136b2227f1dde">LoRaMacCryptoSetKey</a> (<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a> keyID, uint8_t *key)</td></tr>
+<tr class="separator:a5ec00b7729d64be6c11136b2227f1dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144dbe06d24a82f12c33a8bcb159bbef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a144dbe06d24a82f12c33a8bcb159bbef">LoRaMacCryptoPrepareJoinRequest</a> (<a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_join_request__t">LoRaMacMessageJoinRequest_t</a> *macMsg)</td></tr>
+<tr class="separator:a144dbe06d24a82f12c33a8bcb159bbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c51465bcf074c9df8115bc596a460fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a3c51465bcf074c9df8115bc596a460fd">LoRaMacCryptoPrepareReJoinType1</a> (<a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_re_join_type1__t">LoRaMacMessageReJoinType1_t</a> *macMsg)</td></tr>
+<tr class="separator:a3c51465bcf074c9df8115bc596a460fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa593e5d1a7748b3f26cb01eeed35757f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#aa593e5d1a7748b3f26cb01eeed35757f">LoRaMacCryptoPrepareReJoinType0or2</a> (<a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_re_join_type0or2__t">LoRaMacMessageReJoinType0or2_t</a> *macMsg)</td></tr>
+<tr class="separator:aa593e5d1a7748b3f26cb01eeed35757f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499546c79d973995c79c44ab05e8e097"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a499546c79d973995c79c44ab05e8e097">LoRaMacCryptoHandleJoinAccept</a> (<a class="el" href="_lo_ra_mac_types_8h.html#ac2589ca2a32be1c64027de20236c0024">JoinReqIdentifier_t</a> joinReqType, uint8_t *joinEUI, <a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_join_accept__t">LoRaMacMessageJoinAccept_t</a> *macMsg)</td></tr>
+<tr class="separator:a499546c79d973995c79c44ab05e8e097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933d7ff3d89878e80a19523a24045587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a933d7ff3d89878e80a19523a24045587">LoRaMacCryptoSecureMessage</a> (uint32_t fCntUp, uint8_t txDr, uint8_t txCh, <a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_data__t">LoRaMacMessageData_t</a> *macMsg)</td></tr>
+<tr class="separator:a933d7ff3d89878e80a19523a24045587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9733c65b607f6e0bf26e3cee6ffa8830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a9733c65b607f6e0bf26e3cee6ffa8830">LoRaMacCryptoUnsecureMessage</a> (<a class="el" href="_lo_ra_mac_types_8h.html#abb9a9e8723302bd6e5f85fb7e2062f4f">AddressIdentifier_t</a> addrID, uint32_t address, <a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20b">FCntIdentifier_t</a> fCntID, uint32_t fCntDown, <a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_data__t">LoRaMacMessageData_t</a> *macMsg)</td></tr>
+<tr class="separator:a9733c65b607f6e0bf26e3cee6ffa8830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66469fffae89115547b460d75c79fda0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a66469fffae89115547b460d75c79fda0">LoRaMacCryptoDeriveMcRootKey</a> (<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a> keyID)</td></tr>
+<tr class="separator:a66469fffae89115547b460d75c79fda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af133639992bb1fe5a1d47476adde30ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#af133639992bb1fe5a1d47476adde30ea">LoRaMacCryptoDeriveMcKEKey</a> (<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a> keyID)</td></tr>
+<tr class="separator:af133639992bb1fe5a1d47476adde30ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9784ca6713884112bc9610b9df7cc9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac9784ca6713884112bc9610b9df7cc9e">LoRaMacCryptoDeriveMcSessionKeyPair</a> (<a class="el" href="_lo_ra_mac_types_8h.html#abb9a9e8723302bd6e5f85fb7e2062f4f">AddressIdentifier_t</a> addrID, uint32_t mcAddr)</td></tr>
+<tr class="separator:ac9784ca6713884112bc9610b9df7cc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>LoRa MAC layer cryptography implementation. </p>
+<div class="textblock"><p>LoRa MAC layer cryptographic functionality implementation. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Revised BSD License, see section <a class="el" href="index.html#LICENSE">License</a>.</dd></dl>
 <div class="fragment"><div class="line">  ______                              _</div><div class="line"> / _____)             _              | |</div><div class="line">( (____  _____ ____ _| |_ _____  ____| |__</div><div class="line"> \____ \| ___ |    (_   _) ___ |/ ___)  _ \</div><div class="line"> _____) ) ____| | | || |_| ____( (___| | | |</div><div class="line">(______/|_____)_|_|_| \__)_____)\____)_| |_|</div><div class="line">(C)2013-2017 Semtech</div><div class="line"></div><div class="line"> ___ _____ _   ___ _  _____ ___  ___  ___ ___</div><div class="line">/ __|_   _/_\ / __| |/ / __/ _ \| _ \/ __| __|</div><div class="line">\__ \ | |/ _ \ (__| <span class="stringliteral">&#39; &lt;| _| (_) |   / (__| _|</span></div><div class="line"><span class="stringliteral">|___/ |_/_/ \_\___|_|\_\_| \___/|_|_\\___|___|</span></div><div class="line"><span class="stringliteral">embedded.connectivity.solutions===============</span></div></div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Miguel Luis ( Semtech )</dd>
 <dd>
 Gregory Cristian ( Semtech )</dd>
 <dd>
-Daniel Jaeckle ( STACKFORCE ) </dd></dl>
-</div></div><!-- contents -->
+Daniel Jaeckle ( STACKFORCE )</dd>
+<dd>
+Johannes Bruder ( STACKFORCE )</dd></dl>
+<p>addtogroup LORAMAC </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="aac7b9f15243c18a9764ed06876165e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac7b9f15243c18a9764ed06876165e33">&#9670;&nbsp;</a></span>LoRaMacCryptoNvmEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void( * LoRaMacCryptoNvmEvent) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Signature of callback function to be called by the LoRaMac Crypto module when the non-volatile context have to be stored. It is also possible to save the entire crypto module context. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ac626bd5e8bbec818c939aba174edecd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac626bd5e8bbec818c939aba174edecd9">&#9670;&nbsp;</a></span>LoRaMacCryptoStatus_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LoRaMac Cryto Status </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9abbbcdcf975e44b35f68fd2fe23e93541"></a>LORAMAC_CRYPTO_SUCCESS&#160;</td><td class="fielddoc"><p>No error occurred </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a102c65fd853260bac854d3c6d28b456c"></a>LORAMAC_CRYPTO_FAIL_MIC&#160;</td><td class="fielddoc"><p>MIC does not match </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9ab89904ff59d51385219f3086edaa5a21"></a>LORAMAC_CRYPTO_FAIL_ADDRESS&#160;</td><td class="fielddoc"><p>Address does not match </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a4bac2987f11e78b96214bf760ef98127"></a>LORAMAC_CRYPTO_FAIL_JOIN_NONCE&#160;</td><td class="fielddoc"><p>JoinNonce was not greater than previous one. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a013ebdfdc3faaede1b3406a1164a314c"></a>LORAMAC_CRYPTO_FAIL_RJCOUNT0_OVERFLOW&#160;</td><td class="fielddoc"><p>RJcount0 reached 2^16-1 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a06426fd74c9100b43e1fdaaabb253a94"></a>LORAMAC_CRYPTO_FAIL_FCNT_ID&#160;</td><td class="fielddoc"><p>FCNT_ID is not supported </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9ae8acea307f86e84248dca07820b50cea"></a>LORAMAC_CRYPTO_FAIL_FCNT_SMALLER&#160;</td><td class="fielddoc"><p>FCntUp/Down check failed (new FCnt is smaller than previous one) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a6b54665107db8b030ed0cbed9d491922"></a>LORAMAC_CRYPTO_FAIL_FCNT_DUPLICATED&#160;</td><td class="fielddoc"><p>FCntUp/Down check failed (duplicated) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a7ff298826e4d397d6cb58124f8f5501a"></a>LORAMAC_CRYPTO_FAIL_MAX_GAP_FCNT&#160;</td><td class="fielddoc"><p>MAX_GAP_FCNT check failed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a98af56b45b4a8ebc471e182f8d1d2f49"></a>LORAMAC_CRYPTO_FAIL_PARAM&#160;</td><td class="fielddoc"><p>Not allowed parameter value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9aadb3b5051bdd8c6508d1c392b10d06bb"></a>LORAMAC_CRYPTO_ERROR_NPE&#160;</td><td class="fielddoc"><p>Null pointer exception </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9aa3811d1f718098fd33a3c151c2e55956"></a>LORAMAC_CRYPTO_ERROR_INVALID_KEY_ID&#160;</td><td class="fielddoc"><p>Invalid key identifier exception </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a829965f0965e3d046a725b51ddc29f7d"></a>LORAMAC_CRYPTO_ERROR_INVALID_ADDR_ID&#160;</td><td class="fielddoc"><p>Invalid address identifier exception </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a1d7752f37e89ddff214b408484bac25d"></a>LORAMAC_CRYPTO_ERROR_INVALID_VERSION&#160;</td><td class="fielddoc"><p>Invalid LoRaWAN specification version </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9acea7733b679bb1c100701b8d473d8bab"></a>LORAMAC_CRYPTO_ERROR_BUF_SIZE&#160;</td><td class="fielddoc"><p>Incompatible buffer size </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9aa237793776bbbd05afd5bb0d724ce6fe"></a>LORAMAC_CRYPTO_ERROR_SECURE_ELEMENT_FUNC&#160;</td><td class="fielddoc"><p>The secure element reports an error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a484e27696adc6c38b14204fd1b5a561c"></a>LORAMAC_CRYPTO_ERROR_PARSER&#160;</td><td class="fielddoc"><p>Error from parser reported </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9aecab19d7c688addb2100ef2f91e23dec"></a>LORAMAC_CRYPTO_ERROR_SERIALIZER&#160;</td><td class="fielddoc"><p>Error from serializer reported </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a31e1c9c2bb6cbc6e0aa07439f92e7af6"></a>LORAMAC_CRYPTO_ERROR_RJCOUNT1_OVERFLOW&#160;</td><td class="fielddoc"><p>RJcount1 reached 2^16-1 which should never happen </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac626bd5e8bbec818c939aba174edecd9a1dc380de449d3cf7ae6472e07f1bc39c"></a>LORAMAC_CRYPTO_ERROR&#160;</td><td class="fielddoc"><p>Undefined Error occurred </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a874f592d2d266176a0b0aed55bea949a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874f592d2d266176a0b0aed55bea949a">&#9670;&nbsp;</a></span>LoRaMacCryptoInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_crypto_8h.html#aac7b9f15243c18a9764ed06876165e33">LoRaMacCryptoNvmEvent</a>&#160;</td>
+          <td class="paramname"><em>cryptoNvmCtxChanged</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialization of LoRaMac Crypto module It sets initial values of volatile variables and assigns the non-volatile context.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47ea12f357afa557c4db87827ba87561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ea12f357afa557c4db87827ba87561">&#9670;&nbsp;</a></span>LoRaMacCryptoSetLrWanVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoSetLrWanVersion </td>
+          <td>(</td>
+          <td class="paramtype">Version_t&#160;</td>
+          <td class="paramname"><em>version</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the LoRaWAN specification version to be used.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This function should be used for ABP only. In case of OTA the version will be set automatically.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acdfe701d6618c16d30e0dafada108799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfe701d6618c16d30e0dafada108799">&#9670;&nbsp;</a></span>LoRaMacCryptoRestoreNvmCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoRestoreNvmCtx </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cryptoNvmCtx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Restores the internal nvm context from passed pointer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29357bb8493a4efbb50c594ae4c28258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29357bb8493a4efbb50c594ae4c28258">&#9670;&nbsp;</a></span>LoRaMacCryptoGetNvmCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* LoRaMacCryptoGetNvmCtx </td>
+          <td>(</td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>cryptoNvmCtxSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a pointer to the internal non-volatile context.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15725542e04ec7aaa73a639ab9db8ada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15725542e04ec7aaa73a639ab9db8ada">&#9670;&nbsp;</a></span>LoRaMacCryptoGetFCntDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoGetFCntDown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20b">FCntIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>fCntID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>maxFCntGap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>frameFcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>currentDown</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns updated fCntID downlink counter value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac3fd7211e751a5a02b1eefc2e719b921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3fd7211e751a5a02b1eefc2e719b921">&#9670;&nbsp;</a></span>LoRaMacCryptoGetFCntUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoGetFCntUp </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>currentUp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns updated fCntUp uplink counter value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abe81362ecf6dc0e22259101204e82aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe81362ecf6dc0e22259101204e82aba">&#9670;&nbsp;</a></span>LoRaMacCryptoSetMulticastReference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoSetMulticastReference </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#struct_multicast_ctx__t">MulticastCtx_t</a> *&#160;</td>
+          <td class="paramname"><em>multicastList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Provides multicast context.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5ec00b7729d64be6c11136b2227f1dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec00b7729d64be6c11136b2227f1dde">&#9670;&nbsp;</a></span>LoRaMacCryptoSetKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoSetKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>keyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a key</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a144dbe06d24a82f12c33a8bcb159bbef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a144dbe06d24a82f12c33a8bcb159bbef">&#9670;&nbsp;</a></span>LoRaMacCryptoPrepareJoinRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoPrepareJoinRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_join_request__t">LoRaMacMessageJoinRequest_t</a> *&#160;</td>
+          <td class="paramname"><em>macMsg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prepares the join-request message. It computes the mic and add it to the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c51465bcf074c9df8115bc596a460fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c51465bcf074c9df8115bc596a460fd">&#9670;&nbsp;</a></span>LoRaMacCryptoPrepareReJoinType1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoPrepareReJoinType1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_re_join_type1__t">LoRaMacMessageReJoinType1_t</a> *&#160;</td>
+          <td class="paramname"><em>macMsg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prepares a rejoin-request type 1 message. It computes the mic and add it to the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa593e5d1a7748b3f26cb01eeed35757f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa593e5d1a7748b3f26cb01eeed35757f">&#9670;&nbsp;</a></span>LoRaMacCryptoPrepareReJoinType0or2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoPrepareReJoinType0or2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_re_join_type0or2__t">LoRaMacMessageReJoinType0or2_t</a> *&#160;</td>
+          <td class="paramname"><em>macMsg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prepares a rejoin-request type 0 or 2 message. It computes the mic and add it to the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a499546c79d973995c79c44ab05e8e097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a499546c79d973995c79c44ab05e8e097">&#9670;&nbsp;</a></span>LoRaMacCryptoHandleJoinAccept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoHandleJoinAccept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#ac2589ca2a32be1c64027de20236c0024">JoinReqIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>joinReqType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>joinEUI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_join_accept__t">LoRaMacMessageJoinAccept_t</a> *&#160;</td>
+          <td class="paramname"><em>macMsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handles the join-accept message. It decrypts the message, verifies the MIC and if successful derives the session keys.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a933d7ff3d89878e80a19523a24045587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933d7ff3d89878e80a19523a24045587">&#9670;&nbsp;</a></span>LoRaMacCryptoSecureMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoSecureMessage </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fCntUp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>txDr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>txCh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_data__t">LoRaMacMessageData_t</a> *&#160;</td>
+          <td class="paramname"><em>macMsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Secures a message (encryption + integrity).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9733c65b607f6e0bf26e3cee6ffa8830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9733c65b607f6e0bf26e3cee6ffa8830">&#9670;&nbsp;</a></span>LoRaMacCryptoUnsecureMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoUnsecureMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#abb9a9e8723302bd6e5f85fb7e2062f4f">AddressIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>addrID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20b">FCntIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>fCntID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fCntDown</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_data__t">LoRaMacMessageData_t</a> *&#160;</td>
+          <td class="paramname"><em>macMsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unsecures a message (decryption + integrity verification).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66469fffae89115547b460d75c79fda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66469fffae89115547b460d75c79fda0">&#9670;&nbsp;</a></span>LoRaMacCryptoDeriveMcRootKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoDeriveMcRootKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>keyID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Derives the McRootKey from the GenAppKey or AppKey.</p>
+<p>1.0.x McRootKey = aes128_encrypt(GenAppKey , 0x00 | pad16)</p>
+<p>1.1.x McRootKey = aes128_encrypt(AppKey , 0x20 | pad16)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af133639992bb1fe5a1d47476adde30ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af133639992bb1fe5a1d47476adde30ea">&#9670;&nbsp;</a></span>LoRaMacCryptoDeriveMcKEKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoDeriveMcKEKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>keyID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Derives the McKEKey from the McRootKey.</p>
+<p>McKEKey = aes128_encrypt(McRootKey , 0x00 | pad16)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac9784ca6713884112bc9610b9df7cc9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9784ca6713884112bc9610b9df7cc9e">&#9670;&nbsp;</a></span>LoRaMacCryptoDeriveMcSessionKeyPair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoDeriveMcSessionKeyPair </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#abb9a9e8723302bd6e5f85fb7e2062f4f">AddressIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>addrID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mcAddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Derives a Multicast group key pair ( McAppSKey, McNwkSKey ) from McKey</p>
+<p>McAppSKey = aes128_encrypt(McKey, 0x01 | McAddr | pad16) McNwkSKey = aes128_encrypt(McKey, 0x02 | McAddr | pad16)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_effec920ede41fb96e7864e805338585.html">loramac-node</a></li><li class="navelem"><a class="el" href="dir_4a88cfc83a69fddb7155b83fca49a6bc.html">src</a></li><li class="navelem"><a class="el" href="dir_99e362b2a8ddfd673935ba51ee0c0761.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_crypto_8h.html">LoRaMacCrypto.h</a></li>
-    <li class="footer">Generated on Wed Mar 7 2018 16:20:00 for LoRaMAC by
+    <li class="navelem"><a class="el" href="dir_df7eed3543fa7070b0a3ab0e00a3e0a6.html">github-loramac-node</a></li><li class="navelem"><a class="el" href="dir_1dda2d094b0a9f47a7b83974941607c0.html">src</a></li><li class="navelem"><a class="el" href="dir_52c4f436fc21c8338c027271102d36bc.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_crypto_8h.html">LoRaMacCrypto.h</a></li>
+    <li class="footer">Generated on Fri Jul 19 2019 13:26:20 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

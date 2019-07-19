@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inittype_5ft',['InitType_t',['../group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0',1,'Region.h']]]
+  ['channelsmask_5ft',['ChannelsMask_t',['../group___r_e_g_i_o_n.html#gabe3b4bade28dbbd35945897094ebbf8a',1,'Region.h']]]
 ];

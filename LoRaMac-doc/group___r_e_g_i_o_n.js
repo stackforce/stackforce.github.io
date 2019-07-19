@@ -1,10 +1,16 @@
 var group___r_e_g_i_o_n =
 [
+    [ "BeaconFormat_t", "group___r_e_g_i_o_n.html#struct_beacon_format__t", [
+      [ "BeaconSize", "group___r_e_g_i_o_n.html#a990eb48e68d052f9a436b5173acf325e", null ],
+      [ "Rfu1Size", "group___r_e_g_i_o_n.html#ae8ede57459e8f7d00301ac3a5815b0d8", null ],
+      [ "Rfu2Size", "group___r_e_g_i_o_n.html#a98e3f67779fe0a849c40aa90858844c5", null ]
+    ] ],
     [ "PhyParam_t", "group___r_e_g_i_o_n.html#union_phy_param__t", [
       [ "Value", "group___r_e_g_i_o_n.html#a8e0dcce3428a8051614e852b8836d0d1", null ],
       [ "fValue", "group___r_e_g_i_o_n.html#ad30735f839c3c7592fc5bc5390c45715", null ],
       [ "ChannelsMask", "group___r_e_g_i_o_n.html#aed7477cfc6166e3ee0499b898443426a", null ],
-      [ "Channels", "group___r_e_g_i_o_n.html#afecbd1e457cbd79eb7072bd140ff33d4", null ]
+      [ "Channels", "group___r_e_g_i_o_n.html#afecbd1e457cbd79eb7072bd140ff33d4", null ],
+      [ "BeaconFormat", "group___r_e_g_i_o_n.html#a5edb974f005097815897a923ba61b63f", null ]
     ] ],
     [ "GetPhyParams_t", "group___r_e_g_i_o_n.html#struct_get_phy_params__t", [
       [ "Attribute", "group___r_e_g_i_o_n.html#abdcb168ffd6913b85e2f635d7a475f2d", null ],
@@ -17,12 +23,20 @@ var group___r_e_g_i_o_n =
       [ "Joined", "group___r_e_g_i_o_n.html#ac2f6caa0f3b02d2ac5056c3ee7c22652", null ],
       [ "LastTxDoneTime", "group___r_e_g_i_o_n.html#a7316dfb002c4e0015fceeb727020fe5c", null ]
     ] ],
+    [ "InitDefaultsParams_t", "group___r_e_g_i_o_n.html#struct_init_defaults_params__t", [
+      [ "NvmCtx", "group___r_e_g_i_o_n.html#a9ac0dd2d9306e20372799f08663f3a96", null ],
+      [ "Type", "group___r_e_g_i_o_n.html#a4ad14d59d8506d021a74e7b84dd31483", null ]
+    ] ],
+    [ "GetNvmCtxParams_t", "group___r_e_g_i_o_n.html#struct_get_nvm_ctx_params__t", [
+      [ "nvmCtxSize", "group___r_e_g_i_o_n.html#a51201d59f7f6e742bd4889a6124cf0ec", null ]
+    ] ],
     [ "VerifyParams_t", "group___r_e_g_i_o_n.html#union_verify_params__t", [
       [ "sDatarateParams", "group___r_e_g_i_o_n.html#struct_verify_params__t_1_1s_datarate_params", [
         [ "Datarate", "group___r_e_g_i_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],
         [ "DownlinkDwellTime", "group___r_e_g_i_o_n.html#a63074ce7d23ff98956f5d6f4054f235f", null ],
         [ "UplinkDwellTime", "group___r_e_g_i_o_n.html#a0e6663762d6f9173bc8d8cb018f8f17a", null ]
       ] ],
+      [ "Frequency", "group___r_e_g_i_o_n.html#ade3d190636488dad9a89b19446b7acf1", null ],
       [ "TxPower", "group___r_e_g_i_o_n.html#a037b4f849fa8ed4aa1d3c58aef2b28ec", null ],
       [ "DutyCycle", "group___r_e_g_i_o_n.html#a72f580d8a64ab70f5c4f7e10a694c65b", null ],
       [ "DatarateParams", "group___r_e_g_i_o_n.html#a98139e2506044be6c716c0e3462e38a1", null ]
@@ -34,14 +48,6 @@ var group___r_e_g_i_o_n =
     [ "ChanMaskSetParams_t", "group___r_e_g_i_o_n.html#struct_chan_mask_set_params__t", [
       [ "ChannelsMaskIn", "group___r_e_g_i_o_n.html#ade387d6ecaf27781b14ad97ebdfc0695", null ],
       [ "ChannelsMaskType", "group___r_e_g_i_o_n.html#a02b75be74cbc34fa2126b2c250ea9283", null ]
-    ] ],
-    [ "AdrNextParams_t", "group___r_e_g_i_o_n.html#struct_adr_next_params__t", [
-      [ "UpdateChanMask", "group___r_e_g_i_o_n.html#a708080da9c63d868556b2c48cb53003b", null ],
-      [ "AdrEnabled", "group___r_e_g_i_o_n.html#ab3e2fb44577c95786e11aacd56769703", null ],
-      [ "AdrAckCounter", "group___r_e_g_i_o_n.html#a24f0356a3491bf07be9ac99ffa33896a", null ],
-      [ "Datarate", "group___r_e_g_i_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],
-      [ "TxPower", "group___r_e_g_i_o_n.html#a037b4f849fa8ed4aa1d3c58aef2b28ec", null ],
-      [ "UplinkDwellTime", "group___r_e_g_i_o_n.html#a0e6663762d6f9173bc8d8cb018f8f17a", null ]
     ] ],
     [ "RxConfigParams_t", "group___r_e_g_i_o_n.html#struct_rx_config_params__t", [
       [ "Channel", "group___r_e_g_i_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e", null ],
@@ -65,6 +71,7 @@ var group___r_e_g_i_o_n =
       [ "PktLen", "group___r_e_g_i_o_n.html#aff9de7b29c2d9ebf3fa963f2ba09c121", null ]
     ] ],
     [ "LinkAdrReqParams_t", "group___r_e_g_i_o_n.html#struct_link_adr_req_params__t", [
+      [ "Version", "group___r_e_g_i_o_n.html#a82b24af49de7b10e4078eb3b10d46031", null ],
       [ "Payload", "group___r_e_g_i_o_n.html#a3dfbfe76c8f3bd25765750487b815147", null ],
       [ "PayloadSize", "group___r_e_g_i_o_n.html#a65009968bd973163423516e80a11c82f", null ],
       [ "UplinkDwellTime", "group___r_e_g_i_o_n.html#a0e6663762d6f9173bc8d8cb018f8f17a", null ],
@@ -96,7 +103,7 @@ var group___r_e_g_i_o_n =
       [ "LastTxIsJoinRequest", "group___r_e_g_i_o_n.html#a4088d0ca2ff21fd5cdc110e14816dd53", null ],
       [ "DutyCycleEnabled", "group___r_e_g_i_o_n.html#a4d755868e0e80089462286c3ba6a6f18", null ],
       [ "Channel", "group___r_e_g_i_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e", null ],
-      [ "ElapsedTime", "group___r_e_g_i_o_n.html#a2ece30988e7a5bac284623173173c71a", null ],
+      [ "ElapsedTime", "group___r_e_g_i_o_n.html#abcc8bdb6aeb0a261ce00a92d41808291", null ],
       [ "TxTimeOnAir", "group___r_e_g_i_o_n.html#aa17a8607485db100d315e74853dd217e", null ]
     ] ],
     [ "NextChanParams_t", "group___r_e_g_i_o_n.html#struct_next_chan_params__t", [
@@ -120,6 +127,11 @@ var group___r_e_g_i_o_n =
       [ "MaxEirp", "group___r_e_g_i_o_n.html#abacf3c28f803460c8947f0b0077fcf5c", null ],
       [ "AntennaGain", "group___r_e_g_i_o_n.html#a727eaefd87f898a5238118573968962c", null ],
       [ "Timeout", "group___r_e_g_i_o_n.html#ae1c58f120c7eef7bb71a5e3bfeaeb795", null ]
+    ] ],
+    [ "RxBeaconSetup_t", "group___r_e_g_i_o_n.html#struct_rx_beacon_setup__t", [
+      [ "SymbolTimeout", "group___r_e_g_i_o_n.html#adbf32440d72b6d8ac55108352519d5c8", null ],
+      [ "RxTime", "group___r_e_g_i_o_n.html#abdb9737eabd7c9c2fac483fa5ac2b93b", null ],
+      [ "Frequency", "group___r_e_g_i_o_n.html#ade3d190636488dad9a89b19446b7acf1", null ]
     ] ],
     [ "LC", "group___r_e_g_i_o_n.html#ga12fa17e5c1016e01a9d82c25027deb1b", null ],
     [ "DR_0", "group___r_e_g_i_o_n.html#ga6c4ef966b4f3d5eb7597b087f2b97095", null ],
@@ -155,6 +167,7 @@ var group___r_e_g_i_o_n =
     [ "TX_POWER_14", "group___r_e_g_i_o_n.html#ga6932af7382128090be2a6533e260dd9c", null ],
     [ "TX_POWER_15", "group___r_e_g_i_o_n.html#gabe4f87ed0aa6efe21ec76d9a32a334ef", null ],
     [ "PhyAttribute_t", "group___r_e_g_i_o_n.html#gac1354e358e41c80d30879e97df258e27", [
+      [ "PHY_FREQUENCY", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a05fc4a22ebae5338d5459c7b4bd6b0ec", null ],
       [ "PHY_MIN_RX_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a91cb5d84f937c32cd635dd7efe7a9d3a", null ],
       [ "PHY_MIN_TX_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27aace3e56c88b40def8ed6a9106871e7de", null ],
       [ "PHY_MAX_RX_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27abc80857ed9621c5c6fd60d98846b0b84", null ],
@@ -162,8 +175,11 @@ var group___r_e_g_i_o_n =
       [ "PHY_TX_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a62c19af9dc2c54540562e1158c015f57", null ],
       [ "PHY_DEF_TX_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a70c3923333165960549162e3dcf10467", null ],
       [ "PHY_RX_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8cc3b895173b07ee71127e366c8d0d55", null ],
+      [ "PHY_MAX_TX_POWER", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a1fd3e015b3c94bc500173d311017652e", null ],
       [ "PHY_TX_POWER", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a0dceb30b79f1bae301afd5406a86d6f3", null ],
       [ "PHY_DEF_TX_POWER", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a18ae0d314f20c212f9e40207099ab1bb", null ],
+      [ "PHY_DEF_ADR_ACK_LIMIT", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8c3ba027abe03c0e9b0c397bf8184050", null ],
+      [ "PHY_DEF_ADR_ACK_DELAY", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a5f75c468df6f3d0f1faffc5ba2ab5f7c", null ],
       [ "PHY_MAX_PAYLOAD", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ad671e2651e42de26927910282c6b2781", null ],
       [ "PHY_MAX_PAYLOAD_REPEATER", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8a3b9e5ad2604232fd1f8781658452f3", null ],
       [ "PHY_DUTY_CYCLE", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac66308571e624ecc28c79ee0deab8cf0", null ],
@@ -185,25 +201,48 @@ var group___r_e_g_i_o_n =
       [ "PHY_DEF_DOWNLINK_DWELL_TIME", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8e29179691bf6520256a7af0cabae6ad", null ],
       [ "PHY_DEF_MAX_EIRP", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a5bdce0ffd449781819a0d87732ebd2b7", null ],
       [ "PHY_DEF_ANTENNA_GAIN", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a37b73a543ea79ce58bf18035329ba773", null ],
-      [ "PHY_NEXT_LOWER_TX_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac002e7e492cf30dbf9c544b062f5cc8a", null ]
+      [ "PHY_NEXT_LOWER_TX_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac002e7e492cf30dbf9c544b062f5cc8a", null ],
+      [ "PHY_BEACON_INTERVAL", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a1b1d5a52d7fb33bb55996a4bbf9723e9", null ],
+      [ "PHY_BEACON_RESERVED", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a6f86c46dc4ba0d19df23861e4e431d78", null ],
+      [ "PHY_BEACON_GUARD", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a1d78fbe5bb7a47602736ba686549fbd1", null ],
+      [ "PHY_BEACON_WINDOW", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27aec9660bb79a77cf3e0fc8c227c997700", null ],
+      [ "PHY_BEACON_WINDOW_SLOTS", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a70145888d1c1c28db64ec46b3a7bfd36", null ],
+      [ "PHY_PING_SLOT_WINDOW", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ad35dd343808b404771423e73d4047ef9", null ],
+      [ "PHY_BEACON_SYMBOL_TO_DEFAULT", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a734e8723782d1ba2e00a6fba197ec6cc", null ],
+      [ "PHY_BEACON_SYMBOL_TO_EXPANSION_MAX", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a9f1d8c6fe30ca545fa0d2878aee1ac7b", null ],
+      [ "PHY_PING_SLOT_SYMBOL_TO_EXPANSION_MAX", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a404814937dccb1e61346d05456835d86", null ],
+      [ "PHY_BEACON_SYMBOL_TO_EXPANSION_FACTOR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27add7393b4489067c4f119f2a7b1bd449c", null ],
+      [ "PHY_PING_SLOT_SYMBOL_TO_EXPANSION_FACTOR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27adaad38921a58a09c370cdf0d573bae1b", null ],
+      [ "PHY_MAX_BEACON_LESS_PERIOD", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a94f8ade1076b2e28600862c3c79a0e80", null ],
+      [ "PHY_BEACON_DELAY_BEACON_TIMING_ANS", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a28af41850e3e8706424b38ecccd1c820", null ],
+      [ "PHY_BEACON_CHANNEL_FREQ", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27af66678190108f68a137e87f542c79cd8", null ],
+      [ "PHY_BEACON_FORMAT", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a6141dbec6ac34965123693be279f2769", null ],
+      [ "PHY_BEACON_CHANNEL_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ab68a2c284d4e827f05529b48ef5eeed5", null ],
+      [ "PHY_BEACON_CHANNEL_STEPWIDTH", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a08f0ef405589a877cb43902784b50b89", null ],
+      [ "PHY_BEACON_NB_CHANNELS", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a099ba02c06e2f359f1d46d05b70d8732", null ],
+      [ "PHY_PING_SLOT_CHANNEL_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac6dd3ecce054eaefa85d609838280665", null ]
     ] ],
     [ "InitType_t", "group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0", [
       [ "INIT_TYPE_INIT", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7", null ],
-      [ "INIT_TYPE_RESTORE", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0aed3218cb3c4ebbb74a1b48e4f8ac8599", null ],
-      [ "INIT_TYPE_APP_DEFAULTS", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a3d260b94611dd833c5243c16ca26c3f0", null ]
+      [ "INIT_TYPE_RESTORE_DEFAULT_CHANNELS", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a79ad91828ca72b4ead718bdfca91fab7", null ],
+      [ "INIT_TYPE_RESTORE_CTX", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0aadda495dbd34e630ff5bd10821b0d563", null ]
     ] ],
     [ "ChannelsMask_t", "group___r_e_g_i_o_n.html#gabe3b4bade28dbbd35945897094ebbf8a", [
       [ "CHANNELS_MASK", "group___r_e_g_i_o_n.html#ggabe3b4bade28dbbd35945897094ebbf8aa1e68275c0b16a0c4935eada4315dd089", null ],
       [ "CHANNELS_DEFAULT_MASK", "group___r_e_g_i_o_n.html#ggabe3b4bade28dbbd35945897094ebbf8aa9bbb18c8600ad8781ba04a2cb121ea60", null ]
     ] ],
+    [ "AlternateDrType_t", "group___r_e_g_i_o_n.html#ga68dd5abbb091918b80cab467f09f74e8", [
+      [ "ALTERNATE_DR", "group___r_e_g_i_o_n.html#gga68dd5abbb091918b80cab467f09f74e8ab4c1a12aad864f79890364ee709278e1", null ],
+      [ "ALTERNATE_DR_RESTORE", "group___r_e_g_i_o_n.html#gga68dd5abbb091918b80cab467f09f74e8acc98aca93e2287f1d771c9b9c64e680d", null ]
+    ] ],
     [ "RegionIsActive", "group___r_e_g_i_o_n.html#ga3e5cf2322f71f8f9973718024b6fb782", null ],
     [ "RegionGetPhyParam", "group___r_e_g_i_o_n.html#gafbd084611ba512035a6cbe7f3aa5857b", null ],
     [ "RegionSetBandTxDone", "group___r_e_g_i_o_n.html#gabdd176dcf0b7e7900377b4c1e183613d", null ],
-    [ "RegionInitDefaults", "group___r_e_g_i_o_n.html#ga54b1b27a8431cd146b4dc33a894ee6db", null ],
+    [ "RegionInitDefaults", "group___r_e_g_i_o_n.html#ga153ce11dec6506012dbf5f5881a140d7", null ],
+    [ "RegionGetNvmCtx", "group___r_e_g_i_o_n.html#gaefc455cedf4d2f39a88911192fd781e7", null ],
     [ "RegionVerify", "group___r_e_g_i_o_n.html#ga7c1ff626bc1131889fa8de3197a1093a", null ],
     [ "RegionApplyCFList", "group___r_e_g_i_o_n.html#gae3fdd82182ebb0704adb2a017d30e1f2", null ],
     [ "RegionChanMaskSet", "group___r_e_g_i_o_n.html#ga795ed3c13f4c8d03e39298fd64e5b2df", null ],
-    [ "RegionAdrNext", "group___r_e_g_i_o_n.html#ga08cac64beeadd0555460ca5e756a0792", null ],
     [ "RegionRxConfig", "group___r_e_g_i_o_n.html#gaf89984d30239d6597190409068031465", null ],
     [ "RegionComputeRxWindowParameters", "group___r_e_g_i_o_n.html#gabd3eb4e7db9b7987fabb9568f733a2b9", null ],
     [ "RegionTxConfig", "group___r_e_g_i_o_n.html#ga9a4b01301e0f6f6880dc6a651c062ad0", null ],
@@ -212,11 +251,12 @@ var group___r_e_g_i_o_n =
     [ "RegionNewChannelReq", "group___r_e_g_i_o_n.html#gadca654538335b4395c8d54642b83e2d4", null ],
     [ "RegionTxParamSetupReq", "group___r_e_g_i_o_n.html#ga50dbaca7bf982330c183614302d525c4", null ],
     [ "RegionDlChannelReq", "group___r_e_g_i_o_n.html#ga54f7c22677b2d0628e9914f53501d4b8", null ],
-    [ "RegionAlternateDr", "group___r_e_g_i_o_n.html#ga28f24373a279e7665ceb6cd4be30f558", null ],
+    [ "RegionAlternateDr", "group___r_e_g_i_o_n.html#gae4e60552e083960cfae76c343e980f15", null ],
     [ "RegionCalcBackOff", "group___r_e_g_i_o_n.html#ga07cfd135a3e8f85e15a5424c07f71d67", null ],
     [ "RegionNextChannel", "group___r_e_g_i_o_n.html#ga627b895f8bdd552639820ddfcfaa698e", null ],
     [ "RegionChannelAdd", "group___r_e_g_i_o_n.html#gaaa5767f33e988a641abf509ad278ae14", null ],
     [ "RegionChannelsRemove", "group___r_e_g_i_o_n.html#ga50b3505e13d8373fef6e2be6d48e150c", null ],
     [ "RegionSetContinuousWave", "group___r_e_g_i_o_n.html#ga22327f217ed10d84c89b6785143be5b8", null ],
-    [ "RegionApplyDrOffset", "group___r_e_g_i_o_n.html#gab62221e1ca566a89f4b450b30bfb95a7", null ]
+    [ "RegionApplyDrOffset", "group___r_e_g_i_o_n.html#gab62221e1ca566a89f4b450b30bfb95a7", null ],
+    [ "RegionRxBeaconSetup", "group___r_e_g_i_o_n.html#ga5a33ed9d25f4af833ba63eb9370779cf", null ]
 ];

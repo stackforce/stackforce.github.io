@@ -8,6 +8,7 @@ var group___r_e_g_i_o_n_c_o_m_m_o_n =
       [ "ChMask", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#adb3d38c312a46e617b1319f97dd56a87", null ]
     ] ],
     [ "RegionCommonLinkAdrReqVerifyParams_t", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_link_adr_req_verify_params__t", [
+      [ "Version", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a82b24af49de7b10e4078eb3b10d46031", null ],
       [ "Status", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a7ca418fa247ab5f1df4e8b5852d8b738", null ],
       [ "AdrEnabled", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ab3e2fb44577c95786e11aacd56769703", null ],
       [ "Datarate", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],
@@ -31,10 +32,19 @@ var group___r_e_g_i_o_n_c_o_m_m_o_n =
       [ "Joined", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ac2f6caa0f3b02d2ac5056c3ee7c22652", null ],
       [ "DutyCycleEnabled", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a4d755868e0e80089462286c3ba6a6f18", null ],
       [ "Channel", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a1ca6f01ca18afe402de51babe8c95f5e", null ],
-      [ "ElapsedTime", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a2ece30988e7a5bac284623173173c71a", null ],
+      [ "ElapsedTime", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#abcc8bdb6aeb0a261ce00a92d41808291", null ],
       [ "TxTimeOnAir", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#aa17a8607485db100d315e74853dd217e", null ]
     ] ],
-    [ "RegionCommonGetJoinDc", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ga672466fcf1aedaaf075cdabf49bc0c28", null ],
+    [ "RegionCommonRxBeaconSetupParams_t", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_rx_beacon_setup_params__t", [
+      [ "Datarates", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a6c90e795d93b5249e39a90b4d930883d", null ],
+      [ "Frequency", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ade3d190636488dad9a89b19446b7acf1", null ],
+      [ "BeaconSize", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a990eb48e68d052f9a436b5173acf325e", null ],
+      [ "BeaconDatarate", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a0d2ca0c02c8228dd4450a443533be250", null ],
+      [ "BeaconChannelBW", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#a3e1f1dbba73ed20cb31f24e5bef15db5", null ],
+      [ "RxTime", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#abdb9737eabd7c9c2fac483fa5ac2b93b", null ],
+      [ "SymbolTimeout", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#adbf32440d72b6d8ac55108352519d5c8", null ]
+    ] ],
+    [ "RegionCommonGetJoinDc", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#gaa11f97cf6ce25f6a35d53c7aa9ddffcf", null ],
     [ "RegionCommonValueInRange", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#gafdd1c80d953e18d755a631b72a9c3bd3", null ],
     [ "RegionCommonChanVerifyDr", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ga94ce5c6e759081853eb06d1dcffdab25", null ],
     [ "RegionCommonChanDisable", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#ga695c0ab2a06edcae5b33772f639fb676", null ],
@@ -48,5 +58,6 @@ var group___r_e_g_i_o_n_c_o_m_m_o_n =
     [ "RegionCommonComputeSymbolTimeFsk", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#gacc2af896b03aa8ed8d8e5950d96d365f", null ],
     [ "RegionCommonComputeRxWindowParameters", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#gaba7114d0ca01f04933710feb13646138", null ],
     [ "RegionCommonComputeTxPower", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#gaa92800c8e9ce21366d383d14878cc391", null ],
-    [ "RegionCommonCalcBackOff", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#gae2b1dfba27c79f605048f2d9869dc57d", null ]
+    [ "RegionCommonCalcBackOff", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#gae2b1dfba27c79f605048f2d9869dc57d", null ],
+    [ "RegionCommonRxBeaconSetup", "group___r_e_g_i_o_n_c_o_m_m_o_n.html#gaee0029a2ee8779fb65b5521cfdf1f30e", null ]
 ];

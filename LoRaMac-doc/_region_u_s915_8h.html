@@ -27,10 +27,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="loraalliance-stackforce-semtech.jpg"/></td>
+  <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.1</span>
+   &#160;<span id="projectnumber">4.4.2</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('_region_u_s915_8h.html','');});
 
 <p>Region definition for US915.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="_lo_ra_mac_8h_source.html">LoRaMac.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_region_8h_source.html">region/Region.h</a>&quot;</code><br />
 </div>
 <p><a href="_region_u_s915_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -116,7 +116,7 @@ Macros</h2></td></tr>
 <tr class="separator:gab5445433062754a147e74e8c325aa3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84622bf421ab1e647c7b728013521baf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga84622bf421ab1e647c7b728013521baf">US915_DEFAULT_RX1_DR_OFFSET</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga84622bf421ab1e647c7b728013521baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7043556b6107cc2ca3f1275ee94dbb66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga7043556b6107cc2ca3f1275ee94dbb66">US915_MIN_TX_POWER</a>&#160;&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#gac9747c69350f34d485c3134e5a57655b">TX_POWER_10</a></td></tr>
+<tr class="memitem:ga7043556b6107cc2ca3f1275ee94dbb66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga7043556b6107cc2ca3f1275ee94dbb66">US915_MIN_TX_POWER</a>&#160;&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ga6932af7382128090be2a6533e260dd9c">TX_POWER_14</a></td></tr>
 <tr class="separator:ga7043556b6107cc2ca3f1275ee94dbb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa43b92e4e5cf26691dda96f7c4969c25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gaa43b92e4e5cf26691dda96f7c4969c25">US915_MAX_TX_POWER</a>&#160;&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#gab33618449f2a573142c463ab071ef8ed">TX_POWER_0</a></td></tr>
 <tr class="separator:gaa43b92e4e5cf26691dda96f7c4969c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +150,24 @@ Macros</h2></td></tr>
 <tr class="separator:ga0789b26b7a379ca9e5b13782bed55879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51bf1d4da5e2926fb30c0e7b2eb3fcf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga51bf1d4da5e2926fb30c0e7b2eb3fcf3">US915_RX_WND_2_DR</a>&#160;&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ga44cc96ba80ae464cd9330b784d329c16">DR_8</a></td></tr>
 <tr class="separator:ga51bf1d4da5e2926fb30c0e7b2eb3fcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4372ad584b818966caab1a883ae79225"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga4372ad584b818966caab1a883ae79225">US915_BEACON_CHANNEL_FREQ</a>&#160;&#160;&#160;923300000</td></tr>
+<tr class="separator:ga4372ad584b818966caab1a883ae79225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9673a70847ee8885ebf5ce081eca4a4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga9673a70847ee8885ebf5ce081eca4a4c">US915_BEACON_CHANNEL_STEPWIDTH</a>&#160;&#160;&#160;600000</td></tr>
+<tr class="separator:ga9673a70847ee8885ebf5ce081eca4a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21f47754aaf0c7b4a74becf0d7705832"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga21f47754aaf0c7b4a74becf0d7705832">US915_BEACON_NB_CHANNELS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ga21f47754aaf0c7b4a74becf0d7705832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebfea74c93aa8f01a34e751b2418e483"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gaebfea74c93aa8f01a34e751b2418e483">US915_BEACON_SIZE</a>&#160;&#160;&#160;23</td></tr>
+<tr class="separator:gaebfea74c93aa8f01a34e751b2418e483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeebbb0ded7ba9aa586050308e134feb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gaeebbb0ded7ba9aa586050308e134feb4">US915_RFU1_SIZE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:gaeebbb0ded7ba9aa586050308e134feb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05881f86d2c843af7e2989b867395aa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga05881f86d2c843af7e2989b867395aa7">US915_RFU2_SIZE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ga05881f86d2c843af7e2989b867395aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd2b2af437d7681972003637af6f6294"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gafd2b2af437d7681972003637af6f6294">US915_BEACON_CHANNEL_DR</a>&#160;&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ga44cc96ba80ae464cd9330b784d329c16">DR_8</a></td></tr>
+<tr class="separator:gafd2b2af437d7681972003637af6f6294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16d87252a4eab9281f19abf0876dcdf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga16d87252a4eab9281f19abf0876dcdf8">US915_BEACON_CHANNEL_BW</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga16d87252a4eab9281f19abf0876dcdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e07d49dbd7b258315cb44bd3fb695d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga6e07d49dbd7b258315cb44bd3fb695d3">US915_PING_SLOT_CHANNEL_DR</a>&#160;&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ga44cc96ba80ae464cd9330b784d329c16">DR_8</a></td></tr>
+<tr class="separator:ga6e07d49dbd7b258315cb44bd3fb695d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga85b21b9c0af1bca8fb301bedf0be8fb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga85b21b9c0af1bca8fb301bedf0be8fb7">US915_MAX_NB_BANDS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga85b21b9c0af1bca8fb301bedf0be8fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaab05d04cd5aa9b96a16ffd6b129c93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gafaab05d04cd5aa9b96a16ffd6b129c93">US915_BAND0</a>&#160;&#160;&#160;{ 1, <a class="el" href="group___r_e_g_i_o_n_u_s915.html#gaa43b92e4e5cf26691dda96f7c4969c25">US915_MAX_TX_POWER</a>, 0, 0, 0 }</td></tr>
@@ -169,9 +187,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga821c323447c6cadc64cd2d25725782c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga821c323447c6cadc64cd2d25725782c0">RegionUS915SetBandTxDone</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_set_band_tx_done_params__t">SetBandTxDoneParams_t</a> *txDone)</td></tr>
 <tr class="memdesc:ga821c323447c6cadc64cd2d25725782c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the last TX done parameters of the current channel.  <a href="group___r_e_g_i_o_n_u_s915.html#ga821c323447c6cadc64cd2d25725782c0">More...</a><br /></td></tr>
 <tr class="separator:ga821c323447c6cadc64cd2d25725782c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga099942705729797728a84270350aac78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga099942705729797728a84270350aac78">RegionUS915InitDefaults</a> (<a class="el" href="group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0">InitType_t</a> type)</td></tr>
-<tr class="memdesc:ga099942705729797728a84270350aac78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the channels masks and the channels.  <a href="group___r_e_g_i_o_n_u_s915.html#ga099942705729797728a84270350aac78">More...</a><br /></td></tr>
-<tr class="separator:ga099942705729797728a84270350aac78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f4cf7bd1767823899f5a589cbdd5f5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga4f4cf7bd1767823899f5a589cbdd5f5c">RegionUS915InitDefaults</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_init_defaults_params__t">InitDefaultsParams_t</a> *params)</td></tr>
+<tr class="memdesc:ga4f4cf7bd1767823899f5a589cbdd5f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the channels masks and the channels.  <a href="group___r_e_g_i_o_n_u_s915.html#ga4f4cf7bd1767823899f5a589cbdd5f5c">More...</a><br /></td></tr>
+<tr class="separator:ga4f4cf7bd1767823899f5a589cbdd5f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16f5821a5de5fe8415611b790ecc7a89"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga16f5821a5de5fe8415611b790ecc7a89">RegionUS915GetNvmCtx</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_get_nvm_ctx_params__t">GetNvmCtxParams_t</a> *params)</td></tr>
+<tr class="memdesc:ga16f5821a5de5fe8415611b790ecc7a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the internal context and its size.  <a href="group___r_e_g_i_o_n_u_s915.html#ga16f5821a5de5fe8415611b790ecc7a89">More...</a><br /></td></tr>
+<tr class="separator:ga16f5821a5de5fe8415611b790ecc7a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c010d2640341d3e0690d91ac66bc921"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga2c010d2640341d3e0690d91ac66bc921">RegionUS915Verify</a> (<a class="el" href="group___r_e_g_i_o_n.html#union_verify_params__t">VerifyParams_t</a> *verify, <a class="el" href="group___r_e_g_i_o_n.html#gac1354e358e41c80d30879e97df258e27">PhyAttribute_t</a> phyAttribute)</td></tr>
 <tr class="memdesc:ga2c010d2640341d3e0690d91ac66bc921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies a parameter.  <a href="group___r_e_g_i_o_n_u_s915.html#ga2c010d2640341d3e0690d91ac66bc921">More...</a><br /></td></tr>
 <tr class="separator:ga2c010d2640341d3e0690d91ac66bc921"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,9 +202,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9f5d2b3a3e5832ad822ac7f59abd3130"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga9f5d2b3a3e5832ad822ac7f59abd3130">RegionUS915ChanMaskSet</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_chan_mask_set_params__t">ChanMaskSetParams_t</a> *chanMaskSet)</td></tr>
 <tr class="memdesc:ga9f5d2b3a3e5832ad822ac7f59abd3130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a channels mask.  <a href="group___r_e_g_i_o_n_u_s915.html#ga9f5d2b3a3e5832ad822ac7f59abd3130">More...</a><br /></td></tr>
 <tr class="separator:ga9f5d2b3a3e5832ad822ac7f59abd3130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf76316af68c44cbbc44818e0a51cb4d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gaf76316af68c44cbbc44818e0a51cb4d6">RegionUS915AdrNext</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_adr_next_params__t">AdrNextParams_t</a> *adrNext, int8_t *drOut, int8_t *txPowOut, uint32_t *adrAckCounter)</td></tr>
-<tr class="memdesc:gaf76316af68c44cbbc44818e0a51cb4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the next datarate to set, when ADR is on or off.  <a href="group___r_e_g_i_o_n_u_s915.html#gaf76316af68c44cbbc44818e0a51cb4d6">More...</a><br /></td></tr>
-<tr class="separator:gaf76316af68c44cbbc44818e0a51cb4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad480c9c758da7477276d2dc659db2f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gad480c9c758da7477276d2dc659db2f66">RegionUS915ComputeRxWindowParameters</a> (int8_t datarate, uint8_t minRxSymbols, uint32_t rxError, <a class="el" href="group___r_e_g_i_o_n.html#struct_rx_config_params__t">RxConfigParams_t</a> *rxConfigParams)</td></tr>
 <tr class="separator:gad480c9c758da7477276d2dc659db2f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga714ceef0507bb8bd0a65c5b2de8eff2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga714ceef0507bb8bd0a65c5b2de8eff2c">RegionUS915RxConfig</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_rx_config_params__t">RxConfigParams_t</a> *rxConfig, int8_t *datarate)</td></tr>
@@ -207,9 +225,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa4cc824d120b1ef55d88fae38282f8bc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gaa4cc824d120b1ef55d88fae38282f8bc">RegionUS915DlChannelReq</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_dl_channel_req_params__t">DlChannelReqParams_t</a> *dlChannelReq)</td></tr>
 <tr class="memdesc:gaa4cc824d120b1ef55d88fae38282f8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function processes a DlChannel Request.  <a href="group___r_e_g_i_o_n_u_s915.html#gaa4cc824d120b1ef55d88fae38282f8bc">More...</a><br /></td></tr>
 <tr class="separator:gaa4cc824d120b1ef55d88fae38282f8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad0a015a1b8157a3806d982cbf7249720"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#gad0a015a1b8157a3806d982cbf7249720">RegionUS915AlternateDr</a> (int8_t currentDr)</td></tr>
-<tr class="memdesc:gad0a015a1b8157a3806d982cbf7249720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternates the datarate of the channel for the join request.  <a href="group___r_e_g_i_o_n_u_s915.html#gad0a015a1b8157a3806d982cbf7249720">More...</a><br /></td></tr>
-<tr class="separator:gad0a015a1b8157a3806d982cbf7249720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ebc2d7998b94de2ba2998ac8ab928a6"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga5ebc2d7998b94de2ba2998ac8ab928a6">RegionUS915AlternateDr</a> (int8_t currentDr, <a class="el" href="group___r_e_g_i_o_n.html#ga68dd5abbb091918b80cab467f09f74e8">AlternateDrType_t</a> type)</td></tr>
+<tr class="memdesc:ga5ebc2d7998b94de2ba2998ac8ab928a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternates the datarate of the channel for the join request.  <a href="group___r_e_g_i_o_n_u_s915.html#ga5ebc2d7998b94de2ba2998ac8ab928a6">More...</a><br /></td></tr>
+<tr class="separator:ga5ebc2d7998b94de2ba2998ac8ab928a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga134edad7c2c6d4c2a063b08b6358b8be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga134edad7c2c6d4c2a063b08b6358b8be">RegionUS915CalcBackOff</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_calc_back_off_params__t">CalcBackOffParams_t</a> *calcBackOff)</td></tr>
 <tr class="memdesc:ga134edad7c2c6d4c2a063b08b6358b8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the back-off time.  <a href="group___r_e_g_i_o_n_u_s915.html#ga134edad7c2c6d4c2a063b08b6358b8be">More...</a><br /></td></tr>
 <tr class="separator:ga134edad7c2c6d4c2a063b08b6358b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +246,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3a13a700c4bbd1a703aaf73740f9f13c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga3a13a700c4bbd1a703aaf73740f9f13c">RegionUS915ApplyDrOffset</a> (uint8_t downlinkDwellTime, int8_t dr, int8_t drOffset)</td></tr>
 <tr class="memdesc:ga3a13a700c4bbd1a703aaf73740f9f13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes new datarate according to the given offset.  <a href="group___r_e_g_i_o_n_u_s915.html#ga3a13a700c4bbd1a703aaf73740f9f13c">More...</a><br /></td></tr>
 <tr class="separator:ga3a13a700c4bbd1a703aaf73740f9f13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98b18a91e90e1769d9eb7469c1e2eaa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_u_s915.html#ga98b18a91e90e1769d9eb7469c1e2eaa5">RegionUS915RxBeaconSetup</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_rx_beacon_setup__t">RxBeaconSetup_t</a> *rxBeaconSetup, uint8_t *outDr)</td></tr>
+<tr class="memdesc:ga98b18a91e90e1769d9eb7469c1e2eaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the radio into beacon reception mode.  <a href="group___r_e_g_i_o_n_u_s915.html#ga98b18a91e90e1769d9eb7469c1e2eaa5">More...</a><br /></td></tr>
+<tr class="separator:ga98b18a91e90e1769d9eb7469c1e2eaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Region definition for US915. </p>
@@ -236,14 +257,16 @@ Functions</h2></td></tr>
 <dd>
 Gregory Cristian ( Semtech )</dd>
 <dd>
-Daniel Jaeckle ( STACKFORCE ) </dd></dl>
+Daniel Jaeckle ( STACKFORCE )</dd>
+<dd>
+Johannes Bruder ( STACKFORCE ) </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_effec920ede41fb96e7864e805338585.html">loramac-node</a></li><li class="navelem"><a class="el" href="dir_4a88cfc83a69fddb7155b83fca49a6bc.html">src</a></li><li class="navelem"><a class="el" href="dir_99e362b2a8ddfd673935ba51ee0c0761.html">mac</a></li><li class="navelem"><a class="el" href="dir_832bec3c97a3921451cb44c1dbbffa70.html">region</a></li><li class="navelem"><a class="el" href="_region_u_s915_8h.html">RegionUS915.h</a></li>
-    <li class="footer">Generated on Wed Mar 7 2018 16:20:01 for LoRaMAC by
+    <li class="navelem"><a class="el" href="dir_df7eed3543fa7070b0a3ab0e00a3e0a6.html">github-loramac-node</a></li><li class="navelem"><a class="el" href="dir_1dda2d094b0a9f47a7b83974941607c0.html">src</a></li><li class="navelem"><a class="el" href="dir_52c4f436fc21c8338c027271102d36bc.html">mac</a></li><li class="navelem"><a class="el" href="dir_7b723322e8c54ce5f5df3a100886c125.html">region</a></li><li class="navelem"><a class="el" href="_region_u_s915_8h.html">RegionUS915.h</a></li>
+    <li class="footer">Generated on Fri Jul 19 2019 13:26:20 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

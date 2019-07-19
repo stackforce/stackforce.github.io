@@ -10,5 +10,6 @@ var searchData=
   ['regioneu868_2eh',['RegionEU868.h',['../_region_e_u868_8h.html',1,'']]],
   ['regionin865_2eh',['RegionIN865.h',['../_region_i_n865_8h.html',1,'']]],
   ['regionkr920_2eh',['RegionKR920.h',['../_region_k_r920_8h.html',1,'']]],
+  ['regionru864_2eh',['RegionRU864.h',['../_region_r_u864_8h.html',1,'']]],
   ['regionus915_2eh',['RegionUS915.h',['../_region_u_s915_8h.html',1,'']]]
 ];

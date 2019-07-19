@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['sctrlbits',['sCtrlBits',['../group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_frame_ctrl__t_1_1s_ctrl_bits',1,'LoRaMacFrameCtrl_t']]],
-  ['sdatarateparams',['sDatarateParams',['../group___r_e_g_i_o_n.html#struct_verify_params__t_1_1s_datarate_params',1,'VerifyParams_t']]],
-  ['setbandtxdoneparams_5ft',['SetBandTxDoneParams_t',['../group___r_e_g_i_o_n.html#struct_set_band_tx_done_params__t',1,'']]],
-  ['sfields',['sFields',['../group___l_o_r_a_m_a_c.html#struct_dr_range__t_1_1s_fields',1,'DrRange_t']]],
-  ['shdrbits',['sHdrBits',['../group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_header__t_1_1s_hdr_bits',1,'LoRaMacHeader_t']]],
-  ['smacflagbits',['sMacFlagBits',['../group___l_o_r_a_m_a_c.html#struct_lo_ra_mac_flags__t_1_1s_mac_flag_bits',1,'LoRaMacFlags_t']]]
+  ['regioncommoncalcbackoffparams_5ft',['RegionCommonCalcBackOffParams_t',['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_calc_back_off_params__t',1,'']]],
+  ['regioncommonlinkadrparams_5ft',['RegionCommonLinkAdrParams_t',['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_link_adr_params__t',1,'']]],
+  ['regioncommonlinkadrreqverifyparams_5ft',['RegionCommonLinkAdrReqVerifyParams_t',['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_link_adr_req_verify_params__t',1,'']]],
+  ['regioncommonrxbeaconsetupparams_5ft',['RegionCommonRxBeaconSetupParams_t',['../group___r_e_g_i_o_n_c_o_m_m_o_n.html#struct_region_common_rx_beacon_setup_params__t',1,'']]],
+  ['rxbeaconsetup_5ft',['RxBeaconSetup_t',['../group___r_e_g_i_o_n.html#struct_rx_beacon_setup__t',1,'']]],
+  ['rxchannelparams_5ft',['RxChannelParams_t',['../group___l_o_r_a_m_a_c.html#struct_rx_channel_params__t',1,'']]],
+  ['rxconfigparams_5ft',['RxConfigParams_t',['../group___r_e_g_i_o_n.html#struct_rx_config_params__t',1,'']]],
+  ['rxparamsetupreqparams_5ft',['RxParamSetupReqParams_t',['../group___r_e_g_i_o_n.html#struct_rx_param_setup_req_params__t',1,'']]]
 ];

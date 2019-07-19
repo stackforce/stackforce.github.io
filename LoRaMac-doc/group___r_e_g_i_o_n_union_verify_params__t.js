@@ -5,6 +5,7 @@ var group___r_e_g_i_o_n_union_verify_params__t =
       [ "DownlinkDwellTime", "group___r_e_g_i_o_n.html#a63074ce7d23ff98956f5d6f4054f235f", null ],
       [ "UplinkDwellTime", "group___r_e_g_i_o_n.html#a0e6663762d6f9173bc8d8cb018f8f17a", null ]
     ] ],
+    [ "Frequency", "group___r_e_g_i_o_n.html#ade3d190636488dad9a89b19446b7acf1", null ],
     [ "TxPower", "group___r_e_g_i_o_n.html#a037b4f849fa8ed4aa1d3c58aef2b28ec", null ],
     [ "DutyCycle", "group___r_e_g_i_o_n.html#a72f580d8a64ab70f5c4f7e10a694c65b", null ],
     [ "DatarateParams", "group___r_e_g_i_o_n.html#a98139e2506044be6c716c0e3462e38a1", null ]

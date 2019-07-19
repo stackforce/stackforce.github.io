@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deviceclass_5ft',['DeviceClass_t',['../group___l_o_r_a_m_a_c.html#gad065f3831c9a00390949d52a93074970',1,'LoRaMac.h']]]
+  ['beaconstate_5ft',['BeaconState_t',['../group___l_o_r_a_m_a_c_c_l_a_s_s_b.html#ga3adc7f0464bca976a13d17d9b52e2f93',1,'LoRaMacClassB.h']]]
 ];

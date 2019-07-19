@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['phyattribute_5ft',['PhyAttribute_t',['../group___r_e_g_i_o_n.html#gac1354e358e41c80d30879e97df258e27',1,'Region.h']]]
+  ['inittype_5ft',['InitType_t',['../group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0',1,'Region.h']]]
 ];
