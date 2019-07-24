@@ -3,15 +3,26 @@
 
   <title>CRC calculator for Wireless M-Bus by STACKFORCE</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="/application/files/cache/css/stackforce/main.css?ts=1523309067" rel="stylesheet" type="text/css" media="all">
+
   <style>
   body {
-    font-family: 'Arial', 'Tahoma', sans-serif;
+    font-family: 'Open Sans', 'Tahoma', sans-serif;
+    padding: 15px;
   }
   a {
     color: #5da029;
   }
   a:hover {
     color: #6abb2f;
+  }
+  pre {
+    background-color: white;
+    border: none;
+  }
+  .container {
+    margin-top: 30px;
   }
   </style>
 	</head>
@@ -134,36 +145,78 @@ function calcCrc()
 	dataOut[i] = ("00" + data[i].toString(16).toUpperCase()).substr(-2);
   }
   dataOut = dataOut.join(" ");
-  
-  document.getElementById("crc1").innerHTML = Number(crc1).toString(16).toUpperCase();
-  document.getElementById("crc2").innerHTML = Number(crc2).toString(16).toUpperCase();
-  document.getElementById("len").innerHTML = len.toUpperCase();
-  document.getElementById("lenInv").innerHTML = lenInv.toUpperCase();
-  document.getElementById("crcBytes").innerHTML = data.length;
+  var dataOut = "A5 00 "+len.toUpperCase()+" FF "+lenInv.toUpperCase()+" "+dataOut+" "+Number(crc1).toString(16).toUpperCase()+" "+Number(crc2).toString(16).toUpperCase();
   document.getElementById("dataOut").innerHTML = dataOut;
+  document.getElementById("crcBytes").innerHTML = data.length;
 }
 </script>
-<pre>
- ___ _____ _   ___ _  _____ ___  ___  ___ ___
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <img width="20%" src="https://cdn.worldvectorlogo.com/logos/stackforce-logo-1.svg" />
+        <h1 style="padding-top: 30px">CRC Calculation Module</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        Enter bytes, separated by spaces:<br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9">
+        <!-- <textarea autofocus rows="3" style="width: 100%" id="crcInput"></textarea></br /> -->
+        <input type="text" style="width:100%;" id="crcInput">
+      </div>
+      <div class="col-sm-3">
+        <button onclick="javascript:calcCrc();">Calculate</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="font-size: 150%">
+    <div class="row">
+      <div class="col-sm-9">
+        <div style="font-weight: bold">
+          SERIAL FRAME:
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          Input Length: <span id="crcBytes"></span> byte(s)<br />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12" style="height: 2em">
+        <span id="dataOut"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 100px">
+    <div class="row">
+      <div class="col-sm-12">
+        <div style="margin-top: 10px; font-size: 0.7em;">
+          <a href="https://www.stackforce.de">Â©2014-2019 STACKFORCE</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <pre>
+___ _____ _   ___ _  _____ ___  ___  ___ ___
 / __|_   _/_\ / __| |/ / __/ _ \| _ \/ __| __|
 \__ \ | |/ _ \ (__| ' <| _| (_) |   / (__| _|
 |___/ |_/_/ \_\___|_|\_\_| \___/|_|_\\___|___|
 embedded.connectivity.solutions.==============
-</pre>
+        </pre>
+      </div>
+    </div>
+  </div>
 
-<b>CRC Calculation Module</b>
-<br /><br />
-Enter bytes, separated by spaces:<br />
-<!-- <textarea autofocus rows="3" style="width: 100%" id="crcInput"></textarea></br /> -->
-<input type="text" style="width:100%;" id="crcInput">
-<button onclick="javascript:calcCrc();">Calculate</button>
- Input Length: <span id="crcBytes"></span> byte(s)<br />
-<br />
-<div style="font-size: 150%;font-weight: bold">
-SERIAL FRAME: <br />
-A5 00 <span id="len"></span> FF <span id="lenInv"></span> <span id="dataOut"></span> <span id="crc1"></span> <span id="crc2"></span> <br /> 
-</div>
-<br /><hr />
-<div style="margin-top: 10px; font-size: 0.7em;"><a href="https://www.stackforce.de">©2016 STACKFORCE</a></div>
-	</body>
+</body>
 </html>
