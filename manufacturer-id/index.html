@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Manufacturer ID calculation</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="/application/files/cache/css/stackforce/main.css?ts=1523309067" rel="stylesheet" type="text/css" media="all">
+      
+        <style>
+        body {
+          font-family: 'Open Sans', 'Tahoma', sans-serif;
+          padding: 15px;
+        }
+        a {
+          color: #5da029;
+        }
+        a:hover {
+          color: #6abb2f;
+        }
+        pre {
+          background-color: white;
+          border: none;
+        }
+        .container {
+          margin-top: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img width="20%" src="https://cdn.worldvectorlogo.com/logos/stackforce-logo-1.svg" />
+                    <h1 style="padding-top: 30px">Calculator for calculating 16-bit manufacturer ID</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                <p>The generic ID can be derived by the following FLAG Manufacturers ID list.</p>
+                <p>Calculation of the 16-bit manufacturer ID used in EN 13757-4 based on those three letter codes is like this:<br>
+                    <code>32 x 32 x &lt;A&gt; + 32 x &lt;B&gt; + &lt;C&gt;</code><br>
+                    Whereas, &lt;A&gt;, &lt;B&gt; and &lt;C&gt; correspond to the number of the character within the alphabet. Example:<br>
+                    <br>
+                    The three letter code for manufacturer STACKFORCE is STF.<br>
+                    The character number within the alphabet for the single letters are: S=19, T=20 and F=6.<br>
+                    This leads to<br>
+                    <code>32 x 32 x 19 + 32 x 20 + 6 = 20102 = 0x4E86</code>
+                </p>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+
+        function calcManufacturer()
+        {
+        var manufacturerCode = document.getElementById("manufacturerCode").value.toUpperCase();
+        if(manufacturerCode.length != 3) {
+            alert("Sorry, something wrong with the manufactuer code.");
+            return;
+        }
+        var letters = new Array();
+        for(i=0;i<manufacturerCode.length;i++) {
+            letters[i] = manufacturerCode.charCodeAt(i)-64;
+        }
+        var manufacturerID = 32*32*letters[0]+32*letters[1]+letters[2];
+        document.getElementById("manufacturerID").innerHTML = "0x"+manufacturerID.toString(16).toUpperCase();
+        }
+
+        </script>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    Enter three letter code for the manufacturer:
+                    <input type="text" style="width:50px;" id="manufacturerCode">
+                    <button onclick="javascript:calcManufacturer()">Calculate</button>
+                    Manufacturer ID: <span style="font-weight:bold" id="manufacturerID"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
