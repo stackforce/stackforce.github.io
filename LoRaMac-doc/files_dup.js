@@ -1,4 +1,4 @@
-var files =
+var files_dup =
 [
     [ "LoRaMac.h", "_lo_ra_mac_8h.html", "_lo_ra_mac_8h" ],
     [ "LoRaMacClassB.h", "_lo_ra_mac_class_b_8h.html", "_lo_ra_mac_class_b_8h" ],
