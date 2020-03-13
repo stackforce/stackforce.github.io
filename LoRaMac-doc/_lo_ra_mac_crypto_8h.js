@@ -29,6 +29,7 @@ var _lo_ra_mac_crypto_8h =
     [ "LoRaMacCryptoGetNvmCtx", "_lo_ra_mac_crypto_8h.html#a29357bb8493a4efbb50c594ae4c28258", null ],
     [ "LoRaMacCryptoGetFCntDown", "_lo_ra_mac_crypto_8h.html#a15725542e04ec7aaa73a639ab9db8ada", null ],
     [ "LoRaMacCryptoGetFCntUp", "_lo_ra_mac_crypto_8h.html#ac3fd7211e751a5a02b1eefc2e719b921", null ],
+    [ "LoRaMacCryptoGetRJcount", "_lo_ra_mac_crypto_8h.html#ab1d1f491d5a199e6736491b8ea05e9e8", null ],
     [ "LoRaMacCryptoSetMulticastReference", "_lo_ra_mac_crypto_8h.html#abe81362ecf6dc0e22259101204e82aba", null ],
     [ "LoRaMacCryptoSetKey", "_lo_ra_mac_crypto_8h.html#a5ec00b7729d64be6c11136b2227f1dde", null ],
     [ "LoRaMacCryptoPrepareJoinRequest", "_lo_ra_mac_crypto_8h.html#a144dbe06d24a82f12c33a8bcb159bbef", null ],

@@ -94,7 +94,8 @@ var _lo_ra_mac_8h =
       [ "MLME_BEACON_ACQUISITION", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1caec86b2b668cea61b3c298fef89411e8b", null ],
       [ "MLME_PING_SLOT_INFO", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3ef28198f0049cf4b222edc9b8ad2201", null ],
       [ "MLME_BEACON_TIMING", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1cad5d1950a71c91d499dcd0ffeb6e77fa5", null ],
-      [ "MLME_BEACON_LOST", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3607bda0c271befdc6ef57686496a332", null ]
+      [ "MLME_BEACON_LOST", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3607bda0c271befdc6ef57686496a332", null ],
+      [ "MLME_REVERT_JOIN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca4cb5a0009909c8c98fd456abdf9e310c", null ]
     ] ],
     [ "Mib_t", "group___l_o_r_a_m_a_c.html#ga64429ce77a29145f6a7508df5eaa2d3e", [
       [ "MIB_DEVICE_CLASS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eac0426517132356c9977dcdafa5ab3a7f", null ],
@@ -151,6 +152,9 @@ var _lo_ra_mac_8h =
       [ "MIB_DEFAULT_ANTENNA_GAIN", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eafdc28fdfdbed01cb4c4ea59e0c9b9994", null ],
       [ "MIB_NVM_CTXS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eab3b5ae42bb6c37f4e87d07347af9ab56", null ],
       [ "MIB_ABP_LORAWAN_VERSION", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea8a327664635fb5657ea4ec9fb72ede32", null ],
+      [ "MIB_REJOIN_0_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea6cfa147a50c52331ec2ef9a069b0d310", null ],
+      [ "MIB_REJOIN_1_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea7c089e8762b6b3ac7c9abd674b889e5d", null ],
+      [ "MIB_REJOIN_2_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead177c4a052fe42b244e9fb36cb423119", null ],
       [ "MIB_BEACON_INTERVAL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eae022575683d2249a82a086a04c5a15c1", null ],
       [ "MIB_BEACON_RESERVED", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaa19d77bfa7a7e003c1c88446520a6528", null ],
       [ "MIB_BEACON_GUARD", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea01fcf8618d1d1d240f638a333dc127da", null ],
