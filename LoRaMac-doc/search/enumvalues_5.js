@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['init_5ftype_5finit_2452',['INIT_TYPE_INIT',['../group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7',1,'Region.h']]],
-  ['init_5ftype_5frestore_5fctx_2453',['INIT_TYPE_RESTORE_CTX',['../group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0aadda495dbd34e630ff5bd10821b0d563',1,'Region.h']]],
-  ['init_5ftype_5frestore_5fdefault_5fchannels_2454',['INIT_TYPE_RESTORE_DEFAULT_CHANNELS',['../group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a79ad91828ca72b4ead718bdfca91fab7',1,'Region.h']]]
+  ['j_5fs_5fenc_5fkey_2615',['J_S_ENC_KEY',['../_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a5c91633b56c684a83d43acd3a19b8f89',1,'LoRaMacTypes.h']]],
+  ['j_5fs_5fint_5fkey_2616',['J_S_INT_KEY',['../_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a1f97adf2c1efaba6445fb68f68ef7d0e',1,'LoRaMacTypes.h']]],
+  ['join_5freq_2617',['JOIN_REQ',['../_lo_ra_mac_types_8h.html#ac2589ca2a32be1c64027de20236c0024a1b0106d311b8452754ba15438761469a',1,'LoRaMacTypes.h']]]
 ];

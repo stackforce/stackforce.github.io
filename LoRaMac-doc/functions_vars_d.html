@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.3</span>
+   &#160;<span id="projectnumber">4.4.4</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>Datarate
 : <a class="el" href="group___l_o_r_a_m_a_c.html#a780280c12645b2666878162aab5d8cad">BeaconInfo_t</a>
+, <a class="el" href="_lo_ra_mac_adr_8h.html#ae2f6080f3aa0e9485c55513ca56bb24d">CalcNextAdrParams_t</a>
 , <a class="el" href="group___r_e_g_i_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d">ContinuousWaveParams_t</a>
 , <a class="el" href="group___r_e_g_i_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d">GetPhyParams_t</a>
 , <a class="el" href="group___l_o_r_a_m_a_c.html#a780280c12645b2666878162aab5d8cad">McpsConfirm_t</a>
@@ -101,6 +102,7 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 , <a class="el" href="group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d">McpsReqUnconfirmed_t</a>
 , <a class="el" href="group___l_o_r_a_m_a_c.html#a780280c12645b2666878162aab5d8cad">MlmeReqJoin_t</a>
 , <a class="el" href="group___r_e_g_i_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d">NextChanParams_t</a>
+, <a class="el" href="group___r_e_g_i_o_n_c_o_m_m_o_n.html#a780280c12645b2666878162aab5d8cad">RegionCommonCountNbOfEnabledChannelsParams_t</a>
 , <a class="el" href="group___r_e_g_i_o_n_c_o_m_m_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d">RegionCommonLinkAdrParams_t</a>
 , <a class="el" href="group___r_e_g_i_o_n_c_o_m_m_o_n.html#ae2f6080f3aa0e9485c55513ca56bb24d">RegionCommonLinkAdrReqVerifyParams_t</a>
 , <a class="el" href="group___l_o_r_a_m_a_c.html#a780280c12645b2666878162aab5d8cad">RxChannelParams_t</a>
@@ -177,9 +179,15 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 : <a class="el" href="group___r_e_g_i_o_n.html#a72f580d8a64ab70f5c4f7e10a694c65b">VerifyParams_t</a>
 </li>
 <li>DutyCycleEnabled
-: <a class="el" href="group___r_e_g_i_o_n.html#a4d755868e0e80089462286c3ba6a6f18">CalcBackOffParams_t</a>
-, <a class="el" href="group___r_e_g_i_o_n.html#a4d755868e0e80089462286c3ba6a6f18">NextChanParams_t</a>
-, <a class="el" href="group___r_e_g_i_o_n_c_o_m_m_o_n.html#a4d755868e0e80089462286c3ba6a6f18">RegionCommonCalcBackOffParams_t</a>
+: <a class="el" href="group___r_e_g_i_o_n.html#a4d755868e0e80089462286c3ba6a6f18">NextChanParams_t</a>
+, <a class="el" href="group___r_e_g_i_o_n_c_o_m_m_o_n.html#a4d755868e0e80089462286c3ba6a6f18">RegionCommonIdentifyChannelsParam_t</a>
+</li>
+<li>DutyCycleTimePeriod
+: <a class="el" href="group___r_e_g_i_o_n.html#ac04c99fbc7e7868a507edfbfbf544e44">PhyParam_t</a>
+, <a class="el" href="group___r_e_g_i_o_n_c_o_m_m_o_n.html#ac04c99fbc7e7868a507edfbfbf544e44">RegionCommonSetDutyCycleParams_t</a>
+</li>
+<li>DutyCycleWaitTime
+: <a class="el" href="group___l_o_r_a_m_a_c.html#a7e26dc56480fe71c6b73bc99da96e244">RequestReturnParam_t</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -187,7 +195,7 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 17 2019 11:58:25 for LoRaMAC by
+    <li class="footer">Generated on Tue May 26 2020 14:26:15 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

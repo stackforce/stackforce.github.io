@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.3</span>
+   &#160;<span id="projectnumber">4.4.4</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -121,16 +121,64 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a2742626ea7aaa8bf40b39c6a92309cd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a2742626ea7aaa8bf40b39c6a92309cd2">LORAMAC_FHDR_MAX_FIELD_SIZE</a>&#160;&#160;&#160;22</td></tr>
-<tr class="separator:a2742626ea7aaa8bf40b39c6a92309cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f22c72d37ffbdf521572031039c16c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#ae6f22c72d37ffbdf521572031039c16c">LORAMAC_FHDR_DEV_ADD_FIELD_SIZE</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ae6f22c72d37ffbdf521572031039c16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5375786bd7c99f0b4f3702687994eb06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a5375786bd7c99f0b4f3702687994eb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdff84ebb7c171fb2870bb75a9d1abe7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#acdff84ebb7c171fb2870bb75a9d1abe7">LORAMAC_JOIN_TYPE_FIELD_SIZE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:acdff84ebb7c171fb2870bb75a9d1abe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c13ece1219b51184551783d67395383"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a2c13ece1219b51184551783d67395383">LORAMAC_JOIN_EUI_FIELD_SIZE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a2c13ece1219b51184551783d67395383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae81c0d024be7835381a76cb8c7cf08f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#aae81c0d024be7835381a76cb8c7cf08f">LORAMAC_DEV_EUI_FIELD_SIZE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:aae81c0d024be7835381a76cb8c7cf08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37febd071952013fc49b1837b24b672a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a37febd071952013fc49b1837b24b672a">LORAMAC_DEV_NONCE_FIELD_SIZE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a37febd071952013fc49b1837b24b672a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b0f123896a348956475e975c350948"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a36b0f123896a348956475e975c350948">LORAMAC_JOIN_NONCE_FIELD_SIZE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a36b0f123896a348956475e975c350948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fe0eaec9abf317115d3db46521fed5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a40fe0eaec9abf317115d3db46521fed5">LORAMAC_RJCOUNT_0_FIELD_SIZE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a40fe0eaec9abf317115d3db46521fed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bbd573e55ddfcac81f7894e835ea40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#af6bbd573e55ddfcac81f7894e835ea40">LORAMAC_RJCOUNT_1_FIELD_SIZE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:af6bbd573e55ddfcac81f7894e835ea40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33304f16c3bc3327643cf23e9ee1f676"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a33304f16c3bc3327643cf23e9ee1f676">LORAMAC_NET_ID_FIELD_SIZE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a33304f16c3bc3327643cf23e9ee1f676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18eb277d5a12325ec7301ab8e6d1ff19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a18eb277d5a12325ec7301ab8e6d1ff19">LORAMAC_DEV_ADDR_FIELD_SIZE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a18eb277d5a12325ec7301ab8e6d1ff19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a80e9b43e8491e43195b1727a39ef87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a9a80e9b43e8491e43195b1727a39ef87">LORAMAC_DL_SETTINGS_FIELD_SIZE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a9a80e9b43e8491e43195b1727a39ef87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66df7f416d88ec6a2c9420d6fe1e88da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a66df7f416d88ec6a2c9420d6fe1e88da">LORAMAC_RX_DELAY_FIELD_SIZE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a66df7f416d88ec6a2c9420d6fe1e88da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32dfcdec40ac5ba91d5b7da999bcaeab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a32dfcdec40ac5ba91d5b7da999bcaeab">LORAMAC_CF_LIST_FIELD_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a32dfcdec40ac5ba91d5b7da999bcaeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a87ebfd58a5e383236385cc03252e07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a1a87ebfd58a5e383236385cc03252e07">LORAMAC_FHDR_DEV_ADDR_FIELD_SIZE</a>&#160;&#160;&#160;<a class="el" href="_lo_ra_mac_header_types_8h.html#a18eb277d5a12325ec7301ab8e6d1ff19">LORAMAC_DEV_ADDR_FIELD_SIZE</a></td></tr>
+<tr class="separator:a1a87ebfd58a5e383236385cc03252e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4fb573eb02f55b69bd0ef799cfd236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a2c4fb573eb02f55b69bd0ef799cfd236">LORAMAC_FHDR_F_CTRL_FIELD_SIZE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a2c4fb573eb02f55b69bd0ef799cfd236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96f24aeef8051f0c9a37fa8da620c262"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a96f24aeef8051f0c9a37fa8da620c262">LORAMAC_FHDR_F_CNT_FIELD_SIZE</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a96f24aeef8051f0c9a37fa8da620c262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa853d03a7cc33886a71f01dcd18d9d0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#aa853d03a7cc33886a71f01dcd18d9d0e">LORAMAC_FHDR_F_OPTS_MAX_FIELD_SIZE</a>&#160;&#160;&#160;15</td></tr>
 <tr class="separator:aa853d03a7cc33886a71f01dcd18d9d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8427b5a6205399157084d145cf03c605"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a8427b5a6205399157084d145cf03c605">LORAMAC_F_PORT_FIELD_SIZE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a8427b5a6205399157084d145cf03c605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136a7ea3e55b3675d8188b8123788cac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a136a7ea3e55b3675d8188b8123788cac">LORAMAC_MAC_PAYLOAD_FIELD_MAX_SIZE</a>&#160;&#160;&#160;242</td></tr>
+<tr class="separator:a136a7ea3e55b3675d8188b8123788cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a1d5370680b14d41e94e812a5c1cf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#aa3a1d5370680b14d41e94e812a5c1cf6">LORAMAC_MIC_FIELD_SIZE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:aa3a1d5370680b14d41e94e812a5c1cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace98f1d237bc69203176dbd1936e39f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#ace98f1d237bc69203176dbd1936e39f3">LORAMAC_JOIN_REQ_MSG_SIZE</a></td></tr>
+<tr class="separator:ace98f1d237bc69203176dbd1936e39f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b16a3aa6261a55404264bc19212edf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a23b16a3aa6261a55404264bc19212edf">LORAMAC_RE_JOIN_1_MSG_SIZE</a></td></tr>
+<tr class="separator:a23b16a3aa6261a55404264bc19212edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98372e99dfde14579347c2df8a09975"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#ad98372e99dfde14579347c2df8a09975">LORAMAC_RE_JOIN_0_2_MSG_SIZE</a></td></tr>
+<tr class="separator:ad98372e99dfde14579347c2df8a09975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b9aa8602c1e0e07fa231abe126fd20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a00b9aa8602c1e0e07fa231abe126fd20">LORAMAC_JOIN_ACCEPT_FRAME_MIN_SIZE</a></td></tr>
+<tr class="separator:a00b9aa8602c1e0e07fa231abe126fd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c577b974e5981627ad1984e4c160fa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a6c577b974e5981627ad1984e4c160fa5">LORAMAC_JOIN_ACCEPT_FRAME_MAX_SIZE</a></td></tr>
+<tr class="separator:a6c577b974e5981627ad1984e4c160fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a4f5206700893fb59678189e03fe1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#af0a4f5206700893fb59678189e03fe1f">JOIN_ACCEPT_MIC_COMPUTATION_OFFSET</a></td></tr>
+<tr class="separator:af0a4f5206700893fb59678189e03fe1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2381a5bc77d04b26967bc68e605de5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a0f2381a5bc77d04b26967bc68e605de5">LORAMAC_FRAME_PAYLOAD_OVERHEAD_SIZE</a></td></tr>
+<tr class="separator:a0f2381a5bc77d04b26967bc68e605de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada024a79b43f36a70a7bc09428586fb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#ada024a79b43f36a70a7bc09428586fb8">LORAMAC_FRAME_PAYLOAD_MIN_SIZE</a></td></tr>
+<tr class="separator:ada024a79b43f36a70a7bc09428586fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7047edc3e914bef8d659b4324ca27c78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_header_types_8h.html#a7047edc3e914bef8d659b4324ca27c78">LORAMAC_FRAME_PAYLOAD_MAX_SIZE</a></td></tr>
+<tr class="separator:a7047edc3e914bef8d659b4324ca27c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LoRa MAC layer header type definitions. </p>
@@ -432,29 +480,209 @@ FOpts[<a class="el" href="_lo_ra_mac_header_types_8h.html#aa853d03a7cc33886a71f0
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a2742626ea7aaa8bf40b39c6a92309cd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2742626ea7aaa8bf40b39c6a92309cd2">&#9670;&nbsp;</a></span>LORAMAC_FHDR_MAX_FIELD_SIZE</h2>
+<a id="a5375786bd7c99f0b4f3702687994eb06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5375786bd7c99f0b4f3702687994eb06">&#9670;&nbsp;</a></span>LORAMAC_MHDR_FIELD_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LORAMAC_FHDR_MAX_FIELD_SIZE&#160;&#160;&#160;22</td>
+          <td class="memname">#define LORAMAC_MHDR_FIELD_SIZE&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Frame header (FHDR) maximum field size </p>
+<p>MAC header field size </p>
 
 </div>
 </div>
-<a id="ae6f22c72d37ffbdf521572031039c16c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6f22c72d37ffbdf521572031039c16c">&#9670;&nbsp;</a></span>LORAMAC_FHDR_DEV_ADD_FIELD_SIZE</h2>
+<a id="acdff84ebb7c171fb2870bb75a9d1abe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdff84ebb7c171fb2870bb75a9d1abe7">&#9670;&nbsp;</a></span>LORAMAC_JOIN_TYPE_FIELD_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LORAMAC_FHDR_DEV_ADD_FIELD_SIZE&#160;&#160;&#160;4</td>
+          <td class="memname">#define LORAMAC_JOIN_TYPE_FIELD_SIZE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ReJoinType field size </p>
+
+</div>
+</div>
+<a id="a2c13ece1219b51184551783d67395383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c13ece1219b51184551783d67395383">&#9670;&nbsp;</a></span>LORAMAC_JOIN_EUI_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_JOIN_EUI_FIELD_SIZE&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Join EUI field size </p>
+
+</div>
+</div>
+<a id="aae81c0d024be7835381a76cb8c7cf08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae81c0d024be7835381a76cb8c7cf08f">&#9670;&nbsp;</a></span>LORAMAC_DEV_EUI_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_DEV_EUI_FIELD_SIZE&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Device EUI field size </p>
+
+</div>
+</div>
+<a id="a37febd071952013fc49b1837b24b672a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37febd071952013fc49b1837b24b672a">&#9670;&nbsp;</a></span>LORAMAC_DEV_NONCE_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_DEV_NONCE_FIELD_SIZE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>End-device nonce field size </p>
+
+</div>
+</div>
+<a id="a36b0f123896a348956475e975c350948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b0f123896a348956475e975c350948">&#9670;&nbsp;</a></span>LORAMAC_JOIN_NONCE_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_JOIN_NONCE_FIELD_SIZE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Join-server nonce field size </p>
+
+</div>
+</div>
+<a id="a40fe0eaec9abf317115d3db46521fed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40fe0eaec9abf317115d3db46521fed5">&#9670;&nbsp;</a></span>LORAMAC_RJCOUNT_0_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_RJCOUNT_0_FIELD_SIZE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RJcount0 field size </p>
+
+</div>
+</div>
+<a id="af6bbd573e55ddfcac81f7894e835ea40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6bbd573e55ddfcac81f7894e835ea40">&#9670;&nbsp;</a></span>LORAMAC_RJCOUNT_1_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_RJCOUNT_1_FIELD_SIZE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RJcount1 field size </p>
+
+</div>
+</div>
+<a id="a33304f16c3bc3327643cf23e9ee1f676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33304f16c3bc3327643cf23e9ee1f676">&#9670;&nbsp;</a></span>LORAMAC_NET_ID_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_NET_ID_FIELD_SIZE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Network ID field size </p>
+
+</div>
+</div>
+<a id="a18eb277d5a12325ec7301ab8e6d1ff19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18eb277d5a12325ec7301ab8e6d1ff19">&#9670;&nbsp;</a></span>LORAMAC_DEV_ADDR_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_DEV_ADDR_FIELD_SIZE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Device address field size </p>
+
+</div>
+</div>
+<a id="a9a80e9b43e8491e43195b1727a39ef87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a80e9b43e8491e43195b1727a39ef87">&#9670;&nbsp;</a></span>LORAMAC_DL_SETTINGS_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_DL_SETTINGS_FIELD_SIZE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DLSettings field size </p>
+
+</div>
+</div>
+<a id="a66df7f416d88ec6a2c9420d6fe1e88da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66df7f416d88ec6a2c9420d6fe1e88da">&#9670;&nbsp;</a></span>LORAMAC_RX_DELAY_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_RX_DELAY_FIELD_SIZE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RxDelay field size </p>
+
+</div>
+</div>
+<a id="a32dfcdec40ac5ba91d5b7da999bcaeab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32dfcdec40ac5ba91d5b7da999bcaeab">&#9670;&nbsp;</a></span>LORAMAC_CF_LIST_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_CF_LIST_FIELD_SIZE&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CFList field size </p>
+
+</div>
+</div>
+<a id="a1a87ebfd58a5e383236385cc03252e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a87ebfd58a5e383236385cc03252e07">&#9670;&nbsp;</a></span>LORAMAC_FHDR_DEV_ADDR_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_FHDR_DEV_ADDR_FIELD_SIZE&#160;&#160;&#160;<a class="el" href="_lo_ra_mac_header_types_8h.html#a18eb277d5a12325ec7301ab8e6d1ff19">LORAMAC_DEV_ADDR_FIELD_SIZE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -507,13 +735,247 @@ FOpts[<a class="el" href="_lo_ra_mac_header_types_8h.html#aa853d03a7cc33886a71f0
 
 </div>
 </div>
+<a id="a8427b5a6205399157084d145cf03c605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8427b5a6205399157084d145cf03c605">&#9670;&nbsp;</a></span>LORAMAC_F_PORT_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_F_PORT_FIELD_SIZE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Port field size </p>
+
+</div>
+</div>
+<a id="a136a7ea3e55b3675d8188b8123788cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136a7ea3e55b3675d8188b8123788cac">&#9670;&nbsp;</a></span>LORAMAC_MAC_PAYLOAD_FIELD_MAX_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_MAC_PAYLOAD_FIELD_MAX_SIZE&#160;&#160;&#160;242</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Port field size </p>
+
+</div>
+</div>
+<a id="aa3a1d5370680b14d41e94e812a5c1cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a1d5370680b14d41e94e812a5c1cf6">&#9670;&nbsp;</a></span>LORAMAC_MIC_FIELD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_MIC_FIELD_SIZE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MIC field size </p>
+
+</div>
+</div>
+<a id="ace98f1d237bc69203176dbd1936e39f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace98f1d237bc69203176dbd1936e39f3">&#9670;&nbsp;</a></span>LORAMAC_JOIN_REQ_MSG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_JOIN_REQ_MSG_SIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#a2c13ece1219b51184551783d67395383">LORAMAC_JOIN_EUI_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_DEV_EUI_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#a37febd071952013fc49b1837b24b672a">LORAMAC_DEV_NONCE_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_MIC_FIELD_SIZE )</div>
+</div><!-- fragment --><p>JoinRequest frame size</p>
+<p>MHDR(1) + JoinEUI(8) + DevEUI(8) + DevNonce(2) + MIC(4) </p>
+
+</div>
+</div>
+<a id="a23b16a3aa6261a55404264bc19212edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b16a3aa6261a55404264bc19212edf">&#9670;&nbsp;</a></span>LORAMAC_RE_JOIN_1_MSG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_RE_JOIN_1_MSG_SIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#acdff84ebb7c171fb2870bb75a9d1abe7">LORAMAC_JOIN_TYPE_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_JOIN_EUI_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#aae81c0d024be7835381a76cb8c7cf08f">LORAMAC_DEV_EUI_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_RJCOUNT_1_FIELD_SIZE + \</div>
+<div class="line">                                              LORAMAC_MIC_FIELD_SIZE )</div>
+</div><!-- fragment --><p>ReJoinRequest type 1 frame size</p>
+<p>MHDR(1) + ReJoinType(1) + JoinEUI(8) + DevEUI(8) + RJcount1(2) + MIC(4) </p>
+
+</div>
+</div>
+<a id="ad98372e99dfde14579347c2df8a09975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98372e99dfde14579347c2df8a09975">&#9670;&nbsp;</a></span>LORAMAC_RE_JOIN_0_2_MSG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_RE_JOIN_0_2_MSG_SIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#acdff84ebb7c171fb2870bb75a9d1abe7">LORAMAC_JOIN_TYPE_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_NET_ID_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#aae81c0d024be7835381a76cb8c7cf08f">LORAMAC_DEV_EUI_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_RJCOUNT_0_FIELD_SIZE + \</div>
+<div class="line">                                              LORAMAC_MIC_FIELD_SIZE )</div>
+</div><!-- fragment --><p>ReJoinRequest type 0 or 2 frame size</p>
+<p>MHDR(1) + ReJoinType(1) + NetID(3) + DevEUI(8) + RJcount0(2) + MIC(4) </p>
+
+</div>
+</div>
+<a id="a00b9aa8602c1e0e07fa231abe126fd20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b9aa8602c1e0e07fa231abe126fd20">&#9670;&nbsp;</a></span>LORAMAC_JOIN_ACCEPT_FRAME_MIN_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_JOIN_ACCEPT_FRAME_MIN_SIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#a36b0f123896a348956475e975c350948">LORAMAC_JOIN_NONCE_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_NET_ID_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#a18eb277d5a12325ec7301ab8e6d1ff19">LORAMAC_DEV_ADDR_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_DL_SETTINGS_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#a66df7f416d88ec6a2c9420d6fe1e88da">LORAMAC_RX_DELAY_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_MIC_FIELD_SIZE )</div>
+</div><!-- fragment --><p>JoinAccept frame minimum size</p>
+<p>MHDR(1) + AppNonce(3) + NetID(3) + DevAddr(4) + DLSettings(1) + RxDelay(1) + MIC(4) </p>
+
+</div>
+</div>
+<a id="a6c577b974e5981627ad1984e4c160fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c577b974e5981627ad1984e4c160fa5">&#9670;&nbsp;</a></span>LORAMAC_JOIN_ACCEPT_FRAME_MAX_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_JOIN_ACCEPT_FRAME_MAX_SIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#a36b0f123896a348956475e975c350948">LORAMAC_JOIN_NONCE_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_NET_ID_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#a18eb277d5a12325ec7301ab8e6d1ff19">LORAMAC_DEV_ADDR_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_DL_SETTINGS_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#a66df7f416d88ec6a2c9420d6fe1e88da">LORAMAC_RX_DELAY_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_CF_LIST_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#aa3a1d5370680b14d41e94e812a5c1cf6">LORAMAC_MIC_FIELD_SIZE</a> )</div>
+</div><!-- fragment --><p>JoinAccept frame maximum size</p>
+<p>MHDR(1) + AppNonce(3) + NetID(3) + DevAddr(4) + DLSettings(1) + RxDelay(1) + CFList(16) + MIC(4) </p>
+
+</div>
+</div>
+<a id="af0a4f5206700893fb59678189e03fe1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a4f5206700893fb59678189e03fe1f">&#9670;&nbsp;</a></span>JOIN_ACCEPT_MIC_COMPUTATION_OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JOIN_ACCEPT_MIC_COMPUTATION_OFFSET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#acdff84ebb7c171fb2870bb75a9d1abe7">LORAMAC_JOIN_TYPE_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#a2c13ece1219b51184551783d67395383">LORAMAC_JOIN_EUI_FIELD_SIZE</a> + \</div>
+<div class="line">      LORAMAC_DEV_NONCE_FIELD_SIZE )</div>
+</div><!-- fragment --><p>MIC computation offset </p><dl class="section remark"><dt>Remarks</dt><dd>required for 1.1.x support </dd></dl>
+
+</div>
+</div>
+<a id="a0f2381a5bc77d04b26967bc68e605de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f2381a5bc77d04b26967bc68e605de5">&#9670;&nbsp;</a></span>LORAMAC_FRAME_PAYLOAD_OVERHEAD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_FRAME_PAYLOAD_OVERHEAD_SIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + ( <a class="code" href="_lo_ra_mac_header_types_8h.html#a1a87ebfd58a5e383236385cc03252e07">LORAMAC_FHDR_DEV_ADDR_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_FHDR_F_CTRL_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#a96f24aeef8051f0c9a37fa8da620c262">LORAMAC_FHDR_F_CNT_FIELD_SIZE</a> ) + \</div>
+<div class="line">                                              <a class="code" href="_lo_ra_mac_header_types_8h.html#a8427b5a6205399157084d145cf03c605">LORAMAC_F_PORT_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#aa3a1d5370680b14d41e94e812a5c1cf6">LORAMAC_MIC_FIELD_SIZE</a> )</div>
+</div><!-- fragment --><p>FRMPayload overhead to be used when setting the Radio.SetMaxPayloadLength</p>
+<p>Overhead to be used when setting the Radio.SetMaxPayloadLength in RxWindowSetup function.</p>
+<p>MHDR(1) + FHDR(7) + Port(1) + MIC(4)</p>
+<p>Maximum PHYPayload = MaxPayloadOfDatarate + LORAMAC_FRAME_PAYLOAD_OVERHEAD_SIZE </p>
+
+</div>
+</div>
+<a id="ada024a79b43f36a70a7bc09428586fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada024a79b43f36a70a7bc09428586fb8">&#9670;&nbsp;</a></span>LORAMAC_FRAME_PAYLOAD_MIN_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_FRAME_PAYLOAD_MIN_SIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + ( <a class="code" href="_lo_ra_mac_header_types_8h.html#a1a87ebfd58a5e383236385cc03252e07">LORAMAC_FHDR_DEV_ADDR_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_FHDR_F_CTRL_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#a96f24aeef8051f0c9a37fa8da620c262">LORAMAC_FHDR_F_CNT_FIELD_SIZE</a> ) + \</div>
+<div class="line">                                              <a class="code" href="_lo_ra_mac_header_types_8h.html#aa3a1d5370680b14d41e94e812a5c1cf6">LORAMAC_MIC_FIELD_SIZE</a> )</div>
+</div><!-- fragment --><p>FRMPayload minimum size</p>
+<p>MHDR(1) + FHDR(7) + MIC(4) </p>
+
+</div>
+</div>
+<a id="a7047edc3e914bef8d659b4324ca27c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7047edc3e914bef8d659b4324ca27c78">&#9670;&nbsp;</a></span>LORAMAC_FRAME_PAYLOAD_MAX_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_FRAME_PAYLOAD_MAX_SIZE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a> + ( <a class="code" href="_lo_ra_mac_header_types_8h.html#a1a87ebfd58a5e383236385cc03252e07">LORAMAC_FHDR_DEV_ADDR_FIELD_SIZE</a> + \</div>
+<div class="line">                                              LORAMAC_FHDR_F_CTRL_FIELD_SIZE + <a class="code" href="_lo_ra_mac_header_types_8h.html#a96f24aeef8051f0c9a37fa8da620c262">LORAMAC_FHDR_F_CNT_FIELD_SIZE</a> ) + \</div>
+<div class="line">                                              <a class="code" href="_lo_ra_mac_header_types_8h.html#a8427b5a6205399157084d145cf03c605">LORAMAC_F_PORT_FIELD_SIZE</a> + <a class="code" href="_lo_ra_mac_header_types_8h.html#a136a7ea3e55b3675d8188b8123788cac">LORAMAC_MAC_PAYLOAD_FIELD_MAX_SIZE</a> + \</div>
+<div class="line">                                              <a class="code" href="_lo_ra_mac_header_types_8h.html#aa3a1d5370680b14d41e94e812a5c1cf6">LORAMAC_MIC_FIELD_SIZE</a> )</div>
+</div><!-- fragment --><p>FRMPayload maximum possible size</p>
+<p>MHDR(1) + FHDR(7) + Port(1) + MACPayload(242) + MIC(4) </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a96f24aeef8051f0c9a37fa8da620c262"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a96f24aeef8051f0c9a37fa8da620c262">LORAMAC_FHDR_F_CNT_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_FHDR_F_CNT_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:93</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a18eb277d5a12325ec7301ab8e6d1ff19"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a18eb277d5a12325ec7301ab8e6d1ff19">LORAMAC_DEV_ADDR_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_DEV_ADDR_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:75</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a66df7f416d88ec6a2c9420d6fe1e88da"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a66df7f416d88ec6a2c9420d6fe1e88da">LORAMAC_RX_DELAY_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_RX_DELAY_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:81</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a2c13ece1219b51184551783d67395383"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a2c13ece1219b51184551783d67395383">LORAMAC_JOIN_EUI_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_JOIN_EUI_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:54</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a8427b5a6205399157084d145cf03c605"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a8427b5a6205399157084d145cf03c605">LORAMAC_F_PORT_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_F_PORT_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:99</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a136a7ea3e55b3675d8188b8123788cac"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a136a7ea3e55b3675d8188b8123788cac">LORAMAC_MAC_PAYLOAD_FIELD_MAX_SIZE</a></div><div class="ttdeci">#define LORAMAC_MAC_PAYLOAD_FIELD_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:102</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_acdff84ebb7c171fb2870bb75a9d1abe7"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#acdff84ebb7c171fb2870bb75a9d1abe7">LORAMAC_JOIN_TYPE_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_JOIN_TYPE_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:51</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_aae81c0d024be7835381a76cb8c7cf08f"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#aae81c0d024be7835381a76cb8c7cf08f">LORAMAC_DEV_EUI_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_DEV_EUI_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:57</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a1a87ebfd58a5e383236385cc03252e07"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a1a87ebfd58a5e383236385cc03252e07">LORAMAC_FHDR_DEV_ADDR_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_FHDR_DEV_ADDR_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:87</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a5375786bd7c99f0b4f3702687994eb06"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a5375786bd7c99f0b4f3702687994eb06">LORAMAC_MHDR_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_MHDR_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:48</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_aa3a1d5370680b14d41e94e812a5c1cf6"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#aa3a1d5370680b14d41e94e812a5c1cf6">LORAMAC_MIC_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_MIC_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:105</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a36b0f123896a348956475e975c350948"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a36b0f123896a348956475e975c350948">LORAMAC_JOIN_NONCE_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_JOIN_NONCE_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:63</div></div>
+<div class="ttc" id="a_lo_ra_mac_header_types_8h_html_a37febd071952013fc49b1837b24b672a"><div class="ttname"><a href="_lo_ra_mac_header_types_8h.html#a37febd071952013fc49b1837b24b672a">LORAMAC_DEV_NONCE_FIELD_SIZE</a></div><div class="ttdeci">#define LORAMAC_DEV_NONCE_FIELD_SIZE</div><div class="ttdef"><b>Definition:</b> LoRaMacHeaderTypes.h:60</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_df7eed3543fa7070b0a3ab0e00a3e0a6.html">github-loramac-node</a></li><li class="navelem"><a class="el" href="dir_1dda2d094b0a9f47a7b83974941607c0.html">src</a></li><li class="navelem"><a class="el" href="dir_52c4f436fc21c8338c027271102d36bc.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_header_types_8h.html">LoRaMacHeaderTypes.h</a></li>
-    <li class="footer">Generated on Tue Dec 17 2019 11:58:22 for LoRaMAC by
+    <li class="footer">Generated on Tue May 26 2020 14:26:14 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

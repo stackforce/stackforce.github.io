@@ -69,17 +69,6 @@ var _lo_ra_mac_message_types_8h =
       [ "JoinAccept", "_lo_ra_mac_message_types_8h.html#ada5dcba275ce79c2a73b278c7af6c3bc", null ],
       [ "Data", "_lo_ra_mac_message_types_8h.html#af7d5cad3b3ed14fe02a1e2ae33c42320", null ]
     ] ],
-    [ "LORAMAC_MHDR_FIELD_SIZE", "_lo_ra_mac_message_types_8h.html#a5375786bd7c99f0b4f3702687994eb06", null ],
-    [ "LORAMAC_JOIN_EUI_FIELD_SIZE", "_lo_ra_mac_message_types_8h.html#a2c13ece1219b51184551783d67395383", null ],
-    [ "LORAMAC_DEV_EUI_FIELD_SIZE", "_lo_ra_mac_message_types_8h.html#aae81c0d024be7835381a76cb8c7cf08f", null ],
-    [ "LORAMAC_JOIN_NONCE_FIELD_SIZE", "_lo_ra_mac_message_types_8h.html#a36b0f123896a348956475e975c350948", null ],
-    [ "LORAMAC_NET_ID_FIELD_SIZE", "_lo_ra_mac_message_types_8h.html#a33304f16c3bc3327643cf23e9ee1f676", null ],
-    [ "LORAMAC_F_PORT_FIELD_SIZE", "_lo_ra_mac_message_types_8h.html#a8427b5a6205399157084d145cf03c605", null ],
-    [ "LORAMAC_C_FLIST_FIELD_SIZE", "_lo_ra_mac_message_types_8h.html#a98d6916a2f8eac98ca6a6ee87dd46c18", null ],
-    [ "LORAMAC_MIC_FIELD_SIZE", "_lo_ra_mac_message_types_8h.html#aa3a1d5370680b14d41e94e812a5c1cf6", null ],
-    [ "LORAMAC_JOIN_REQ_MSG_SIZE", "_lo_ra_mac_message_types_8h.html#ace98f1d237bc69203176dbd1936e39f3", null ],
-    [ "LORAMAC_RE_JOIN_1_MSG_SIZE", "_lo_ra_mac_message_types_8h.html#a23b16a3aa6261a55404264bc19212edf", null ],
-    [ "LORAMAC_RE_JOIN_0_2_MSG_SIZE", "_lo_ra_mac_message_types_8h.html#ad98372e99dfde14579347c2df8a09975", null ],
     [ "LoRaMacMessageType_t", "_lo_ra_mac_message_types_8h.html#ae2107fa60177bca99dc6548286d200c8", [
       [ "LORAMAC_MSG_TYPE_JOIN_REQUEST", "_lo_ra_mac_message_types_8h.html#ae2107fa60177bca99dc6548286d200c8a77f9f8b8a8d4b67233d3a85eda77e769", null ],
       [ "LORAMAC_MSG_TYPE_RE_JOIN_1", "_lo_ra_mac_message_types_8h.html#ae2107fa60177bca99dc6548286d200c8a8bc3a03cb6072b9e92d8809bef388b85", null ],

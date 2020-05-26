@@ -1,11 +1,16 @@
 var files_dup =
 [
     [ "LoRaMac.h", "_lo_ra_mac_8h.html", "_lo_ra_mac_8h" ],
+    [ "LoRaMacAdr.h", "_lo_ra_mac_adr_8h.html", "_lo_ra_mac_adr_8h" ],
     [ "LoRaMacClassB.h", "_lo_ra_mac_class_b_8h.html", "_lo_ra_mac_class_b_8h" ],
     [ "LoRaMacClassBConfig.h", "_lo_ra_mac_class_b_config_8h.html", "_lo_ra_mac_class_b_config_8h" ],
+    [ "LoRaMacCommands.h", "_lo_ra_mac_commands_8h.html", "_lo_ra_mac_commands_8h" ],
+    [ "LoRaMacConfirmQueue.h", "_lo_ra_mac_confirm_queue_8h.html", "_lo_ra_mac_confirm_queue_8h" ],
     [ "LoRaMacCrypto.h", "_lo_ra_mac_crypto_8h.html", "_lo_ra_mac_crypto_8h" ],
     [ "LoRaMacHeaderTypes.h", "_lo_ra_mac_header_types_8h.html", "_lo_ra_mac_header_types_8h" ],
     [ "LoRaMacMessageTypes.h", "_lo_ra_mac_message_types_8h.html", "_lo_ra_mac_message_types_8h" ],
+    [ "LoRaMacParser.h", "_lo_ra_mac_parser_8h.html", "_lo_ra_mac_parser_8h" ],
+    [ "LoRaMacSerializer.h", "_lo_ra_mac_serializer_8h.html", "_lo_ra_mac_serializer_8h" ],
     [ "LoRaMacTest.h", "_lo_ra_mac_test_8h.html", "_lo_ra_mac_test_8h" ],
     [ "LoRaMacTypes.h", "_lo_ra_mac_types_8h.html", "_lo_ra_mac_types_8h" ],
     [ "Region.h", "_region_8h.html", "_region_8h" ],

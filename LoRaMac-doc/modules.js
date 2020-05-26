@@ -1,7 +1,9 @@
 var modules =
 [
     [ "LoRa MAC layer implementation", "group___l_o_r_a_m_a_c.html", "group___l_o_r_a_m_a_c" ],
+    [ "LoRa MAC ADR implementation", "group___l_o_r_a_m_a_c_a_d_r.html", null ],
     [ "LoRa MAC Class B layer implementation", "group___l_o_r_a_m_a_c_c_l_a_s_s_b.html", "group___l_o_r_a_m_a_c_c_l_a_s_s_b" ],
+    [ "LoRa MAC confirm queue implementation", "group___l_o_r_a_m_a_c_c_o_n_f_i_r_m_q_u_e_u_e.html", "group___l_o_r_a_m_a_c_c_o_n_f_i_r_m_q_u_e_u_e" ],
     [ "LoRa MAC layer test function implementation", "group___l_o_r_a_m_a_c_t_e_s_t.html", "group___l_o_r_a_m_a_c_t_e_s_t" ],
     [ "Secure Element API Definition", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html", "group___s_e_c_u_r_e_e_l_e_m_e_n_t" ],
     [ "Region implementation", "group___r_e_g_i_o_n.html", "group___r_e_g_i_o_n" ],

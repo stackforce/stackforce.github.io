@@ -51,8 +51,7 @@ var group___l_o_r_a_m_a_c =
       [ "UplinkDwellTime", "group___l_o_r_a_m_a_c.html#a0e6663762d6f9173bc8d8cb018f8f17a", null ],
       [ "DownlinkDwellTime", "group___l_o_r_a_m_a_c.html#a63074ce7d23ff98956f5d6f4054f235f", null ],
       [ "MaxEirp", "group___l_o_r_a_m_a_c.html#abacf3c28f803460c8947f0b0077fcf5c", null ],
-      [ "AntennaGain", "group___l_o_r_a_m_a_c.html#a727eaefd87f898a5238118573968962c", null ],
-      [ "RepeaterSupport", "group___l_o_r_a_m_a_c.html#a037bdbc41e8b3deeaab3684cf4b23f66", null ]
+      [ "AntennaGain", "group___l_o_r_a_m_a_c.html#a727eaefd87f898a5238118573968962c", null ]
     ] ],
     [ "PingSlotInfo_t", "group___l_o_r_a_m_a_c.html#union_ping_slot_info__t", [
       [ "sInfoFields", "group___l_o_r_a_m_a_c.html#struct_ping_slot_info__t_1_1s_info_fields", [
@@ -86,6 +85,9 @@ var group___l_o_r_a_m_a_c =
       [ "Value", "group___l_o_r_a_m_a_c.html#a88f4d00bdab99ae6f48c7ae0bc468bb4", null ],
       [ "Bits", "group___l_o_r_a_m_a_c.html#a86a8429036015d2cec16df681e2258be", null ]
     ] ],
+    [ "RequestReturnParam_t", "group___l_o_r_a_m_a_c.html#struct_request_return_param__t", [
+      [ "DutyCycleWaitTime", "group___l_o_r_a_m_a_c.html#a7e26dc56480fe71c6b73bc99da96e244", null ]
+    ] ],
     [ "McpsReqUnconfirmed_t", "group___l_o_r_a_m_a_c.html#struct_mcps_req_unconfirmed__t", [
       [ "fPort", "group___l_o_r_a_m_a_c.html#a2973de9ac0ab5e876b80362bc4c6a88b", null ],
       [ "fBuffer", "group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af", null ],
@@ -96,7 +98,8 @@ var group___l_o_r_a_m_a_c =
       [ "fPort", "group___l_o_r_a_m_a_c.html#a2973de9ac0ab5e876b80362bc4c6a88b", null ],
       [ "fBuffer", "group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af", null ],
       [ "fBufferSize", "group___l_o_r_a_m_a_c.html#a6b4fc83528d7391a193516d9f4ba985b", null ],
-      [ "Datarate", "group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ]
+      [ "Datarate", "group___l_o_r_a_m_a_c.html#ae2f6080f3aa0e9485c55513ca56bb24d", null ],
+      [ "NbTrials", "group___l_o_r_a_m_a_c.html#a9da59688c25c389a323e4d155fca3a47", null ]
     ] ],
     [ "McpsReqProprietary_t", "group___l_o_r_a_m_a_c.html#struct_mcps_req_proprietary__t", [
       [ "fBuffer", "group___l_o_r_a_m_a_c.html#a2e9f11cf5a8f2a797999359bedee31af", null ],
@@ -110,7 +113,8 @@ var group___l_o_r_a_m_a_c =
         [ "Proprietary", "group___l_o_r_a_m_a_c.html#ad79bb26667e5f61b5e5dd5d58a085b48", null ]
       ] ],
       [ "Type", "group___l_o_r_a_m_a_c.html#a29993a5d65888bf0f36ec406896bb540", null ],
-      [ "Req", "group___l_o_r_a_m_a_c.html#abefc0ad64bd2753c8fd383c6716cbd79", null ]
+      [ "Req", "group___l_o_r_a_m_a_c.html#abefc0ad64bd2753c8fd383c6716cbd79", null ],
+      [ "ReqReturn", "group___l_o_r_a_m_a_c.html#a8b53ab54bfb99b956268108f85f8870a", null ]
     ] ],
     [ "McpsConfirm_t", "group___l_o_r_a_m_a_c.html#struct_mcps_confirm__t", [
       [ "McpsRequest", "group___l_o_r_a_m_a_c.html#ab5da7b8ef4530ebd1fb2005f950a2b0b", null ],
@@ -118,7 +122,7 @@ var group___l_o_r_a_m_a_c =
       [ "Datarate", "group___l_o_r_a_m_a_c.html#a780280c12645b2666878162aab5d8cad", null ],
       [ "TxPower", "group___l_o_r_a_m_a_c.html#a037b4f849fa8ed4aa1d3c58aef2b28ec", null ],
       [ "AckReceived", "group___l_o_r_a_m_a_c.html#ac59e1bd1c9450c7d136c7f475be89ded", null ],
-      [ "NbTrans", "group___l_o_r_a_m_a_c.html#ad6aa102780ccf555a6c75d04d1e13573", null ],
+      [ "NbRetries", "group___l_o_r_a_m_a_c.html#a87c781229ed6a79169564bbed6581f29", null ],
       [ "TxTimeOnAir", "group___l_o_r_a_m_a_c.html#aa17a8607485db100d315e74853dd217e", null ],
       [ "UpLinkCounter", "group___l_o_r_a_m_a_c.html#ae8c54ca277e4d7295dfd498889e42fdd", null ],
       [ "Channel", "group___l_o_r_a_m_a_c.html#ae82bf9242a014164f9f6907f29782c44", null ]
@@ -169,7 +173,8 @@ var group___l_o_r_a_m_a_c =
         [ "DeriveMcSessionKeyPair", "group___l_o_r_a_m_a_c.html#a47ac7463abb231f76e534234ec2506df", null ]
       ] ],
       [ "Type", "group___l_o_r_a_m_a_c.html#a83b9239b834fa1a95fba118c0a392a8b", null ],
-      [ "Req", "group___l_o_r_a_m_a_c.html#af33c5072daf50434dc79d1aee6f66395", null ]
+      [ "Req", "group___l_o_r_a_m_a_c.html#af33c5072daf50434dc79d1aee6f66395", null ],
+      [ "ReqReturn", "group___l_o_r_a_m_a_c.html#a8b53ab54bfb99b956268108f85f8870a", null ]
     ] ],
     [ "MlmeConfirm_t", "group___l_o_r_a_m_a_c.html#struct_mlme_confirm__t", [
       [ "MlmeRequest", "group___l_o_r_a_m_a_c.html#a05e619573c522884eada37bde4e3d1f3", null ],
@@ -187,14 +192,18 @@ var group___l_o_r_a_m_a_c =
       [ "BeaconInfo", "group___l_o_r_a_m_a_c.html#a25bcb652202d9e4aa631212438e9dce6", null ]
     ] ],
     [ "MibParam_t", "group___l_o_r_a_m_a_c.html#union_mib_param__t", [
+      [ "sLrWanVersion", "group___l_o_r_a_m_a_c.html#struct_mib_param__t_1_1s_lr_wan_version", [
+        [ "LoRaWan", "group___l_o_r_a_m_a_c.html#a4c54bf1553f1382319bf8a648f18565c", null ],
+        [ "LoRaWanRegion", "group___l_o_r_a_m_a_c.html#a4faef42902cd9dca5ed46892ea79c8bb", null ]
+      ] ],
       [ "Class", "group___l_o_r_a_m_a_c.html#a1ca946ebc53171e9f0f1fc39c005a7a6", null ],
       [ "NetworkActivation", "group___l_o_r_a_m_a_c.html#accf1e50e3bdef4302a1abe08fe19bf7e", null ],
       [ "DevEui", "group___l_o_r_a_m_a_c.html#a2aa72c6d37233b51e7ae46f85398f888", null ],
       [ "JoinEui", "group___l_o_r_a_m_a_c.html#aeb981b575d32a4582e5722c866a01fc9", null ],
+      [ "SePin", "group___l_o_r_a_m_a_c.html#a934424d6105a0665c5742fd393b0b8bf", null ],
       [ "AdrEnable", "group___l_o_r_a_m_a_c.html#a04efa8698eeea64f27b216d64e598c0d", null ],
       [ "NetID", "group___l_o_r_a_m_a_c.html#a84a14c879508144e9961372ace234169", null ],
       [ "DevAddr", "group___l_o_r_a_m_a_c.html#a8644153b1c46ffcaeb2b44b5544a2c1a", null ],
-      [ "GenAppKey", "group___l_o_r_a_m_a_c.html#af103d1f7491a45901f22da3806de4075", null ],
       [ "AppKey", "group___l_o_r_a_m_a_c.html#a560c2bd9214ee75105acac8593614bd9", null ],
       [ "NwkKey", "group___l_o_r_a_m_a_c.html#a6eb84e41aa1c32cfd3f7d6d64cb71db8", null ],
       [ "JSIntKey", "group___l_o_r_a_m_a_c.html#a18d7480c030a2a4d7c9fec85addd9180", null ],
@@ -217,7 +226,6 @@ var group___l_o_r_a_m_a_c =
       [ "McAppSKey3", "group___l_o_r_a_m_a_c.html#ae7acdd46a589d36a343abca99c7b1270", null ],
       [ "McNwkSKey3", "group___l_o_r_a_m_a_c.html#acbae367c07c5a5f252ca891ef16e9909", null ],
       [ "EnablePublicNetwork", "group___l_o_r_a_m_a_c.html#aff3bd8c7ac1d2fe36ed22c15c25273aa", null ],
-      [ "EnableRepeaterSupport", "group___l_o_r_a_m_a_c.html#a6af0230b4a6c8b1caf81b8eb6be2ca1f", null ],
       [ "ChannelList", "group___l_o_r_a_m_a_c.html#ad8f366dd9087f9cdaa4f7021f2d6e2b9", null ],
       [ "Rx2Channel", "group___l_o_r_a_m_a_c.html#aeb71ba4d0a3c96a2e0a925e720f87006", null ],
       [ "Rx2DefaultChannel", "group___l_o_r_a_m_a_c.html#a57bc4a70f2eff824ae89b97536c0ad3c", null ],
@@ -242,9 +250,7 @@ var group___l_o_r_a_m_a_c =
       [ "DefaultAntennaGain", "group___l_o_r_a_m_a_c.html#a3679fa4ff6ab120429480da6aa8a017d", null ],
       [ "Contexts", "group___l_o_r_a_m_a_c.html#af7f9f29122377bc13f6d7abdc0a81920", null ],
       [ "AbpLrWanVersion", "group___l_o_r_a_m_a_c.html#a0502443abe64504f60a0a1628d0a5b98", null ],
-      [ "Rejoin0CycleInSec", "group___l_o_r_a_m_a_c.html#a313b77f7d98a09e9a94da194579882c4", null ],
-      [ "Rejoin1CycleInSec", "group___l_o_r_a_m_a_c.html#a69f1bf517a7aab6d5be6988d7c03d22c", null ],
-      [ "Rejoin2CycleInSec", "group___l_o_r_a_m_a_c.html#a82de09ada81f2d0f89aa93c930b0be81", null ],
+      [ "LrWanVersion", "group___l_o_r_a_m_a_c.html#a43db990adec74aa7018e0e686e9eb46a", null ],
       [ "BeaconInterval", "group___l_o_r_a_m_a_c.html#a64d29802c576ec4c7ab0f70cb95e069a", null ],
       [ "BeaconReserved", "group___l_o_r_a_m_a_c.html#a50d7e50c4e30198ad593c0b02cb4adff", null ],
       [ "BeaconGuard", "group___l_o_r_a_m_a_c.html#a1ab621d67410ed81e04b1ecbe743a9c7", null ],
@@ -282,9 +288,7 @@ var group___l_o_r_a_m_a_c =
     [ "MAX_ACK_RETRIES", "group___l_o_r_a_m_a_c.html#ga47bc6aeb5be0ba39387e2049e342fa7e", null ],
     [ "UP_LINK", "group___l_o_r_a_m_a_c.html#ga7e75f3071d6911b19a563d554038f8da", null ],
     [ "DOWN_LINK", "group___l_o_r_a_m_a_c.html#ga801525db3ba12b250029f026403524b7", null ],
-    [ "LORAMAC_MFR_LEN", "group___l_o_r_a_m_a_c.html#ga1727f288e9a871f1474ce61f942a08f3", null ],
     [ "LORA_MAC_MLME_CONFIRM_QUEUE_LEN", "group___l_o_r_a_m_a_c.html#ga47c33a3d3db7c795afba5b3ac94d99c8", null ],
-    [ "LORA_MAC_FRMPAYLOAD_OVERHEAD", "group___l_o_r_a_m_a_c.html#ga9623296c345a3636f460ecdb8b1bbd9d", null ],
     [ "LORAMAC_MAX_MC_CTX", "group___l_o_r_a_m_a_c.html#ga350863a913c89325530d89cfbf606a1d", null ],
     [ "LORAMAC_CRYPTO_MULTICAST_KEYS", "group___l_o_r_a_m_a_c.html#gadc75a6b3de1272a9500d116c99e0469d", null ],
     [ "ActivationType_t", "group___l_o_r_a_m_a_c.html#ga8d64e6041eb0e2a04accfdece713df46", [
@@ -327,6 +331,7 @@ var group___l_o_r_a_m_a_c =
       [ "MCPS_PROPRIETARY", "group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696a29a54ded2edefe9179a33a14e3ceaca5", null ]
     ] ],
     [ "Mlme_t", "group___l_o_r_a_m_a_c.html#ga867a2ba8db200cd6a00511fec9979f1c", [
+      [ "MLME_UNKNOWN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca1c658fc6af0d7d742966b42341d5d4cb", null ],
       [ "MLME_JOIN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca475ad5dea1c4c13b93b31095c665e92e", null ],
       [ "MLME_REJOIN_0", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1cab15073ad9a5bf1ab4fe6e33d045221a6", null ],
       [ "MLME_REJOIN_1", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1cafa4ddefb5db3403a02f369bd6fe0480f", null ],
@@ -341,18 +346,17 @@ var group___l_o_r_a_m_a_c =
       [ "MLME_BEACON_ACQUISITION", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1caec86b2b668cea61b3c298fef89411e8b", null ],
       [ "MLME_PING_SLOT_INFO", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3ef28198f0049cf4b222edc9b8ad2201", null ],
       [ "MLME_BEACON_TIMING", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1cad5d1950a71c91d499dcd0ffeb6e77fa5", null ],
-      [ "MLME_BEACON_LOST", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3607bda0c271befdc6ef57686496a332", null ],
-      [ "MLME_REVERT_JOIN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca4cb5a0009909c8c98fd456abdf9e310c", null ]
+      [ "MLME_BEACON_LOST", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3607bda0c271befdc6ef57686496a332", null ]
     ] ],
     [ "Mib_t", "group___l_o_r_a_m_a_c.html#ga64429ce77a29145f6a7508df5eaa2d3e", [
       [ "MIB_DEVICE_CLASS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eac0426517132356c9977dcdafa5ab3a7f", null ],
       [ "MIB_NETWORK_ACTIVATION", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea936d749fe86b00f36b9daddb23b48c1e", null ],
       [ "MIB_DEV_EUI", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea10d34d8af3b38c704342c34775e35b17", null ],
       [ "MIB_JOIN_EUI", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea44969e0394774fbad5917e36a9efa8db", null ],
+      [ "MIB_SE_PIN", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea083aa53653cbd9e61e35bfeaa7688445", null ],
       [ "MIB_ADR", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea756ff0b66217e3e4ddd0442c8aa56802", null ],
       [ "MIB_NET_ID", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea982c4b7cc1e276633134aa89298c96b0", null ],
       [ "MIB_DEV_ADDR", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eab1459b05690ffa347a71393006b526ac", null ],
-      [ "MIB_GEN_APP_KEY", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eac7734a59da8d77efa199a6fdb8a0eaaa", null ],
       [ "MIB_APP_KEY", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea5d411f5f36d5e485223c5bad0d7eb41f", null ],
       [ "MIB_NWK_KEY", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eabfbcd3d07efda7511980b12444790869", null ],
       [ "MIB_J_S_INT_KEY", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea25064fe61ade5e2fd9783ab136268caf", null ],
@@ -375,7 +379,6 @@ var group___l_o_r_a_m_a_c =
       [ "MIB_MC_APP_S_KEY_3", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea012297d04eeefaf2cce16b2fa2428a96", null ],
       [ "MIB_MC_NWK_S_KEY_3", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea0b3e26a0b7c086ce01095cbd43005ea8", null ],
       [ "MIB_PUBLIC_NETWORK", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eab2819c46ba94b53c1fb2c3a0bfa75e48", null ],
-      [ "MIB_REPEATER_SUPPORT", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea2d0a50cc4dd24771854bd138934ef3e5", null ],
       [ "MIB_CHANNELS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea0236aae7748c12308383eab208a3cc5a", null ],
       [ "MIB_RX2_CHANNEL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea60fe29749b57c7a5315e9c1475269ba3", null ],
       [ "MIB_RX2_DEFAULT_CHANNEL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eac3a212e314ab58f78007ce812187179d", null ],
@@ -399,9 +402,7 @@ var group___l_o_r_a_m_a_c =
       [ "MIB_DEFAULT_ANTENNA_GAIN", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eafdc28fdfdbed01cb4c4ea59e0c9b9994", null ],
       [ "MIB_NVM_CTXS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eab3b5ae42bb6c37f4e87d07347af9ab56", null ],
       [ "MIB_ABP_LORAWAN_VERSION", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea8a327664635fb5657ea4ec9fb72ede32", null ],
-      [ "MIB_REJOIN_0_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea6cfa147a50c52331ec2ef9a069b0d310", null ],
-      [ "MIB_REJOIN_1_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea7c089e8762b6b3ac7c9abd674b889e5d", null ],
-      [ "MIB_REJOIN_2_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead177c4a052fe42b244e9fb36cb423119", null ],
+      [ "MIB_LORAWAN_VERSION", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea116c3c2605bf1997548b7fa47129b320", null ],
       [ "MIB_BEACON_INTERVAL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eae022575683d2249a82a086a04c5a15c1", null ],
       [ "MIB_BEACON_RESERVED", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaa19d77bfa7a7e003c1c88446520a6528", null ],
       [ "MIB_BEACON_GUARD", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea01fcf8618d1d1d240f638a333dc127da", null ],
@@ -476,5 +477,6 @@ var group___l_o_r_a_m_a_c =
     [ "LoRaMacMibGetRequestConfirm", "group___l_o_r_a_m_a_c.html#ga3e208a4f73213aa801eeb9d9da7b71dd", null ],
     [ "LoRaMacMibSetRequestConfirm", "group___l_o_r_a_m_a_c.html#ga7a4ee0ced221591206b09630d4a70844", null ],
     [ "LoRaMacMlmeRequest", "group___l_o_r_a_m_a_c.html#ga097113f30feecc17c780940ff74af33e", null ],
-    [ "LoRaMacMcpsRequest", "group___l_o_r_a_m_a_c.html#ga79768f8a3c22aaff84d4dfcc77ad508c", null ]
+    [ "LoRaMacMcpsRequest", "group___l_o_r_a_m_a_c.html#ga79768f8a3c22aaff84d4dfcc77ad508c", null ],
+    [ "LoRaMacDeInitialization", "group___l_o_r_a_m_a_c.html#gac01c687b7f28bc92fd0fc4739c1d7a81", null ]
 ];

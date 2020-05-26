@@ -16,6 +16,5 @@ var group___l_o_r_a_m_a_c_struct_lo_ra_mac_params__t =
     [ "UplinkDwellTime", "group___l_o_r_a_m_a_c.html#a0e6663762d6f9173bc8d8cb018f8f17a", null ],
     [ "DownlinkDwellTime", "group___l_o_r_a_m_a_c.html#a63074ce7d23ff98956f5d6f4054f235f", null ],
     [ "MaxEirp", "group___l_o_r_a_m_a_c.html#abacf3c28f803460c8947f0b0077fcf5c", null ],
-    [ "AntennaGain", "group___l_o_r_a_m_a_c.html#a727eaefd87f898a5238118573968962c", null ],
-    [ "RepeaterSupport", "group___l_o_r_a_m_a_c.html#a037bdbc41e8b3deeaab3684cf4b23f66", null ]
+    [ "AntennaGain", "group___l_o_r_a_m_a_c.html#a727eaefd87f898a5238118573968962c", null ]
 ];

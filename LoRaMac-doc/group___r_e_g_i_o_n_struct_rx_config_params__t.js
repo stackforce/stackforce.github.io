@@ -8,7 +8,6 @@ var group___r_e_g_i_o_n_struct_rx_config_params__t =
     [ "WindowTimeout", "group___r_e_g_i_o_n.html#a9d9f6c16ea62e2bcc09b100e2cb83e3f", null ],
     [ "WindowOffset", "group___r_e_g_i_o_n.html#a9d092276960345e3b06ba105cf0c8b98", null ],
     [ "DownlinkDwellTime", "group___r_e_g_i_o_n.html#a63074ce7d23ff98956f5d6f4054f235f", null ],
-    [ "RepeaterSupport", "group___r_e_g_i_o_n.html#a037bdbc41e8b3deeaab3684cf4b23f66", null ],
     [ "RxContinuous", "group___r_e_g_i_o_n.html#ad155d9bae95f09d927ca588dc4f4734a", null ],
     [ "RxSlot", "group___r_e_g_i_o_n.html#a0a258bf8cfad5219bfd579257e523fc1", null ]
 ];

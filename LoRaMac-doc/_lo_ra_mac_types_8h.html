@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.3</span>
+   &#160;<span id="projectnumber">4.4.4</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -109,6 +109,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:union_mc_rx_params__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_mc_channel_params__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#struct_mc_channel_params__t">McChannelParams_t</a></td></tr>
 <tr class="separator:struct_mc_channel_params__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:union_mc_channel_params__t_1_1u_mc_keys"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#union_mc_channel_params__t_1_1u_mc_keys">McChannelParams_t::uMcKeys</a></td></tr>
+<tr class="separator:union_mc_channel_params__t_1_1u_mc_keys"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_multicast_ctx__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#struct_multicast_ctx__t">MulticastCtx_t</a></td></tr>
 <tr class="separator:struct_multicast_ctx__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_band__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#struct_band__t">Band_t</a></td></tr>
@@ -117,6 +119,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:struct_mc_rx_params__t_8_class_b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_mc_rx_params__t_8_class_c"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#struct_mc_rx_params__t_8_class_c">McRxParams_t.ClassC</a></td></tr>
 <tr class="separator:struct_mc_rx_params__t_8_class_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_mc_channel_params__t_1_1u_mc_keys_8_session"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#struct_mc_channel_params__t_1_1u_mc_keys_8_session">McChannelParams_t::uMcKeys.Session</a></td></tr>
+<tr class="separator:struct_mc_channel_params__t_1_1u_mc_keys_8_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f3d2a035e6bc5055f718f63bd2f8482"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#a9f3d2a035e6bc5055f718f63bd2f8482">LORAMAC_CRYPTO_UNICAST_KEYS</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a9f3d2a035e6bc5055f718f63bd2f8482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc75a6b3de1272a9500d116c99e0469d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#adc75a6b3de1272a9500d116c99e0469d">LORAMAC_CRYPTO_MULTICAST_KEYS</a>&#160;&#160;&#160;127</td></tr>
@@ -141,45 +145,40 @@ Data Structures</h2></td></tr>
 &#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba1456f60d6b4acc6863d03fd3de9a314c">MC_FCNT_DOWN_0</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba96845af78301c5848baf9d9baac6de3e">MC_FCNT_DOWN_1</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba7d86b1e84ea0d46432ab00449aa23b1d">MC_FCNT_DOWN_2</a>, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20babc05bd58a27f045705ea2f4191e2f12d">MC_FCNT_DOWN_3</a>, 
-<br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba3f94c23da42971065c7f59e9e1cd7064">RJ_COUNT_0</a>, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba26f1c8a71f6c417511f7776afa15f8ef">RJ_COUNT_1</a>
+<a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20babc05bd58a27f045705ea2f4191e2f12d">MC_FCNT_DOWN_3</a>
 <br />
  }</td></tr>
 <tr class="separator:a6b5d63e46906a7521f8fbc8da613b20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef8730e8da8f3d23e7963ab48116c745"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a> { <br />
 &#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a173515207e02692f707913a33510ca95">APP_KEY</a> = 0, 
-<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a3ee8dde6d9ed599100c3b07d6d1488a4">GEN_APP_KEY</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a6ed669d13aea86e761b655a5bd099086">NWK_KEY</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a1f97adf2c1efaba6445fb68f68ef7d0e">J_S_INT_KEY</a>, 
+<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a5c91633b56c684a83d43acd3a19b8f89">J_S_ENC_KEY</a>, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a5c91633b56c684a83d43acd3a19b8f89">J_S_ENC_KEY</a>, 
-<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a834612eaa15950f649711e2cb0ddef1b">F_NWK_S_INT_KEY</a>, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a834612eaa15950f649711e2cb0ddef1b">F_NWK_S_INT_KEY</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a4b99bd41995af66820f94de3e65ec32e">S_NWK_S_INT_KEY</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745aad2e6b088c1cf150c0c3f39b8b52089e">NWK_S_ENC_KEY</a>, 
+<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745aab4a7f684aac76d3431511cda572740d">APP_S_KEY</a>, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745aab4a7f684aac76d3431511cda572740d">APP_S_KEY</a>, 
-<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a17db182d92f5a46ea2c56a63efa50c17">MC_ROOT_KEY</a>, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a17db182d92f5a46ea2c56a63efa50c17">MC_ROOT_KEY</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a8bcdf7ab32f0c3e19bf35a44d9b54acf">MC_KE_KEY</a> = LORAMAC_CRYPTO_MULTICAST_KEYS, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a4cf68da182b67e08b87dab37ba8ea30c">MC_KEY_0</a>, 
+<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745ac6b99c9da693f4c91f085912ff9bf28f">MC_APP_S_KEY_0</a>, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745ac6b99c9da693f4c91f085912ff9bf28f">MC_APP_S_KEY_0</a>, 
-<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a38b592810e74fd7d2aea91925e2ba8cc">MC_NWK_S_KEY_0</a>, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a38b592810e74fd7d2aea91925e2ba8cc">MC_NWK_S_KEY_0</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a6483114533e03e6d8c89cb1c54ea2c58">MC_KEY_1</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a3651e1a86437be8025136e6aa8fd33fc">MC_APP_S_KEY_1</a>, 
+<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a83943e441020196d6d97767d61224763">MC_NWK_S_KEY_1</a>, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a83943e441020196d6d97767d61224763">MC_NWK_S_KEY_1</a>, 
-<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745af168917706d83e50a6359a5a6ae88620">MC_KEY_2</a>, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745af168917706d83e50a6359a5a6ae88620">MC_KEY_2</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745abf549e240785dda51ebc411887153fa8">MC_APP_S_KEY_2</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745adff00c1de489ee088a3c26a0a19b5be5">MC_NWK_S_KEY_2</a>, 
+<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745ae4b23f8e356c43b00e558ecaf3e7ad18">MC_KEY_3</a>, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745ae4b23f8e356c43b00e558ecaf3e7ad18">MC_KEY_3</a>, 
-<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a1aeee12393ec8823f1ff621012875966">MC_APP_S_KEY_3</a>, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a1aeee12393ec8823f1ff621012875966">MC_APP_S_KEY_3</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a980d076e0e956abd474b5d885d7a52b6">MC_NWK_S_KEY_3</a>, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745ac53ea481f99a2e380d508a036b88104f">SLOT_RAND_ZERO_KEY</a>, 
-<br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745aec8a3617311ffdac328944fe1e482708">NO_KEY</a>
+<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745aec8a3617311ffdac328944fe1e482708">NO_KEY</a>
 <br />
  }</td></tr>
 <tr class="separator:aef8730e8da8f3d23e7963ab48116c745"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,28 +199,22 @@ Data Structures</h2></td></tr>
  }</td></tr>
 <tr class="separator:ac2589ca2a32be1c64027de20236c0024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a00d3cd56eeef4e681e5a0dcf382c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2">LoRaMacMoteCmd_t</a> { <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2ad48873a29c312a8f68dfa7c4d56b0aa1">MOTE_MAC_RESET_IND</a> = 0x01, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a035270648ea6d6ff24b23a953d8f969b">MOTE_MAC_LINK_CHECK_REQ</a> = 0x02, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a035270648ea6d6ff24b23a953d8f969b">MOTE_MAC_LINK_CHECK_REQ</a> = 0x02, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a7e789c1aa1dfcd3ca03935dd65cf572c">MOTE_MAC_LINK_ADR_ANS</a> = 0x03, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a258e400aeae362afff0d14b7f6153bd4">MOTE_MAC_DUTY_CYCLE_ANS</a> = 0x04, 
+<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a155ae506492f1ddb173b99b52da4092a">MOTE_MAC_RX_PARAM_SETUP_ANS</a> = 0x05, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a155ae506492f1ddb173b99b52da4092a">MOTE_MAC_RX_PARAM_SETUP_ANS</a> = 0x05, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2ae3d02a70f26e3f3daf8a84408e962425">MOTE_MAC_DEV_STATUS_ANS</a> = 0x06, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2ae3d02a70f26e3f3daf8a84408e962425">MOTE_MAC_DEV_STATUS_ANS</a> = 0x06, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a83cdaea222c3968f69fe1c23c29a4385">MOTE_MAC_NEW_CHANNEL_ANS</a> = 0x07, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2abd4c19102721cfb18b76136732ac2de8">MOTE_MAC_RX_TIMING_SETUP_ANS</a> = 0x08, 
+<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a462cebd0ba7165044eeabf44c00b1f4c">MOTE_MAC_TX_PARAM_SETUP_ANS</a> = 0x09, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a462cebd0ba7165044eeabf44c00b1f4c">MOTE_MAC_TX_PARAM_SETUP_ANS</a> = 0x09, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a6dfc8ca9222ce73c834a0907992cce13">MOTE_MAC_DL_CHANNEL_ANS</a> = 0x0A, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2aba88d3e7a5250496b7b3e49f9ce83a1c">MOTE_MAC_REKEY_IND</a> = 0x0B, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a6dfc8ca9222ce73c834a0907992cce13">MOTE_MAC_DL_CHANNEL_ANS</a> = 0x0A, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a4cf12db0cdf5a55afe7749e4ad442ec6">MOTE_MAC_DEVICE_TIME_REQ</a> = 0x0D, 
-<br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a0ccda5fd3a69a532a132023bcdacd456">MOTE_MAC_ADR_PARAM_SETUP_ANS</a> = 0x0C, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a16fd76985c53262c6892ec81d86d57fc">MOTE_MAC_REJOIN_PARAM_ANS</a> = 0x0F, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a0461298b8aefa724064165703494e938">MOTE_MAC_DEVICE_MODE_IND</a> = 0x20, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2aed808c522284c94e7ca16d95a4fc2382">MOTE_MAC_PING_SLOT_INFO_REQ</a> = 0x10, 
+<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a069ffc2a9173e6437dde5f490fbf55e4">MOTE_MAC_PING_SLOT_FREQ_ANS</a> = 0x11, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a069ffc2a9173e6437dde5f490fbf55e4">MOTE_MAC_PING_SLOT_FREQ_ANS</a> = 0x11, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a191680dbef6251395b25572161fea7fa">MOTE_MAC_BEACON_TIMING_REQ</a> = 0x12, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a191680dbef6251395b25572161fea7fa">MOTE_MAC_BEACON_TIMING_REQ</a> = 0x12, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a4dc4c40b7dd928a07db449d06f5a5764">MOTE_MAC_BEACON_FREQ_ANS</a> = 0x13
 <br />
  }</td></tr>
@@ -239,16 +232,10 @@ Data Structures</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a6b15b371027770899224e613bbe162a8">SRV_MAC_TX_PARAM_SETUP_REQ</a> = 0x09, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052ae3385a6aa575b3ac756c362dbbc8c39f">SRV_MAC_DL_CHANNEL_REQ</a> = 0x0A, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a8212a37ca1cf08758a6d6a4f9630f0cc">SRV_MAC_REKEY_CONF</a> = 0x0B, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a78d485559ac12d2e66956b70f8cdc07f">SRV_MAC_ADR_PARAM_SETUP_REQ</a> = 0x0C, 
-<br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052ab77a9fb8e6a64783f3c263439ef10d6f">SRV_MAC_FORCE_REJOIN_REQ</a> = 0x0E, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a8c3904cd5fd98680814624b72720e61a">SRV_MAC_REJOIN_PARAM_REQ</a> = 0x0F, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a974c6bd7b637916fd6a83b7a47546bbc">SRV_MAC_DEVICE_MODE_CONF</a> = 0x20, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a113b3f626ada09840ac3b3b8893ec1c0">SRV_MAC_DEVICE_TIME_ANS</a> = 0x0D, 
+<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a48b2f2b3e46838a2738eccd25cf5257b">SRV_MAC_PING_SLOT_INFO_ANS</a> = 0x10, 
 <br />
-&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a48b2f2b3e46838a2738eccd25cf5257b">SRV_MAC_PING_SLOT_INFO_ANS</a> = 0x10, 
-<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a2890dadbeb8248717792665d1352c10c">SRV_MAC_PING_SLOT_CHANNEL_REQ</a> = 0x11, 
+&#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a2890dadbeb8248717792665d1352c10c">SRV_MAC_PING_SLOT_CHANNEL_REQ</a> = 0x11, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a2cbdf3e0a9076d4b114336202a42b53a">SRV_MAC_BEACON_TIMING_ANS</a> = 0x12, 
 <a class="el" href="_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a2c91301feb800501751f6b6b490a5ca6">SRV_MAC_BEACON_FREQ_REQ</a> = 0x13
 <br />
@@ -262,7 +249,6 @@ Data Structures</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2ac64f43487ee770c216c2ee1a829b75ca">FRAME_TYPE_DATA_CONFIRMED_UP</a> = 0x04, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2ad9249e47768f5551f2733532da9f3712">FRAME_TYPE_DATA_CONFIRMED_DOWN</a> = 0x05, 
-<a class="el" href="_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2a5c37ac92d79e87879ed58b74cc79e62d">FRAME_TYPE_REJOIN</a> = 0x06, 
 <a class="el" href="_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2a68dbf0499a1912728cc6a6d1ab328b37">FRAME_TYPE_PROPRIETARY</a> = 0x07
 <br />
  }</td></tr>
@@ -338,8 +324,17 @@ ClassC</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>Multicast channel </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_b_2_b-_l072_z-_l_r_w_a_n1_2main_8c-example.html#_a128">classB/B-L072Z-LRWAN1/main.c</a>, <a class="el" href="class_b_2_n_a_mote72_2main_8c-example.html#_a138">classB/NAMote72/main.c</a>, <a class="el" href="class_b_2_nucleo_l073_2main_8c-example.html#_a128">classB/NucleoL073/main.c</a>, <a class="el" href="class_b_2_nucleo_l152_2main_8c-example.html#_a128">classB/NucleoL152/main.c</a>, <a class="el" href="class_b_2_nucleo_l476_2main_8c-example.html#_a128">classB/NucleoL476/main.c</a>, <a class="el" href="class_b_2_s_a_m_r34_2main_8c-example.html#_a128">classB/SAMR34/main.c</a>, <a class="el" href="class_b_2_s_ki_m880_b_2main_8c-example.html#_a128">classB/SKiM880B/main.c</a>, <a class="el" href="class_b_2_s_ki_m881_a_x_l_2main_8c-example.html#_a128">classB/SKiM881AXL/main.c</a>, <a class="el" href="class_b_2_s_ki_m980_a_2main_8c-example.html#_a128">classB/SKiM980A/main.c</a>, <a class="el" href="class_c_2_b-_l072_z-_l_r_w_a_n1_2main_8c-example.html#_a108">classC/B-L072Z-LRWAN1/main.c</a>, <a class="el" href="class_c_2_n_a_mote72_2main_8c-example.html#_a118">classC/NAMote72/main.c</a>, <a class="el" href="class_c_2_nucleo_l073_2main_8c-example.html#_a108">classC/NucleoL073/main.c</a>, <a class="el" href="class_c_2_nucleo_l152_2main_8c-example.html#_a108">classC/NucleoL152/main.c</a>, <a class="el" href="class_c_2_nucleo_l476_2main_8c-example.html#_a108">classC/NucleoL476/main.c</a>, <a class="el" href="class_c_2_s_a_m_r34_2main_8c-example.html#_a108">classC/SAMR34/main.c</a>, <a class="el" href="class_c_2_s_ki_m880_b_2main_8c-example.html#_a108">classC/SKiM880B/main.c</a>, <a class="el" href="class_c_2_s_ki_m881_a_x_l_2main_8c-example.html#_a108">classC/SKiM881AXL/main.c</a>, and <a class="el" href="class_c_2_s_ki_m980_a_2main_8c-example.html#_a108">classC/SKiM980A/main.c</a>.</dd>
+</dl>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ab80005ab7b793ce0a3e7d6d85d085b6d"></a>bool</td>
+<td class="fieldname">
+IsRemotelySetup</td>
+<td class="fielddoc">
+<p>Indicate if the multicast channel is being setup remotely or locally. Indicates which set of keys are to be used. <a class="el" href="_lo_ra_mac_types_8h.html">uMcKeys</a> </p>
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a1ca946ebc53171e9f0f1fc39c005a7a6"></a><a class="el" href="_lo_ra_mac_types_8h.html#ad065f3831c9a00390949d52a93074970">DeviceClass_t</a></td>
 <td class="fieldname">
@@ -368,11 +363,10 @@ Address</td>
 <p>Address </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a9714b782324e60c2508e25dee3cf5002"></a>uint8_t *</td>
+<a id="ac7cd8a1493c676818eaa45de6c833a36"></a>union <a class="el" href="_lo_ra_mac_types_8h.html#union_mc_channel_params__t_1_1u_mc_keys">uMcKeys</a></td>
 <td class="fieldname">
-McKeyE</td>
+McKeys</td>
 <td class="fielddoc">
-<p>Encrypted multicast key </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a834c8c499b08d415196358a1f960a668"></a>uint32_t</td>
@@ -394,6 +388,38 @@ FCountMax</td>
 RxParams</td>
 <td class="fielddoc">
 <p>Multicast reception parameters </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="union_mc_channel_params__t_1_1u_mc_keys" id="union_mc_channel_params__t_1_1u_mc_keys"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#union_mc_channel_params__t_1_1u_mc_keys">&#9670;&nbsp;</a></span>McChannelParams_t::uMcKeys</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union McChannelParams_t::uMcKeys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Multicast keys </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a9714b782324e60c2508e25dee3cf5002"></a>uint8_t *</td>
+<td class="fieldname">
+McKeyE</td>
+<td class="fielddoc">
+<p>Encrypted multicast key - Used when IsRemotelySetup equals <code>true</code>. MC_KEY is decrypted and then the session keys ar derived. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3fb27f18f9331072de5f2c1e607725e2"></a>struct <a class="el" href="_lo_ra_mac_types_8h.html#struct_mc_channel_params__t_1_1u_mc_keys_8_session">uMcKeys</a></td>
+<td class="fieldname">
+Session</td>
+<td class="fielddoc">
+<p>Multicast Session keys - Used when IsRemotelySetup equals <code>false</code> </p>
 </td></tr>
 </table>
 
@@ -481,25 +507,32 @@ TxMaxPower</td>
 <p>Maximum Tx power </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a0e59dea87537a3d472a44694fc2be894"></a>TimerTime_t</td>
+<a id="a53eb98721ce4f9cde69159acec80a34e"></a>TimerTime_t</td>
 <td class="fieldname">
-LastJoinTxDoneTime</td>
+LastBandUpdateTime</td>
 <td class="fielddoc">
-<p>Time stamp of the last JoinReq Tx frame. </p>
+<p>The last time the band has been synchronized with the current time </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a7316dfb002c4e0015fceeb727020fe5c"></a>TimerTime_t</td>
+<a id="a4b7f87c131cc45553320a799034ffb57"></a>TimerTime_t</td>
 <td class="fieldname">
-LastTxDoneTime</td>
+TimeCredits</td>
 <td class="fielddoc">
-<p>Time stamp of the last Tx frame </p>
+<p>Current time credits which are available. This is a value in ms </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a4de67f0652eb4259907c41ea8056c318"></a>TimerTime_t</td>
+<a id="ad53b5c486126244d6b145c1a3baa8166"></a>TimerTime_t</td>
 <td class="fieldname">
-TimeOff</td>
+MaxTimeCredits</td>
 <td class="fielddoc">
-<p>Holds the time where the device is off </p>
+<p>Maximum time credits which are available. This is a value in ms </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a21212b6cbf78f6218e41b4f13b236f87"></a>bool</td>
+<td class="fieldname">
+ReadyForTransmission</td>
+<td class="fielddoc">
+<p>Set to true when the band is ready for use. </p>
 </td></tr>
 </table>
 
@@ -574,6 +607,38 @@ Datarate</td>
 
 </div>
 </div>
+<a name="struct_mc_channel_params__t_1_1u_mc_keys_8_session" id="struct_mc_channel_params__t_1_1u_mc_keys_8_session"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_mc_channel_params__t_1_1u_mc_keys_8_session">&#9670;&nbsp;</a></span>McChannelParams_t::uMcKeys.Session</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct McChannelParams_t::uMcKeys.Session</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Multicast Session keys - Used when IsRemotelySetup equals <code>false</code> </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a30d768ac4df9248dd43404b67f76ea6e"></a>uint8_t *</td>
+<td class="fieldname">
+McAppSKey</td>
+<td class="fielddoc">
+<p>Multicast application session key </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5de343360c5043389eadb58d762cd037"></a>uint8_t *</td>
+<td class="fieldname">
+McNwkSKey</td>
+<td class="fielddoc">
+<p>Multicast network session key </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9f3d2a035e6bc5055f718f63bd2f8482"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f3d2a035e6bc5055f718f63bd2f8482">&#9670;&nbsp;</a></span>LORAMAC_CRYPTO_UNICAST_KEYS</h2>
@@ -630,7 +695,7 @@ Datarate</td>
 <p>LoRaWAN Specification V1.0.2, chapter 17 </p>
 </td></tr>
 </table>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_b_2_b-_l072_z-_l_r_w_a_n1_2main_8c-example.html#a71">classB/B-L072Z-LRWAN1/main.c</a>, <a class="el" href="class_b_2_n_a_mote72_2main_8c-example.html#a81">classB/NAMote72/main.c</a>, <a class="el" href="class_b_2_nucleo_l073_2main_8c-example.html#a71">classB/NucleoL073/main.c</a>, <a class="el" href="class_b_2_nucleo_l152_2main_8c-example.html#a71">classB/NucleoL152/main.c</a>, <a class="el" href="class_b_2_nucleo_l476_2main_8c-example.html#a71">classB/NucleoL476/main.c</a>, <a class="el" href="class_b_2_s_a_m_l21_2main_8c-example.html#a71">classB/SAML21/main.c</a>, <a class="el" href="class_b_2_s_ki_m880_b_2main_8c-example.html#a71">classB/SKiM880B/main.c</a>, <a class="el" href="class_b_2_s_ki_m881_a_x_l_2main_8c-example.html#a71">classB/SKiM881AXL/main.c</a>, and <a class="el" href="class_b_2_s_ki_m980_a_2main_8c-example.html#a71">classB/SKiM980A/main.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_b_2_b-_l072_z-_l_r_w_a_n1_2main_8c-example.html#a76">classB/B-L072Z-LRWAN1/main.c</a>, <a class="el" href="class_b_2_n_a_mote72_2main_8c-example.html#a86">classB/NAMote72/main.c</a>, <a class="el" href="class_b_2_nucleo_l073_2main_8c-example.html#a76">classB/NucleoL073/main.c</a>, <a class="el" href="class_b_2_nucleo_l152_2main_8c-example.html#a76">classB/NucleoL152/main.c</a>, <a class="el" href="class_b_2_nucleo_l476_2main_8c-example.html#a76">classB/NucleoL476/main.c</a>, <a class="el" href="class_b_2_s_a_m_r34_2main_8c-example.html#a76">classB/SAMR34/main.c</a>, <a class="el" href="class_b_2_s_ki_m880_b_2main_8c-example.html#a76">classB/SKiM880B/main.c</a>, <a class="el" href="class_b_2_s_ki_m881_a_x_l_2main_8c-example.html#a76">classB/SKiM881AXL/main.c</a>, and <a class="el" href="class_b_2_s_ki_m980_a_2main_8c-example.html#a76">classB/SKiM980A/main.c</a>.</dd>
 </dl>
 
 </div>
@@ -694,10 +759,6 @@ Datarate</td>
 </td></tr>
 <tr><td class="fieldname"><a id="a6b5d63e46906a7521f8fbc8da613b20babc05bd58a27f045705ea2f4191e2f12d"></a>MC_FCNT_DOWN_3&#160;</td><td class="fielddoc"><p>Multicast downlink counter for index 3 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6b5d63e46906a7521f8fbc8da613b20ba3f94c23da42971065c7f59e9e1cd7064"></a>RJ_COUNT_0&#160;</td><td class="fielddoc"><p>RJcount1 is a counter incremented with every transmitted Type 1 Rejoin request. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a6b5d63e46906a7521f8fbc8da613b20ba26f1c8a71f6c417511f7776afa15f8ef"></a>RJ_COUNT_1&#160;</td><td class="fielddoc"><p>RJcount0 is a counter incremented with every transmitted Type 0 or 2 Rejoin request. </p>
-</td></tr>
 </table>
 
 </div>
@@ -716,8 +777,6 @@ Datarate</td>
 <p>LoRaMac Key identifier </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aef8730e8da8f3d23e7963ab48116c745a173515207e02692f707913a33510ca95"></a>APP_KEY&#160;</td><td class="fielddoc"><p>Application root key </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aef8730e8da8f3d23e7963ab48116c745a3ee8dde6d9ed599100c3b07d6d1488a4"></a>GEN_APP_KEY&#160;</td><td class="fielddoc"><p>Application root key Used to derive McRootKey for 1.0.x devices </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aef8730e8da8f3d23e7963ab48116c745a6ed669d13aea86e761b655a5bd099086"></a>NWK_KEY&#160;</td><td class="fielddoc"><p>Network root key </p>
 </td></tr>
@@ -835,9 +894,7 @@ Datarate</td>
 <p>LoRaMAC mote MAC commands</p>
 <p>LoRaWAN Specification V1.1.0, chapter 5, table 4 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2ad48873a29c312a8f68dfa7c4d56b0aa1"></a>MOTE_MAC_RESET_IND&#160;</td><td class="fielddoc"><p>ResetInd </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2a035270648ea6d6ff24b23a953d8f969b"></a>MOTE_MAC_LINK_CHECK_REQ&#160;</td><td class="fielddoc"><p>LinkCheckReq </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2a035270648ea6d6ff24b23a953d8f969b"></a>MOTE_MAC_LINK_CHECK_REQ&#160;</td><td class="fielddoc"><p>LinkCheckReq </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2a7e789c1aa1dfcd3ca03935dd65cf572c"></a>MOTE_MAC_LINK_ADR_ANS&#160;</td><td class="fielddoc"><p>LinkADRAns </p>
 </td></tr>
@@ -855,15 +912,7 @@ Datarate</td>
 </td></tr>
 <tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2a6dfc8ca9222ce73c834a0907992cce13"></a>MOTE_MAC_DL_CHANNEL_ANS&#160;</td><td class="fielddoc"><p>DlChannelAns </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2aba88d3e7a5250496b7b3e49f9ce83a1c"></a>MOTE_MAC_REKEY_IND&#160;</td><td class="fielddoc"><p>RekeyInd </p>
-</td></tr>
 <tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2a4cf12db0cdf5a55afe7749e4ad442ec6"></a>MOTE_MAC_DEVICE_TIME_REQ&#160;</td><td class="fielddoc"><p>DeviceTimeReq </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2a0ccda5fd3a69a532a132023bcdacd456"></a>MOTE_MAC_ADR_PARAM_SETUP_ANS&#160;</td><td class="fielddoc"><p>ADRParamSetupAns </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2a16fd76985c53262c6892ec81d86d57fc"></a>MOTE_MAC_REJOIN_PARAM_ANS&#160;</td><td class="fielddoc"><p>RejoinParamSetupAns </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2a0461298b8aefa724064165703494e938"></a>MOTE_MAC_DEVICE_MODE_IND&#160;</td><td class="fielddoc"><p>DeviceModeInd ( Class C only ) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a26a00d3cd56eeef4e681e5a0dcf382c2aed808c522284c94e7ca16d95a4fc2382"></a>MOTE_MAC_PING_SLOT_INFO_REQ&#160;</td><td class="fielddoc"><p>PingSlotInfoReq </p>
 </td></tr>
@@ -911,16 +960,6 @@ Datarate</td>
 </td></tr>
 <tr><td class="fieldname"><a id="a4f91028194f81a04f72e33f2fdda2052ae3385a6aa575b3ac756c362dbbc8c39f"></a>SRV_MAC_DL_CHANNEL_REQ&#160;</td><td class="fielddoc"><p>DlChannelReq </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f91028194f81a04f72e33f2fdda2052a8212a37ca1cf08758a6d6a4f9630f0cc"></a>SRV_MAC_REKEY_CONF&#160;</td><td class="fielddoc"><p>RekeyConf </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a4f91028194f81a04f72e33f2fdda2052a78d485559ac12d2e66956b70f8cdc07f"></a>SRV_MAC_ADR_PARAM_SETUP_REQ&#160;</td><td class="fielddoc"><p>ADRParamSetupReq </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a4f91028194f81a04f72e33f2fdda2052ab77a9fb8e6a64783f3c263439ef10d6f"></a>SRV_MAC_FORCE_REJOIN_REQ&#160;</td><td class="fielddoc"><p>ForceRejoinReq </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a4f91028194f81a04f72e33f2fdda2052a8c3904cd5fd98680814624b72720e61a"></a>SRV_MAC_REJOIN_PARAM_REQ&#160;</td><td class="fielddoc"><p>RejoinParamSetupReq </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a4f91028194f81a04f72e33f2fdda2052a974c6bd7b637916fd6a83b7a47546bbc"></a>SRV_MAC_DEVICE_MODE_CONF&#160;</td><td class="fielddoc"><p>DeviceModeConf ( Class C only ) </p>
-</td></tr>
 <tr><td class="fieldname"><a id="a4f91028194f81a04f72e33f2fdda2052a113b3f626ada09840ac3b3b8893ec1c0"></a>SRV_MAC_DEVICE_TIME_ANS&#160;</td><td class="fielddoc"><p>DeviceTimeAns </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4f91028194f81a04f72e33f2fdda2052a48b2f2b3e46838a2738eccd25cf5257b"></a>SRV_MAC_PING_SLOT_INFO_ANS&#160;</td><td class="fielddoc"><p>PingSlotInfoAns </p>
@@ -961,8 +1000,6 @@ Datarate</td>
 </td></tr>
 <tr><td class="fieldname"><a id="aa4faa85be75a0f7b173d1db23922d4f2ad9249e47768f5551f2733532da9f3712"></a>FRAME_TYPE_DATA_CONFIRMED_DOWN&#160;</td><td class="fielddoc"><p>LoRaMAC confirmed down-link frame </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa4faa85be75a0f7b173d1db23922d4f2a5c37ac92d79e87879ed58b74cc79e62d"></a>FRAME_TYPE_REJOIN&#160;</td><td class="fielddoc"><p>LoRaMAC Rejoin Request </p>
-</td></tr>
 <tr><td class="fieldname"><a id="aa4faa85be75a0f7b173d1db23922d4f2a68dbf0499a1912728cc6a6d1ab328b37"></a>FRAME_TYPE_PROPRIETARY&#160;</td><td class="fielddoc"><p>LoRaMAC proprietary frame </p>
 </td></tr>
 </table>
@@ -1000,7 +1037,7 @@ Datarate</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_df7eed3543fa7070b0a3ab0e00a3e0a6.html">github-loramac-node</a></li><li class="navelem"><a class="el" href="dir_1dda2d094b0a9f47a7b83974941607c0.html">src</a></li><li class="navelem"><a class="el" href="dir_52c4f436fc21c8338c027271102d36bc.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_types_8h.html">LoRaMacTypes.h</a></li>
-    <li class="footer">Generated on Tue Dec 17 2019 11:58:22 for LoRaMAC by
+    <li class="footer">Generated on Tue May 26 2020 14:26:14 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

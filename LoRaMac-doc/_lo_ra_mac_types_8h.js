@@ -5,14 +5,27 @@ var _lo_ra_mac_types_8h =
       [ "ClassC", "_lo_ra_mac_types_8h.html#a35847565a5d9ec40c1d729eebcfd18f4", null ]
     ] ],
     [ "McChannelParams_t", "_lo_ra_mac_types_8h.html#struct_mc_channel_params__t", [
+      [ "uMcKeys", "_lo_ra_mac_types_8h.html#union_mc_channel_params__t_1_1u_mc_keys", [
+        [ "McKeyE", "_lo_ra_mac_types_8h.html#a9714b782324e60c2508e25dee3cf5002", null ],
+        [ "Session", "_lo_ra_mac_types_8h.html#a3fb27f18f9331072de5f2c1e607725e2", null ]
+      ] ],
+      [ "uMcKeys.Session", "_lo_ra_mac_types_8h.html#struct_mc_channel_params__t_1_1u_mc_keys_8_session", [
+        [ "McAppSKey", "_lo_ra_mac_types_8h.html#a30d768ac4df9248dd43404b67f76ea6e", null ],
+        [ "McNwkSKey", "_lo_ra_mac_types_8h.html#a5de343360c5043389eadb58d762cd037", null ]
+      ] ],
+      [ "IsRemotelySetup", "_lo_ra_mac_types_8h.html#ab80005ab7b793ce0a3e7d6d85d085b6d", null ],
       [ "Class", "_lo_ra_mac_types_8h.html#a1ca946ebc53171e9f0f1fc39c005a7a6", null ],
       [ "IsEnabled", "_lo_ra_mac_types_8h.html#a45f8df3acbb2721c2df8462f1cd8f14b", null ],
       [ "GroupID", "_lo_ra_mac_types_8h.html#a42b6b657c97a0ffc370fd627662f06f8", null ],
       [ "Address", "_lo_ra_mac_types_8h.html#aca1b23fd721c8d8dc70a8227e336b6e8", null ],
-      [ "McKeyE", "_lo_ra_mac_types_8h.html#a9714b782324e60c2508e25dee3cf5002", null ],
+      [ "McKeys", "_lo_ra_mac_types_8h.html#ac7cd8a1493c676818eaa45de6c833a36", null ],
       [ "FCountMin", "_lo_ra_mac_types_8h.html#a834c8c499b08d415196358a1f960a668", null ],
       [ "FCountMax", "_lo_ra_mac_types_8h.html#a281efa5823791e745bcc11d996eacb0e", null ],
       [ "RxParams", "_lo_ra_mac_types_8h.html#a6b71eaf8e99ab720425d1bf918bb053d", null ]
+    ] ],
+    [ "uMcKeys", "_lo_ra_mac_types_8h.html#union_mc_channel_params__t_1_1u_mc_keys", [
+      [ "McKeyE", "_lo_ra_mac_types_8h.html#a9714b782324e60c2508e25dee3cf5002", null ],
+      [ "Session", "_lo_ra_mac_types_8h.html#a3fb27f18f9331072de5f2c1e607725e2", null ]
     ] ],
     [ "MulticastCtx_t", "_lo_ra_mac_types_8h.html#struct_multicast_ctx__t", [
       [ "ChannelParams", "_lo_ra_mac_types_8h.html#af460c277c98f8a61be2d4885ef659991", null ],
@@ -24,9 +37,10 @@ var _lo_ra_mac_types_8h =
     [ "Band_t", "_lo_ra_mac_types_8h.html#struct_band__t", [
       [ "DCycle", "_lo_ra_mac_types_8h.html#a9ab2dfbcbe5e7e43c95ff6a436886139", null ],
       [ "TxMaxPower", "_lo_ra_mac_types_8h.html#a1b9d27384fedab3a94167b8e9bf9b432", null ],
-      [ "LastJoinTxDoneTime", "_lo_ra_mac_types_8h.html#a0e59dea87537a3d472a44694fc2be894", null ],
-      [ "LastTxDoneTime", "_lo_ra_mac_types_8h.html#a7316dfb002c4e0015fceeb727020fe5c", null ],
-      [ "TimeOff", "_lo_ra_mac_types_8h.html#a4de67f0652eb4259907c41ea8056c318", null ]
+      [ "LastBandUpdateTime", "_lo_ra_mac_types_8h.html#a53eb98721ce4f9cde69159acec80a34e", null ],
+      [ "TimeCredits", "_lo_ra_mac_types_8h.html#a4b7f87c131cc45553320a799034ffb57", null ],
+      [ "MaxTimeCredits", "_lo_ra_mac_types_8h.html#ad53b5c486126244d6b145c1a3baa8166", null ],
+      [ "ReadyForTransmission", "_lo_ra_mac_types_8h.html#a21212b6cbf78f6218e41b4f13b236f87", null ]
     ] ],
     [ "McRxParams_t.ClassB", "_lo_ra_mac_types_8h.html#struct_mc_rx_params__t_8_class_b", [
       [ "Frequency", "_lo_ra_mac_types_8h.html#a7cf395303ce3665a9834721d4b748e4b", null ],
@@ -36,6 +50,10 @@ var _lo_ra_mac_types_8h =
     [ "McRxParams_t.ClassC", "_lo_ra_mac_types_8h.html#struct_mc_rx_params__t_8_class_c", [
       [ "Frequency", "_lo_ra_mac_types_8h.html#a7cf395303ce3665a9834721d4b748e4b", null ],
       [ "Datarate", "_lo_ra_mac_types_8h.html#ab167a1a04ee343287144313854d0c5e1", null ]
+    ] ],
+    [ "uMcKeys.Session", "_lo_ra_mac_types_8h.html#struct_mc_channel_params__t_1_1u_mc_keys_8_session", [
+      [ "McAppSKey", "_lo_ra_mac_types_8h.html#a30d768ac4df9248dd43404b67f76ea6e", null ],
+      [ "McNwkSKey", "_lo_ra_mac_types_8h.html#a5de343360c5043389eadb58d762cd037", null ]
     ] ],
     [ "LORAMAC_CRYPTO_UNICAST_KEYS", "_lo_ra_mac_types_8h.html#a9f3d2a035e6bc5055f718f63bd2f8482", null ],
     [ "LORAMAC_CRYPTO_MULTICAST_KEYS", "_lo_ra_mac_types_8h.html#adc75a6b3de1272a9500d116c99e0469d", null ],
@@ -58,13 +76,10 @@ var _lo_ra_mac_types_8h =
       [ "MC_FCNT_DOWN_0", "_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba1456f60d6b4acc6863d03fd3de9a314c", null ],
       [ "MC_FCNT_DOWN_1", "_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba96845af78301c5848baf9d9baac6de3e", null ],
       [ "MC_FCNT_DOWN_2", "_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba7d86b1e84ea0d46432ab00449aa23b1d", null ],
-      [ "MC_FCNT_DOWN_3", "_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20babc05bd58a27f045705ea2f4191e2f12d", null ],
-      [ "RJ_COUNT_0", "_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba3f94c23da42971065c7f59e9e1cd7064", null ],
-      [ "RJ_COUNT_1", "_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20ba26f1c8a71f6c417511f7776afa15f8ef", null ]
+      [ "MC_FCNT_DOWN_3", "_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20babc05bd58a27f045705ea2f4191e2f12d", null ]
     ] ],
     [ "KeyIdentifier_t", "_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745", [
       [ "APP_KEY", "_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a173515207e02692f707913a33510ca95", null ],
-      [ "GEN_APP_KEY", "_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a3ee8dde6d9ed599100c3b07d6d1488a4", null ],
       [ "NWK_KEY", "_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a6ed669d13aea86e761b655a5bd099086", null ],
       [ "J_S_INT_KEY", "_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a1f97adf2c1efaba6445fb68f68ef7d0e", null ],
       [ "J_S_ENC_KEY", "_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745a5c91633b56c684a83d43acd3a19b8f89", null ],
@@ -103,7 +118,6 @@ var _lo_ra_mac_types_8h =
       [ "JOIN_REQ", "_lo_ra_mac_types_8h.html#ac2589ca2a32be1c64027de20236c0024a1b0106d311b8452754ba15438761469a", null ]
     ] ],
     [ "LoRaMacMoteCmd_t", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2", [
-      [ "MOTE_MAC_RESET_IND", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2ad48873a29c312a8f68dfa7c4d56b0aa1", null ],
       [ "MOTE_MAC_LINK_CHECK_REQ", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a035270648ea6d6ff24b23a953d8f969b", null ],
       [ "MOTE_MAC_LINK_ADR_ANS", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a7e789c1aa1dfcd3ca03935dd65cf572c", null ],
       [ "MOTE_MAC_DUTY_CYCLE_ANS", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a258e400aeae362afff0d14b7f6153bd4", null ],
@@ -113,11 +127,7 @@ var _lo_ra_mac_types_8h =
       [ "MOTE_MAC_RX_TIMING_SETUP_ANS", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2abd4c19102721cfb18b76136732ac2de8", null ],
       [ "MOTE_MAC_TX_PARAM_SETUP_ANS", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a462cebd0ba7165044eeabf44c00b1f4c", null ],
       [ "MOTE_MAC_DL_CHANNEL_ANS", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a6dfc8ca9222ce73c834a0907992cce13", null ],
-      [ "MOTE_MAC_REKEY_IND", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2aba88d3e7a5250496b7b3e49f9ce83a1c", null ],
       [ "MOTE_MAC_DEVICE_TIME_REQ", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a4cf12db0cdf5a55afe7749e4ad442ec6", null ],
-      [ "MOTE_MAC_ADR_PARAM_SETUP_ANS", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a0ccda5fd3a69a532a132023bcdacd456", null ],
-      [ "MOTE_MAC_REJOIN_PARAM_ANS", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a16fd76985c53262c6892ec81d86d57fc", null ],
-      [ "MOTE_MAC_DEVICE_MODE_IND", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a0461298b8aefa724064165703494e938", null ],
       [ "MOTE_MAC_PING_SLOT_INFO_REQ", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2aed808c522284c94e7ca16d95a4fc2382", null ],
       [ "MOTE_MAC_PING_SLOT_FREQ_ANS", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a069ffc2a9173e6437dde5f490fbf55e4", null ],
       [ "MOTE_MAC_BEACON_TIMING_REQ", "_lo_ra_mac_types_8h.html#a26a00d3cd56eeef4e681e5a0dcf382c2a191680dbef6251395b25572161fea7fa", null ],
@@ -134,11 +144,6 @@ var _lo_ra_mac_types_8h =
       [ "SRV_MAC_RX_TIMING_SETUP_REQ", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052aa24b1505ef48247c1d2a3d486d603686", null ],
       [ "SRV_MAC_TX_PARAM_SETUP_REQ", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a6b15b371027770899224e613bbe162a8", null ],
       [ "SRV_MAC_DL_CHANNEL_REQ", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052ae3385a6aa575b3ac756c362dbbc8c39f", null ],
-      [ "SRV_MAC_REKEY_CONF", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a8212a37ca1cf08758a6d6a4f9630f0cc", null ],
-      [ "SRV_MAC_ADR_PARAM_SETUP_REQ", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a78d485559ac12d2e66956b70f8cdc07f", null ],
-      [ "SRV_MAC_FORCE_REJOIN_REQ", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052ab77a9fb8e6a64783f3c263439ef10d6f", null ],
-      [ "SRV_MAC_REJOIN_PARAM_REQ", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a8c3904cd5fd98680814624b72720e61a", null ],
-      [ "SRV_MAC_DEVICE_MODE_CONF", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a974c6bd7b637916fd6a83b7a47546bbc", null ],
       [ "SRV_MAC_DEVICE_TIME_ANS", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a113b3f626ada09840ac3b3b8893ec1c0", null ],
       [ "SRV_MAC_PING_SLOT_INFO_ANS", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a48b2f2b3e46838a2738eccd25cf5257b", null ],
       [ "SRV_MAC_PING_SLOT_CHANNEL_REQ", "_lo_ra_mac_types_8h.html#a4f91028194f81a04f72e33f2fdda2052a2890dadbeb8248717792665d1352c10c", null ],
@@ -152,7 +157,6 @@ var _lo_ra_mac_types_8h =
       [ "FRAME_TYPE_DATA_UNCONFIRMED_DOWN", "_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2a0309638c699fe7748561e2bac00bd689", null ],
       [ "FRAME_TYPE_DATA_CONFIRMED_UP", "_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2ac64f43487ee770c216c2ee1a829b75ca", null ],
       [ "FRAME_TYPE_DATA_CONFIRMED_DOWN", "_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2ad9249e47768f5551f2733532da9f3712", null ],
-      [ "FRAME_TYPE_REJOIN", "_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2a5c37ac92d79e87879ed58b74cc79e62d", null ],
       [ "FRAME_TYPE_PROPRIETARY", "_lo_ra_mac_types_8h.html#aa4faa85be75a0f7b173d1db23922d4f2a68dbf0499a1912728cc6a6d1ab328b37", null ]
     ] ],
     [ "LoRaMacBatteryLevel_t", "_lo_ra_mac_types_8h.html#a5a62cf2c7cfb24beb4fa7c89d3574665", [

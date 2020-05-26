@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.3</span>
+   &#160;<span id="projectnumber">4.4.4</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -135,8 +135,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:struct_tx_param_setup_req_params__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_dl_channel_req_params__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#struct_dl_channel_req_params__t">DlChannelReqParams_t</a></td></tr>
 <tr class="separator:struct_dl_channel_req_params__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:struct_calc_back_off_params__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#struct_calc_back_off_params__t">CalcBackOffParams_t</a></td></tr>
-<tr class="separator:struct_calc_back_off_params__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_next_chan_params__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#struct_next_chan_params__t">NextChanParams_t</a></td></tr>
 <tr class="separator:struct_next_chan_params__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct_channel_add_params__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#struct_channel_add_params__t">ChannelAddParams_t</a></td></tr>
@@ -152,6 +150,8 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ga12fa17e5c1016e01a9d82c25027deb1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#ga12fa17e5c1016e01a9d82c25027deb1b">LC</a>(channelIndex)&#160;&#160;&#160;( uint16_t )( 1 &lt;&lt; ( channelIndex - 1 ) )</td></tr>
 <tr class="separator:ga12fa17e5c1016e01a9d82c25027deb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacd698b1fa5a3832c7508536a77ff6c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#gaacd698b1fa5a3832c7508536a77ff6c0">REGION_VERSION</a>&#160;&#160;&#160;0x00010003</td></tr>
+<tr class="separator:gaacd698b1fa5a3832c7508536a77ff6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c4ef966b4f3d5eb7597b087f2b97095"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#ga6c4ef966b4f3d5eb7597b087f2b97095">DR_0</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga6c4ef966b4f3d5eb7597b087f2b97095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga87e71569dc5f2114e685560de072af26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#ga87e71569dc5f2114e685560de072af26">DR_1</a>&#160;&#160;&#160;1</td></tr>
@@ -237,60 +237,65 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a5f75c468df6f3d0f1faffc5ba2ab5f7c">PHY_DEF_ADR_ACK_DELAY</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ad671e2651e42de26927910282c6b2781">PHY_MAX_PAYLOAD</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8a3b9e5ad2604232fd1f8781658452f3">PHY_MAX_PAYLOAD_REPEATER</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac66308571e624ecc28c79ee0deab8cf0">PHY_DUTY_CYCLE</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27acf2bd6f434ce2844651513ad2b9b9da5">PHY_MAX_RX_WINDOW</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27acf2bd6f434ce2844651513ad2b9b9da5">PHY_MAX_RX_WINDOW</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a3680d45f45e3e0a96ce9f1e1b5ed7371">PHY_RECEIVE_DELAY1</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a3680d45f45e3e0a96ce9f1e1b5ed7371">PHY_RECEIVE_DELAY1</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a9c7e3df5f55fab406960a9e5bf635155">PHY_RECEIVE_DELAY2</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27af564c82ebd72dcd6c4fc1e702b2ec64c">PHY_JOIN_ACCEPT_DELAY1</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a04e6c3d25ce44a74c0a29f28aa92eb48">PHY_JOIN_ACCEPT_DELAY2</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a04e6c3d25ce44a74c0a29f28aa92eb48">PHY_JOIN_ACCEPT_DELAY2</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a01c12b14686172b4a3c4d095deef4248">PHY_MAX_FCNT_GAP</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a01c12b14686172b4a3c4d095deef4248">PHY_MAX_FCNT_GAP</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8485b24e94d037ba487ab6ecfaf162e8">PHY_ACK_TIMEOUT</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ae648c84cc946657e970c7e08dd69cb6f">PHY_DEF_DR1_OFFSET</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a1835125d2139942145a0ed0caff058f3">PHY_DEF_RX2_FREQUENCY</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a1835125d2139942145a0ed0caff058f3">PHY_DEF_RX2_FREQUENCY</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a672678e5f03f8ad1afa8817405e72ef0">PHY_DEF_RX2_DR</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a672678e5f03f8ad1afa8817405e72ef0">PHY_DEF_RX2_DR</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27aa6fd00cadf73ba804e35d85aadd15882">PHY_CHANNELS_MASK</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a7253f56eb1b6f4fe64d7a51b2e573766">PHY_CHANNELS_DEFAULT_MASK</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a52d463ed953da20f07f8d045c58caee8">PHY_MAX_NB_CHANNELS</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a52d463ed953da20f07f8d045c58caee8">PHY_MAX_NB_CHANNELS</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a52c9055b2e5bbfc05c86e83798856aba">PHY_CHANNELS</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a52c9055b2e5bbfc05c86e83798856aba">PHY_CHANNELS</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ab35cca5e0dae3d87e02c8c80e4d4685e">PHY_DEF_UPLINK_DWELL_TIME</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8e29179691bf6520256a7af0cabae6ad">PHY_DEF_DOWNLINK_DWELL_TIME</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a5bdce0ffd449781819a0d87732ebd2b7">PHY_DEF_MAX_EIRP</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a5bdce0ffd449781819a0d87732ebd2b7">PHY_DEF_MAX_EIRP</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a37b73a543ea79ce58bf18035329ba773">PHY_DEF_ANTENNA_GAIN</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a37b73a543ea79ce58bf18035329ba773">PHY_DEF_ANTENNA_GAIN</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac002e7e492cf30dbf9c544b062f5cc8a">PHY_NEXT_LOWER_TX_DR</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a1b1d5a52d7fb33bb55996a4bbf9723e9">PHY_BEACON_INTERVAL</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a6f86c46dc4ba0d19df23861e4e431d78">PHY_BEACON_RESERVED</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a6f86c46dc4ba0d19df23861e4e431d78">PHY_BEACON_RESERVED</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a1d78fbe5bb7a47602736ba686549fbd1">PHY_BEACON_GUARD</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a1d78fbe5bb7a47602736ba686549fbd1">PHY_BEACON_GUARD</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27aec9660bb79a77cf3e0fc8c227c997700">PHY_BEACON_WINDOW</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a70145888d1c1c28db64ec46b3a7bfd36">PHY_BEACON_WINDOW_SLOTS</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ad35dd343808b404771423e73d4047ef9">PHY_PING_SLOT_WINDOW</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ad35dd343808b404771423e73d4047ef9">PHY_PING_SLOT_WINDOW</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a734e8723782d1ba2e00a6fba197ec6cc">PHY_BEACON_SYMBOL_TO_DEFAULT</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a734e8723782d1ba2e00a6fba197ec6cc">PHY_BEACON_SYMBOL_TO_DEFAULT</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a9f1d8c6fe30ca545fa0d2878aee1ac7b">PHY_BEACON_SYMBOL_TO_EXPANSION_MAX</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a404814937dccb1e61346d05456835d86">PHY_PING_SLOT_SYMBOL_TO_EXPANSION_MAX</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27add7393b4489067c4f119f2a7b1bd449c">PHY_BEACON_SYMBOL_TO_EXPANSION_FACTOR</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27add7393b4489067c4f119f2a7b1bd449c">PHY_BEACON_SYMBOL_TO_EXPANSION_FACTOR</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27adaad38921a58a09c370cdf0d573bae1b">PHY_PING_SLOT_SYMBOL_TO_EXPANSION_FACTOR</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27adaad38921a58a09c370cdf0d573bae1b">PHY_PING_SLOT_SYMBOL_TO_EXPANSION_FACTOR</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a94f8ade1076b2e28600862c3c79a0e80">PHY_MAX_BEACON_LESS_PERIOD</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a28af41850e3e8706424b38ecccd1c820">PHY_BEACON_DELAY_BEACON_TIMING_ANS</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27af66678190108f68a137e87f542c79cd8">PHY_BEACON_CHANNEL_FREQ</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27af66678190108f68a137e87f542c79cd8">PHY_BEACON_CHANNEL_FREQ</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a6141dbec6ac34965123693be279f2769">PHY_BEACON_FORMAT</a>, 
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a6141dbec6ac34965123693be279f2769">PHY_BEACON_FORMAT</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ab68a2c284d4e827f05529b48ef5eeed5">PHY_BEACON_CHANNEL_DR</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a08f0ef405589a877cb43902784b50b89">PHY_BEACON_CHANNEL_STEPWIDTH</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a099ba02c06e2f359f1d46d05b70d8732">PHY_BEACON_NB_CHANNELS</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a099ba02c06e2f359f1d46d05b70d8732">PHY_BEACON_NB_CHANNELS</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac6dd3ecce054eaefa85d609838280665">PHY_PING_SLOT_CHANNEL_DR</a>
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27afcf58ca6bef66dffc8806d92c29043d6">PHY_PING_SLOT_CHANNEL_FREQ</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac6dd3ecce054eaefa85d609838280665">PHY_PING_SLOT_CHANNEL_DR</a>, 
+<b>PHY_PING_SLOT_NB_CHANNELS</b>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a80807aa8b937b37002697a86116d530a">PHY_SF_FROM_DR</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27acd2412001278a4fb5c8b82fd08350f08">PHY_BW_FROM_DR</a>
 <br />
  }</td></tr>
 <tr class="separator:gac1354e358e41c80d30879e97df258e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0">InitType_t</a> { <a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7">INIT_TYPE_INIT</a>, 
+<tr class="memitem:gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0">InitType_t</a> { <a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a0a01b683daa10604c0f49b76bb41826d">INIT_TYPE_BANDS</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7">INIT_TYPE_INIT</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a79ad91828ca72b4ead718bdfca91fab7">INIT_TYPE_RESTORE_DEFAULT_CHANNELS</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0aadda495dbd34e630ff5bd10821b0d563">INIT_TYPE_RESTORE_CTX</a>
  }</td></tr>
@@ -356,9 +361,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gae4e60552e083960cfae76c343e980f15"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#gae4e60552e083960cfae76c343e980f15">RegionAlternateDr</a> (<a class="el" href="group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec">LoRaMacRegion_t</a> region, int8_t currentDr, <a class="el" href="group___r_e_g_i_o_n.html#ga68dd5abbb091918b80cab467f09f74e8">AlternateDrType_t</a> type)</td></tr>
 <tr class="memdesc:gae4e60552e083960cfae76c343e980f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternates the datarate of the channel for the join request.  <a href="group___r_e_g_i_o_n.html#gae4e60552e083960cfae76c343e980f15">More...</a><br /></td></tr>
 <tr class="separator:gae4e60552e083960cfae76c343e980f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07cfd135a3e8f85e15a5424c07f71d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#ga07cfd135a3e8f85e15a5424c07f71d67">RegionCalcBackOff</a> (<a class="el" href="group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec">LoRaMacRegion_t</a> region, <a class="el" href="group___r_e_g_i_o_n.html#struct_calc_back_off_params__t">CalcBackOffParams_t</a> *calcBackOff)</td></tr>
-<tr class="memdesc:ga07cfd135a3e8f85e15a5424c07f71d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the back-off time.  <a href="group___r_e_g_i_o_n.html#ga07cfd135a3e8f85e15a5424c07f71d67">More...</a><br /></td></tr>
-<tr class="separator:ga07cfd135a3e8f85e15a5424c07f71d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga627b895f8bdd552639820ddfcfaa698e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9">LoRaMacStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#ga627b895f8bdd552639820ddfcfaa698e">RegionNextChannel</a> (<a class="el" href="group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec">LoRaMacRegion_t</a> region, <a class="el" href="group___r_e_g_i_o_n.html#struct_next_chan_params__t">NextChanParams_t</a> *nextChanParams, uint8_t *channel, TimerTime_t *time, TimerTime_t *aggregatedTimeOff)</td></tr>
 <tr class="memdesc:ga627b895f8bdd552639820ddfcfaa698e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches and set the next random available channel.  <a href="group___r_e_g_i_o_n.html#ga627b895f8bdd552639820ddfcfaa698e">More...</a><br /></td></tr>
 <tr class="separator:ga627b895f8bdd552639820ddfcfaa698e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,6 +379,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5a33ed9d25f4af833ba63eb9370779cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#ga5a33ed9d25f4af833ba63eb9370779cf">RegionRxBeaconSetup</a> (<a class="el" href="group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec">LoRaMacRegion_t</a> region, <a class="el" href="group___r_e_g_i_o_n.html#struct_rx_beacon_setup__t">RxBeaconSetup_t</a> *rxBeaconSetup, uint8_t *outDr)</td></tr>
 <tr class="memdesc:ga5a33ed9d25f4af833ba63eb9370779cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the radio into beacon reception mode.  <a href="group___r_e_g_i_o_n.html#ga5a33ed9d25f4af833ba63eb9370779cf">More...</a><br /></td></tr>
 <tr class="separator:ga5a33ed9d25f4af833ba63eb9370779cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd8d6186e52054fb35355dce70b56fd5"><td class="memItemLeft" align="right" valign="top">Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#gabd8d6186e52054fb35355dce70b56fd5">RegionGetVersion</a> (void)</td></tr>
+<tr class="memdesc:gabd8d6186e52054fb35355dce70b56fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the version of the regional parameters implementation.  <a href="group___r_e_g_i_o_n.html#gabd8d6186e52054fb35355dce70b56fd5">More...</a><br /></td></tr>
+<tr class="separator:gabd8d6186e52054fb35355dce70b56fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This is the common API to access the specific regional implementations. </p>
@@ -484,6 +489,13 @@ BeaconFormat</td>
 <td class="fielddoc">
 <p>Beacon format </p>
 </td></tr>
+<tr><td class="fieldtype">
+<a id="ac04c99fbc7e7868a507edfbfbf544e44"></a>TimerTime_t</td>
+<td class="fieldname">
+DutyCycleTimePeriod</td>
+<td class="fielddoc">
+<p>Duty Cycle Period </p>
+</td></tr>
 </table>
 
 </div>
@@ -514,21 +526,28 @@ Attribute</td>
 <td class="fieldname">
 Datarate</td>
 <td class="fielddoc">
-<p>Datarate. The parameter is needed for the following queries: PHY_MAX_PAYLOAD, PHY_MAX_PAYLOAD_REPEATER, PHY_NEXT_LOWER_TX_DR. </p>
+<p>Datarate. The parameter is needed for the following queries: PHY_MAX_PAYLOAD, PHY_NEXT_LOWER_TX_DR, PHY_SF_FROM_DR, PHY_BW_FROM_DR. </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a0e6663762d6f9173bc8d8cb018f8f17a"></a>uint8_t</td>
 <td class="fieldname">
 UplinkDwellTime</td>
 <td class="fielddoc">
-<p>Uplink dwell time. This parameter must be set to query: PHY_MAX_PAYLOAD, PHY_MAX_PAYLOAD_REPEATER, PHY_MIN_TX_DR. The parameter is needed for the following queries: PHY_MIN_TX_DR, PHY_MAX_PAYLOAD, PHY_MAX_PAYLOAD_REPEATER, PHY_NEXT_LOWER_TX_DR. </p>
+<p>Uplink dwell time. This parameter must be set to query: PHY_MAX_PAYLOAD, PHY_MIN_TX_DR. The parameter is needed for the following queries: PHY_MIN_TX_DR, PHY_MAX_PAYLOAD, PHY_NEXT_LOWER_TX_DR. </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a63074ce7d23ff98956f5d6f4054f235f"></a>uint8_t</td>
 <td class="fieldname">
 DownlinkDwellTime</td>
 <td class="fielddoc">
-<p>Downlink dwell time. This parameter must be set to query: PHY_MAX_PAYLOAD, PHY_MAX_PAYLOAD_REPEATER, PHY_MIN_RX_DR. The parameter is needed for the following queries: PHY_MIN_RX_DR, PHY_MAX_PAYLOAD, PHY_MAX_PAYLOAD_REPEATER. </p>
+<p>Downlink dwell time. This parameter must be set to query: PHY_MAX_PAYLOAD, PHY_MIN_RX_DR. The parameter is needed for the following queries: PHY_MIN_RX_DR, PHY_MAX_PAYLOAD. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1ca6f01ca18afe402de51babe8c95f5e"></a>uint8_t</td>
+<td class="fieldname">
+Channel</td>
+<td class="fielddoc">
+<p>Specification of the downlink channel. Used in Class B only. The parameter is needed for the following queries: PHY_BEACON_CHANNEL_FREQ, PHY_PING_SLOT_CHANNEL_FREQ </p>
 </td></tr>
 </table>
 
@@ -568,6 +587,20 @@ Joined</td>
 LastTxDoneTime</td>
 <td class="fielddoc">
 <p>Last TX done time. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a58a6560e60a5d3981f0b2d65e0d9bab4"></a>TimerTime_t</td>
+<td class="fieldname">
+LastTxAirTime</td>
+<td class="fielddoc">
+<p>Time-on-air of the last transmission. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9a8b21e82dac72840f53abc6136cfd23"></a>SysTime_t</td>
+<td class="fieldname">
+ElapsedTimeSinceStartUp</td>
+<td class="fielddoc">
+<p>Elapsed time since initialization. </p>
 </td></tr>
 </table>
 
@@ -808,13 +841,6 @@ WindowOffset</td>
 DownlinkDwellTime</td>
 <td class="fielddoc">
 <p>Downlink dwell time. </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a037bdbc41e8b3deeaab3684cf4b23f66"></a>bool</td>
-<td class="fieldname">
-RepeaterSupport</td>
-<td class="fielddoc">
-<p>Set to true, if a repeater is supported. </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ad155d9bae95f09d927ca588dc4f4734a"></a>bool</td>
@@ -1110,66 +1136,6 @@ Rx1Frequency</td>
 
 </div>
 </div>
-<a name="struct_calc_back_off_params__t" id="struct_calc_back_off_params__t"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#struct_calc_back_off_params__t">&#9670;&nbsp;</a></span>CalcBackOffParams_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct CalcBackOffParams_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Parameter structure for the function RegionCalcBackOff. </p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ac2f6caa0f3b02d2ac5056c3ee7c22652"></a>bool</td>
-<td class="fieldname">
-Joined</td>
-<td class="fielddoc">
-<p>Set to true, if the node has already joined a network, otherwise false. </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a4088d0ca2ff21fd5cdc110e14816dd53"></a>bool</td>
-<td class="fieldname">
-LastTxIsJoinRequest</td>
-<td class="fielddoc">
-<p>Joined Set to true, if the last uplink was a join request </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a4d755868e0e80089462286c3ba6a6f18"></a>bool</td>
-<td class="fieldname">
-DutyCycleEnabled</td>
-<td class="fielddoc">
-<p>Set to true, if the duty cycle is enabled, otherwise false. </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a1ca6f01ca18afe402de51babe8c95f5e"></a>uint8_t</td>
-<td class="fieldname">
-Channel</td>
-<td class="fielddoc">
-<p>Current channel index. </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="abcc8bdb6aeb0a261ce00a92d41808291"></a>SysTime_t</td>
-<td class="fieldname">
-ElapsedTime</td>
-<td class="fielddoc">
-<p>Elapsed time since the start of the node. </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="aa17a8607485db100d315e74853dd217e"></a>TimerTime_t</td>
-<td class="fieldname">
-TxTimeOnAir</td>
-<td class="fielddoc">
-<p>Time-on-air of the last transmission. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a name="struct_next_chan_params__t" id="struct_next_chan_params__t"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#struct_next_chan_params__t">&#9670;&nbsp;</a></span>NextChanParams_t</h2>
 
@@ -1218,6 +1184,27 @@ Joined</td>
 DutyCycleEnabled</td>
 <td class="fielddoc">
 <p>Set to true, if the duty cycle is enabled, otherwise false. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9a8b21e82dac72840f53abc6136cfd23"></a>SysTime_t</td>
+<td class="fieldname">
+ElapsedTimeSinceStartUp</td>
+<td class="fielddoc">
+<p>Elapsed time since the start of the node. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a4088d0ca2ff21fd5cdc110e14816dd53"></a>bool</td>
+<td class="fieldname">
+LastTxIsJoinRequest</td>
+<td class="fielddoc">
+<p>Joined Set to true, if the last uplink was a join request </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aff9de7b29c2d9ebf3fa963f2ba09c121"></a>uint16_t</td>
+<td class="fieldname">
+PktLen</td>
+<td class="fielddoc">
+<p>Payload length of the next frame </p>
 </td></tr>
 </table>
 
@@ -1399,6 +1386,21 @@ Frequency</td>
 
 </div>
 </div>
+<a id="gaacd698b1fa5a3832c7508536a77ff6c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaacd698b1fa5a3832c7508536a77ff6c0">&#9670;&nbsp;</a></span>REGION_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGION_VERSION&#160;&#160;&#160;0x00010003</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Regional parameters version definition. </p>
+
+</div>
+</div>
 <a id="ga6c4ef966b4f3d5eb7597b087f2b97095"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6c4ef966b4f3d5eb7597b087f2b97095">&#9670;&nbsp;</a></span>DR_0</h2>
 
@@ -1434,6 +1436,8 @@ Frequency</td>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">RU864  </td><td class="markdownTableBodyCenter">SF12 - BW125   </td></tr>
 </table>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_b_2_b-_l072_z-_l_r_w_a_n1_2main_8c-example.html#a127">classB/B-L072Z-LRWAN1/main.c</a>, <a class="el" href="class_b_2_n_a_mote72_2main_8c-example.html#a137">classB/NAMote72/main.c</a>, <a class="el" href="class_b_2_nucleo_l073_2main_8c-example.html#a127">classB/NucleoL073/main.c</a>, <a class="el" href="class_b_2_nucleo_l152_2main_8c-example.html#a127">classB/NucleoL152/main.c</a>, <a class="el" href="class_b_2_nucleo_l476_2main_8c-example.html#a127">classB/NucleoL476/main.c</a>, <a class="el" href="class_b_2_s_a_m_r34_2main_8c-example.html#a127">classB/SAMR34/main.c</a>, <a class="el" href="class_b_2_s_ki_m880_b_2main_8c-example.html#a127">classB/SKiM880B/main.c</a>, <a class="el" href="class_b_2_s_ki_m881_a_x_l_2main_8c-example.html#a127">classB/SKiM881AXL/main.c</a>, <a class="el" href="class_b_2_s_ki_m980_a_2main_8c-example.html#a127">classB/SKiM980A/main.c</a>, <a class="el" href="class_c_2_b-_l072_z-_l_r_w_a_n1_2main_8c-example.html#a107">classC/B-L072Z-LRWAN1/main.c</a>, <a class="el" href="class_c_2_n_a_mote72_2main_8c-example.html#a117">classC/NAMote72/main.c</a>, <a class="el" href="class_c_2_nucleo_l073_2main_8c-example.html#a107">classC/NucleoL073/main.c</a>, <a class="el" href="class_c_2_nucleo_l152_2main_8c-example.html#a107">classC/NucleoL152/main.c</a>, <a class="el" href="class_c_2_nucleo_l476_2main_8c-example.html#a107">classC/NucleoL476/main.c</a>, <a class="el" href="class_c_2_s_a_m_r34_2main_8c-example.html#a107">classC/SAMR34/main.c</a>, <a class="el" href="class_c_2_s_ki_m880_b_2main_8c-example.html#a107">classC/SKiM880B/main.c</a>, <a class="el" href="class_c_2_s_ki_m881_a_x_l_2main_8c-example.html#a107">classC/SKiM881AXL/main.c</a>, and <a class="el" href="class_c_2_s_ki_m980_a_2main_8c-example.html#a107">classC/SKiM980A/main.c</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -1510,6 +1514,8 @@ Frequency</td>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">RU864  </td><td class="markdownTableBodyCenter">SF10 - BW125   </td></tr>
 </table>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_b_2_b-_l072_z-_l_r_w_a_n1_2main_8c-example.html#a126">classB/B-L072Z-LRWAN1/main.c</a>, <a class="el" href="class_b_2_n_a_mote72_2main_8c-example.html#a136">classB/NAMote72/main.c</a>, <a class="el" href="class_b_2_nucleo_l073_2main_8c-example.html#a126">classB/NucleoL073/main.c</a>, <a class="el" href="class_b_2_nucleo_l152_2main_8c-example.html#a126">classB/NucleoL152/main.c</a>, <a class="el" href="class_b_2_nucleo_l476_2main_8c-example.html#a126">classB/NucleoL476/main.c</a>, <a class="el" href="class_b_2_s_a_m_r34_2main_8c-example.html#a126">classB/SAMR34/main.c</a>, <a class="el" href="class_b_2_s_ki_m880_b_2main_8c-example.html#a126">classB/SKiM880B/main.c</a>, <a class="el" href="class_b_2_s_ki_m881_a_x_l_2main_8c-example.html#a126">classB/SKiM881AXL/main.c</a>, <a class="el" href="class_b_2_s_ki_m980_a_2main_8c-example.html#a126">classB/SKiM980A/main.c</a>, <a class="el" href="class_c_2_b-_l072_z-_l_r_w_a_n1_2main_8c-example.html#a106">classC/B-L072Z-LRWAN1/main.c</a>, <a class="el" href="class_c_2_n_a_mote72_2main_8c-example.html#a116">classC/NAMote72/main.c</a>, <a class="el" href="class_c_2_nucleo_l073_2main_8c-example.html#a106">classC/NucleoL073/main.c</a>, <a class="el" href="class_c_2_nucleo_l152_2main_8c-example.html#a106">classC/NucleoL152/main.c</a>, <a class="el" href="class_c_2_nucleo_l476_2main_8c-example.html#a106">classC/NucleoL476/main.c</a>, <a class="el" href="class_c_2_s_a_m_r34_2main_8c-example.html#a106">classC/SAMR34/main.c</a>, <a class="el" href="class_c_2_s_ki_m880_b_2main_8c-example.html#a106">classC/SKiM880B/main.c</a>, <a class="el" href="class_c_2_s_ki_m881_a_x_l_2main_8c-example.html#a106">classC/SKiM881AXL/main.c</a>, and <a class="el" href="class_c_2_s_ki_m980_a_2main_8c-example.html#a106">classC/SKiM980A/main.c</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -1548,7 +1554,7 @@ Frequency</td>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">RU864  </td><td class="markdownTableBodyCenter">SF9 - BW125   </td></tr>
 </table>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_a_2_s_a_m_l21_2main_8c-example.html#a129">classA/SAML21/main.c</a>, <a class="el" href="class_b_2_s_a_m_l21_2main_8c-example.html#a149">classB/SAML21/main.c</a>, and <a class="el" href="class_c_2_s_a_m_l21_2main_8c-example.html#a129">classC/SAML21/main.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_a_2_s_a_m_r34_2main_8c-example.html#a122">classA/SAMR34/main.c</a>, <a class="el" href="class_b_2_s_a_m_r34_2main_8c-example.html#a152">classB/SAMR34/main.c</a>, and <a class="el" href="class_c_2_s_a_m_r34_2main_8c-example.html#a132">classC/SAMR34/main.c</a>.</dd>
 </dl>
 
 </div>
@@ -2234,7 +2240,7 @@ Frequency</td>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">RU864  </td><td class="markdownTableBodyCenter">Max EIRP - 10   </td></tr>
 </table>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_a_2_n_a_mote72_2main_8c-example.html#a14">classA/NAMote72/main.c</a>, <a class="el" href="class_b_2_n_a_mote72_2main_8c-example.html#a14">classB/NAMote72/main.c</a>, and <a class="el" href="class_c_2_n_a_mote72_2main_8c-example.html#a14">classC/NAMote72/main.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="class_a_2_n_a_mote72_2main_8c-example.html#a17">classA/NAMote72/main.c</a>, <a class="el" href="class_b_2_n_a_mote72_2main_8c-example.html#a17">classB/NAMote72/main.c</a>, and <a class="el" href="class_c_2_n_a_mote72_2main_8c-example.html#a17">classC/NAMote72/main.c</a>.</dd>
 </dl>
 
 </div>
@@ -2638,8 +2644,6 @@ Frequency</td>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27ad671e2651e42de26927910282c6b2781"></a>PHY_MAX_PAYLOAD&#160;</td><td class="fielddoc"><p>Maximum payload possible. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27a8a3b9e5ad2604232fd1f8781658452f3"></a>PHY_MAX_PAYLOAD_REPEATER&#160;</td><td class="fielddoc"><p>Maximum payload possible when repeater support is enabled. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27ac66308571e624ecc28c79ee0deab8cf0"></a>PHY_DUTY_CYCLE&#160;</td><td class="fielddoc"><p>Duty cycle. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27acf2bd6f434ce2844651513ad2b9b9da5"></a>PHY_MAX_RX_WINDOW&#160;</td><td class="fielddoc"><p>Maximum receive window duration. </p>
@@ -2716,7 +2720,13 @@ Frequency</td>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27a099ba02c06e2f359f1d46d05b70d8732"></a>PHY_BEACON_NB_CHANNELS&#160;</td><td class="fielddoc"><p>The number of channels for the beacon reception. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27afcf58ca6bef66dffc8806d92c29043d6"></a>PHY_PING_SLOT_CHANNEL_FREQ&#160;</td><td class="fielddoc"><p>Ping slot channel frequency. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27ac6dd3ecce054eaefa85d609838280665"></a>PHY_PING_SLOT_CHANNEL_DR&#160;</td><td class="fielddoc"><p>The datarate of a ping slot channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27a80807aa8b937b37002697a86116d530a"></a>PHY_SF_FROM_DR&#160;</td><td class="fielddoc"><p>The equivalent spreading factor value from datarate </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27acd2412001278a4fb5c8b82fd08350f08"></a>PHY_BW_FROM_DR&#160;</td><td class="fielddoc"><p>The equivalent bandwith index from datarate </p>
 </td></tr>
 </table>
 
@@ -2735,7 +2745,9 @@ Frequency</td>
 </div><div class="memdoc">
 <p>Enumeration of initialization types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7"></a>INIT_TYPE_INIT&#160;</td><td class="fielddoc"><p>Initializes the region specific data to defaults, according to the LoRaWAN specification. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a0a01b683daa10604c0f49b76bb41826d"></a>INIT_TYPE_BANDS&#160;</td><td class="fielddoc"><p>Initializes the band definitions. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7"></a>INIT_TYPE_INIT&#160;</td><td class="fielddoc"><p>Initializes the region specific data to defaults, according to the LoRaWAN specification. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a79ad91828ca72b4ead718bdfca91fab7"></a>INIT_TYPE_RESTORE_DEFAULT_CHANNELS&#160;</td><td class="fielddoc"><p>Restores default channels defined by the LoRaWAN specification only. </p>
 </td></tr>
@@ -3566,43 +3578,6 @@ Frequency</td>
 
 </div>
 </div>
-<a id="ga07cfd135a3e8f85e15a5424c07f71d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga07cfd135a3e8f85e15a5424c07f71d67">&#9670;&nbsp;</a></span>RegionCalcBackOff()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RegionCalcBackOff </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec">LoRaMacRegion_t</a>&#160;</td>
-          <td class="paramname"><em>region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___r_e_g_i_o_n.html#struct_calc_back_off_params__t">CalcBackOffParams_t</a> *&#160;</td>
-          <td class="paramname"><em>calcBackOff</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates the back-off time. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">[IN]</td><td>region LoRaWAN region.</td></tr>
-    <tr><td class="paramname">[IN]</td><td>calcBackOff Pointer to the function parameters. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ga627b895f8bdd552639820ddfcfaa698e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga627b895f8bdd552639820ddfcfaa698e">&#9670;&nbsp;</a></span>RegionNextChannel()</h2>
 
@@ -3888,12 +3863,38 @@ Frequency</td>
 
 </div>
 </div>
+<a id="gabd8d6186e52054fb35355dce70b56fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd8d6186e52054fb35355dce70b56fd5">&#9670;&nbsp;</a></span>RegionGetVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Version_t RegionGetVersion </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the version of the regional parameters implementation. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Version</td><td>of the regional parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 17 2019 11:58:23 for LoRaMAC by
+    <li class="footer">Generated on Tue May 26 2020 14:26:14 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

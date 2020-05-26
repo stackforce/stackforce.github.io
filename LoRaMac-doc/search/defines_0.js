@@ -1,21 +1,4 @@
 var searchData=
 [
-  ['loramac_5fc_5fflist_5ffield_5fsize_2775',['LORAMAC_C_FLIST_FIELD_SIZE',['../_lo_ra_mac_message_types_8h.html#a98d6916a2f8eac98ca6a6ee87dd46c18',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5fcrypto_5fmulticast_5fkeys_2776',['LORAMAC_CRYPTO_MULTICAST_KEYS',['../_lo_ra_mac_types_8h.html#adc75a6b3de1272a9500d116c99e0469d',1,'LoRaMacTypes.h']]],
-  ['loramac_5fcrypto_5funicast_5fkeys_2777',['LORAMAC_CRYPTO_UNICAST_KEYS',['../_lo_ra_mac_types_8h.html#a9f3d2a035e6bc5055f718f63bd2f8482',1,'LoRaMacTypes.h']]],
-  ['loramac_5fdev_5feui_5ffield_5fsize_2778',['LORAMAC_DEV_EUI_FIELD_SIZE',['../_lo_ra_mac_message_types_8h.html#aae81c0d024be7835381a76cb8c7cf08f',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5ff_5fport_5ffield_5fsize_2779',['LORAMAC_F_PORT_FIELD_SIZE',['../_lo_ra_mac_message_types_8h.html#a8427b5a6205399157084d145cf03c605',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5ffhdr_5fdev_5fadd_5ffield_5fsize_2780',['LORAMAC_FHDR_DEV_ADD_FIELD_SIZE',['../_lo_ra_mac_header_types_8h.html#ae6f22c72d37ffbdf521572031039c16c',1,'LoRaMacHeaderTypes.h']]],
-  ['loramac_5ffhdr_5ff_5fcnt_5ffield_5fsize_2781',['LORAMAC_FHDR_F_CNT_FIELD_SIZE',['../_lo_ra_mac_header_types_8h.html#a96f24aeef8051f0c9a37fa8da620c262',1,'LoRaMacHeaderTypes.h']]],
-  ['loramac_5ffhdr_5ff_5fctrl_5ffield_5fsize_2782',['LORAMAC_FHDR_F_CTRL_FIELD_SIZE',['../_lo_ra_mac_header_types_8h.html#a2c4fb573eb02f55b69bd0ef799cfd236',1,'LoRaMacHeaderTypes.h']]],
-  ['loramac_5ffhdr_5ff_5fopts_5fmax_5ffield_5fsize_2783',['LORAMAC_FHDR_F_OPTS_MAX_FIELD_SIZE',['../_lo_ra_mac_header_types_8h.html#aa853d03a7cc33886a71f01dcd18d9d0e',1,'LoRaMacHeaderTypes.h']]],
-  ['loramac_5ffhdr_5fmax_5ffield_5fsize_2784',['LORAMAC_FHDR_MAX_FIELD_SIZE',['../_lo_ra_mac_header_types_8h.html#a2742626ea7aaa8bf40b39c6a92309cd2',1,'LoRaMacHeaderTypes.h']]],
-  ['loramac_5fjoin_5feui_5ffield_5fsize_2785',['LORAMAC_JOIN_EUI_FIELD_SIZE',['../_lo_ra_mac_message_types_8h.html#a2c13ece1219b51184551783d67395383',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5fjoin_5fnonce_5ffield_5fsize_2786',['LORAMAC_JOIN_NONCE_FIELD_SIZE',['../_lo_ra_mac_message_types_8h.html#a36b0f123896a348956475e975c350948',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5fjoin_5freq_5fmsg_5fsize_2787',['LORAMAC_JOIN_REQ_MSG_SIZE',['../_lo_ra_mac_message_types_8h.html#ace98f1d237bc69203176dbd1936e39f3',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5fmhdr_5ffield_5fsize_2788',['LORAMAC_MHDR_FIELD_SIZE',['../_lo_ra_mac_message_types_8h.html#a5375786bd7c99f0b4f3702687994eb06',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5fmic_5ffield_5fsize_2789',['LORAMAC_MIC_FIELD_SIZE',['../_lo_ra_mac_message_types_8h.html#aa3a1d5370680b14d41e94e812a5c1cf6',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5fnet_5fid_5ffield_5fsize_2790',['LORAMAC_NET_ID_FIELD_SIZE',['../_lo_ra_mac_message_types_8h.html#a33304f16c3bc3327643cf23e9ee1f676',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5fre_5fjoin_5f0_5f2_5fmsg_5fsize_2791',['LORAMAC_RE_JOIN_0_2_MSG_SIZE',['../_lo_ra_mac_message_types_8h.html#ad98372e99dfde14579347c2df8a09975',1,'LoRaMacMessageTypes.h']]],
-  ['loramac_5fre_5fjoin_5f1_5fmsg_5fsize_2792',['LORAMAC_RE_JOIN_1_MSG_SIZE',['../_lo_ra_mac_message_types_8h.html#a23b16a3aa6261a55404264bc19212edf',1,'LoRaMacMessageTypes.h']]]
+  ['fcnt_5fdown_5finital_5fvalue_2937',['FCNT_DOWN_INITAL_VALUE',['../_lo_ra_mac_crypto_8h.html#a97eab0d530bc3c01f4bd7d46ae8b9b06',1,'LoRaMacCrypto.h']]]
 ];

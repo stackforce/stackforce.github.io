@@ -32,12 +32,14 @@ var _lo_ra_mac_8h =
       [ "DeriveMcKEKey", "group___l_o_r_a_m_a_c.html#a6f1a93abbe944ac663482cc8cbb4f86e", null ],
       [ "DeriveMcSessionKeyPair", "group___l_o_r_a_m_a_c.html#a47ac7463abb231f76e534234ec2506df", null ]
     ] ],
+    [ "sLrWanVersion", "group___l_o_r_a_m_a_c.html#struct_mib_param__t_1_1s_lr_wan_version", [
+      [ "LoRaWan", "group___l_o_r_a_m_a_c.html#a4c54bf1553f1382319bf8a648f18565c", null ],
+      [ "LoRaWanRegion", "group___l_o_r_a_m_a_c.html#a4faef42902cd9dca5ed46892ea79c8bb", null ]
+    ] ],
     [ "MAX_ACK_RETRIES", "group___l_o_r_a_m_a_c.html#ga47bc6aeb5be0ba39387e2049e342fa7e", null ],
     [ "UP_LINK", "group___l_o_r_a_m_a_c.html#ga7e75f3071d6911b19a563d554038f8da", null ],
     [ "DOWN_LINK", "group___l_o_r_a_m_a_c.html#ga801525db3ba12b250029f026403524b7", null ],
-    [ "LORAMAC_MFR_LEN", "group___l_o_r_a_m_a_c.html#ga1727f288e9a871f1474ce61f942a08f3", null ],
     [ "LORA_MAC_MLME_CONFIRM_QUEUE_LEN", "group___l_o_r_a_m_a_c.html#ga47c33a3d3db7c795afba5b3ac94d99c8", null ],
-    [ "LORA_MAC_FRMPAYLOAD_OVERHEAD", "group___l_o_r_a_m_a_c.html#ga9623296c345a3636f460ecdb8b1bbd9d", null ],
     [ "LORAMAC_MAX_MC_CTX", "group___l_o_r_a_m_a_c.html#ga350863a913c89325530d89cfbf606a1d", null ],
     [ "LORAMAC_CRYPTO_MULTICAST_KEYS", "group___l_o_r_a_m_a_c.html#gadc75a6b3de1272a9500d116c99e0469d", null ],
     [ "ActivationType_t", "group___l_o_r_a_m_a_c.html#ga8d64e6041eb0e2a04accfdece713df46", [
@@ -80,6 +82,7 @@ var _lo_ra_mac_8h =
       [ "MCPS_PROPRIETARY", "group___l_o_r_a_m_a_c.html#gga3a34a8c4488f3dd643fa1fc390691696a29a54ded2edefe9179a33a14e3ceaca5", null ]
     ] ],
     [ "Mlme_t", "group___l_o_r_a_m_a_c.html#ga867a2ba8db200cd6a00511fec9979f1c", [
+      [ "MLME_UNKNOWN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca1c658fc6af0d7d742966b42341d5d4cb", null ],
       [ "MLME_JOIN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca475ad5dea1c4c13b93b31095c665e92e", null ],
       [ "MLME_REJOIN_0", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1cab15073ad9a5bf1ab4fe6e33d045221a6", null ],
       [ "MLME_REJOIN_1", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1cafa4ddefb5db3403a02f369bd6fe0480f", null ],
@@ -94,18 +97,17 @@ var _lo_ra_mac_8h =
       [ "MLME_BEACON_ACQUISITION", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1caec86b2b668cea61b3c298fef89411e8b", null ],
       [ "MLME_PING_SLOT_INFO", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3ef28198f0049cf4b222edc9b8ad2201", null ],
       [ "MLME_BEACON_TIMING", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1cad5d1950a71c91d499dcd0ffeb6e77fa5", null ],
-      [ "MLME_BEACON_LOST", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3607bda0c271befdc6ef57686496a332", null ],
-      [ "MLME_REVERT_JOIN", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca4cb5a0009909c8c98fd456abdf9e310c", null ]
+      [ "MLME_BEACON_LOST", "group___l_o_r_a_m_a_c.html#gga867a2ba8db200cd6a00511fec9979f1ca3607bda0c271befdc6ef57686496a332", null ]
     ] ],
     [ "Mib_t", "group___l_o_r_a_m_a_c.html#ga64429ce77a29145f6a7508df5eaa2d3e", [
       [ "MIB_DEVICE_CLASS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eac0426517132356c9977dcdafa5ab3a7f", null ],
       [ "MIB_NETWORK_ACTIVATION", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea936d749fe86b00f36b9daddb23b48c1e", null ],
       [ "MIB_DEV_EUI", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea10d34d8af3b38c704342c34775e35b17", null ],
       [ "MIB_JOIN_EUI", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea44969e0394774fbad5917e36a9efa8db", null ],
+      [ "MIB_SE_PIN", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea083aa53653cbd9e61e35bfeaa7688445", null ],
       [ "MIB_ADR", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea756ff0b66217e3e4ddd0442c8aa56802", null ],
       [ "MIB_NET_ID", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea982c4b7cc1e276633134aa89298c96b0", null ],
       [ "MIB_DEV_ADDR", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eab1459b05690ffa347a71393006b526ac", null ],
-      [ "MIB_GEN_APP_KEY", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eac7734a59da8d77efa199a6fdb8a0eaaa", null ],
       [ "MIB_APP_KEY", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea5d411f5f36d5e485223c5bad0d7eb41f", null ],
       [ "MIB_NWK_KEY", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eabfbcd3d07efda7511980b12444790869", null ],
       [ "MIB_J_S_INT_KEY", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea25064fe61ade5e2fd9783ab136268caf", null ],
@@ -128,7 +130,6 @@ var _lo_ra_mac_8h =
       [ "MIB_MC_APP_S_KEY_3", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea012297d04eeefaf2cce16b2fa2428a96", null ],
       [ "MIB_MC_NWK_S_KEY_3", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea0b3e26a0b7c086ce01095cbd43005ea8", null ],
       [ "MIB_PUBLIC_NETWORK", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eab2819c46ba94b53c1fb2c3a0bfa75e48", null ],
-      [ "MIB_REPEATER_SUPPORT", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea2d0a50cc4dd24771854bd138934ef3e5", null ],
       [ "MIB_CHANNELS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea0236aae7748c12308383eab208a3cc5a", null ],
       [ "MIB_RX2_CHANNEL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea60fe29749b57c7a5315e9c1475269ba3", null ],
       [ "MIB_RX2_DEFAULT_CHANNEL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eac3a212e314ab58f78007ce812187179d", null ],
@@ -152,9 +153,7 @@ var _lo_ra_mac_8h =
       [ "MIB_DEFAULT_ANTENNA_GAIN", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eafdc28fdfdbed01cb4c4ea59e0c9b9994", null ],
       [ "MIB_NVM_CTXS", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eab3b5ae42bb6c37f4e87d07347af9ab56", null ],
       [ "MIB_ABP_LORAWAN_VERSION", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea8a327664635fb5657ea4ec9fb72ede32", null ],
-      [ "MIB_REJOIN_0_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea6cfa147a50c52331ec2ef9a069b0d310", null ],
-      [ "MIB_REJOIN_1_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea7c089e8762b6b3ac7c9abd674b889e5d", null ],
-      [ "MIB_REJOIN_2_CYCLE", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ead177c4a052fe42b244e9fb36cb423119", null ],
+      [ "MIB_LORAWAN_VERSION", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea116c3c2605bf1997548b7fa47129b320", null ],
       [ "MIB_BEACON_INTERVAL", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eae022575683d2249a82a086a04c5a15c1", null ],
       [ "MIB_BEACON_RESERVED", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3eaa19d77bfa7a7e003c1c88446520a6528", null ],
       [ "MIB_BEACON_GUARD", "group___l_o_r_a_m_a_c.html#gga64429ce77a29145f6a7508df5eaa2d3ea01fcf8618d1d1d240f638a333dc127da", null ],
@@ -231,5 +230,6 @@ var _lo_ra_mac_8h =
     [ "LoRaMacMibGetRequestConfirm", "group___l_o_r_a_m_a_c.html#ga3e208a4f73213aa801eeb9d9da7b71dd", null ],
     [ "LoRaMacMibSetRequestConfirm", "group___l_o_r_a_m_a_c.html#ga7a4ee0ced221591206b09630d4a70844", null ],
     [ "LoRaMacMlmeRequest", "group___l_o_r_a_m_a_c.html#ga097113f30feecc17c780940ff74af33e", null ],
-    [ "LoRaMacMcpsRequest", "group___l_o_r_a_m_a_c.html#ga79768f8a3c22aaff84d4dfcc77ad508c", null ]
+    [ "LoRaMacMcpsRequest", "group___l_o_r_a_m_a_c.html#ga79768f8a3c22aaff84d4dfcc77ad508c", null ],
+    [ "LoRaMacDeInitialization", "group___l_o_r_a_m_a_c.html#gac01c687b7f28bc92fd0fc4739c1d7a81", null ]
 ];

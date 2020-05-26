@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.3</span>
+   &#160;<span id="projectnumber">4.4.4</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -161,6 +161,8 @@ Macros</h2></td></tr>
 <tr class="separator:gac242b7599d5234bc866206a447d8c517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga77e5a8b7c5dfa8969dbc0696cc33c99c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga77e5a8b7c5dfa8969dbc0696cc33c99c">CN779_BEACON_CHANNEL_FREQ</a>&#160;&#160;&#160;785000000</td></tr>
 <tr class="separator:ga77e5a8b7c5dfa8969dbc0696cc33c99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga543894821c0bc9acf4c63419b98d1f56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga543894821c0bc9acf4c63419b98d1f56">CN779_PING_SLOT_CHANNEL_FREQ</a>&#160;&#160;&#160;785000000</td></tr>
+<tr class="separator:ga543894821c0bc9acf4c63419b98d1f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f202781c3c981507e765aae5b055851"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga5f202781c3c981507e765aae5b055851">CN779_BEACON_SIZE</a>&#160;&#160;&#160;17</td></tr>
 <tr class="separator:ga5f202781c3c981507e765aae5b055851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf99931151145c3f16b55aea30318620a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#gaf99931151145c3f16b55aea30318620a">CN779_RFU1_SIZE</a>&#160;&#160;&#160;2</td></tr>
@@ -175,7 +177,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga7fa27388e6f22ee269e982bbf0605961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga605a78b9ce2c56ef5d320e029e369236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga605a78b9ce2c56ef5d320e029e369236">CN779_MAX_NB_BANDS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga605a78b9ce2c56ef5d320e029e369236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga428819be1d6f97028be344a4bf8dff3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga428819be1d6f97028be344a4bf8dff3e">CN779_BAND0</a>&#160;&#160;&#160;{ 100, <a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga8a70356561f3416db21a1e93b4ee4ae9">CN779_MAX_TX_POWER</a>, 0, 0, 0 }</td></tr>
+<tr class="memitem:ga428819be1d6f97028be344a4bf8dff3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga428819be1d6f97028be344a4bf8dff3e">CN779_BAND0</a>&#160;&#160;&#160;{ 100, <a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga8a70356561f3416db21a1e93b4ee4ae9">CN779_MAX_TX_POWER</a>, 0, 0, 0, 0 }</td></tr>
 <tr class="separator:ga428819be1d6f97028be344a4bf8dff3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1318d698c85f15c35bd4953830d5df48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga1318d698c85f15c35bd4953830d5df48">CN779_LC1</a>&#160;&#160;&#160;{ 779500000, 0, { ( ( <a class="el" href="group___r_e_g_i_o_n.html#ga872e12c82020c02a7f70a1c6ed1375df">DR_5</a> &lt;&lt; 4 ) | <a class="el" href="group___r_e_g_i_o_n.html#ga6c4ef966b4f3d5eb7597b087f2b97095">DR_0</a> ) }, 0 }</td></tr>
 <tr class="separator:ga1318d698c85f15c35bd4953830d5df48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,9 +237,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7126e174faf17d2f3b28792e060213a5"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga7126e174faf17d2f3b28792e060213a5">RegionCN779AlternateDr</a> (int8_t currentDr, <a class="el" href="group___r_e_g_i_o_n.html#ga68dd5abbb091918b80cab467f09f74e8">AlternateDrType_t</a> type)</td></tr>
 <tr class="memdesc:ga7126e174faf17d2f3b28792e060213a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternates the datarate of the channel for the join request.  <a href="group___r_e_g_i_o_n_c_n779.html#ga7126e174faf17d2f3b28792e060213a5">More...</a><br /></td></tr>
 <tr class="separator:ga7126e174faf17d2f3b28792e060213a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga159d16a30e948dcab70399897672848b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga159d16a30e948dcab70399897672848b">RegionCN779CalcBackOff</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_calc_back_off_params__t">CalcBackOffParams_t</a> *calcBackOff)</td></tr>
-<tr class="memdesc:ga159d16a30e948dcab70399897672848b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the back-off time.  <a href="group___r_e_g_i_o_n_c_n779.html#ga159d16a30e948dcab70399897672848b">More...</a><br /></td></tr>
-<tr class="separator:ga159d16a30e948dcab70399897672848b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37a1c6f7657dd872a54e0573c5f554f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___l_o_r_a_m_a_c.html#ga363b63a6d24ca4827c81898ebb1887e9">LoRaMacStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga37a1c6f7657dd872a54e0573c5f554f3">RegionCN779NextChannel</a> (<a class="el" href="group___r_e_g_i_o_n.html#struct_next_chan_params__t">NextChanParams_t</a> *nextChanParams, uint8_t *channel, TimerTime_t *time, TimerTime_t *aggregatedTimeOff)</td></tr>
 <tr class="memdesc:ga37a1c6f7657dd872a54e0573c5f554f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches and set the next random available channel.  <a href="group___r_e_g_i_o_n_c_n779.html#ga37a1c6f7657dd872a54e0573c5f554f3">More...</a><br /></td></tr>
 <tr class="separator:ga37a1c6f7657dd872a54e0573c5f554f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -711,6 +710,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga543894821c0bc9acf4c63419b98d1f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga543894821c0bc9acf4c63419b98d1f56">&#9670;&nbsp;</a></span>CN779_PING_SLOT_CHANNEL_FREQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CN779_PING_SLOT_CHANNEL_FREQ&#160;&#160;&#160;785000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ping slot channel frequency </p>
+
+</div>
+</div>
 <a id="ga5f202781c3c981507e765aae5b055851"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5f202781c3c981507e765aae5b055851">&#9670;&nbsp;</a></span>CN779_BEACON_SIZE</h2>
 
@@ -823,11 +837,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CN779_BAND0&#160;&#160;&#160;{ 100, <a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga8a70356561f3416db21a1e93b4ee4ae9">CN779_MAX_TX_POWER</a>, 0, 0, 0 }</td>
+          <td class="memname">#define CN779_BAND0&#160;&#160;&#160;{ 100, <a class="el" href="group___r_e_g_i_o_n_c_n779.html#ga8a70356561f3416db21a1e93b4ee4ae9">CN779_MAX_TX_POWER</a>, 0, 0, 0, 0 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Band 0 definition { DutyCycle, TxMaxPower, LastJoinTxDoneTime, LastTxDoneTime, TimeOff } </p>
+<p>Band 0 definition Band = { DutyCycle, TxMaxPower, LastBandUpdateTime, TimeCredits, MaxTimeCredits, ReadyForTransmission } </p>
 
 </div>
 </div>
@@ -1482,32 +1496,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga159d16a30e948dcab70399897672848b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga159d16a30e948dcab70399897672848b">&#9670;&nbsp;</a></span>RegionCN779CalcBackOff()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RegionCN779CalcBackOff </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___r_e_g_i_o_n.html#struct_calc_back_off_params__t">CalcBackOffParams_t</a> *&#160;</td>
-          <td class="paramname"><em>calcBackOff</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates the back-off time. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">[IN]</td><td>calcBackOff Pointer to the function parameters. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ga37a1c6f7657dd872a54e0573c5f554f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga37a1c6f7657dd872a54e0573c5f554f3">&#9670;&nbsp;</a></span>RegionCN779NextChannel()</h2>
 
@@ -1745,7 +1733,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 17 2019 11:58:23 for LoRaMAC by
+    <li class="footer">Generated on Tue May 26 2020 14:26:14 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

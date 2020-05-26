@@ -6,6 +6,7 @@ var _region_8h =
       [ "UplinkDwellTime", "group___r_e_g_i_o_n.html#a0e6663762d6f9173bc8d8cb018f8f17a", null ]
     ] ],
     [ "LC", "group___r_e_g_i_o_n.html#ga12fa17e5c1016e01a9d82c25027deb1b", null ],
+    [ "REGION_VERSION", "group___r_e_g_i_o_n.html#gaacd698b1fa5a3832c7508536a77ff6c0", null ],
     [ "DR_0", "group___r_e_g_i_o_n.html#ga6c4ef966b4f3d5eb7597b087f2b97095", null ],
     [ "DR_1", "group___r_e_g_i_o_n.html#ga87e71569dc5f2114e685560de072af26", null ],
     [ "DR_2", "group___r_e_g_i_o_n.html#gad402daa928a8b3dea829315fab69de17", null ],
@@ -53,7 +54,6 @@ var _region_8h =
       [ "PHY_DEF_ADR_ACK_LIMIT", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8c3ba027abe03c0e9b0c397bf8184050", null ],
       [ "PHY_DEF_ADR_ACK_DELAY", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a5f75c468df6f3d0f1faffc5ba2ab5f7c", null ],
       [ "PHY_MAX_PAYLOAD", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ad671e2651e42de26927910282c6b2781", null ],
-      [ "PHY_MAX_PAYLOAD_REPEATER", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8a3b9e5ad2604232fd1f8781658452f3", null ],
       [ "PHY_DUTY_CYCLE", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac66308571e624ecc28c79ee0deab8cf0", null ],
       [ "PHY_MAX_RX_WINDOW", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27acf2bd6f434ce2844651513ad2b9b9da5", null ],
       [ "PHY_RECEIVE_DELAY1", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a3680d45f45e3e0a96ce9f1e1b5ed7371", null ],
@@ -92,9 +92,14 @@ var _region_8h =
       [ "PHY_BEACON_CHANNEL_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ab68a2c284d4e827f05529b48ef5eeed5", null ],
       [ "PHY_BEACON_CHANNEL_STEPWIDTH", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a08f0ef405589a877cb43902784b50b89", null ],
       [ "PHY_BEACON_NB_CHANNELS", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a099ba02c06e2f359f1d46d05b70d8732", null ],
-      [ "PHY_PING_SLOT_CHANNEL_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac6dd3ecce054eaefa85d609838280665", null ]
+      [ "PHY_PING_SLOT_CHANNEL_FREQ", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27afcf58ca6bef66dffc8806d92c29043d6", null ],
+      [ "PHY_PING_SLOT_CHANNEL_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac6dd3ecce054eaefa85d609838280665", null ],
+      [ "PHY_PING_SLOT_NB_CHANNELS", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8f68ff4e1789d08898253bd66a96a742", null ],
+      [ "PHY_SF_FROM_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a80807aa8b937b37002697a86116d530a", null ],
+      [ "PHY_BW_FROM_DR", "group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27acd2412001278a4fb5c8b82fd08350f08", null ]
     ] ],
     [ "InitType_t", "group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0", [
+      [ "INIT_TYPE_BANDS", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a0a01b683daa10604c0f49b76bb41826d", null ],
       [ "INIT_TYPE_INIT", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7", null ],
       [ "INIT_TYPE_RESTORE_DEFAULT_CHANNELS", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a79ad91828ca72b4ead718bdfca91fab7", null ],
       [ "INIT_TYPE_RESTORE_CTX", "group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0aadda495dbd34e630ff5bd10821b0d563", null ]
@@ -124,11 +129,11 @@ var _region_8h =
     [ "RegionTxParamSetupReq", "group___r_e_g_i_o_n.html#ga50dbaca7bf982330c183614302d525c4", null ],
     [ "RegionDlChannelReq", "group___r_e_g_i_o_n.html#ga54f7c22677b2d0628e9914f53501d4b8", null ],
     [ "RegionAlternateDr", "group___r_e_g_i_o_n.html#gae4e60552e083960cfae76c343e980f15", null ],
-    [ "RegionCalcBackOff", "group___r_e_g_i_o_n.html#ga07cfd135a3e8f85e15a5424c07f71d67", null ],
     [ "RegionNextChannel", "group___r_e_g_i_o_n.html#ga627b895f8bdd552639820ddfcfaa698e", null ],
     [ "RegionChannelAdd", "group___r_e_g_i_o_n.html#gaaa5767f33e988a641abf509ad278ae14", null ],
     [ "RegionChannelsRemove", "group___r_e_g_i_o_n.html#ga50b3505e13d8373fef6e2be6d48e150c", null ],
     [ "RegionSetContinuousWave", "group___r_e_g_i_o_n.html#ga22327f217ed10d84c89b6785143be5b8", null ],
     [ "RegionApplyDrOffset", "group___r_e_g_i_o_n.html#gab62221e1ca566a89f4b450b30bfb95a7", null ],
-    [ "RegionRxBeaconSetup", "group___r_e_g_i_o_n.html#ga5a33ed9d25f4af833ba63eb9370779cf", null ]
+    [ "RegionRxBeaconSetup", "group___r_e_g_i_o_n.html#ga5a33ed9d25f4af833ba63eb9370779cf", null ],
+    [ "RegionGetVersion", "group___r_e_g_i_o_n.html#gabd8d6186e52054fb35355dce70b56fd5", null ]
 ];

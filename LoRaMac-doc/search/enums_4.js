@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fcntidentifier_5ft_2386',['FCntIdentifier_t',['../_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20b',1,'LoRaMacTypes.h']]],
-  ['ftype_5ft_2387',['FType_t',['../_lo_ra_mac_types_8h.html#adc878261e25e5543a50a2f03b4a1687a',1,'LoRaMacTypes.h']]]
+  ['fcntidentifier_5ft_2544',['FCntIdentifier_t',['../_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20b',1,'LoRaMacTypes.h']]],
+  ['ftype_5ft_2545',['FType_t',['../_lo_ra_mac_types_8h.html#adc878261e25e5543a50a2f03b4a1687a',1,'LoRaMacTypes.h']]]
 ];

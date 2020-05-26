@@ -1,13 +1,17 @@
 var group___l_o_r_a_m_a_c_union_mib_param__t =
 [
+    [ "sLrWanVersion", "group___l_o_r_a_m_a_c.html#struct_mib_param__t_1_1s_lr_wan_version", [
+      [ "LoRaWan", "group___l_o_r_a_m_a_c.html#a4c54bf1553f1382319bf8a648f18565c", null ],
+      [ "LoRaWanRegion", "group___l_o_r_a_m_a_c.html#a4faef42902cd9dca5ed46892ea79c8bb", null ]
+    ] ],
     [ "Class", "group___l_o_r_a_m_a_c.html#a1ca946ebc53171e9f0f1fc39c005a7a6", null ],
     [ "NetworkActivation", "group___l_o_r_a_m_a_c.html#accf1e50e3bdef4302a1abe08fe19bf7e", null ],
     [ "DevEui", "group___l_o_r_a_m_a_c.html#a2aa72c6d37233b51e7ae46f85398f888", null ],
     [ "JoinEui", "group___l_o_r_a_m_a_c.html#aeb981b575d32a4582e5722c866a01fc9", null ],
+    [ "SePin", "group___l_o_r_a_m_a_c.html#a934424d6105a0665c5742fd393b0b8bf", null ],
     [ "AdrEnable", "group___l_o_r_a_m_a_c.html#a04efa8698eeea64f27b216d64e598c0d", null ],
     [ "NetID", "group___l_o_r_a_m_a_c.html#a84a14c879508144e9961372ace234169", null ],
     [ "DevAddr", "group___l_o_r_a_m_a_c.html#a8644153b1c46ffcaeb2b44b5544a2c1a", null ],
-    [ "GenAppKey", "group___l_o_r_a_m_a_c.html#af103d1f7491a45901f22da3806de4075", null ],
     [ "AppKey", "group___l_o_r_a_m_a_c.html#a560c2bd9214ee75105acac8593614bd9", null ],
     [ "NwkKey", "group___l_o_r_a_m_a_c.html#a6eb84e41aa1c32cfd3f7d6d64cb71db8", null ],
     [ "JSIntKey", "group___l_o_r_a_m_a_c.html#a18d7480c030a2a4d7c9fec85addd9180", null ],
@@ -30,7 +34,6 @@ var group___l_o_r_a_m_a_c_union_mib_param__t =
     [ "McAppSKey3", "group___l_o_r_a_m_a_c.html#ae7acdd46a589d36a343abca99c7b1270", null ],
     [ "McNwkSKey3", "group___l_o_r_a_m_a_c.html#acbae367c07c5a5f252ca891ef16e9909", null ],
     [ "EnablePublicNetwork", "group___l_o_r_a_m_a_c.html#aff3bd8c7ac1d2fe36ed22c15c25273aa", null ],
-    [ "EnableRepeaterSupport", "group___l_o_r_a_m_a_c.html#a6af0230b4a6c8b1caf81b8eb6be2ca1f", null ],
     [ "ChannelList", "group___l_o_r_a_m_a_c.html#ad8f366dd9087f9cdaa4f7021f2d6e2b9", null ],
     [ "Rx2Channel", "group___l_o_r_a_m_a_c.html#aeb71ba4d0a3c96a2e0a925e720f87006", null ],
     [ "Rx2DefaultChannel", "group___l_o_r_a_m_a_c.html#a57bc4a70f2eff824ae89b97536c0ad3c", null ],
@@ -55,9 +58,7 @@ var group___l_o_r_a_m_a_c_union_mib_param__t =
     [ "DefaultAntennaGain", "group___l_o_r_a_m_a_c.html#a3679fa4ff6ab120429480da6aa8a017d", null ],
     [ "Contexts", "group___l_o_r_a_m_a_c.html#af7f9f29122377bc13f6d7abdc0a81920", null ],
     [ "AbpLrWanVersion", "group___l_o_r_a_m_a_c.html#a0502443abe64504f60a0a1628d0a5b98", null ],
-    [ "Rejoin0CycleInSec", "group___l_o_r_a_m_a_c.html#a313b77f7d98a09e9a94da194579882c4", null ],
-    [ "Rejoin1CycleInSec", "group___l_o_r_a_m_a_c.html#a69f1bf517a7aab6d5be6988d7c03d22c", null ],
-    [ "Rejoin2CycleInSec", "group___l_o_r_a_m_a_c.html#a82de09ada81f2d0f89aa93c930b0be81", null ],
+    [ "LrWanVersion", "group___l_o_r_a_m_a_c.html#a43db990adec74aa7018e0e686e9eb46a", null ],
     [ "BeaconInterval", "group___l_o_r_a_m_a_c.html#a64d29802c576ec4c7ab0f70cb95e069a", null ],
     [ "BeaconReserved", "group___l_o_r_a_m_a_c.html#a50d7e50c4e30198ad593c0b02cb4adff", null ],
     [ "BeaconGuard", "group___l_o_r_a_m_a_c.html#a1ab621d67410ed81e04b1ecbe743a9c7", null ],
