@@ -41,7 +41,7 @@ var _lo_ra_mac_crypto_8h =
     [ "LoRaMacCryptoHandleJoinAccept", "_lo_ra_mac_crypto_8h.html#a499546c79d973995c79c44ab05e8e097", null ],
     [ "LoRaMacCryptoSecureMessage", "_lo_ra_mac_crypto_8h.html#a933d7ff3d89878e80a19523a24045587", null ],
     [ "LoRaMacCryptoUnsecureMessage", "_lo_ra_mac_crypto_8h.html#a9733c65b607f6e0bf26e3cee6ffa8830", null ],
-    [ "LoRaMacCryptoDeriveMcRootKey", "_lo_ra_mac_crypto_8h.html#a66469fffae89115547b460d75c79fda0", null ],
+    [ "LoRaMacCryptoDeriveMcRootKey", "_lo_ra_mac_crypto_8h.html#a1a1b6f39fc237f9a286a10dc9025070f", null ],
     [ "LoRaMacCryptoDeriveMcKEKey", "_lo_ra_mac_crypto_8h.html#af133639992bb1fe5a1d47476adde30ea", null ],
     [ "LoRaMacCryptoDeriveMcSessionKeyPair", "_lo_ra_mac_crypto_8h.html#ac9784ca6713884112bc9610b9df7cc9e", null ]
 ];

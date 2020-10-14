@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.4</span>
+   &#160;<span id="projectnumber">4.4.5</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -170,8 +170,8 @@ $(document).ready(function(){initNavTree('_lo_ra_mac_crypto_8h.html','');});
 <tr class="separator:a933d7ff3d89878e80a19523a24045587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9733c65b607f6e0bf26e3cee6ffa8830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a9733c65b607f6e0bf26e3cee6ffa8830">LoRaMacCryptoUnsecureMessage</a> (<a class="el" href="_lo_ra_mac_types_8h.html#abb9a9e8723302bd6e5f85fb7e2062f4f">AddressIdentifier_t</a> addrID, uint32_t address, <a class="el" href="_lo_ra_mac_types_8h.html#a6b5d63e46906a7521f8fbc8da613b20b">FCntIdentifier_t</a> fCntID, uint32_t fCntDown, <a class="el" href="_lo_ra_mac_message_types_8h.html#struct_lo_ra_mac_message_data__t">LoRaMacMessageData_t</a> *macMsg)</td></tr>
 <tr class="separator:a9733c65b607f6e0bf26e3cee6ffa8830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66469fffae89115547b460d75c79fda0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a66469fffae89115547b460d75c79fda0">LoRaMacCryptoDeriveMcRootKey</a> (<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a> keyID)</td></tr>
-<tr class="separator:a66469fffae89115547b460d75c79fda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1b6f39fc237f9a286a10dc9025070f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#a1a1b6f39fc237f9a286a10dc9025070f">LoRaMacCryptoDeriveMcRootKey</a> (uint8_t versionMinor, <a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a> keyID)</td></tr>
+<tr class="separator:a1a1b6f39fc237f9a286a10dc9025070f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af133639992bb1fe5a1d47476adde30ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#af133639992bb1fe5a1d47476adde30ea">LoRaMacCryptoDeriveMcKEKey</a> (<a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a> keyID)</td></tr>
 <tr class="separator:af133639992bb1fe5a1d47476adde30ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9784ca6713884112bc9610b9df7cc9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac9784ca6713884112bc9610b9df7cc9e">LoRaMacCryptoDeriveMcSessionKeyPair</a> (<a class="el" href="_lo_ra_mac_types_8h.html#abb9a9e8723302bd6e5f85fb7e2062f4f">AddressIdentifier_t</a> addrID, uint32_t mcAddr)</td></tr>
@@ -883,8 +883,8 @@ Johannes Bruder ( STACKFORCE )</dd></dl>
 
 </div>
 </div>
-<a id="a66469fffae89115547b460d75c79fda0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66469fffae89115547b460d75c79fda0">&#9670;&nbsp;</a></span>LoRaMacCryptoDeriveMcRootKey()</h2>
+<a id="a1a1b6f39fc237f9a286a10dc9025070f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1b6f39fc237f9a286a10dc9025070f">&#9670;&nbsp;</a></span>LoRaMacCryptoDeriveMcRootKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -892,9 +892,19 @@ Johannes Bruder ( STACKFORCE )</dd></dl>
         <tr>
           <td class="memname"><a class="el" href="_lo_ra_mac_crypto_8h.html#ac626bd5e8bbec818c939aba174edecd9">LoRaMacCryptoStatus_t</a> LoRaMacCryptoDeriveMcRootKey </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a>&#160;</td>
-          <td class="paramname"><em>keyID</em></td><td>)</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>versionMinor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="_lo_ra_mac_types_8h.html#aef8730e8da8f3d23e7963ab48116c745">KeyIdentifier_t</a>&#160;</td>
+          <td class="paramname"><em>keyID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -903,6 +913,7 @@ Johannes Bruder ( STACKFORCE )</dd></dl>
 <p>1.1.x McRootKey = aes128_encrypt(AppKey, 0x20 | pad16)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">[IN]</td><td>versionMinor - LoRaWAN specification minor version to be used. </td></tr>
     <tr><td class="paramname">[IN]</td><td>keyID - Key identifier of the root key to use to perform the derivation ( AppKey ) </td></tr>
   </table>
   </dd>
@@ -997,7 +1008,7 @@ Johannes Bruder ( STACKFORCE )</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_df7eed3543fa7070b0a3ab0e00a3e0a6.html">github-loramac-node</a></li><li class="navelem"><a class="el" href="dir_1dda2d094b0a9f47a7b83974941607c0.html">src</a></li><li class="navelem"><a class="el" href="dir_52c4f436fc21c8338c027271102d36bc.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_crypto_8h.html">LoRaMacCrypto.h</a></li>
-    <li class="footer">Generated on Tue May 26 2020 14:26:14 for LoRaMAC by
+    <li class="footer">Generated on Wed Oct 14 2020 15:45:48 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

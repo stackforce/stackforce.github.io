@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.4</span>
+   &#160;<span id="projectnumber">4.4.5</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('_lo_ra_mac_types_8h.html','');});
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;timer.h&quot;</code><br />
+<code>#include &quot;systime.h&quot;</code><br />
 </div>
 <p><a href="_lo_ra_mac_types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -125,6 +126,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:a9f3d2a035e6bc5055f718f63bd2f8482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc75a6b3de1272a9500d116c99e0469d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#adc75a6b3de1272a9500d116c99e0469d">LORAMAC_CRYPTO_MULTICAST_KEYS</a>&#160;&#160;&#160;127</td></tr>
 <tr class="separator:adc75a6b3de1272a9500d116c99e0469d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350863a913c89325530d89cfbf606a1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#a350863a913c89325530d89cfbf606a1d">LORAMAC_MAX_MC_CTX</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a350863a913c89325530d89cfbf606a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad065f3831c9a00390949d52a93074970"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lo_ra_mac_types_8h.html#ad065f3831c9a00390949d52a93074970">DeviceClass_t</a> { <a class="el" href="_lo_ra_mac_types_8h.html#ad065f3831c9a00390949d52a93074970a307ee33f71385819abc142fe4f23c3bb">CLASS_A</a> = 0x00, 
 <a class="el" href="_lo_ra_mac_types_8h.html#ad065f3831c9a00390949d52a93074970a10611f4c3b970c7d722c98eaea63ddd5">CLASS_B</a> = 0x01, 
 <a class="el" href="_lo_ra_mac_types_8h.html#ad065f3831c9a00390949d52a93074970abfee35359a39adbacbc3f13eddc76cd0">CLASS_C</a> = 0x02
@@ -514,6 +517,13 @@ LastBandUpdateTime</td>
 <p>The last time the band has been synchronized with the current time </p>
 </td></tr>
 <tr><td class="fieldtype">
+<a id="ad2f6ea61674a40ddea40b0fac19382e4"></a>TimerTime_t</td>
+<td class="fieldname">
+LastMaxCreditAssignTime</td>
+<td class="fielddoc">
+<p>The last time we have assigned the max credits for the 24h interval. </p>
+</td></tr>
+<tr><td class="fieldtype">
 <a id="a4b7f87c131cc45553320a799034ffb57"></a>TimerTime_t</td>
 <td class="fieldname">
 TimeCredits</td>
@@ -667,6 +677,21 @@ McNwkSKey</td>
       </table>
 </div><div class="memdoc">
 <p>Start value for multicast keys enumeration </p>
+
+</div>
+</div>
+<a id="a350863a913c89325530d89cfbf606a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350863a913c89325530d89cfbf606a1d">&#9670;&nbsp;</a></span>LORAMAC_MAX_MC_CTX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LORAMAC_MAX_MC_CTX&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum number of multicast context </p>
 
 </div>
 </div>
@@ -1037,7 +1062,7 @@ McNwkSKey</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_df7eed3543fa7070b0a3ab0e00a3e0a6.html">github-loramac-node</a></li><li class="navelem"><a class="el" href="dir_1dda2d094b0a9f47a7b83974941607c0.html">src</a></li><li class="navelem"><a class="el" href="dir_52c4f436fc21c8338c027271102d36bc.html">mac</a></li><li class="navelem"><a class="el" href="_lo_ra_mac_types_8h.html">LoRaMacTypes.h</a></li>
-    <li class="footer">Generated on Tue May 26 2020 14:26:14 for LoRaMAC by
+    <li class="footer">Generated on Wed Oct 14 2020 15:45:49 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

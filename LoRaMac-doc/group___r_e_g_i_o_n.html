@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="page_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LoRaMAC
-   &#160;<span id="projectnumber">4.4.4</span>
+   &#160;<span id="projectnumber">4.4.5</span>
    </div>
    <div id="projectbrief">Documentation of the API</div>
   </td>
@@ -282,21 +282,21 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a6141dbec6ac34965123693be279f2769">PHY_BEACON_FORMAT</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ab68a2c284d4e827f05529b48ef5eeed5">PHY_BEACON_CHANNEL_DR</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a08f0ef405589a877cb43902784b50b89">PHY_BEACON_CHANNEL_STEPWIDTH</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a099ba02c06e2f359f1d46d05b70d8732">PHY_BEACON_NB_CHANNELS</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a0f41e6b7adaf1a43e7368b2382f88709">PHY_BEACON_CHANNEL_OFFSET</a>, 
 <br />
 &#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27afcf58ca6bef66dffc8806d92c29043d6">PHY_PING_SLOT_CHANNEL_FREQ</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27ac6dd3ecce054eaefa85d609838280665">PHY_PING_SLOT_CHANNEL_DR</a>, 
-<b>PHY_PING_SLOT_NB_CHANNELS</b>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a8f68ff4e1789d08898253bd66a96a742">PHY_PING_SLOT_NB_CHANNELS</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27a80807aa8b937b37002697a86116d530a">PHY_SF_FROM_DR</a>, 
 <br />
 &#160;&#160;<a class="el" href="group___r_e_g_i_o_n.html#ggac1354e358e41c80d30879e97df258e27acd2412001278a4fb5c8b82fd08350f08">PHY_BW_FROM_DR</a>
 <br />
  }</td></tr>
 <tr class="separator:gac1354e358e41c80d30879e97df258e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0">InitType_t</a> { <a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a0a01b683daa10604c0f49b76bb41826d">INIT_TYPE_BANDS</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7">INIT_TYPE_INIT</a>, 
-<a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a79ad91828ca72b4ead718bdfca91fab7">INIT_TYPE_RESTORE_DEFAULT_CHANNELS</a>, 
+<tr class="memitem:gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_g_i_o_n.html#gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0">InitType_t</a> { <a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0af3c1df3d07008ab845c6a5b16f3475e2">INIT_TYPE_DEFAULTS</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0ae10e172fec43b8316dea89ee14073cca">INIT_TYPE_RESET_TO_DEFAULT_CHANNELS</a>, 
+<a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a867913ab78eb6e92e540b10908145588">INIT_TYPE_ACTIVATE_DEFAULT_CHANNELS</a>, 
 <a class="el" href="group___r_e_g_i_o_n.html#ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0aadda495dbd34e630ff5bd10821b0d563">INIT_TYPE_RESTORE_CTX</a>
  }</td></tr>
 <tr class="separator:gaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2716,13 +2716,15 @@ Frequency</td>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27ab68a2c284d4e827f05529b48ef5eeed5"></a>PHY_BEACON_CHANNEL_DR&#160;</td><td class="fielddoc"><p>The beacon channel datarate. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27a08f0ef405589a877cb43902784b50b89"></a>PHY_BEACON_CHANNEL_STEPWIDTH&#160;</td><td class="fielddoc"><p>The frequency stepwidth between the beacon channels. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27a099ba02c06e2f359f1d46d05b70d8732"></a>PHY_BEACON_NB_CHANNELS&#160;</td><td class="fielddoc"><p>The number of channels for the beacon reception. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27a0f41e6b7adaf1a43e7368b2382f88709"></a>PHY_BEACON_CHANNEL_OFFSET&#160;</td><td class="fielddoc"><p>The static offset for the downlink channel calculation. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27afcf58ca6bef66dffc8806d92c29043d6"></a>PHY_PING_SLOT_CHANNEL_FREQ&#160;</td><td class="fielddoc"><p>Ping slot channel frequency. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27ac6dd3ecce054eaefa85d609838280665"></a>PHY_PING_SLOT_CHANNEL_DR&#160;</td><td class="fielddoc"><p>The datarate of a ping slot channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27a8f68ff4e1789d08898253bd66a96a742"></a>PHY_PING_SLOT_NB_CHANNELS&#160;</td><td class="fielddoc"><p>The number of channels for the ping slot reception. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac1354e358e41c80d30879e97df258e27a80807aa8b937b37002697a86116d530a"></a>PHY_SF_FROM_DR&#160;</td><td class="fielddoc"><p>The equivalent spreading factor value from datarate </p>
 </td></tr>
@@ -2745,11 +2747,11 @@ Frequency</td>
 </div><div class="memdoc">
 <p>Enumeration of initialization types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a0a01b683daa10604c0f49b76bb41826d"></a>INIT_TYPE_BANDS&#160;</td><td class="fielddoc"><p>Initializes the band definitions. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0af3c1df3d07008ab845c6a5b16f3475e2"></a>INIT_TYPE_DEFAULTS&#160;</td><td class="fielddoc"><p>Initializes the regional default settings for the band, channel and default channels mask. Some regions also initiate other default configurations. In general, this type is intended to be called once during the initialization. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a5065ce7a587a2aeff0da16507222c4d7"></a>INIT_TYPE_INIT&#160;</td><td class="fielddoc"><p>Initializes the region specific data to defaults, according to the LoRaWAN specification. </p>
+<tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0ae10e172fec43b8316dea89ee14073cca"></a>INIT_TYPE_RESET_TO_DEFAULT_CHANNELS&#160;</td><td class="fielddoc"><p>Resets the channels mask to the default channels. Deactivates all other channels. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a79ad91828ca72b4ead718bdfca91fab7"></a>INIT_TYPE_RESTORE_DEFAULT_CHANNELS&#160;</td><td class="fielddoc"><p>Restores default channels defined by the LoRaWAN specification only. </p>
+<tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0a867913ab78eb6e92e540b10908145588"></a>INIT_TYPE_ACTIVATE_DEFAULT_CHANNELS&#160;</td><td class="fielddoc"><p>Activates the default channels. Leaves all other active channels active. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaab9f8ee61b0f0fdfbfe5fc56dc3f7b0aadda495dbd34e630ff5bd10821b0d563"></a>INIT_TYPE_RESTORE_CTX&#160;</td><td class="fielddoc"><p>Restores internal context from passed pointer. </p>
 </td></tr>
@@ -3894,7 +3896,7 @@ Frequency</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 26 2020 14:26:14 for LoRaMAC by
+    <li class="footer">Generated on Wed Oct 14 2020 15:45:49 for LoRaMAC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

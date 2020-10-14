@@ -151,7 +151,7 @@ var group___l_o_r_a_m_a_c =
     [ "MlmeReqTxCw_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req_tx_cw__t", [
       [ "Timeout", "group___l_o_r_a_m_a_c.html#ae1c58f120c7eef7bb71a5e3bfeaeb795", null ],
       [ "Frequency", "group___l_o_r_a_m_a_c.html#ade3d190636488dad9a89b19446b7acf1", null ],
-      [ "Power", "group___l_o_r_a_m_a_c.html#ab44615b5dd16068c5a1bfb228b72c081", null ]
+      [ "Power", "group___l_o_r_a_m_a_c.html#a6ebc6ad47329ddd2d5e0d30ae0310a1e", null ]
     ] ],
     [ "MlmeReqPingSlotInfo_t", "group___l_o_r_a_m_a_c.html#struct_mlme_req_ping_slot_info__t", [
       [ "PingSlot", "group___l_o_r_a_m_a_c.html#a7d14ca889c3298c18025341f2935e3cf", null ]
@@ -289,7 +289,6 @@ var group___l_o_r_a_m_a_c =
     [ "UP_LINK", "group___l_o_r_a_m_a_c.html#ga7e75f3071d6911b19a563d554038f8da", null ],
     [ "DOWN_LINK", "group___l_o_r_a_m_a_c.html#ga801525db3ba12b250029f026403524b7", null ],
     [ "LORA_MAC_MLME_CONFIRM_QUEUE_LEN", "group___l_o_r_a_m_a_c.html#ga47c33a3d3db7c795afba5b3ac94d99c8", null ],
-    [ "LORAMAC_MAX_MC_CTX", "group___l_o_r_a_m_a_c.html#ga350863a913c89325530d89cfbf606a1d", null ],
     [ "LORAMAC_CRYPTO_MULTICAST_KEYS", "group___l_o_r_a_m_a_c.html#gadc75a6b3de1272a9500d116c99e0469d", null ],
     [ "ActivationType_t", "group___l_o_r_a_m_a_c.html#ga8d64e6041eb0e2a04accfdece713df46", [
       [ "ACTIVATION_TYPE_NONE", "group___l_o_r_a_m_a_c.html#gga8d64e6041eb0e2a04accfdece713df46ac4bd0d596d7a5551f302f6094f2101f1", null ],

@@ -21,7 +21,7 @@ var secure_element_8h =
     [ "SecureElementComputeAesCmac", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga4856f7e209d1c0f90f1f58d798cd7de2", null ],
     [ "SecureElementVerifyAesCmac", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gaa7809fcf041025c0c581b364d5b2f3c3", null ],
     [ "SecureElementAesEncrypt", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga4dad12e2062fd318aba17c51b96d64f4", null ],
-    [ "SecureElementDeriveAndStoreKey", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga0e5ea32fd3c56323d2b39dd3a84d1b59", null ],
+    [ "SecureElementDeriveAndStoreKey", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga90b16a0e97768daf4d94445a9978cdd2", null ],
     [ "SecureElementProcessJoinAccept", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga69af36b3c50e22732a6f13623ee4499c", null ],
     [ "SecureElementRandomNumber", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#gab96a7a833c840ab7453b8bb78c91b805", null ],
     [ "SecureElementSetDevEui", "group___s_e_c_u_r_e_e_l_e_m_e_n_t.html#ga0686e9a08199aa5c48114a010cf29beb", null ],
